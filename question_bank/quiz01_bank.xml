@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- MATE 3001 - Quiz 01: Conjuntos y Valor Absoluto -->
+  <!-- Question Bank for Moodle XML Format -->
+  
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz01</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Sets - Enumeration -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Conjuntos-Enumeracion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dado el conjunto de números enteros entre -3 y 5 (inclusive), ¿cuál es su forma de enumeración?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\{-3, -2, -1, 0, 1, 2, 3, 4, 5\}\)</p>]]></text>
+      <feedback><text>Correcto. El conjunto incluye todos los enteros desde -3 hasta 5.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{-3, -2, -1, 1, 2, 3, 4, 5\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el 0.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{-2, -1, 0, 1, 2, 3, 4, 5\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el -3.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{-3, -2, -1, 0, 1, 2, 3, 4\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el 5.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Sets - Union -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Conjuntos-Union</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sean \(A = \{1, 3, 5, 7, 9\}\) y \(C = \{3, 6, 9, 12\}\). ¿Cuál es \(A \cup C\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\{1, 3, 5, 6, 7, 9, 12\}\)</p>]]></text>
+      <feedback><text>Correcto. La unión incluye todos los elementos de ambos conjuntos.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{3, 9\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es la intersección, no la unión.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{1, 3, 5, 6, 7, 9\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el 12.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{1, 3, 5, 7, 9, 6, 12\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los elementos deben estar ordenados.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Sets - Intersection -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Conjuntos-Interseccion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sean \(A = \{1, 3, 5, 7, 9\}\) y \(C = \{3, 6, 9, 12\}\). ¿Cuál es \(A \cap C\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\{3, 9\}\)</p>]]></text>
+      <feedback><text>Correcto. La intersección incluye solo los elementos comunes.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{1, 3, 5, 6, 7, 9, 12\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es la unión, no la intersección.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{6, 12\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Estos elementos no están en A.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{1, 5, 7\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Estos elementos no están en C.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Sets - Membership -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Conjuntos-Pertenencia</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál de las siguientes afirmaciones es FALSA?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{2, 4\} \subseteq \{1, 2, 3, 4, 5\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta afirmación es verdadera.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\mathbb{N} \subseteq \mathbb{Q}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta afirmación es verdadera.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{16} \in \mathbb{N}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta afirmación es verdadera (\(\sqrt{16} = 4\)).</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\frac{3}{4} \in \mathbb{Z}\)</p>]]></text>
+      <feedback><text>Correcto. Esta afirmación es falsa porque 3/4 no es un entero.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Sets - Prime Numbers -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Conjuntos-Primos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es la factorización prima de 21?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(3 \times 7\)</p>]]></text>
+      <feedback><text>Correcto. 21 = 3 × 7.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3 \times 8\)</p>]]></text>
+      <feedback><text>Incorrecto. 3 × 8 = 24, no 21.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(7 \times 3 \times 1\)</p>]]></text>
+      <feedback><text>Incorrecto. En factorización prima no se incluye el 1.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>21 es un número primo</p>]]></text>
+      <feedback><text>Incorrecto. 21 es compuesto.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Sets - Application Problem -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Conjuntos-Aplicacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>En una encuesta a 100 estudiantes: 45 prefieren matemáticas, 35 prefieren ciencias, 15 prefieren ambas. ¿Cuántos estudiantes no prefieren ninguna de las dos materias?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>35 estudiantes</p>]]></text>
+      <feedback><text>Correcto. 100 - (45 + 35 - 15) = 35.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>20 estudiantes</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el cálculo usando la fórmula de unión.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>40 estudiantes</p>]]></text>
+      <feedback><text>Incorrecto. Este número es muy alto.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>25 estudiantes</p>]]></text>
+      <feedback><text>Incorrecto. No consideraste correctamente la intersección.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Absolute Value - Basic -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-ValorAbsoluto-Basico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el valor de \(|-15|\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>15</p>]]></text>
+      <feedback><text>Correcto. El valor absoluto de -15 es 15.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-15</p>]]></text>
+      <feedback><text>Incorrecto. El valor absoluto siempre es no negativo.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0</p>]]></text>
+      <feedback><text>Incorrecto. El valor absoluto de -15 no es 0.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\pm 15\)</p>]]></text>
+      <feedback><text>Incorrecto. El valor absoluto tiene un único valor.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Absolute Value - Operations -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-ValorAbsoluto-Operaciones</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el valor de \(|8 - 12|\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>4</p>]]></text>
+      <feedback><text>Correcto. |8 - 12| = |-4| = 4.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-4</p>]]></text>
+      <feedback><text>Incorrecto. El valor absoluto no puede ser negativo.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>20</p>]]></text>
+      <feedback><text>Incorrecto. Este sería 8 + 12.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-4</p>]]></text>
+      <feedback><text>Incorrecto. El valor absoluto siempre es positivo o cero.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Absolute Value - Addition -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-ValorAbsoluto-Suma</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el valor de \(|6| + |-8|\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>14</p>]]></text>
+      <feedback><text>Correcto. |6| + |-8| = 6 + 8 = 14.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-2</p>]]></text>
+      <feedback><text>Incorrecto. Este sería 6 + (-8).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>2</p>]]></text>
+      <feedback><text>Incorrecto. Este sería |6 - 8|.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-14</p>]]></text>
+      <feedback><text>Incorrecto. La suma de valores absolutos no puede ser negativa.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Absolute Value - Division -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-ValorAbsoluto-Division</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el valor de \(\frac{|-24|}{|6|}\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>4</p>]]></text>
+      <feedback><text>Correcto. |-24|/|6| = 24/6 = 4.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-4</p>]]></text>
+      <feedback><text>Incorrecto. La división de valores absolutos es positiva.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{24}{-6}\)</p>]]></text>
+      <feedback><text>Incorrecto. |6| = 6, no -6.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-\frac{24}{6}\)</p>]]></text>
+      <feedback><text>Incorrecto. La división de valores absolutos no es negativa.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: Signs - Multiplication -->
+  <question type="multichoice">
+    <name>
+      <text>Q11-Signos-Multiplicacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el resultado de \((-7) \cdot (-6)\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>42</p>]]></text>
+      <feedback><text>Correcto. Negativo por negativo es positivo.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-42</p>]]></text>
+      <feedback><text>Incorrecto. Negativo por negativo es positivo.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-13</p>]]></text>
+      <feedback><text>Incorrecto. Este sería -7 + (-6).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>13</p>]]></text>
+      <feedback><text>Incorrecto. Este sería 7 + 6.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Signs - Distributive -->
+  <question type="multichoice">
+    <name>
+      <text>Q12-Signos-Distributiva</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el resultado de \(-(8 + 3)\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>-11</p>]]></text>
+      <feedback><text>Correcto. -(8 + 3) = -11.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>11</p>]]></text>
+      <feedback><text>Incorrecto. El signo negativo afecta toda la suma.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-5</p>]]></text>
+      <feedback><text>Incorrecto. Este sería 8 - 3 con signo negativo.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>5</p>]]></text>
+      <feedback><text>Incorrecto. Este sería |8 - 3|.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 13: Complex Absolute Value -->
+  <question type="multichoice">
+    <name>
+      <text>Q13-ValorAbsoluto-Complejo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el valor de \(|(-3) \cdot 2| - |5 - 9| + \frac{|-18|}{|-3|}\)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>8</p>]]></text>
+      <feedback><text>Correcto. 6 - 4 + 6 = 8.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>2</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el cálculo de cada término.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>-2</p>]]></text>
+      <feedback><text>Incorrecto. El resultado final no puede ser negativo.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>14</p>]]></text>
+      <feedback><text>Incorrecto. Verifica la operación de resta.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
