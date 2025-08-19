@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Venn Diagram — p5.js + MathJax</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax v3 config -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  <!-- p5.js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Interactive Venn Diagram (p5.js)</h1>
+    <p>Drag each number token into the correct region. Click <strong>Evaluate Answer</strong> to check.</p>
+  </header>
+  
+  <main>
+    <section class="definitions">
+      <div id="set-definitions" aria-live="polite">
+        <div class="set-row"><span class="set-label">A:</span> <span id="setA" class="math">Loading...</span></div>
+        <div class="set-row"><span class="set-label">B:</span> <span id="setB" class="math">Loading...</span></div>
+      </div>
+    </section>
+
+    <section class="board-wrapper">
+      <div id="canvas-holder" class="canvas-holder" aria-label="Venn diagram interactive canvas"></div>
+      <div class="legend">
+        <span class="legend-item legend-a">Set A</span>
+        <span class="legend-item legend-b">Set B</span>
+        <span class="legend-item legend-ab">Intersection</span>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="evaluateBtn" class="btn primary">Evaluate Answer</button>
+      <button id="resetBtn" class="btn">Reset/New Sets</button>
+    </section>
+
+    <section class="feedback" aria-live="polite">
+      <div id="feedback"></div>
+    </section>
+  </main>
+
+  <script src="p5-venn.js"></script>
+</body>
+<!--
+  Note: This page uses CDNs for p5.js and MathJax. If offline, download locally and update paths.
+-->
+</html>
+

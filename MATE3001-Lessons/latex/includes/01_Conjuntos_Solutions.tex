@@ -1,0 +1,177 @@
+%========================================
+% DETAILED SOLUTIONS: Conjuntos y Operaciones con Conjuntos
+%========================================
+
+\subsection*{Ejercicio 1}
+
+\textbf{Problema 1a:} $A = \{x \mid x \text{ es un número natural menor que 6}\}$
+
+\textbf{Solución detallada:} Los números naturales son $\{1, 2, 3, 4, 5, 6, 7, \ldots\}$. Los que son menores que 6 son: $1, 2, 3, 4, 5$. Por tanto, $A = \{1, 2, 3, 4, 5\}$.
+
+\textbf{Problema 1b:} $B = \{x \mid x \text{ es una vocal de la palabra ``matemática''}\}$
+
+\textbf{Solución detallada:} En la palabra ``matemática'', las vocales que aparecen son: m-\textbf{a}-t-\textbf{e}-m-\textbf{á}-t-\textbf{i}-c-\textbf{a}. Notamos que aparecen $a$, $e$, á, $i$, $a$. Como en un conjunto no repetimos elementos, y considerando que á es la misma vocal $a$ con acento, tenemos: $B = \{a, e, i\}$.
+
+\textbf{Problema 1c:} $C = \{x \mid x \text{ es un número par entre 10 y 20}\}$
+
+\textbf{Solución detallada:} Los números entre 10 y 20 son: $11, 12, 13, 14, 15, 16, 17, 18, 19$. De estos, los pares son aquellos divisibles por 2: $12, 14, 16, 18$. Por tanto, $C = \{12, 14, 16, 18\}$.
+
+\subsection*{Ejercicio 2}
+
+\textbf{Análisis de pertenencia a conjuntos numéricos:}
+
+\textbf{Problema 2a:} $3 \in \{1, 2, 3, 4, 5\}$ es \textbf{Verdadero} porque 3 está listado explícitamente en el conjunto.
+
+\textbf{Problema 2b:} $0 \in \mathbb{N}$ es \textbf{Falso} porque los números naturales tradicionalmente se definen como $\{1, 2, 3, 4, \ldots\}$, excluyendo el cero.
+
+\textbf{Problema 2c:} $-5 \in \mathbb{Z}$ es \textbf{Verdadero} porque los enteros incluyen números negativos, cero y positivos.
+
+\textbf{Problema 2d:} $\frac{2}{3} \in \mathbb{Q}$ es \textbf{Verdadero} porque los racionales son precisamente los números que se pueden expresar como $\frac{a}{b}$ donde $a, b$ son enteros y $b \neq 0$.
+
+\textbf{Problema 2e:} $\sqrt{2} \in \mathbb{Q}$ es \textbf{Falso} porque $\sqrt{2}$ es irracional. Su representación decimal es $1.414213...$, que es infinita y no periódica.
+
+\subsection*{Ejercicio 3}
+
+\textbf{Operaciones con conjuntos:} Sean $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$ y $C = \{5, 6, 7, 8, 9\}$.
+
+\textbf{Problema 3a:} $A \cup B$ (unión)
+\begin{align}
+A \cup B &= \{\text{todos los elementos que están en A o en B o en ambos}\} \\
+&= \{1, 2, 3, 4, 5, 6, 7\}
+\end{align}
+
+\textbf{Problema 3b:} $A \cap B$ (intersección)
+\begin{align}
+A \cap B &= \{\text{elementos que están tanto en A como en B}\} \\
+&= \{3, 4, 5\}
+\end{align}
+
+\textbf{Problema 3c:} $B \cup C$
+\begin{align}
+B \cup C &= \{3, 4, 5, 6, 7\} \cup \{5, 6, 7, 8, 9\} \\
+&= \{3, 4, 5, 6, 7, 8, 9\}
+\end{align}
+
+\textbf{Problema 3d:} $B \cap C$
+\begin{align}
+B \cap C &= \{3, 4, 5, 6, 7\} \cap \{5, 6, 7, 8, 9\} \\
+&= \{5, 6, 7\}
+\end{align}
+
+\textbf{Problema 3e:} $A \cap B \cap C$ (intersección de tres conjuntos)
+\begin{align}
+A \cap B \cap C &= \{3, 4, 5\} \cap \{5, 6, 7\} \\
+&= \{5\}
+\end{align}
+
+\subsection*{Ejercicio 4}
+
+\textbf{Análisis de relaciones de subconjuntos:}
+
+\textbf{Problema 4a:} $\{1, 2\} \subseteq \{1, 2, 3, 4\}$ es \textbf{Verdadero}
+\textit{Explicación:} Todo elemento del primer conjunto (1 y 2) está presente en el segundo conjunto.
+
+\textbf{Problema 4b:} $\{a, b, c\} \subseteq \{c, b, a\}$ es \textbf{Verdadero}
+\textit{Explicación:} Ambos conjuntos contienen exactamente los mismos elementos. El orden no importa en los conjuntos.
+
+\textbf{Problema 4c:} $\mathbb{N} \subseteq \mathbb{Z}$ es \textbf{Verdadero}
+\textit{Explicación:} Todo número natural es también un número entero.
+
+\textbf{Problema 4d:} $\mathbb{Q} \subseteq \mathbb{N}$ es \textbf{Falso}
+\textit{Explicación:} Los racionales incluyen fracciones como $\frac{1}{2}$ que no son números naturales.
+
+\textbf{Problema 4e:} $\emptyset \subseteq \{1, 2, 3\}$ es \textbf{Verdadero}
+\textit{Explicación:} Por definición, el conjunto vacío es subconjunto de cualquier conjunto.
+
+\subsection*{Ejercicio 5}
+
+\textbf{Clasificación detallada de números:}
+
+Para cada número, verificamos su pertenencia a cada conjunto numérico:
+
+\textbf{$-3$:} No es natural (negativos no incluidos), es entero, es racional ($-3 = \frac{-3}{1}$), no es irracional.
+
+\textbf{$0$:} No es natural, es entero, es racional ($0 = \frac{0}{1}$), no es irracional.
+
+\textbf{$\frac{1}{2}$:} No es natural, no es entero, es racional (ya está en forma de fracción), no es irracional.
+
+\textbf{$\sqrt{9} = 3$:} Es natural, es entero, es racional, no es irracional.
+
+\textbf{$\sqrt{7}$:} No es natural, no es entero, no es racional, es irracional (su decimal no termina ni se repite).
+
+\textbf{$\pi$:} No es natural, no es entero, no es racional, es irracional.
+
+\textbf{$2.75 = \frac{11}{4}$:} No es natural, no es entero, es racional, no es irracional.
+
+\subsection*{Ejercicio 6}
+
+\textbf{Análisis de números primos y factorización:}
+
+\textbf{$13$:} Para verificar si es primo, probamos divisibilidad por números primos menores que $\sqrt{13} \approx 3.6$. Probamos 2 y 3: $13 \div 2 = 6.5$ (no entero), $13 \div 3 = 4.33...$ (no entero). Por tanto, 13 es primo.
+
+\textbf{$15$:} $15 \div 3 = 5$, entonces $15 = 3 \times 5$. Como 3 y 5 son primos, esta es la factorización prima.
+
+\textbf{$17$:} Probamos divisibilidad por primos menores que $\sqrt{17} \approx 4.1$. Probamos 2 y 3: no dividen exactamente. Por tanto, 17 es primo.
+
+\textbf{$24$:} 
+\begin{align}
+24 &= 2 \times 12 \\
+&= 2 \times 2 \times 6 \\
+&= 2 \times 2 \times 2 \times 3 \\
+&= 2^3 \times 3
+\end{align}
+
+\textbf{$29$:} Probamos divisibilidad por primos menores que $\sqrt{29} \approx 5.4$. Probamos 2, 3, 5: ninguno divide exactamente. Por tanto, 29 es primo.
+
+\subsection*{Ejercicio 7}
+
+\textbf{Conversión de decimales a fracciones:}
+
+\textbf{$0.25$:} 
+\begin{align}
+0.25 &= \frac{25}{100} = \frac{25 \div 25}{100 \div 25} = \frac{1}{4}
+\end{align}
+
+\textbf{$0.75$:}
+\begin{align}
+0.75 &= \frac{75}{100} = \frac{75 \div 25}{100 \div 25} = \frac{3}{4}
+\end{align}
+
+\textbf{$1.2$:}
+\begin{align}
+1.2 &= \frac{12}{10} = \frac{12 \div 2}{10 \div 2} = \frac{6}{5}
+\end{align}
+
+\textbf{$0.125$:}
+\begin{align}
+0.125 &= \frac{125}{1000} = \frac{125 \div 125}{1000 \div 125} = \frac{1}{8}
+\end{align}
+
+\subsection*{Ejercicio 8}
+
+\textbf{Problema de aplicación con diagramas de Venn:}
+
+Este problema requiere el principio de inclusión-exclusión: $|A \cup B| = |A| + |B| - |A \cap B|$
+
+Datos: Total = 30, $|M| = 18$, $|F| = 15$, $|M \cap F| = 8$
+
+\textbf{Análisis con diagrama de Venn:}
+\begin{itemize}
+    \item Solo matemáticas: $18 - 8 = 10$ estudiantes
+    \item Solo física: $15 - 8 = 7$ estudiantes  
+    \item Ambas materias: $8$ estudiantes
+    \item Total estudiando al menos una: $10 + 7 + 8 = 25$ estudiantes
+    \item Ninguna materia: $30 - 25 = 5$ estudiantes
+\end{itemize}
+
+\subsection*{Ejercicio 9}
+
+\textbf{Demostración de la transitividad de subconjuntos:}
+
+Esta demostración utiliza la definición formal de subconjunto y la lógica matemática básica.
+
+\textbf{Método de demostración:} Demostración directa
+
+\textbf{Estrategia:} Tomar un elemento arbitrario de $A$ y mostrar que debe estar en $C$.
+
+La demostración sigue la estructura lógica: $x \in A \Rightarrow x \in B \Rightarrow x \in C$, estableciendo la cadena de implicaciones necesaria para concluir que $A \subseteq C$.

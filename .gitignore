@@ -1,0 +1,29 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bbl
+*.blg
+*.idx
+*.ind
+*.ilg
+*.lof
+*.lot
+*.glo
+*.gls
+*.glg
+*.ist
+*.acn
+*.acr
+*.alg
+*.glsdefs
+*.nav
+*.snm
+*.vrb
+
+# PDF files
+*.pdf
