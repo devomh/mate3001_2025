@@ -53,6 +53,7 @@ CourseCode-Lessons/
 %========================================
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}              % Adapt for course language
+\decimalpoint                                % Force decimal point instead of comma
 \usepackage[margin=1in]{geometry}
 \setlength{\headheight}{15pt}
 \usepackage{amsmath, amsthm, amssymb}
@@ -62,6 +63,8 @@ CourseCode-Lessons/
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{tikz}                        % For LaTeX-generated diagrams
+\usetikzlibrary{arrows.meta}           % For arrow styles
+\usepackage{comment}                     % For conditional content exclusion
 
 %========================================
 % COURSE CUSTOMIZATION SECTION
@@ -92,7 +95,8 @@ CourseCode-Lessons/
     rightmargin=10pt,
     innertopmargin=10pt,
     innerbottommargin=10pt,
-    frametitle={\textbf{Definición}}
+    frametitle={\textbf{Definición}},
+    frametitlealignment=\raggedright
 ]{definition}
 
 % Example Environment (Green)
@@ -104,7 +108,8 @@ CourseCode-Lessons/
     rightmargin=10pt,
     innertopmargin=10pt,
     innerbottommargin=10pt,
-    frametitle={\textbf{Ejemplo}}
+    frametitle={\textbf{Ejemplo}},
+    frametitlealignment=\raggedright
 ]{example}
 
 % Exercise Environment (Orange)
@@ -118,7 +123,8 @@ CourseCode-Lessons/
     rightmargin=10pt,
     innertopmargin=10pt,
     innerbottommargin=10pt,
-    frametitle={\stepcounter{exercise}\textbf{Ejercicio \theexercise}}
+    frametitle={\stepcounter{exercise}\textbf{Ejercicio \theexercise}},
+    frametitlealignment=\raggedright
 ]{exercise}
 
 % Theorem Environment (Orange variant)
@@ -129,8 +135,7 @@ CourseCode-Lessons/
     leftmargin=10pt,
     rightmargin=10pt,
     innertopmargin=10pt,
-    innerbottommargin=10pt,
-    frametitle={\textbf{Teorema}}
+    innerbottommargin=10pt
 ]{theorem}
 
 %========================================
@@ -152,23 +157,28 @@ CourseCode-Lessons/
 \newcommand{\problem}{\stepcounter{problem}\textbf{\theproblem.} }
 \newcommand{\solution}{\textbf{Solución:} }
 
-% Custom numbered lists for exercises
-\newcommand{\exerciselist}{\begin{enumerate}[label=\textbf{\alph*.}]}
-\newcommand{\endexerciselist}{\end{enumerate}}
+% Custom environment for exercise lists
+\newenvironment{exerciselist}
+    {\begin{enumerate}[label=\textbf{\alph*.}]}
+    {\end{enumerate}}
 
 % Solution environment with conditional display
 \newif\ifshowsolutions
 % \showsolutionstrue  % Uncomment for instructor version
 \showsolutionsfalse   % Default: student version
 
-\newenvironment{solucion}[1][Solución]
-  {\ifshowsolutions\par\medskip\noindent\textbf{#1:}\par\nopagebreak\fi}
-  {\ifshowsolutions\par\medskip\fi}
+\ifshowsolutions
+    \newenvironment{solucion}[1][Solución]
+      {\par\medskip\noindent\textbf{#1:}\par\nopagebreak}
+      {\par\medskip}
+\else
+    \excludecomment{solucion}
+\fi
 
 %========================================
 % GRAPHICS CONFIGURATION
 %========================================
-\graphicspath{{../images/}{../images/shared/}{../images/diagrams/}}
+\graphicspath{{../images/}{../images/shared/}{../images/diagrams/}{../images/NN_topic_name/}}
 
 %========================================
 % DOCUMENT CONTENT
@@ -180,6 +190,9 @@ CourseCode-Lessons/
 \author{\coursecode\ - \coursename}
 \date{}
 \maketitle
+
+% Set section counter to lesson number (optional)
+% \setcounter{section}{1}  % Uncomment and adjust for lessons after the first
 
 % Modular content inclusion
 \input{includes/00_Topic_Content}         % Replace 00 with lesson number
@@ -251,11 +264,11 @@ Sí, es un polinomio de grado 2.
 \end{exercise}
 
 \begin{exercise}
-\exerciselist
+\begin{exerciselist}
     \item Calcule $\sqrt{16}$.
     \item Simplifique $\frac{x^2-1}{x-1}$.
     \item Factorice $x^2 - 4$.
-\endexerciselist
+\end{exerciselist}
 \end{exercise}
 ```
 
@@ -301,25 +314,232 @@ pdflatex NN_Topic_Master.tex
 1. Edit master file: Uncomment `\showsolutionstrue`
 2. Compile: `pdflatex NN_Topic_Master.tex`
 
-### Automated Script Example
+### Enhanced Build Automation
+
+#### Makefile Template
+```makefile
+# Makefile for LaTeX course compilation
+# Usage: make lesson=01 version=student
+#        make lesson=01 version=instructor
+#        make all-student
+#        make all-instructor
+#        make clean
+
+# Variables
+LESSON ?= 01
+VERSION ?= student
+LATEXCMD = pdflatex
+LATEXOPTS = -interaction=nonstopmode -halt-on-error
+
+# Find all master files
+MASTERS = $(wildcard ??_*_Master.tex)
+LESSONS = $(patsubst %_Master.tex,%,$(MASTERS))
+
+# Default target
+.PHONY: help
+help:
+	@echo "Available targets:"
+	@echo "  lesson=XX version=student/instructor - Compile specific lesson"
+	@echo "  all-student                         - Compile all lessons (student version)"
+	@echo "  all-instructor                      - Compile all lessons (instructor version)"
+	@echo "  clean                               - Remove auxiliary files"
+	@echo "  clean-all                           - Remove all generated files"
+
+# Compile specific lesson
+.PHONY: compile
+compile: $(LESSON)_*_Master.pdf
+
+# Pattern rule for PDF generation
+%_Master.pdf: %_Master.tex
+	@echo "Compiling $< ($(VERSION) version)..."
+	@if [ "$(VERSION)" = "instructor" ]; then \
+		sed -i.bak 's/\\showsolutionsfalse/\\showsolutionstrue/' $<; \
+	fi
+	$(LATEXCMD) $(LATEXOPTS) $<
+	$(LATEXCMD) $(LATEXOPTS) $<  # Second pass for references
+	@if [ "$(VERSION)" = "instructor" ]; then \
+		mv $<.bak $<; \
+	fi
+	@echo "Successfully compiled $@"
+
+# Compile all lessons
+.PHONY: all-student all-instructor
+all-student:
+	@$(MAKE) compile-all VERSION=student
+
+all-instructor:
+	@$(MAKE) compile-all VERSION=instructor
+
+.PHONY: compile-all
+compile-all:
+	@for master in $(MASTERS); do \
+		echo "Compiling $$master ($(VERSION) version)..."; \
+		if [ "$(VERSION)" = "instructor" ]; then \
+			sed -i.bak 's/\\showsolutionsfalse/\\showsolutionstrue/' $$master; \
+		fi; \
+		$(LATEXCMD) $(LATEXOPTS) $$master; \
+		$(LATEXCMD) $(LATEXOPTS) $$master; \
+		if [ "$(VERSION)" = "instructor" ]; then \
+			mv $$master.bak $$master; \
+		fi; \
+	done
+
+# Clean auxiliary files
+.PHONY: clean
+clean:
+	rm -f *.aux *.log *.toc *.out *.nav *.snm *.fls *.fdb_latexmk *.synctex.gz
+
+# Clean all generated files
+.PHONY: clean-all
+clean-all: clean
+	rm -f *.pdf *.bak
+```
+
+#### Advanced Bash Script
 ```bash
 #!/bin/bash
-# compile_lesson.sh [lesson_number] [version]
-# Usage: ./compile_lesson.sh 01 student
-#        ./compile_lesson.sh 01 instructor
+# compile_lesson.sh [lesson_number] [version] [options]
+# Enhanced compilation script with error handling and logging
 
-LESSON=$1
-VERSION=$2
+set -e  # Exit on any error
 
+# Configuration
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LOG_DIR="$SCRIPT_DIR/logs"
+DATE=$(date +"%Y%m%d_%H%M%S")
+
+# Default values
+LESSON=""
+VERSION="student"
+VERBOSE=false
+CLEAN_AFTER=false
+
+# Color codes for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Functions
+usage() {
+    echo "Usage: $0 [OPTIONS] lesson_number version"
+    echo "Options:"
+    echo "  -v, --verbose    Enable verbose output"
+    echo "  -c, --clean      Clean auxiliary files after compilation"
+    echo "  -h, --help       Show this help message"
+    echo "Examples:"
+    echo "  $0 01 student"
+    echo "  $0 02 instructor --verbose"
+    echo "  $0 --clean 03 student"
+}
+
+log() {
+    echo -e "${BLUE}[$(date +'%H:%M:%S')]${NC} $1"
+    [ -d "$LOG_DIR" ] && echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_DIR/compile_${DATE}.log"
+}
+
+error() {
+    echo -e "${RED}ERROR:${NC} $1" >&2
+    [ -d "$LOG_DIR" ] && echo "[$(date +'%Y-%m-%d %H:%M:%S')] ERROR: $1" >> "$LOG_DIR/compile_${DATE}.log"
+    exit 1
+}
+
+success() {
+    echo -e "${GREEN}SUCCESS:${NC} $1"
+    [ -d "$LOG_DIR" ] && echo "[$(date +'%Y-%m-%d %H:%M:%S')] SUCCESS: $1" >> "$LOG_DIR/compile_${DATE}.log"
+}
+
+warning() {
+    echo -e "${YELLOW}WARNING:${NC} $1"
+    [ -d "$LOG_DIR" ] && echo "[$(date +'%Y-%m-%d %H:%M:%S')] WARNING: $1" >> "$LOG_DIR/compile_${DATE}.log"
+}
+
+# Parse command line arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -v|--verbose)
+            VERBOSE=true
+            shift
+            ;;
+        -c|--clean)
+            CLEAN_AFTER=true
+            shift
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        -*)
+            error "Unknown option $1"
+            ;;
+        *)
+            if [ -z "$LESSON" ]; then
+                LESSON="$1"
+            elif [ -z "$VERSION" ] || [ "$VERSION" = "student" ]; then
+                VERSION="$1"
+            else
+                error "Too many arguments"
+            fi
+            shift
+            ;;
+    esac
+done
+
+# Validate arguments
+[ -z "$LESSON" ] && error "Lesson number is required"
+[ "$VERSION" != "student" ] && [ "$VERSION" != "instructor" ] && error "Version must be 'student' or 'instructor'"
+
+# Setup logging
+mkdir -p "$LOG_DIR"
+
+# Find master file
+MASTER_FILE=$(find . -name "${LESSON}_*_Master.tex" | head -1)
+[ -z "$MASTER_FILE" ] || [ ! -f "$MASTER_FILE" ] && error "Master file for lesson $LESSON not found"
+
+log "Starting compilation of $MASTER_FILE ($VERSION version)"
+
+# Create backup if instructor version
 if [ "$VERSION" = "instructor" ]; then
-    sed -i 's/\\showsolutionsfalse/\\showsolutionstrue/' ${LESSON}_*_Master.tex
+    cp "$MASTER_FILE" "${MASTER_FILE}.backup"
+    sed -i 's/\\showsolutionsfalse/\\showsolutionstrue/' "$MASTER_FILE"
+    log "Enabled solutions for instructor version"
 fi
 
-pdflatex ${LESSON}_*_Master.tex
-pdflatex ${LESSON}_*_Master.tex  # Second pass for references
+# Compile LaTeX
+log "Running pdflatex (first pass)..."
+if [ "$VERBOSE" = true ]; then
+    pdflatex "$MASTER_FILE" | tee -a "$LOG_DIR/compile_${DATE}.log"
+else
+    pdflatex "$MASTER_FILE" > /dev/null 2>&1 || error "First pdflatex pass failed"
+fi
 
+log "Running pdflatex (second pass)..."
+if [ "$VERBOSE" = true ]; then
+    pdflatex "$MASTER_FILE" | tee -a "$LOG_DIR/compile_${DATE}.log"
+else
+    pdflatex "$MASTER_FILE" > /dev/null 2>&1 || error "Second pdflatex pass failed"
+fi
+
+# Restore original file if instructor version
 if [ "$VERSION" = "instructor" ]; then
-    sed -i 's/\\showsolutionstrue/\\showsolutionsfalse/' ${LESSON}_*_Master.tex
+    mv "${MASTER_FILE}.backup" "$MASTER_FILE"
+    log "Restored original file"
+fi
+
+# Clean auxiliary files if requested
+if [ "$CLEAN_AFTER" = true ]; then
+    rm -f *.aux *.log *.toc *.out *.nav *.snm *.fls *.fdb_latexmk *.synctex.gz
+    log "Cleaned auxiliary files"
+fi
+
+# Final success message
+OUTPUT_PDF="${MASTER_FILE%.tex}.pdf"
+success "Compilation completed: $OUTPUT_PDF"
+
+if [ -f "$OUTPUT_PDF" ]; then
+    FILE_SIZE=$(ls -lh "$OUTPUT_PDF" | awk '{print $5}')
+    log "Output file size: $FILE_SIZE"
 fi
 ```
 
@@ -357,18 +577,41 @@ fi
 ## 📦 Dependencies and Requirements
 
 ### Required LaTeX Packages
+
+**IMPORTANT**: Package loading order matters to avoid conflicts. Load packages in this sequence:
+
 ```latex
+% 1. Core encoding and language packages (load first)
 \usepackage[utf8]{inputenc}      % Character encoding
 \usepackage[spanish]{babel}      % Language support (adapt as needed)
+
+% 2. Page layout and geometry
 \usepackage[margin=1in]{geometry} % Page margins
+\setlength{\headheight}{15pt}    % Required for fancyhdr
+
+% 3. Mathematical packages
 \usepackage{amsmath, amsthm, amssymb} % Mathematical typesetting
-\usepackage{mdframed}            % Colored boxes
-\usepackage{xcolor}              % Color definitions
+
+% 4. Visual and formatting packages
+\usepackage{xcolor}              % Color definitions (load before mdframed)
+\usepackage{mdframed}            % Colored boxes (requires xcolor)
 \usepackage{enumitem}            % Custom list formatting
 \usepackage{fancyhdr}            % Headers and footers
 \usepackage{graphicx}            % Image inclusion
+
+% 5. Graphics and diagrams (load last)
 \usepackage{tikz}                % LaTeX-generated diagrams
+\usetikzlibrary{arrows.meta}     % For arrow styles (load after tikz)
+
+% 6. Conditional compilation
+\usepackage{comment}             % For conditional content exclusion
 ```
+
+**Common Package Conflicts:**
+- `xcolor` must be loaded before `mdframed`
+- `geometry` should be loaded early to avoid margin conflicts
+- `babel` should be loaded before packages that depend on language settings
+- TikZ libraries must be loaded after the main `tikz` package
 
 ### System Requirements
 - **LaTeX Distribution**: TeX Live 2020+ or MiKTeX
@@ -407,8 +650,9 @@ mkdir latex latex/includes images images/shared
 
 ### Step 4: Asset Management
 1. Copy institutional logos to `images/shared/`
-2. Organize lesson-specific images in `images/NN_topic/`
-3. Update `\graphicspath{}` if needed
+2. Organize lesson-specific images in `images/NN_topic_name/`
+3. Update `\graphicspath{}` to include lesson-specific directory: `{../images/NN_topic_name/}`
+4. Set section counter for lessons after the first: `\setcounter{section}{N}`
 
 ### Customization Checklist
 - [ ] Course code and name
@@ -418,6 +662,8 @@ mkdir latex latex/includes images images/shared
 - [ ] Header/footer format
 - [ ] Exercise numbering style
 - [ ] Directory structure adaptation
+- [ ] Lesson-specific image directories
+- [ ] Section counter initialization for multi-lesson courses
 
 ---
 
@@ -490,17 +736,138 @@ Referring to equation \ref{eq:quadratic}...
 | Spanish characters | Encoding issues | Use `\usepackage[utf8]{inputenc}` |
 | Exercise numbering | Counter conflicts | Reset counters with `\newcounter{exercise}[section]` |
 
+### Version Control Best Practices
+
+#### Recommended .gitignore
+```gitignore
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.backup
+
+# LaTeX temporary files
+*.figlist
+*.makefile
+*.auxlock
+*.figlist
+*.makefile
+*.fls
+*.fdb_latexmk
+*.dpth
+*.md5
+*.auxlock
+
+# Build output (optional - you may want to commit PDFs)
+*.pdf
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+*.tmp
+.vscode/
+.idea/
+
+# Build directories
+build/
+dist/
+logs/
+```
+
+#### Git Workflow Recommendations
+
+**Branch Structure:**
+```bash
+# Main development branch
+git checkout -b develop
+
+# Feature branches for new lessons
+git checkout -b lesson/05-equations
+
+# Solution branches (optional)
+git checkout -b solutions/instructor-versions
+
+# Release branches for semester versions
+git checkout -b release/spring-2024
+```
+
+**Commit Message Conventions:**
+```bash
+# Good commit messages
+git commit -m "Add: Lesson 03 - Quadratic Functions content"
+git commit -m "Fix: Exercise numbering in polynomial chapter"
+git commit -m "Update: Color scheme for better accessibility"
+git commit -m "Docs: Add compilation instructions to README"
+
+# Use prefixes: Add, Fix, Update, Docs, Refactor, Test
+```
+
+**Pre-commit Hooks (optional):**
+```bash
+#!/bin/bash
+# .git/hooks/pre-commit
+# Automatically compile and test before commits
+
+echo "Running pre-commit checks..."
+
+# Check for syntax errors in LaTeX files
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep '\.tex$'); do
+    echo "Checking $file..."
+    # Basic LaTeX syntax check
+    if ! lacheck "$file" 2>/dev/null; then
+        echo "LaTeX syntax errors found in $file"
+        exit 1
+    fi
+done
+
+# Attempt compilation of changed master files
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep '_Master\.tex$'); do
+    echo "Testing compilation of $file..."
+    if ! pdflatex -interaction=nonstopmode "$file" >/dev/null 2>&1; then
+        echo "Compilation failed for $file"
+        exit 1
+    fi
+done
+
+echo "Pre-commit checks passed!"
+```
+
 ### Best Practices
 1. **Consistent naming**: Follow `NN_Topic_Type.tex` convention
 2. **Modular content**: Keep content, exercises, and solutions separate
-3. **Version control**: Use git, exclude `.aux`, `.log`, `.pdf` files
-4. **Backup strategy**: Regular commits, separate solution branches
+3. **Version control**: Use git with proper `.gitignore` and branching strategy
+4. **Backup strategy**: Regular commits, separate solution branches, tagged releases
 5. **Testing**: Compile both student and instructor versions regularly
+6. **Documentation**: Maintain clear README with setup and compilation instructions
+7. **Collaboration**: Use feature branches and pull requests for team development
 
 ### Performance Optimization
 - Use `\includeonly{}` for selective compilation during development
 - Cache TikZ diagrams with `external` library for complex figures
 - Split very long documents into smaller master files
+- Use Makefile for parallel compilation of multiple lessons
+- Set up automated builds with GitHub Actions or similar CI/CD tools
 
 ---
 

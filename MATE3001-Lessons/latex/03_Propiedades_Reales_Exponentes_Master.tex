@@ -15,6 +15,7 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{tikz}                        % For LaTeX-generated diagrams
+\usetikzlibrary{arrows.meta}           % For arrow styles
 \usepackage{comment}                     % For conditional content exclusion
 
 %========================================
@@ -24,7 +25,7 @@
 \newcommand{\coursecode}{MATE 3001}      % Course code
 \newcommand{\coursename}{Matemática Elemental}     % Course name
 \newcommand{\institution}{UPR-Humacao}   % Institution name
-\newcommand{\lessontitle}{Conjuntos y Operaciones con Conjuntos}    % Will be overridden per lesson
+\newcommand{\lessontitle}{Propiedades de los Números Reales y Exponentes}    % Will be overridden per lesson
 
 %========================================
 % COLOR SCHEME DEFINITIONS
@@ -129,7 +130,7 @@
 %========================================
 % GRAPHICS CONFIGURATION
 %========================================
-\graphicspath{{../images/}{../images/shared/}{../images/diagrams/}}
+\graphicspath{{../images/}{../images/shared/}{../images/diagrams/}{../images/03_propiedades_reales/}}
 
 %========================================
 % DOCUMENT CONTENT
@@ -142,15 +143,18 @@
 \date{}
 \maketitle
 
+% Set section counter to lesson number
+\setcounter{section}{2}
+
 % Modular content inclusion
-\input{includes/01_Conjuntos_Content}         
-\input{includes/01_Conjuntos_Exercises}       
+\input{includes/03_Propiedades_Reales_Content}         
+\input{includes/03_Propiedades_Reales_Exercises}       
 
 % Conditional solution inclusion
 \ifshowsolutions
     \newpage
     \section*{Soluciones}
-    \input{includes/01_Conjuntos_Solutions}
+    \input{includes/03_Propiedades_Reales_Solutions}
 \fi
 
 \end{document}
