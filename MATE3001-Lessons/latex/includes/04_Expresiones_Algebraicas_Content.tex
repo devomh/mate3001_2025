@@ -24,38 +24,38 @@ Ejemplos de expresiones algebraicas:
 
 % Visual breakdown of algebraic expression components
 \begin{center}
-\begin{tikzpicture}[scale=1.1]
-    % Main expression
-    \node at (0,3) {\Large $3x^2 - 5xy + 7y^2 - 2$};
+\begin{tikzpicture}[scale=1.2]
+    % Main expression with better spacing
+    \node at (0,3.5) {\huge $3x^2 - 5xy + 7y^2 - 2$};
     
-    % Term indicators with different colors
-    \draw[red, thick, -{Stealth}] (-2.2,2.5) to[bend right=20] (-5.2,2);
-    \node[red] at (-5.2,1.5) {\textbf{Término 1:} $3x^2$};
+    % Term indicators with improved arrows and positioning
+    \draw[red, ultra thick, -{Stealth[length=4mm]}] (-2.8,3) to[bend right=25] (-4.5,1.8);
+    \node[red, text width=2.5cm, align=center] at (-4.5,1.2) {\textbf{Término 1:}\\ $3x^2$};
     
-    \draw[blue, thick, -{Stealth}] (-0.7,2.5) to[bend right=20] (-0.7,2);
-    \node[blue] at (-0.7,1.5) {\textbf{Término 2:} $-5xy$};
+    \draw[blue, ultra thick, -{Stealth[length=4mm]}] (-1.1,3) to[bend right=15] (-1.5,1.8);
+    \node[blue, text width=2.5cm, align=center] at (-1.5,1.2) {\textbf{Término 2:}\\ $-5xy$};
     
-    \draw[green!70!black, thick, -{Stealth}] (0.8,2.5) to[bend left=20] (0.8,2);
-    \node[green!70!black] at (0.8,1.5) {\textbf{Término 3:} $7y^2$};
+    \draw[green!70!black, ultra thick, -{Stealth[length=4mm]}] (1.1,3) to[bend left=15] (1.5,1.8);
+    \node[green!70!black, text width=2.5cm, align=center] at (1.5,1.2) {\textbf{Término 3:}\\ $7y^2$};
     
-    \draw[purple, thick, -{Stealth}] (2,2.5) to[bend left=20] (5,2);
-    \node[purple] at (5,1.5) {\textbf{Término 4:} $-2$};
+    \draw[purple, ultra thick, -{Stealth[length=4mm]}] (2.3,3) to[bend left=25] (4.5,1.8);
+    \node[purple, text width=2.5cm, align=center] at (4.5,1.2) {\textbf{Término 4:}\\ $-2$};
     
-    % Component breakdown
-    \node at (-3,0.5) {\textbf{Coeficientes:} $3, -5, 7, -2$};
-    \node at (0,0.5) {\textbf{Variables:} $x, y$};
-    \node at (3,0.5) {\textbf{Exponentes:} $2, 1, 2, 0$};
+    % Component breakdown with better alignment and spacing
+    \node[text width=4cm, align=center] at (-3.5,0) {\textbf{Coeficientes:}\\ $3, -5, 7, -2$};
+    \node[text width=3cm, align=center] at (0,0) {\textbf{Variables:}\\ $x, y$};
+    \node[text width=4cm, align=center] at (3.5,0) {\textbf{Exponentes:}\\ $2, 1, 2, 0$};
 \end{tikzpicture}
 \end{center}
 
 \begin{definition}
 \textbf{Términos:} Las partes de una expresión algebraica separadas por los signos $+$ o $-$.
 
-\textbf{Coeficientes:} Los números que multiplican a las variables.
+\noindent \textbf{Coeficientes:} Los números que multiplican a las variables.
 
-\textbf{Variables:} Las letras que representan números desconocidos o que pueden variar.
+\noindent \textbf{Variables:} Las letras que representan números desconocidos o que pueden variar.
 
-\textbf{Exponentes:} Los números que indican cuántas veces se multiplica la variable por sí misma.
+\noindent  \textbf{Exponentes:} Los números que indican cuántas veces se multiplica la variable por sí misma.
 \end{definition}
 
 \subsectiontitle{Dominio de una Expresión Algebraica}
@@ -121,7 +121,7 @@ donde:
 \item Término constante: $-7$
 \end{itemize}
 
-\textbf{Ejemplo 2:} $Q(x) = -5x^2 + 8$
+\noindent \textbf{Ejemplo 2:} $Q(x) = -5x^2 + 8$
 \begin{itemize}
 \item Grado: 2
 \item Término principal: $-5x^2$
@@ -221,11 +221,11 @@ P(x) &= 3x^3 - 2x^2 + x - 4 \\
 Q(x) &= x^3 + 5x^2 - 3x + 1
 \end{align}
 
-\textbf{Suma:}
+\noindent \textbf{Suma:}
 $$P(x) + Q(x) = (3x^3 + x^3) + (-2x^2 + 5x^2) + (x - 3x) + (-4 + 1)$$
 $$= 4x^3 + 3x^2 - 2x - 3$$
 
-\textbf{Resta:}
+\noindent \textbf{Resta:}
 $$P(x) - Q(x) = (3x^3 - x^3) + (-2x^2 - 5x^2) + (x - (-3x)) + (-4 - 1)$$
 $$= 2x^3 - 7x^2 + 4x - 5$$
 \end{example}
@@ -264,10 +264,10 @@ Exponente negativo & $a^{-n} = \frac{1}{a^n}$ & $x^{-2} = \frac{1}{x^2}$ \\
 \textbf{Ejemplo 1:} Simplificar $(2x^3y^2)^4$
 $$= 2^4 \cdot (x^3)^4 \cdot (y^2)^4 = 16x^{12}y^8$$
 
-\textbf{Ejemplo 2:} Simplificar $\frac{15x^7y^3}{3x^2y^5}$
+\noindent \textbf{Ejemplo 2:} Simplificar $\frac{15x^7y^3}{3x^2y^5}$
 $$= \frac{15}{3} \cdot \frac{x^7}{x^2} \cdot \frac{y^3}{y^5} = 5x^5y^{-2} = \frac{5x^5}{y^2}$$
 
-\textbf{Ejemplo 3:} Simplificar $(x^{-2}y^3)^{-1}$
+\noindent \textbf{Ejemplo 3:} Simplificar $(x^{-2}y^3)^{-1}$
 $$= x^{(-2)(-1)} \cdot y^{3(-1)} = x^2y^{-3} = \frac{x^2}{y^3}$$
 \end{example}
 
@@ -299,37 +299,44 @@ $$= 2x^2 - 8x + 3x - 12 = 2x^2 - 5x - 12$$
 
 % FOIL method visual guide
 \begin{center}
-\begin{tikzpicture}[scale=1.2]
-    % The expression (a+b)(c+d)
-    \node at (0,2) {\huge $(a + b)(c + d)$};
+\begin{tikzpicture}[scale=1.5]
+    % The expression (a+b)(c+d) with better spacing
+    \node at (0,3.5) {\Huge $(a + b)(c + d)$};
     
-    % FOIL arrows and labels
-    \draw[red, thick, -{Stealth}] (-0.8,1.7) to[bend left=30] (-0.3,1.7);
-    \node[red] at (-0.55, 1.3) {\textbf{F}irst: $ac$};
+    % Mark individual terms for precise arrow targeting
+    \coordinate (a) at (-1.25,3.5);
+    \coordinate (b) at (-0.35,3.5);
+    \coordinate (c) at (0.35,3.5);
+    \coordinate (d) at (1.25,3.5);
     
-    \draw[blue, thick, -{Stealth}] (-0.8,1.7) to[bend left=50] (0.3,1.7);
-    \node[blue] at (-0.2, 0.8) {\textbf{O}uter: $ad$};
+    % FOIL arrows with proper directional positioning
+    % First: a × c (red) - from above
+    \draw[red, ultra thick, -{Stealth[length=4mm]}] 
+        (-1.25,3.7) to[bend left=25] (0.35,3.7);
+    \node[red, text width=2.5cm, align=center] at (-3.2,2.8) {\textbf{First:}\\ $a \times c = ac$};
     
-    \draw[green!70!black, thick, -{Stealth}] (-0.3,1.7) to[bend right=50] (0.3,1.7);
-    \node[green!70!black] at (0.2, 0.8) {\textbf{I}nner: $bc$};
+    % Outer: a × d (blue) - from above
+    \draw[blue, ultra thick, -{Stealth[length=4mm]}] 
+        (-1.25,3.8) to[bend left=45] (1.25,3.8);
+    \node[blue, text width=2.5cm, align=center] at (-3.2,1.5) {\textbf{Outer:}\\ $a \times d = ad$};
     
-    \draw[purple, thick, -{Stealth}] (-0.3,1.7) to[bend right=30] (0.3,1.7);
-    \node[purple] at (0.55, 1.3) {\textbf{L}ast: $bd$};
+    % Inner: b × c (green) - from below
+    \draw[green!60!black, ultra thick, -{Stealth[length=4mm]}] 
+        (-0.35,3.3) to[bend right=45] (0.35,3.3);
+    \node[green!60!black, text width=2.5cm, align=center] at (3.2,2.8) {\textbf{Inner:}\\ $b \times c = bc$};
     
-    % Result
-    \node at (0,0) {\textbf{Resultado:} $ac + ad + bc + bd$};
+    % Last: b × d (purple) - from below
+    \draw[purple, ultra thick, -{Stealth[length=4mm]}] 
+        (-0.35,3.2) to[bend right=25] (1.25,3.2);
+    \node[purple, text width=2.5cm, align=center] at (3.2,1.5) {\textbf{Last:}\\ $b \times d = bd$};
+    
+    % Result with enhanced formatting
+    \node[draw, fill=yellow!15, rounded corners=5pt, text width=9cm, align=center, 
+          inner sep=8pt] at (0,0.2) {
+        \textbf{Resultado:} $ac + ad + bc + bd$
+    };
 \end{tikzpicture}
 \end{center}
-
-Para $(a + b)(c + d)$:
-\begin{itemize}
-\item \textbf{F}irst: $a \cdot c$
-\item \textbf{O}uter: $a \cdot d$  
-\item \textbf{I}nner: $b \cdot c$
-\item \textbf{L}ast: $b \cdot d$
-\end{itemize}
-
-\textbf{Resultado:} $ac + ad + bc + bd$
 
 \subsectiontitle{Productos Notables}
 
@@ -388,21 +395,32 @@ La factorización es el proceso inverso de la multiplicación. Expresamos un pol
 % Factorization process flowchart
 \begin{center}
 \begin{tikzpicture}[
-    box/.style={rectangle, draw, fill=blue!10, text width=3cm, text centered},
-    decision/.style={diamond, draw, fill=yellow!10, text width=2cm, text centered},
-    arrow/.style={-{Stealth[length=3mm]}, thick}
+    scale=1.1,
+    box/.style={rectangle, draw=black, thick, fill=blue!15, text width=3.5cm, text centered, minimum height=1.2cm, rounded corners=3pt},
+    decision/.style={diamond, draw=black, thick, fill=yellow!20, text width=2.8cm, text centered, minimum height=1.5cm, aspect=2},
+    arrow/.style={-{Stealth[length=4mm]}, ultra thick, blue!70!black}
 ]
-    \node[box] (start) at (0,0) {Expresión a factorizar};
-    \node[decision] (common) at (0,-2) {¿Hay factor común?};
-    \node[box] (extract) at (-3,-4) {Extraer factor común};
-    \node[decision] (terms) at (0,-4) {¿Cuántos términos?};
-    \node[box] (two) at (-2,-6) {2 términos:\\ Diferencia cuadrados};
-    \node[box] (three) at (0,-6) {3 términos:\\ Trinomio};
-    \node[box] (four) at (2,-6) {4+ términos:\\ Agrupación};
+    % Start node
+    \node[box] (start) at (0,0) {\textbf{Expresión\\a factorizar}};
     
+    % First decision
+    \node[decision] (common) at (0,-3) {¿Hay factor\\común?};
+    
+    % Extract common factor branch
+    \node[box] (extract) at (-4.5,-6) {\textbf{Extraer\\factor común}};
+    
+    % Second decision
+    \node[decision] (terms) at (0,-6) {¿Cuántos\\términos?};
+    
+    % Final branches with better spacing
+    \node[box] (two) at (-3,-9.5) {\textbf{2 términos:}\\Diferencia de\\cuadrados};
+    \node[box] (three) at (0,-9.5) {\textbf{3 términos:}\\Trinomio\\cuadrático};
+    \node[box] (four) at (3,-9.5) {\textbf{4+ términos:}\\Factorización\\por agrupación};
+    
+    % Arrows with better positioning
     \draw[arrow] (start) -- (common);
-    \draw[arrow] (common) -- node[left] {Sí} (extract);
-    \draw[arrow] (common) -- node[right] {No} (terms);
+    \draw[arrow] (common) -- node[left, fill=white, inner sep=2pt] {\textbf{Sí}} (extract);
+    \draw[arrow] (common) -- node[right, fill=white, inner sep=2pt] {\textbf{No}} (terms);
     \draw[arrow] (terms) -- (two);
     \draw[arrow] (terms) -- (three);
     \draw[arrow] (terms) -- (four);
@@ -456,7 +474,7 @@ $$P(2) = 2(2)^3 - 3(2)^2 + 2 - 5 = 16 - 12 + 2 - 5 = 1$$
 \begin{theorem}
 \textbf{Teorema del Residuo:} Si un polinomio $P(x)$ se divide por $(x - a)$, entonces el residuo es $P(a)$.
 
-\textbf{Teorema del Factor:} $(x - a)$ es un factor de $P(x)$ si y solo si $P(a) = 0$.
+\noindent \textbf{Teorema del Factor:} $(x - a)$ es un factor de $P(x)$ si y solo si $P(a) = 0$.
 \end{theorem}
 
 Estos teoremas son útiles para factorizar polinomios de grado alto y encontrar sus raíces.

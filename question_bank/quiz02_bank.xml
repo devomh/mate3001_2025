@@ -25,25 +25,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(\sqrt{11}\)</p>]]></text>
-      <feedback><text>Correcto. La raíz cuadrada de 11 no puede expresarse como cociente de enteros, por lo que es irracional.</text></feedback>
+      <feedback format="html"><text>Correcto. La raíz cuadrada de 11 no puede expresarse como cociente de enteros, por lo que es irracional.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\sqrt{9}\)</p>]]></text>
-      <feedback><text>Incorrecto. \(\sqrt{9} = 3\), que es un número natural, entero y racional.</text></feedback>
+      <feedback format="html"><text>Incorrecto. \(\sqrt{9} = 3\), que es un número natural, entero y racional.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{7}{3}\)</p>]]></text>
-      <feedback><text>Incorrecto. Esta es una fracción, por lo que pertenece al conjunto de números racionales.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta es una fracción, por lo que pertenece al conjunto de números racionales.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(0.4\overline{7}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este decimal periódico puede expresarse como fracción, por lo que es racional.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este decimal periódico puede expresarse como fracción, por lo que es racional.</text></feedback>
     </answer>
   </question>
 
@@ -65,25 +65,25 @@
     <!-- Correct Answer (the false statement) -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(\pi \in \mathbb{Q}\)</p>]]></text>
-      <feedback><text>Correcto. Esta afirmación es FALSA. π es un número irracional, no racional.</text></feedback>
+      <feedback format="html"><text>Correcto. Esta afirmación es FALSA. π es un número irracional, no racional.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\sqrt{25} \in \mathbb{N}\)</p>]]></text>
-      <feedback><text>Incorrecto. Esta afirmación es verdadera porque \(\sqrt{25} = 5\) y 5 es natural.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta afirmación es verdadera porque \(\sqrt{25} = 5\) y 5 es natural.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{-8}{2} \in \mathbb{Q}\)</p>]]></text>
-      <feedback><text>Incorrecto. Esta afirmación es verdadera porque \(\frac{-8}{2} = -4\) es racional.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta afirmación es verdadera porque \(\frac{-8}{2} = -4\) es racional.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\mathbb{Z} \subseteq \mathbb{Q}\)</p>]]></text>
-      <feedback><text>Incorrecto. Esta afirmación es verdadera porque todo entero puede escribirse como fracción.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta afirmación es verdadera porque todo entero puede escribirse como fracción.</text></feedback>
     </answer>
   </question>
 
@@ -105,25 +105,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>Propiedad Distributiva</p>]]></text>
-      <feedback><text>Correcto. La multiplicación se distribuye sobre la suma: \(a(b+c) = ab + ac\).</text></feedback>
+      <feedback format="html"><text>Correcto. La multiplicación se distribuye sobre la suma: \(a(b+c) = ab + ac\).</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>Propiedad Conmutativa</p>]]></text>
-      <feedback><text>Incorrecto. La propiedad conmutativa se refiere al cambio de orden, no a la distribución.</text></feedback>
+      <feedback format="html"><text>Incorrecto. La propiedad conmutativa se refiere al cambio de orden, no a la distribución.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>Propiedad Asociativa</p>]]></text>
-      <feedback><text>Incorrecto. La propiedad asociativa se refiere a la agrupación, no a la distribución.</text></feedback>
+      <feedback format="html"><text>Incorrecto. La propiedad asociativa se refiere a la agrupación, no a la distribución.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>Propiedad del Neutro Multiplicativo</p>]]></text>
-      <feedback><text>Incorrecto. El neutro multiplicativo es 1, no se aplica aquí.</text></feedback>
+      <feedback format="html"><text>Incorrecto. El neutro multiplicativo es 1, no se aplica aquí.</text></feedback>
     </answer>
   </question>
 
@@ -145,25 +145,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(-\frac{4}{3}\)</p>]]></text>
-      <feedback><text>Correcto. El inverso multiplicativo se obtiene invirtiendo la fracción: \(-\frac{3}{4} \times \left(-\frac{4}{3}\right) = 1\).</text></feedback>
+      <feedback format="html"><text>Correcto. El inverso multiplicativo se obtiene invirtiendo la fracción: \(-\frac{3}{4} \times \left(-\frac{4}{3}\right) = 1\).</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{4}{3}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado cambiaría el signo. El inverso debe preservar el signo para que el producto sea 1.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado cambiaría el signo. El inverso debe preservar el signo para que el producto sea 1.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{3}{4}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este es el inverso aditivo, no el multiplicativo.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este es el inverso aditivo, no el multiplicativo.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(-\frac{3}{4}\)</p>]]></text>
-      <feedback><text>Incorrecto. Un número no puede ser su propio inverso multiplicativo (excepto ±1).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Un número no puede ser su propio inverso multiplicativo (excepto ±1).</text></feedback>
     </answer>
   </question>
 
@@ -185,25 +185,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>29</p>]]></text>
-      <feedback><text>Correcto. Siguiendo PEMDSR: \(5 + 3 \times 2^3 = 5 + 3 \times 8 = 5 + 24 = 29\).</text></feedback>
+      <feedback format="html"><text>Correcto. Siguiendo PEMDSR: \(5 + 3 \times 2^3 = 5 + 3 \times 8 = 5 + 24 = 29\).</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>64</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado se obtiene al hacer \((5+3) \times 2^3\), ignorando el orden de operaciones.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado se obtiene al hacer \((5+3) \times 2^3\), ignorando el orden de operaciones.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>512</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado se obtiene al hacer \((5+3 \times 2)^3\), agrupando incorrectamente.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado se obtiene al hacer \((5+3 \times 2)^3\), agrupando incorrectamente.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>23</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado se obtiene al hacer \(5 + 3 \times 2 \times 3\), calculando mal el exponente.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado se obtiene al hacer \(5 + 3 \times 2 \times 3\), calculando mal el exponente.</text></feedback>
     </answer>
   </question>
 
@@ -225,25 +225,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>16</p>]]></text>
-      <feedback><text>Correcto. \((-2)^4 = (-2) \times (-2) \times (-2) \times (-2) = 16\). Exponente par con base negativa da resultado positivo.</text></feedback>
+      <feedback format="html"><text>Correcto. \((-2)^4 = (-2) \times (-2) \times (-2) \times (-2) = 16\). Exponente par con base negativa da resultado positivo.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>-16</p>]]></text>
-      <feedback><text>Incorrecto. Este sería el resultado de \(-2^4\), pero aquí tenemos \((-2)^4\). Los paréntesis cambian el resultado.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este sería el resultado de \(-2^4\), pero aquí tenemos \((-2)^4\). Los paréntesis cambian el resultado.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>8</p>]]></text>
-      <feedback><text>Incorrecto. Este sería \(2^3\), no \((-2)^4\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este sería \(2^3\), no \((-2)^4\).</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>-8</p>]]></text>
-      <feedback><text>Incorrecto. Este sería \((-2)^3\), no \((-2)^4\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este sería \((-2)^3\), no \((-2)^4\).</text></feedback>
     </answer>
   </question>
 
@@ -265,25 +265,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(\frac{31}{35}\)</p>]]></text>
-      <feedback><text>Correcto. \(\frac{3}{5} + \frac{2}{7} = \frac{21}{35} + \frac{10}{35} = \frac{31}{35}\).</text></feedback>
+      <feedback format="html"><text>Correcto. \(\frac{3}{5} + \frac{2}{7} = \frac{21}{35} + \frac{10}{35} = \frac{31}{35}\).</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{5}{12}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado se obtiene sumando numeradores y denominadores directamente: \(\frac{3+2}{5+7}\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado se obtiene sumando numeradores y denominadores directamente: \(\frac{3+2}{5+7}\).</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{6}{35}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado se obtiene multiplicando numeradores: \(\frac{3 \times 2}{35}\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado se obtiene multiplicando numeradores: \(\frac{3 \times 2}{35}\).</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{21}{10}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado confunde los pasos del proceso.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado confunde los pasos del proceso.</text></feedback>
     </answer>
   </question>
 
@@ -305,25 +305,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(\frac{1}{3}\)</p>]]></text>
-      <feedback><text>Correcto. Sea x = 0.333..., entonces 10x = 3.333..., por lo que 9x = 3, así x = 1/3.</text></feedback>
+      <feedback format="html"><text>Correcto. Sea x = 0.333..., entonces 10x = 3.333..., por lo que 9x = 3, así x = 1/3.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{3}{10}\)</p>]]></text>
-      <feedback><text>Incorrecto. Esta sería la conversión de 0.3, no de 0.333...</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta sería la conversión de 0.3, no de 0.333...</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{3}{9}\)</p>]]></text>
-      <feedback><text>Incorrecto. Aunque el método es correcto, esta fracción no está simplificada. \(\frac{3}{9} = \frac{1}{3}\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Aunque el método es correcto, esta fracción no está simplificada. \(\frac{3}{9} = \frac{1}{3}\).</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{33}{100}\)</p>]]></text>
-      <feedback><text>Incorrecto. Esta sería la conversión aproximada, no exacta.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta sería la conversión aproximada, no exacta.</text></feedback>
     </answer>
   </question>
 
@@ -345,25 +345,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(12x + 30\)</p>]]></text>
-      <feedback><text>Correcto. \(6(2x + 5) = 6 \cdot 2x + 6 \cdot 5 = 12x + 30\).</text></feedback>
+      <feedback format="html"><text>Correcto. \(6(2x + 5) = 6 \cdot 2x + 6 \cdot 5 = 12x + 30\).</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(12x + 5\)</p>]]></text>
-      <feedback><text>Incorrecto. Se distribuyó solo al primer término. Debe ser \(6 \cdot 2x + 6 \cdot 5\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Se distribuyó solo al primer término. Debe ser \(6 \cdot 2x + 6 \cdot 5\).</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(8x + 11\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado suma incorrectamente 6 a cada término en lugar de multiplicar.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado suma incorrectamente 6 a cada término en lugar de multiplicar.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(6x + 30\)</p>]]></text>
-      <feedback><text>Incorrecto. No se distribuyó correctamente al primer término. \(6 \cdot 2x = 12x\), no \(6x\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. No se distribuyó correctamente al primer término. \(6 \cdot 2x = 12x\), no \(6x\).</text></feedback>
     </answer>
   </question>
 
@@ -385,25 +385,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>38 unidades cuadradas</p>]]></text>
-      <feedback><text>Correcto. Área = (3x + 4) × 2 = 6x + 8. Con x = 5: 6(5) + 8 = 30 + 8 = 38.</text></feedback>
+      <feedback format="html"><text>Correcto. Área = (3x + 4) × 2 = 6x + 8. Con x = 5: 6(5) + 8 = 30 + 8 = 38.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>34 unidades cuadradas</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado se obtiene al calcular solo el perímetro: 2(3x + 4 + 2) con x = 5.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado se obtiene al calcular solo el perímetro: 2(3x + 4 + 2) con x = 5.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>19 unidades cuadradas</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado olvida multiplicar por el ancho: solo calcula 3x + 4 con x = 5.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado olvida multiplicar por el ancho: solo calcula 3x + 4 con x = 5.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>30 unidades cuadradas</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado no incluye el término constante: solo calcula 6x con x = 5.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado no incluye el término constante: solo calcula 6x con x = 5.</text></feedback>
     </answer>
   </question>
 
@@ -425,25 +425,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(-\sqrt{9} < -2.5 < 0 < \frac{5}{2} < \sqrt{7}\)</p>]]></text>
-      <feedback><text>Correcto. -3 < -2.5 < 0 < 2.5 < 2.646 aproximadamente.</text></feedback>
+      <feedback format="html"><text><![CDATA[Correcto. -3 < -2.5 < 0 < 2.5 < 2.646 aproximadamente.]]></text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(-2.5 < -\sqrt{9} < 0 < \frac{5}{2} < \sqrt{7}\)</p>]]></text>
-      <feedback><text>Incorrecto. \(-\sqrt{9} = -3\) es menor que -2.5.</text></feedback>
+      <feedback format="html"><text><![CDATA[Incorrecto. \(-\sqrt{9} = -3\) es menor que -2.5.]]></text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(-\sqrt{9} < -2.5 < 0 < \sqrt{7} < \frac{5}{2}\)</p>]]></text>
-      <feedback><text>Incorrecto. \(\sqrt{7} \approx 2.646\) es mayor que \(\frac{5}{2} = 2.5\).</text></feedback>
+      <feedback format="html"><text><![CDATA[Incorrecto. \(\sqrt{7} \approx 2.646\) es mayor que \(\frac{5}{2} = 2.5\).]]></text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(0 < -2.5 < -\sqrt{9} < \frac{5}{2} < \sqrt{7}\)</p>]]></text>
-      <feedback><text>Incorrecto. Los números negativos son menores que cero.</text></feedback>
+      <feedback format="html"><text><![CDATA[Incorrecto. Los números negativos son menores que cero.]]></text></feedback>
     </answer>
   </question>
 
@@ -465,25 +465,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(\sqrt{2} + \sqrt{8}\)</p>]]></text>
-      <feedback><text>Correcto. \(\sqrt{2} + \sqrt{8} = \sqrt{2} + 2\sqrt{2} = 3\sqrt{2}\), que es irracional.</text></feedback>
+      <feedback format="html"><text>Correcto. \(\sqrt{2} + \sqrt{8} = \sqrt{2} + 2\sqrt{2} = 3\sqrt{2}\), que es irracional.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\sqrt{36} + \sqrt{49}\)</p>]]></text>
-      <feedback><text>Incorrecto. \(\sqrt{36} + \sqrt{49} = 6 + 7 = 13\), que es racional.</text></feedback>
+      <feedback format="html"><text>Incorrecto. \(\sqrt{36} + \sqrt{49} = 6 + 7 = 13\), que es racional.</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{\sqrt{16}}{\sqrt{4}}\)</p>]]></text>
-      <feedback><text>Incorrecto. \(\frac{\sqrt{16}}{\sqrt{4}} = \frac{4}{2} = 2\), que es racional.</text></feedback>
+      <feedback format="html"><text>Incorrecto. \(\frac{\sqrt{16}}{\sqrt{4}} = \frac{4}{2} = 2\), que es racional.</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\sqrt{25} - \sqrt{16}\)</p>]]></text>
-      <feedback><text>Incorrecto. \(\sqrt{25} - \sqrt{16} = 5 - 4 = 1\), que es racional.</text></feedback>
+      <feedback format="html"><text>Incorrecto. \(\sqrt{25} - \sqrt{16} = 5 - 4 = 1\), que es racional.</text></feedback>
     </answer>
   </question>
 
@@ -505,25 +505,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>\(\frac{1}{2}\)</p>]]></text>
-      <feedback><text>Correcto. \(\frac{2}{3} + \frac{1}{6} = \frac{5}{6}\), luego \(\frac{5}{6} \times \frac{3}{5} = \frac{1}{2}\).</text></feedback>
+      <feedback format="html"><text>Correcto. \(\frac{2}{3} + \frac{1}{6} = \frac{5}{6}\), luego \(\frac{5}{6} \times \frac{3}{5} = \frac{1}{2}\).</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{5}{6}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este es solo el resultado de la suma, falta multiplicar por \(\frac{3}{5}\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este es solo el resultado de la suma, falta multiplicar por \(\frac{3}{5}\).</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{1}{6}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado ignora la suma y solo multiplica \(\frac{1}{6} \times \frac{3}{5}\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado ignora la suma y solo multiplica \(\frac{1}{6} \times \frac{3}{5}\).</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>\(\frac{3}{10}\)</p>]]></text>
-      <feedback><text>Incorrecto. Este resultado multiplica incorrectamente las fracciones.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Este resultado multiplica incorrectamente las fracciones.</text></feedback>
     </answer>
   </question>
 
@@ -545,25 +545,25 @@
     <!-- Correct Answer -->
     <answer fraction="100" format="html">
       <text><![CDATA[<p>Propiedad del Inverso Aditivo</p>]]></text>
-      <feedback><text>Correcto. Todo número sumado a su opuesto (inverso aditivo) da como resultado cero.</text></feedback>
+      <feedback format="html"><text>Correcto. Todo número sumado a su opuesto (inverso aditivo) da como resultado cero.</text></feedback>
     </answer>
     
     <!-- Distractor 1 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>Propiedad del Neutro Aditivo</p>]]></text>
-      <feedback><text>Incorrecto. El neutro aditivo se refiere a sumar cero: \(n + 0 = n\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. El neutro aditivo se refiere a sumar cero: \(n + 0 = n\).</text></feedback>
     </answer>
     
     <!-- Distractor 2 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>Propiedad Conmutativa</p>]]></text>
-      <feedback><text>Incorrecto. La propiedad conmutativa se refiere al orden: \(a + b = b + a\).</text></feedback>
+      <feedback format="html"><text>Incorrecto. La propiedad conmutativa se refiere al orden: \(a + b = b + a\).</text></feedback>
     </answer>
     
     <!-- Distractor 3 -->
     <answer fraction="0" format="html">
       <text><![CDATA[<p>Propiedad del Neutro Multiplicativo</p>]]></text>
-      <feedback><text>Incorrecto. Esta propiedad involucra suma, no multiplicación.</text></feedback>
+      <feedback format="html"><text>Incorrecto. Esta propiedad involucra suma, no multiplicación.</text></feedback>
     </answer>
   </question>
 
