@@ -27,3 +27,6 @@
 
 # PDF files
 *.pdf
+
+# Exams
+exams/

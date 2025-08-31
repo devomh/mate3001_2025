@@ -161,6 +161,7 @@ Format: `Q##-Topic-Subtopic`
 - [ ] Each question has exactly 4 options
 - [ ] Only one correct answer per question
 - [ ] Distractors are plausible but incorrect
+- [ ] No duplicate options
 - [ ] Feedback is educational and specific
 - [ ] Mathematical expressions render correctly
 

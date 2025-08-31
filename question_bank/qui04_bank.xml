@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz04</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Polynomial Components -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Polinomios-Componentes</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dado el polinomio \(P(x) = -3x^5 + 7x^3 - 2x^2 + x - 9\), ¿cuál es el coeficiente principal?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(-3\)</p>]]></text>
+      <feedback><text>Correcto. El coeficiente principal es el coeficiente del término de mayor grado, que es -3 en el término \(-3x^5\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(5\)</p>]]></text>
+      <feedback><text>Incorrecto. Este es el grado del polinomio, no el coeficiente principal.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(7\)</p>]]></text>
+      <feedback><text>Incorrecto. Este es el coeficiente de \(x^3\), pero no del término principal.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-9\)</p>]]></text>
+      <feedback><text>Incorrecto. Este es el término constante, no el coeficiente principal.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Polynomial Classification -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Polinomios-Clasificacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>El polinomio \(Q(x) = 4x^2 - 11x + 7\) se clasifica como:</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Polinomio cuadrático trinomio</p>]]></text>
+      <feedback><text>Correcto. Es cuadrático por su grado 2 y trinomio por tener 3 términos.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Polinomio cúbico trinomio</p>]]></text>
+      <feedback><text>Incorrecto. El mayor exponente es 2, no 3, por lo que es cuadrático.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Polinomio cuadrático binomio</p>]]></text>
+      <feedback><text>Incorrecto. Tiene 3 términos, no 2, por lo que es trinomio.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Polinomio lineal trinomio</p>]]></text>
+      <feedback><text>Incorrecto. El término \(4x^2\) indica que es de grado 2 (cuadrático), no lineal.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Combining Like Terms -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Expresiones-TerminosSemejantes</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique la expresión: \(3x^3 - 5x^2 + 2x - 7 + x^3 + 8x^2 - 4x + 12 - 2x^3 + x^2\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2x^3 + 4x^2 - 2x + 5\)</p>]]></text>
+      <feedback><text>Correcto. Agrupando términos semejantes: \(3x^3 + x^3 - 2x^3 = 2x^3\), \(-5x^2 + 8x^2 + x^2 = 4x^2\), \(2x - 4x = -2x\), \(-7 + 12 = 5\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^3 + 4x^2 + 2x + 5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término lineal: \(2x - 4x = -2x\), no \(+2x\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(4x^3 + 4x^2 - 2x + 5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en los términos cúbicos: \(3x^3 + x^3 - 2x^3 = 2x^3\), no \(4x^3\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^3 + 2x^2 - 2x + 5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en los términos cuadráticos: \(-5x^2 + 8x^2 + x^2 = 4x^2\), no \(2x^2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Polynomial Addition -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Polinomios-Suma</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sean \(P(x) = 2x^4 - 3x^3 + 5x^2 - x + 8\) y \(Q(x) = -x^4 + 4x^3 - 2x^2 + 7x - 3\). Calcule \(P(x) + Q(x)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x^4 + x^3 + 3x^2 + 6x + 5\)</p>]]></text>
+      <feedback><text>Correcto. Sumando término a término: \(2x^4 + (-x^4) = x^4\), \(-3x^3 + 4x^3 = x^3\), \(5x^2 + (-2x^2) = 3x^2\), \(-x + 7x = 6x\), \(8 + (-3) = 5\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^4 + x^3 + 3x^2 - 6x + 5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término lineal: \(-x + 7x = 6x\), no \(-6x\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3x^4 + x^3 + 3x^2 + 6x + 5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término de grado 4: \(2x^4 + (-x^4) = x^4\), no \(3x^4\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^4 + x^3 + 7x^2 + 6x + 5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término cuadrático: \(5x^2 + (-2x^2) = 3x^2\), no \(7x^2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Polynomial Subtraction -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Polinomios-Resta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sean \(A(x) = 3x^3 - 2x^2 + 4x - 1\) y \(B(x) = x^3 + 5x^2 - 3x + 7\). Calcule \(A(x) - B(x)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2x^3 - 7x^2 + 7x - 8\)</p>]]></text>
+      <feedback><text>Correcto. Restando término a término: \(3x^3 - x^3 = 2x^3\), \(-2x^2 - 5x^2 = -7x^2\), \(4x - (-3x) = 7x\), \(-1 - 7 = -8\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^3 - 7x^2 + x - 8\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término lineal: \(4x - (-3x) = 4x + 3x = 7x\), no \(x\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^3 + 3x^2 + 7x - 8\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término cuadrático: \(-2x^2 - 5x^2 = -7x^2\), no \(+3x^2\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(4x^3 - 7x^2 + 7x - 8\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término cúbico: \(3x^3 - x^3 = 2x^3\), no \(4x^3\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Laws of Exponents -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Exponentes-LeyesComplejo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\frac{(2x^3y^{-2})^4 \cdot (x^{-1}y^3)^2}{(xy)^{-3}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(16x^{13}y\)</p>]]></text>
+      <feedback><text>Correcto. Aplicando las leyes de exponentes paso a paso: \((2x^3y^{-2})^4 = 16x^{12}y^{-8}\), \((x^{-1}y^3)^2 = x^{-2}y^6\), \((xy)^{-3} = x^{-3}y^{-3}\). Resultado final: \(16x^{13}y\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(16x^{10}y^{-2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en la división final. Al dividir por \((xy)^{-3} = x^{-3}y^{-3}\), los exponentes cambian de signo.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(8x^{13}y\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el coeficiente: \(2^4 = 16\), no 8.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(16x^{9}y^5\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en los exponentes de las variables durante la simplificación.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Negative Exponents -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Exponentes-ExponentesNegativos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique con exponentes positivos: \(\frac{(3a^{-2}b^3)^{-1} \cdot (a^4b^{-1})^2}{(2ab^{-2})^{-3}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\frac{8a^{13}}{3b^{11}}\)</p>]]></text>
+      <feedback><text>Correcto. Simplificando paso a paso: numerador \(\frac{a^2 \cdot a^8}{3b^3 \cdot b^2} = \frac{a^{10}}{3b^5}\), denominador \(\frac{b^6}{8a^3}\), división final \(\frac{8a^{13}}{3b^{11}}\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{24a^{13}}{b^{11}}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el coeficiente: debe ser \(\frac{8}{3}\), no 24.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{8a^{10}}{3b^5}\)</p>]]></text>
+      <feedback><text>Incorrecto. No se completó la división por el denominador \((2ab^{-2})^{-3}\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{8a^{13}b^6}{3}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en los exponentes de \(b\): debe quedar en el denominador como \(b^{11}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Polynomial Multiplication -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Polinomios-Multiplicacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Multiplique y simplifique: \((2x^2 - 3x + 1)(x^2 + 2x - 4)\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2x^4 + x^3 - 13x^2 + 14x - 4\)</p>]]></text>
+      <feedback><text>Correcto. Multiplicando cada término del primer polinomio por cada término del segundo y combinando términos semejantes.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^4 + x^3 - 5x^2 + 14x - 4\)</p>]]></text>
+      <feedback><text>Incorrecto. Error al combinar los términos cuadráticos: \(-8x^2 - 6x^2 + x^2 = -13x^2\), no \(-5x^2\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^4 + 7x^3 - 13x^2 + 14x - 4\)</p>]]></text>
+      <feedback><text>Incorrecto. Error al combinar los términos cúbicos: \(4x^3 - 3x^3 = x^3\), no \(7x^3\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2x^4 + x^3 - 13x^2 - 10x - 4\)</p>]]></text>
+      <feedback><text>Incorrecto. Error al combinar los términos lineales: \(12x + 2x = 14x\), no \(-10x\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Perfect Square Binomial -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-ProductosNotables-CuadradoBinomio</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Desarrolle usando la fórmula del cuadrado de un binomio: \((3x - 4y)^2\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(9x^2 - 24xy + 16y^2\)</p>]]></text>
+      <feedback><text>Correcto. Aplicando \((a-b)^2 = a^2 - 2ab + b^2\): \((3x)^2 - 2(3x)(4y) + (4y)^2 = 9x^2 - 24xy + 16y^2\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(9x^2 + 24xy + 16y^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el signo del término medio: debe ser negativo porque es \((3x - 4y)^2\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(9x^2 - 12xy + 16y^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el término medio: \(2(3x)(4y) = 24xy\), no \(12xy\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(9x^2 - 24xy + 8y^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en el último término: \((4y)^2 = 16y^2\), no \(8y^2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Difference of Squares Factorization -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-Factorizacion-DiferenciaCuadrados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(16x^4 - 81y^4\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((4x^2 + 9y^2)(2x + 3y)(2x - 3y)\)</p>]]></text>
+      <feedback><text>Correcto. Primera diferencia de cuadrados: \((4x^2 + 9y^2)(4x^2 - 9y^2)\), luego \(4x^2 - 9y^2 = (2x + 3y)(2x - 3y)\).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((4x^2 + 9y^2)(4x^2 - 9y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta factorizar completamente \(4x^2 - 9y^2 = (2x + 3y)(2x - 3y)\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((4x + 9y)(4x - 9y)\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en la identificación: \(16x^4 = (4x^2)^2\) y \(81y^4 = (9y^2)^2\), no \((4x)^2\) y \((9y)^2\).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((4x^2 - 9y^2)(4x^2 + 9y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. El orden es correcto pero falta la factorización completa de \(4x^2 - 9y^2\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
