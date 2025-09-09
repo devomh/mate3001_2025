@@ -29,9 +29,9 @@ La factorización es el proceso inverso de la multiplicación. Expresamos un pol
     \node[decision] (terms) at (0,-6) {¿Cuántos\\términos?};
     
     % Final branches with better spacing
-    \node[box] (two) at (-3,-9.5) {\textbf{2 términos:}\\Diferencia de\\cuadrados};
+    \node[box] (two) at (-4,-9.5) {\textbf{2 términos:}\\Diferencia de\\cuadrados};
     \node[box] (three) at (0,-9.5) {\textbf{3 términos:}\\Trinomio\\cuadrático};
-    \node[box] (four) at (3,-9.5) {\textbf{4+ términos:}\\Factorización\\por agrupación};
+    \node[box] (four) at (4,-9.5) {\textbf{4+ términos:}\\Factorización\\por agrupación};
     
     % Arrows with better positioning
     \draw[arrow] (start) -- (common);
@@ -46,34 +46,227 @@ La factorización es el proceso inverso de la multiplicación. Expresamos un pol
 \textbf{Técnicas principales de factorización:}
 
 \begin{enumerate}
-\item \textbf{Factor común:} Se extrae el mayor factor común de todos los términos.
-\item \textbf{Agrupación:} Se agrupan términos para factorizar por partes.
-\item \textbf{Trinomio cuadrático:} Para $ax^2 + bx + c$, se buscan dos números que multiplicados den $ac$ y sumados den $b$.
-\item \textbf{Diferencia de cuadrados:} $a^2 - b^2 = (a + b)(a - b)$
-\item \textbf{Trinomio cuadrático perfecto:} $a^2 \pm 2ab + b^2 = (a \pm b)^2$
-\item \textbf{Suma y diferencia de cubos:} Usar las fórmulas correspondientes.
+\item \textbf{Factor común:} Extraer el mayor factor (numérico y literal) común a todos los términos.
+\item \textbf{Agrupación:} Reagrupar términos para crear un factor común por pares o bloques.
+\item \textbf{Trinomio cuadrático:} Para $ax^2 + bx + c$, usar el método AC cuando $a \neq 1$.
+\item \textbf{Diferencia de cuadrados:} $a^2 - b^2 = (a + b)(a - b)$.
+\item \textbf{Trinomio cuadrático perfecto:} $a^2 \pm 2ab + b^2 = (a \pm b)^2$.
+\item \textbf{Suma y diferencia de cubos:} $a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)$.
+\end{enumerate}
+
+%==============================
+% TECNICA: FACTOR COMUN
+%==============================
+\subsectiontitle{Técnica: Factor común}
+
+\textbf{Idea:} Todo producto distributivo $k\cdot(A + B + \cdots)$ puede “factorizarse hacia atrás”. Buscamos el \emph{máximo factor común} (MFC): el mayor número y las mayores potencias de variables comunes a todos los términos.
+
+\textbf{Pasos:}
+\begin{enumerate}
+  \item Hallar el MFC numérico (máximo común divisor de coeficientes).
+  \item Hallar el MFC literal (variables comunes con el menor exponente presente en todos los términos).
+  \item Extraer el MFC y escribir el polinomio como producto: (MFC)$\times$(resto).
+  \item Verificar multiplicando mentalmente.
 \end{enumerate}
 
 \begin{example}
-\textbf{Factor común:}
-$$6x^3 + 9x^2 - 12x = 3x(2x^2 + 3x - 4)$$
+\textbf{Ejemplo 1.} Factorizar $18x^3y^2 - 12x^2y + 6xy^3$.
 
-\textbf{Agrupación:}
-$$ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)$$
+\begin{enumerate}
+  \item MFC numérico: $\gcd(18,12,6)=6$.
+  \item MFC literal: $x^{\min(3,2,1)}=x$, $y^{\min(2,1,3)}=y$.
+  \item Extraemos: $6xy(3x^2y - 2x + y^2)$.
+  \item Verificación rápida: $6xy\cdot 3x^2y=18x^3y^2$, etc.
+\end{enumerate}
+\end{example}
 
-\textbf{Trinomio cuadrático:}
-$$x^2 + 5x + 6 = (x + 2)(x + 3)$$
+\begin{example}
+\textbf{Ejemplo 2.} Factorizar $-14a^2b + 21ab^2 - 7ab$.
 
-\textbf{Diferencia de cuadrados:}
-$$4x^2 - 9 = (2x + 3)(2x - 3)$$
+\begin{enumerate}
+  \item MFC numérico: $\gcd(14,21,7)=7$ y signo común conveniente $-7$ para simplificar signos.
+  \item MFC literal: $a^{\min(2,1,1)}=a$, $b^{\min(1,2,1)}=b$.
+  \item Extraemos: $-7ab(2a - 3b + 1)$.
+\end{enumerate}
+\end{example}
 
-\textbf{Ejemplo completo:}
-Factorizar: $2x^3 - 8x$
+%==============================
+% TECNICA: AGRUPACION
+%==============================
+\subsectiontitle{Técnica: Factorización por agrupación}
 
-1. \textbf{Factor común:} $2x(x^2 - 4)$
-2. \textbf{Diferencia de cuadrados:} $2x(x + 2)(x - 2)$
+\textbf{Idea:} Reordenar y agrupar términos para crear un mismo factor binomial (o común) en cada grupo y luego factorizar ese factor común “de segundo nivel”.
 
-\textbf{Verificación:} $2x(x + 2)(x - 2) = 2x(x^2 - 4) = 2x^3 - 8x$ $\checkmark$
+\textbf{Pasos:}
+\begin{enumerate}
+  \item Intentar agrupar en pares (o bloques) que compartan un factor binomial.
+  \item Factorizar cada grupo por su MFC.
+  \item Verificar que aparece un factor común binomial. Factorizarlo.
+  \item Si es necesario, reordenar para lograr el factor común.
+\end{enumerate}
+
+\begin{example}
+\textbf{Ejemplo 1.} Factorizar $ax + ay + bx + by$.
+\begin{enumerate}
+  \item Agrupamos: $(ax + ay) + (bx + by)$.
+  \item Por grupo: $a(x + y) + b(x + y)$.
+  \item Factor común binomial: $(x + y)(a + b)$.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2.} Factorizar $3x^3 - 3x^2 - 12x + 12$.
+\begin{enumerate}
+  \item Agrupamos: $(3x^3 - 3x^2) + (-12x + 12)$.
+  \item Por grupo: $3x^2(x - 1) - 12(x - 1)$.
+  \item Factor común binomial: $(x - 1)(3x^2 - 12) = 3(x - 1)(x^2 - 4)$.
+  \item Diferencia de cuadrados: $3(x - 1)(x - 2)(x + 2)$.
+\end{enumerate}
+\end{example}
+
+%==============================
+% TECNICA: TRINOMIO CUADRATICO (a=1 y a!=1)
+%==============================
+\subsectiontitle{Técnica: Trinomio cuadrático}
+
+\textbf{Idea:} En $ax^2 + bx + c$, buscamos dos números que multipliquen $ac$ y sumen $b$. Si $a=1$, buscamos dos números que multipliquen $c$ y sumen $b$; si $a\neq 1$, usamos el \emph{método AC}.
+
+\textbf{Pasos (caso $a=1$):}
+\begin{enumerate}
+  \item Hallar $m,n$ tales que $m+n=b$ y $mn=c$.
+  \item Escribir $(x+m)(x+n)$.
+\end{enumerate}
+
+\textbf{Pasos (método AC, $a\neq 1$):}
+\begin{enumerate}
+  \item Calcular $AC=ac$ y hallar $m,n$ con $m+n=b$ y $mn=ac$.
+  \item Reescribir $bx$ como $mx+nx$.
+  \item Agrupar en dos binomios y factorizar por agrupación.
+\end{enumerate}
+
+\begin{example}
+\textbf{Ejemplo 1 (a=1).} Factorizar $x^2 + 5x + 6$.
+\begin{enumerate}
+  \item Buscamos $m,n$ con $m+n=5$, $mn=6$. Sirven $2$ y $3$.
+  \item Factorizamos: $(x+2)(x+3)$.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2 (método AC).} Factorizar $12x^2 - 7x - 10$.
+\begin{enumerate}
+  \item $ac=12\cdot(-10)=-120$. Buscamos $m,n$ con $m+n=-7$, $mn=-120$. Sirven $m=8$, $n=-15$.
+  \item Reescribimos: $12x^2 + 8x - 15x - 10$.
+  \item Agrupamos: $(12x^2+8x)+(-15x-10)=4x(3x+2)-5(3x+2)$.
+  \item Factor común binomial: $(3x+2)(4x-5)$.
+\end{enumerate}
+\end{example}
+
+%==============================
+% TECNICA: DIFERENCIA DE CUADRADOS
+%==============================
+\subsectiontitle{Técnica: Diferencia de cuadrados}
+
+\textbf{Idea:} Cualquier expresión $a^2-b^2$ se factoriza como $(a+b)(a-b)$. Es clave reconocer cuadrados perfectos (números y binomios).
+
+\textbf{Pasos:}
+\begin{enumerate}
+  \item Identificar $a^2$ y $b^2$ (ambos cuadrados perfectos).
+  \item Escribir $a$ y $b$ y formar $(a+b)(a-b)$.
+  \item Si aparecen nuevas diferencias de cuadrados, repetir.
+\end{enumerate}
+
+\begin{example}
+\textbf{Ejemplo 1.} Factorizar $4x^2-9$.
+\begin{enumerate}
+  \item $4x^2=(2x)^2$, $9=3^2$.
+  \item $4x^2-9=(2x+3)(2x-3)$.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2.} Factorizar $x^4-16$.
+\begin{enumerate}
+  \item $x^4=(x^2)^2$, $16=4^2$.
+  \item $x^4-16=(x^2+4)(x^2-4)$ y $x^2-4=(x+2)(x-2)$.
+  \item Resultado: $(x^2+4)(x+2)(x-2)$.
+\end{enumerate}
+\end{example}
+
+%==============================
+% TECNICA: TRINOMIO CUADRATICO PERFECTO
+%==============================
+\subsectiontitle{Técnica: Trinomio cuadrático perfecto}
+
+\textbf{Idea:} Reconocer $a^2\pm 2ab + b^2=(a\pm b)^2$ comparando el primer y último término con cuadrados perfectos y el término medio con $\pm 2ab$.
+
+\textbf{Pasos:}
+\begin{enumerate}
+  \item Verificar que el primero y último término sean cuadrados perfectos: $a^2$ y $b^2$.
+  \item Confirmar que el término medio sea $\pm 2ab$ (con el signo correspondiente).
+  \item Escribir $(a\pm b)^2$.
+\end{enumerate}
+
+\begin{example}
+\textbf{Ejemplo 1.} Factorizar $4x^2-12x+9$.
+\begin{enumerate}
+  \item $4x^2=(2x)^2$, $9=3^2$, término medio $-12x=-2(2x)(3)$.
+  \item Entonces $(2x-3)^2$.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2.} Factorizar $9y^2+24y+16$.
+\begin{enumerate}
+  \item $9y^2=(3y)^2$, $16=4^2$, término medio $24y=2(3y)(4)$.
+  \item Resultado: $(3y+4)^2$.
+\end{enumerate}
+\end{example}
+
+%==============================
+% TECNICA: SUMA Y DIFERENCIA DE CUBOS
+%==============================
+\subsectiontitle{Técnica: Suma y diferencia de cubos}
+
+\textbf{Idea:} Usar las identidades
+\[
+ a^3+b^3=(a+b)(a^2-ab+b^2),\quad a^3-b^3=(a-b)(a^2+ab+b^2).
+\]
+Reconocer cubos perfectos (números y binomios) y aplicar la fórmula.
+
+\textbf{Pasos:}
+\begin{enumerate}
+  \item Identificar $a^3$ y $b^3$.
+  \item Escribir $a$ y $b$ y aplicar la identidad correspondiente.
+  \item Simplificar si es posible.
+\end{enumerate}
+
+\begin{example}
+\textbf{Ejemplo 1 (diferencia).} Factorizar $x^3-8$.
+\begin{enumerate}
+  \item $x^3=x^3$, $8=2^3$.
+  \item $x^3-8=(x-2)(x^2+2x+4)$.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2 (suma).} Factorizar $8x^3+27$.
+\begin{enumerate}
+  \item $8x^3=(2x)^3$, $27=3^3$.
+  \item $8x^3+27=(2x+3)(4x^2-6x+9)$.
+\end{enumerate}
+\end{example}
+
+%==============================
+% EJEMPLO INTEGRADO (CADENA DE TECNICAS)
+%==============================
+\begin{example}
+\textbf{Ejemplo integrado.} Factorizar $2x^3-8x$.
+\begin{enumerate}
+  \item Factor común: $2x(x^2-4)$.
+  \item Diferencia de cuadrados: $2x(x-2)(x+2)$.
+  \item Verificación: al multiplicar se recupera $2x^3-8x$.
+\end{enumerate}
 \end{example}
 
 \subsectiontitle{Evaluación de Polinomios}

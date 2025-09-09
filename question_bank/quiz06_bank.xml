@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz06</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q1-Factorizacion-FactorComun</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente la expresión: \(24x^3y^2 - 18x^2y^3 + 12xy^4\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(6xy^2(4x^2 - 3xy + 2y^2)\)</p>]]></text>
+      <feedback><text>Correcto. El MFC es 6xy² y al extraerlo queda el polinomio indicado.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6x^2y^2(4x - 3y + 2y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. El MFC literal es xy², no x²y². Revisa los exponentes mínimos.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(12xy^2(2x^2 - \frac{3}{2}xy + y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. El MFC numérico es 6, no 12. Al usar 12 se generan fracciones innecesarias.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6xy(4x^2y - 3xy^2 + 2y^3)\)</p>]]></text>
+      <feedback><text>Incorrecto. El MFC debe incluir y², no solo y. Revisa el exponente mínimo de y.</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q2-Factorizacion-TrinomioBasico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(x^2 - 8x + 15\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((x - 3)(x - 5)\)</p>]]></text>
+      <feedback><text>Correcto. Los números -3 y -5 suman -8 y multiplican 15.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x + 3)(x + 5)\)</p>]]></text>
+      <feedback><text>Incorrecto. Los signos están mal. Necesitas números que sumen -8, no +8.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x - 3)(x + 5)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta factorización da x² + 2x - 15, no x² - 8x + 15.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x + 3)(x - 5)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta factorización da x² - 2x - 15, no x² - 8x + 15.</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q3-Factorizacion-DiferenciaCuadrados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(49a^2 - 16b^2\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((7a + 4b)(7a - 4b)\)</p>]]></text>
+      <feedback><text>Correcto. Es una diferencia de cuadrados: (7a)² - (4b)² = (7a + 4b)(7a - 4b).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((49a + 16b)(a - b)\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes extraer las raíces cuadradas: √49a² = 7a y √16b² = 4b.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((7a + 4b)^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto sería un trinomio cuadrático perfecto, no una diferencia de cuadrados.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((7a - 4b)^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Un cuadrado perfecto tendría la forma a² - 2ab + b², no a² - b².</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q4-Factorizacion-Agrupacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(2x^3 - 6x^2 + 3x - 9\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((x - 3)(2x^2 + 3)\)</p>]]></text>
+      <feedback><text>Correcto. Agrupando: 2x²(x - 3) + 3(x - 3) = (x - 3)(2x² + 3).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2x - 3)(x^2 + 3)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al agrupar incorrectamente no se obtiene el mismo factor binomial en ambos grupos.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x + 3)(2x^2 - 3)\)</p>]]></text>
+      <feedback><text>Incorrecto. El factor común que aparece al agrupar es (x - 3), no (x + 3).</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x(2x^2 - 6x + 3) - 9\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto no es una factorización completa. Debes agrupar en pares y buscar factores comunes.</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q5-Factorizacion-MetodoAC</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(6x^2 + 13x - 5\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((2x + 5)(3x - 1)\)</p>]]></text>
+      <feedback><text>Correcto. Usando el método AC: AC = -30, los números 15 y -2 suman 13 y multiplican -30.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((6x + 5)(x - 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al expandir obtienes 6x² - x - 5, no 6x² + 13x - 5.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((3x + 5)(2x - 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al expandir obtienes 6x² + 7x - 5, no 6x² + 13x - 5.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2x - 5)(3x + 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al expandir obtienes 6x² - 13x - 5, no 6x² + 13x - 5.</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q6-Factorizacion-Multiple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(3x^4 - 48\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(3(x^2 + 4)(x + 2)(x - 2)\)</p>]]></text>
+      <feedback><text>Correcto. Factor común 3, luego diferencia de cuadrados dos veces: x⁴ - 16 = (x² + 4)(x² - 4) = (x² + 4)(x + 2)(x - 2).</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3(x^2 - 4)^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto expandiría a 3(x⁴ - 8x² + 16) = 3x⁴ - 24x² + 48, no 3x⁴ - 48.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3(x + 2)(x - 2)\)</p>]]></text>
+      <feedback><text>Incorrecto. No factorizaste completamente. Faltan dos factores más después de extraer el 3.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((3x^2 + 12)(x + 2)(x - 2)\)</p>]]></text>
+      <feedback><text>Incorrecto. El factor común debe extraerse completamente al principio: 3(x² + 4), no (3x² + 12).</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q7-Factorizacion-CuadradoPerfecto</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(25x^2 + 30x + 9\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((5x + 3)^2\)</p>]]></text>
+      <feedback><text>Correcto. Es un trinomio cuadrático perfecto: (5x)² + 2(5x)(3) + 3² = (5x + 3)².</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((5x + 3)(5x - 3)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es una diferencia de cuadrados que expandiría a 25x² - 9, no 25x² + 30x + 9.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((25x + 9)(x + 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al expandir obtienes 25x² + 34x + 9, no 25x² + 30x + 9.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((5x - 3)^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto expandiría a 25x² - 30x + 9. El signo del término medio debe ser positivo.</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q8-Factorizacion-SumaCubos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(27x^3 + 64y^3\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((3x + 4y)(9x^2 - 12xy + 16y^2)\)</p>]]></text>
+      <feedback><text>Correcto. Es suma de cubos: a³ + b³ = (a + b)(a² - ab + b²) con a = 3x, b = 4y.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((3x + 4y)(9x^2 + 12xy + 16y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. En la suma de cubos, el segundo factor tiene signo negativo en el término medio: a² - ab + b².</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((27x + 64y)(x^2 - xy + y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes extraer las raíces cúbicas: ∛27x³ = 3x y ∛64y³ = 4y.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((3x - 4y)(9x^2 + 12xy + 16y^2)\)</p>]]></text>
+      <feedback><text>Incorrecto. Es una suma de cubos, no diferencia. El primer factor debe ser (3x + 4y).</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q9-Factorizacion-CuadraticaAvanzada</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(x^4 - 10x^2 + 25\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((x^2 - 5)^2\)</p>]]></text>
+      <feedback><text>Correcto. Tratando como cuadrática en x²: (x²)² - 10(x²) + 25 = (x² - 5)².</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x^2 + 5)(x^2 - 5)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es diferencia de cuadrados que expandiría a x⁴ - 25, no x⁴ - 10x² + 25.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x + \sqrt{5})(x - \sqrt{5})\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta factorización es incompleta y solo consideraría x² - 5, no x⁴ - 10x² + 25.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x^2 + 5)^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto expandiría a x⁴ + 10x² + 25. El signo del término medio debe ser negativo.</text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q10-Factorizacion-DiferenciaCubos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente: \(8x^3 - 125\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((2x - 5)(4x^2 + 10x + 25)\)</p>]]></text>
+      <feedback><text>Correcto. Es diferencia de cubos: a³ - b³ = (a - b)(a² + ab + b²) con a = 2x, b = 5.</text></feedback>
+    </answer>
+    
+    <!-- Distractors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2x - 5)(4x^2 - 10x + 25)\)</p>]]></text>
+      <feedback><text>Incorrecto. En la diferencia de cubos, el segundo factor tiene signo positivo en el término medio: a² + ab + b².</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((8x - 125)(x^2 + x + 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes extraer las raíces cúbicas: ∛8x³ = 2x y ∛125 = 5.</text></feedback>
+    </answer>
+    
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2x + 5)(4x^2 - 10x + 25)\)</p>]]></text>
+      <feedback><text>Incorrecto. Es una diferencia de cubos, no suma. El primer factor debe ser (2x - 5).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

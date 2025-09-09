@@ -40,6 +40,49 @@
 \end{exercise}
 
 \begin{exercise}
+\problem Factorice completamente las siguientes expresiones \textit{(nivel reto)}:
+
+\begin{exerciselist}
+    \item $12x^2 - 7x - 10$
+    \item $3x^3 - 3x^2 - 12x + 12$
+    \item $x^4 - 5x^2 + 4$
+    \item $8x^3 + 27y^3$
+    \item $15x^3y - 10x^2y^2 + 6xy - 4y^2$
+    \item $6x^4 - 19x^2 + 15$
+\end{exerciselist}
+
+\begin{solucion}
+\begin{exerciselist}
+    \item Método AC: $ac=12(-10)=-120$, buscamos $m+n=-7$, $mn=-120$; $m=8$, $n=-15$.
+    
+    $12x^2 - 7x - 10 = 12x^2 + 8x - 15x - 10 = 4x(3x+2) - 5(3x+2) = (3x+2)(4x-5)$.
+
+    \item Agrupación:
+    
+    $(3x^3 - 3x^2) + (-12x + 12) = 3x^2(x - 1) - 12(x - 1) = (x - 1)(3x^2 - 12) = 3(x - 1)(x^2 - 4) = 3(x - 1)(x - 2)(x + 2)$.
+
+    \item Cuadrática en $x^2$:
+    
+    Sea $u=x^2$. $u^2 - 5u + 4 = (u - 1)(u - 4)$. Por tanto $x^4 - 5x^2 + 4 = (x^2 - 1)(x^2 - 4) = (x - 1)(x + 1)(x - 2)(x + 2)$.
+
+    \item Suma de cubos:
+    
+    $8x^3 + 27y^3 = (2x)^3 + (3y)^3 = (2x + 3y)(4x^2 - 6xy + 9y^2)$.
+
+    \item Agrupación con dos variables:
+    
+    $(15x^3y - 10x^2y^2) + (6xy - 4y^2) = 5x^2y(3x - 2y) + 2y(3x - 2y) = (3x - 2y)\,y\,(5x^2 + 2)$.
+
+    \item Cuadrática en $x^2$ con coeficientes:
+    
+    Sea $u=x^2$. $6u^2 - 19u + 15 = (3u - 5)(2u - 3)$. Así,
+    
+    $6x^4 - 19x^2 + 15 = (3x^2 - 5)(2x^2 - 3)$.
+\end{exerciselist}
+\end{solucion}
+\end{exercise}
+
+\begin{exercise}
 \problem Evalúe los siguientes polinomios en los valores dados:
 
 \begin{exerciselist}
