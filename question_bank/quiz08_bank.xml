@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz08</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Geometric Formula Application -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Formulas-Perimetro</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>El perímetro de un rectángulo está dado por la fórmula \(P = 2l + 2w\), donde \(P\) es el perímetro, \(l\) es el largo y \(w\) es el ancho. Si un rectángulo tiene un perímetro de 24 unidades y un ancho de 5 unidades, encuentre el largo del rectángulo.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(l = 7\) unidades</p>]]></text>
+      <feedback><text>Correcto. Sustituyendo en la fórmula: 24 = 2l + 2(5), entonces 24 = 2l + 10, por lo que 2l = 14 y l = 7.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(l = 9\) unidades</p>]]></text>
+      <feedback><text>Incorrecto. Parece que sumaste 5 en lugar de restar al despejar. Recuerda: 24 = 2l + 10, entonces 2l = 24 - 10 = 14.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong operation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(l = 2\) unidades</p>]]></text>
+      <feedback><text>Incorrecto. Este valor resulta si dividiste incorrectamente. El perímetro es 24, no 14. Verifica: 2(2) + 2(5) = 14 ≠ 24.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Conceptual error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(l = 12\) unidades</p>]]></text>
+      <feedback><text>Incorrecto. Este valor resulta si usaste P = l + w en lugar de P = 2l + 2w. Recuerda que el perímetro suma todos los lados: 2l + 2w.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Variables on Both Sides -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Formulas-VariablesAmbosLados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Despeje la variable \(x\) en la expresión: \(ax + b = cx + d\) (donde \(a \neq c\))</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = \frac{d - b}{a - c}\)</p>]]></text>
+      <feedback><text>Correcto. Reuniendo términos: ax - cx = d - b, factorizando: x(a - c) = d - b, entonces x = (d - b)/(a - c).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong sign -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{b - d}{a - c}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los signos están invertidos en el numerador. Al mover términos: ax - cx = d - b, no b - d.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{d - b}{c - a}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador está invertido. Al factorizar: x(a - c) = d - b, no x(c - a).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Incomplete factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{d + b}{a + c}\)</p>]]></text>
+      <feedback><text>Incorrecto. Este resultado sugiere errores en el manejo de signos. Revisa cuidadosamente: ax + b = cx + d se convierte en ax - cx = d - b.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Expressions with Parentheses -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Formulas-Parentesis</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Despeje la variable \(x\) en la expresión: \(a(x + b) = c(x + d)\) (donde \(a \neq c\))</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = \frac{cd - ab}{a - c}\)</p>]]></text>
+      <feedback><text>Correcto. Expandiendo: ax + ab = cx + cd, reuniendo: ax - cx = cd - ab, factorizando: x(a - c) = cd - ab.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Distribution error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{c + d - a - b}{a - c}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en la distributiva. Al expandir a(x + b), obtienes ax + ab, no ax + a + b.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong combination -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{ab - cd}{a - c}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los términos están invertidos en el numerador. Después de expandir: ax - cx = cd - ab, no ab - cd.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{cd - ab}{c - a}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador está invertido. Al factorizar los términos con x: x(a - c), no x(c - a).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Multiple Variables Factorization -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Formulas-MultiplesVariables</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Despeje la variable \(x\) en la expresión: \(ax + ay = bx + by\) (donde \(a \neq b\))</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -y\)</p>]]></text>
+      <feedback><text>Correcto. Reuniendo términos: ax - bx = by - ay, factorizando: x(a - b) = y(b - a) = -y(a - b), entonces x = -y.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Missing negative -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = y\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el signo negativo. Observa que (b - a) = -(a - b), por lo que x(a - b) = -y(a - b).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{y(b - a)}{a - b}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta forma es correcta pero no simplificada. Como (b - a) = -(a - b), el resultado se simplifica a x = -y.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Conceptual error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{a - b}{y}\)</p>]]></text>
+      <feedback><text>Incorrecto. Has confundido la variable a despejar. La ecuación se resuelve para x en términos de y, no al revés.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Multiple Terms -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Formulas-TerminosMultiples</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Despeje la variable \(x\) en la expresión: \(a(x + y) + b(x + z) = c\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = \frac{c - ay - bz}{a + b}\)</p>]]></text>
+      <feedback><text>Correcto. Expandiendo: ax + ay + bx + bz = c, reuniendo términos con x: ax + bx = c - ay - bz, factorizando: x(a + b) = c - ay - bz.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Distribution error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{c - a - y - b - z}{a + b}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en la distributiva. a(x + y) = ax + ay, no ax + a + y.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong signs -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{c + ay + bz}{a + b}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los signos están mal. Al mover ay y bz al lado derecho: ax + bx = c - ay - bz.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{c - ay - bz}{a - b}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador debe ser (a + b). Al factorizar x: x(a + b) = c - ay - bz.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Fractions -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Formulas-Fracciones</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Despeje la variable \(x\) en la expresión: \(\frac{x}{a} + \frac{x}{b} = c\) (donde \(a, b \neq 0\))</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = \frac{abc}{a + b}\)</p>]]></text>
+      <feedback><text>Correcto. Factorizando: x(1/a + 1/b) = c, simplificando: x(a + b)/(ab) = c, entonces x = c(ab)/(a + b) = abc/(a + b).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Missing product -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{c}{a + b}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el factor ab en el numerador. Al resolver x(a + b)/(ab) = c, obtienes x = c(ab)/(a + b).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{abc}{ab}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador debe ser (a + b), no ab. Al factorizar x: x(a + b)/(ab) = c.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Fraction operation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{c(a + b)}{ab}\)</p>]]></text>
+      <feedback><text>Incorrecto. Has invertido la fracción. De x(a + b)/(ab) = c, obtienes x = c(ab)/(a + b), no c(a + b)/(ab).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz07</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Basic linear equation -->
+  <question type="shortanswer">
+    <name>
+      <text>Q1-Ecuaciones-Basico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(5x - 12 = 0\)</p>
+      <p>Escriba su respuesta como una fracción si es necesario (ejemplo: 12/5).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>12/5</text>
+      <feedback><text>¡Correcto! Al resolver \(5x - 12 = 0\), obtenemos \(5x = 12\), por lo tanto \(x = \frac{12}{5}\).</text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2.4</text>
+      <feedback><text>¡Correcto! \(\frac{12}{5} = 2.4\)</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Basic linear equation -->
+  <question type="shortanswer">
+    <name>
+      <text>Q2-Ecuaciones-Basico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(3x + 7 = 22\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>5</text>
+      <feedback><text>¡Correcto! Al resolver \(3x + 7 = 22\), obtenemos \(3x = 15\), por lo tanto \(x = 5\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Linear equation with variables on both sides -->
+  <question type="shortanswer">
+    <name>
+      <text>Q3-Ecuaciones-Variable-Ambos-Lados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(4x - 6 = 2x + 8\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>7</text>
+      <feedback><text>¡Correcto! Al reunir términos similares: \(4x - 2x = 8 + 6\), obtenemos \(2x = 14\), por lo tanto \(x = 7\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Linear equation with parentheses -->
+  <question type="shortanswer">
+    <name>
+      <text>Q4-Ecuaciones-Parentesis</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(2(x + 3) = 4x - 2\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>4</text>
+      <feedback><text>¡Correcto! Al aplicar la propiedad distributiva: \(2x + 6 = 4x - 2\), reorganizando obtenemos \(8 = 2x\), por lo tanto \(x = 4\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Fractions equation -->
+  <question type="shortanswer">
+    <name>
+      <text>Q5-Ecuaciones-Fracciones</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(\frac{x}{2} = \frac{x+1}{3}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2</text>
+      <feedback><text>¡Correcto! Al multiplicar por el MCD (6): \(3x = 2(x+1)\), obtenemos \(3x = 2x + 2\), por lo tanto \(x = 2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: More complex fractions -->
+  <question type="shortanswer">
+    <name>
+      <text>Q6-Ecuaciones-Fracciones-Complejo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(\frac{2x-1}{5} = \frac{x+3}{4}\)</p>
+      <p>Escriba su respuesta como una fracción si es necesario (ejemplo: 19/3).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>19/3</text>
+      <feedback><text>¡Correcto! Al multiplicar por el MCD (20): \(4(2x-1) = 5(x+3)\), obtenemos \(8x - 4 = 5x + 15\), por lo tanto \(x = \frac{19}{3}\).</text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>6.333333</text>
+      <feedback><text>¡Correcto! \(\frac{19}{3} \approx 6.33\)</text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>6.33</text>
+      <feedback><text>¡Correcto! \(\frac{19}{3} \approx 6.33\)</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Fractions with subtraction -->
+  <question type="shortanswer">
+    <name>
+      <text>Q7-Ecuaciones-Fracciones-Resta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(\frac{x+3}{4} - \frac{x-1}{6} = 2\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>13</text>
+      <feedback><text>¡Correcto! Al multiplicar por el MCD (12): \(3(x+3) - 2(x-1) = 24\), simplificando: \(x + 11 = 24\), por lo tanto \(x = 13\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Complex fractions -->
+  <question type="shortanswer">
+    <name>
+      <text>Q8-Ecuaciones-Fracciones-Avanzado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(\frac{3x-4}{8} = \frac{x+1}{6}\)</p>
+      <p>Escriba su respuesta como una fracción si es necesario (ejemplo: 16/5).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>16/5</text>
+      <feedback><text>¡Correcto! Al multiplicar por el MCD (24): \(3(3x-4) = 4(x+1)\), obtenemos \(9x - 12 = 4x + 4\), por lo tanto \(x = \frac{16}{5}\).</text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>3.2</text>
+      <feedback><text>¡Correcto! \(\frac{16}{5} = 3.2\)</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Word problem -->
+  <question type="shortanswer">
+    <name>
+      <text>Q9-Ecuaciones-Aplicacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>Problema de aplicación:</strong> Si el doble de un número más su tercera parte es igual a 21, ¿cuál es el número?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>9</text>
+      <feedback><text>¡Correcto! La ecuación es \(2x + \frac{x}{3} = 21\). Multiplicando por 3: \(6x + x = 63\), obtenemos \(7x = 63\), por lo tanto \(x = 9\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Complex equation -->
+  <question type="shortanswer">
+    <name>
+      <text>Q10-Ecuaciones-Complejo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>Problema complejo:</strong> Resuelva la ecuación: \(3(2x - 1) - 2(x + 4) = \frac{x-2}{3} + 5\)</p>
+      <p>Escriba su respuesta como una fracción si es necesario (ejemplo: 46/11).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>46/11</text>
+      <feedback><text>¡Correcto! Expandiendo y simplificando: \(4x - 11 = \frac{x+13}{3}\). Multiplicando por 3: \(12x - 33 = x + 13\), obtenemos \(11x = 46\), por lo tanto \(x = \frac{46}{11}\).</text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>4.181818</text>
+      <feedback><text>¡Correcto! \(\frac{46}{11} \approx 4.18\)</text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>4.18</text>
+      <feedback><text>¡Correcto! \(\frac{46}{11} \approx 4.18\)</text></feedback>
+    </answer>
+  </question>
+</quiz>
