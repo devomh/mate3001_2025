@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz09</text>
+    </category>
+  </question>
+
+  <!-- Q2: Equation Verification -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-VerificacionEcuacion-FracionNegativa</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine si \(x = -\frac{1}{4}\) es solución de la ecuación \(4x^2 = 2x + \frac{1}{4}\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>No, porque \(\frac{1}{4} \neq -\frac{1}{4}\)</p>]]></text>
+      <feedback><text>Correcto. Al sustituir x = -1/4: lado izquierdo da 1/4, lado derecho da -1/4. Como son diferentes, x = -1/4 no es solución.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, porque ambos lados dan \(\frac{1}{4}\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el cálculo del lado derecho: 2(-1/4) + 1/4 = -1/2 + 1/4 = -1/4, no +1/4.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Square calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, porque \(4(-\frac{1}{4})^2 = -\frac{1}{4}\)</p>]]></text>
+      <feedback><text>Incorrecto. Al elevar al cuadrado un número negativo el resultado es positivo: (-1/4)² = 1/16, entonces 4(1/16) = 1/4.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Conceptual error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, porque la ecuación se simplifica correctamente</p>]]></text>
+      <feedback><text>Incorrecto. Aunque los cálculos se realicen correctamente, los resultados de ambos lados deben ser iguales para que sea solución, pero 1/4 ≠ -1/4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: Simple Interest Formula -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-InteresSimple-CalculoBasico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Usando la fórmula \(I = Prt\), si \(P = 2400\), \(r = 0.025\) y \(t = 4\), calcule el valor de \(I\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(I = 240\)</p>]]></text>
+      <feedback><text>Correcto. I = Prt = 2400 × 0.025 × 4 = 2400 × 0.1 = 240.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgetting time factor -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(I = 60\)</p>]]></text>
+      <feedback><text>Incorrecto. Parece que multiplicaste P × r solamente: 2400 × 0.025 = 60. No olvides multiplicar también por t = 4.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Confusing P with I -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(I = 2400\)</p>]]></text>
+      <feedback><text>Incorrecto. Este es el valor del capital principal P, no del interés I. El interés se calcula como I = P × r × t.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Error in calculating r×t -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(I = 24\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el cálculo: r × t = 0.025 × 4 = 0.1, entonces I = 2400 × 0.1 = 240, no 24.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Mathematical Identity -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-IdentidadMatematica-TipoEcuacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine si la ecuación \(5(x + 1) - 3x = 2x + 5\) es una identidad, una ecuación condicional, o una contradicción.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Es una identidad</p>]]></text>
+      <feedback><text>Correcto. Al expandir el lado izquierdo: 5(x+1) - 3x = 5x + 5 - 3x = 2x + 5, que es exactamente igual al lado derecho. La ecuación es verdadera para cualquier valor de x.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Conceptual error with specific value -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Es una ecuación condicional con solución \(x = 0\)</p>]]></text>
+      <feedback><text>Incorrecto. Aunque x = 0 satisface la ecuación, también lo hacen todos los demás valores de x. Al simplificar ambos lados obtienes 2x + 5 = 2x + 5, que es verdadera para cualquier x.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong simplification -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Es una contradicción</p>]]></text>
+      <feedback><text>Incorrecto. Una contradicción ocurre cuando los lados simplificados son diferentes (como 0 = 5). Aquí ambos lados se simplifican a 2x + 5.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Confusing constant with variable -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Es una ecuación condicional con solución \(x = 5\)</p>]]></text>
+      <feedback><text>Incorrecto. El número 5 aparece como término constante, no como la solución. La ecuación se simplifica a 2x + 5 = 2x + 5, que es una identidad válida para cualquier valor de x.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Rectangle Perimeter -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Geometria-PerimetroRectangulo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Un rectángulo tiene largo \((2x + 1)\) y ancho \((6 - x)\). Escriba una expresión simplificada para su perímetro.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(P = 2x + 14\)</p>]]></text>
+      <feedback><text>Correcto. P = 2(largo + ancho) = 2[(2x + 1) + (6 - x)] = 2[2x + 1 + 6 - x] = 2[x + 7] = 2x + 14.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgetting to multiply by 2 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(P = x + 7\)</p>]]></text>
+      <feedback><text>Incorrecto. Has calculado largo + ancho = (2x + 1) + (6 - x) = x + 7, pero el perímetro es 2 veces esta suma: P = 2(x + 7) = 2x + 14.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Error in combining terms -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(P = 2x + 7\)</p>]]></text>
+      <feedback><text>Incorrecto. Al sumar largo + ancho: (2x + 1) + (6 - x) = 2x + 1 + 6 - x = x + 7, no 2x + 7. Luego multiplicas por 2: P = 2(x + 7) = 2x + 14.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Multiplying terms incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(P = 8x + 14\)</p>]]></text>
+      <feedback><text>Incorrecto. Parece que multiplicaste cada término por 2 por separado antes de simplificar. La fórmula correcta es P = 2(largo + ancho), donde primero sumas y luego multiplicas por 2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Factor Theorem -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-TeoremaFactor-PolinomioCubico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Use el Teorema del Factor para determinar si \((x - 1)\) es factor del polinomio \(P(x) = 2x^3 - 3x^2 + x + 1\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>No, porque \(P(1) = 1 \neq 0\)</p>]]></text>
+      <feedback><text>Correcto. Según el Teorema del Factor, (x-1) es factor solo si P(1) = 0. Calculando: P(1) = 2(1)³ - 3(1)² + 1 + 1 = 2 - 3 + 1 + 1 = 1 ≠ 0.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Misapplying theorem -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, porque \(P(1) = 1\)</p>]]></text>
+      <feedback><text>Incorrecto. El Teorema del Factor establece que (x-a) es factor de P(x) solo si P(a) = 0. Como P(1) = 1 ≠ 0, entonces (x-1) no es factor.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, porque \(P(1) = 0\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el cálculo: P(1) = 2(1)³ - 3(1)² + 1 + 1 = 2 - 3 + 1 + 1 = 1, no 0. Si fuera P(1) = 0, entonces (x-1) sí sería factor.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Misinterpreting synthetic division -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, porque el residuo de la división sintética es 1</p>]]></text>
+      <feedback><text>Incorrecto. Si el residuo es 1 (que es P(1) = 1), esto significa que (x-1) NO es factor. Para ser factor, el residuo debe ser 0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Quadratic Factoring -->
+  <question type="multichoice">
+    <name>
+      <text>Q12-FactorizacionCuadratica-AgrupacionCompleja</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Factorice completamente el polinomio: \(10x^2 - 13x - 3\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((2x - 3)(5x + 1)\)</p>]]></text>
+      <feedback><text>Correcto. Usando factorización por agrupación: 10x² - 13x - 3 = 10x² - 15x + 2x - 3 = 5x(2x - 3) + 1(2x - 3) = (2x - 3)(5x + 1).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((10x - 3)(x + 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Verifica expandiendo: (10x - 3)(x + 1) = 10x² + 10x - 3x - 3 = 10x² + 7x - 3, que no es igual a la expresión original.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Coefficient interchange -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((5x - 3)(2x + 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al expandir: (5x - 3)(2x + 1) = 10x² + 5x - 6x - 3 = 10x² - x - 3. Los coeficientes están intercambiados.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Sign errors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2x + 3)(5x - 1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Hay errores de signos. Al expandir: (2x + 3)(5x - 1) = 10x² - 2x + 15x - 3 = 10x² + 13x - 3, que no coincide con la expresión original.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14: Linear Equation -->
+  <question type="multichoice">
+    <name>
+      <text>Q14-EcuacionLineal-ParentesisComplejos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(5x = 3(2x - 1) + 2(x + 7)\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -\frac{11}{3}\)</p>]]></text>
+      <feedback><text>Correcto. Expandiendo: 5x = 6x - 3 + 2x + 14 = 8x + 11. Entonces: 5x - 8x = 11, -3x = 11, x = -11/3.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{11}{3}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error de signo al despejar. De -3x = 11 obtenemos x = -11/3, no +11/3.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Division error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -11\)</p>]]></text>
+      <feedback><text>Incorrecto. No dividiste entre -3. De -3x = 11 obtenemos x = 11/(-3) = -11/3, no -11.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Multiple algebraic errors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa la expansión y simplificación. El lado derecho da 8x + 11, y al resolver 5x = 8x + 11 obtienes x = -11/3.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16: Rational Equation -->
+  <question type="multichoice">
+    <name>
+      <text>Q16-EcuacionRacional-FraccionesComplejas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación: \(\frac{2x - 3}{5} + \frac{x + 4}{2} = \frac{3}{10}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -\frac{11}{9}\)</p>]]></text>
+      <feedback><text>Correcto. Multiplicando por MCM(5,2,10) = 10: 2(2x-3) + 5(x+4) = 3. Expandiendo: 4x - 6 + 5x + 20 = 3, entonces 9x + 14 = 3, 9x = -11, x = -11/9.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{11}{9}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error de signo. De 9x = -11 obtenemos x = -11/9, no +11/9.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Simplification error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -1\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa la simplificación después de multiplicar por el MCM. El resultado correcto es x = -11/9.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: MCM calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -\frac{3}{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Parece que calculaste mal el MCM o cometiste errores en la multiplicación. El MCM de 5, 2, y 10 es 10.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18: Quadratic by Factorization -->
+  <question type="multichoice">
+    <name>
+      <text>Q18-EcuacionCuadratica-Factorizacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva por factorización la ecuación: \(2x^2 - 5x - 3 = 0\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 3\) o \(x = -\frac{1}{2}\)</p>]]></text>
+      <feedback><text>Correcto. Factorizando: 2x² - 5x - 3 = (x - 3)(2x + 1) = 0. Por lo tanto: x - 3 = 0 o 2x + 1 = 0, dando x = 3 o x = -1/2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error in second root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) o \(x = \frac{1}{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. La primera solución es correcta, pero revisa la segunda. De 2x + 1 = 0 obtenemos x = -1/2, no +1/2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Sign error in first root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -3\) o \(x = -\frac{1}{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. La segunda solución es correcta, pero revisa la primera. De x - 3 = 0 obtenemos x = 3, no -3.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{3}{2}\) o \(x = -1\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa la factorización. 2x² - 5x - 3 se factoriza como (x - 3)(2x + 1), no con otros factores.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20: Word Problem -->
+  <question type="multichoice">
+    <name>
+      <text>Q20-ProblemaVerbal-NumerosConsecutivos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La suma de un número y el doble de su siguiente es 35. ¿Cuáles son los dos números?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Los números son 11 y 12</p>]]></text>
+      <feedback><text>Correcto. Sea x el primer número, entonces x + 1 es el siguiente. La ecuación es: x + 2(x + 1) = 35. Resolviendo: 3x + 2 = 35, x = 11. Los números son 11 y 12.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong equation setup -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los números son 17 y 18</p>]]></text>
+      <feedback><text>Incorrecto. Parece que planteaste mal la ecuación. La suma de un número (x) y el doble de su siguiente (2(x+1)) debe ser 35: x + 2(x+1) = 35.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los números son 10 y 11</p>]]></text>
+      <feedback><text>Incorrecto. Verifica el cálculo: 10 + 2(11) = 10 + 22 = 32 ≠ 35. La respuesta correcta es 11 y 12.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong translation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Los números son 16 y 17</p>]]></text>
+      <feedback><text>Incorrecto. Revisa la traducción del problema. "El doble de su siguiente" significa 2(x+1), no 2x+1.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q22: Literal Equation -->
+  <question type="multichoice">
+    <name>
+      <text>Q22-EcuacionLiteral-DespejeVariable</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Despeje la siguiente expresión algebraica para la variable \(t\): \(a(t - b) + c(t + d) = k\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(t = \frac{k + ab - cd}{a + c}\)</p>]]></text>
+      <feedback><text>Correcto. Expandiendo: at - ab + ct + cd = k. Agrupando: (a + c)t = k + ab - cd. Despejando: t = (k + ab - cd)/(a + c).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error in expansion -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(t = \frac{k - ab + cd}{a + c}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error de signos al expandir. De a(t - b) obtienes at - ab, no at + ab. Revisa la expansión cuidadosamente.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Sign error in denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(t = \frac{k + ab - cd}{a - c}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error de signo en el denominador. Al agrupar términos con t obtienes (a + c)t, no (a - c)t.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Forgot to divide -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(t = k + ab - cd\)</p>]]></text>
+      <feedback><text>Incorrecto. No dividiste entre (a + c). Después de obtener (a + c)t = k + ab - cd, debes dividir ambos lados entre (a + c).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
