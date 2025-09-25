@@ -1,47 +1,8 @@
-# MATE 3001 - Examen II - Guía de Repaso
-
-**Universidad de Puerto Rico - Humacao**
-**Departamento de Matemáticas**
-**Matemática Elemental**
-**Septiembre 2025**
-
----
-
-## Información del Examen
-
-Esta guía de repaso cubre todos los temas principales que aparecerán en el Examen II de MATE 3001. Cada problema incluye una solución detallada paso a paso para ayudarte a entender los conceptos y métodos necesarios.
-
-### Temas Cubiertos
-
-1. **Verificación de Ecuaciones** - Determinar si un valor es solución
-2. **Fórmula de Interés Simple** - Aplicación de I = Prt
-3. **Identidades Matemáticas** - Clasificación de tipos de ecuaciones
-4. **Geometría Aplicada** - Perímetros y expresiones algebraicas
-5. **Teorema del Factor** - Evaluación de polinomios
-6. **Factorización de Polinomios** - Métodos de agrupación
-7. **Ecuaciones Lineales** - Resolución con paréntesis
-8. **Ecuaciones Racionales** - Fracciones y denominadores múltiples
-9. **Ecuaciones Cuadráticas** - Resolución por factorización
-10. **Problemas Verbales** - Traducción de palabras a álgebra
-11. **Ecuaciones Literales** - Despeje de variables
-
-### Instrucciones de Uso
-
-- Intenta resolver cada problema por tu cuenta antes de ver la solución
-- Verifica tus respuestas usando los métodos de verificación mostrados
-- Practica los métodos paso a paso para dominar las técnicas
-- Usa el espacio en blanco para hacer tus cálculos
-
----
+# MATE 3001 - Repaso
 
 ## Problema 1: Verificación de Ecuaciones
 
 **Enunciado:** Determine si $x = \frac{2}{3}$ es solución de la ecuación $\frac{2}{3}x - \frac{4}{9} = 0$.
-
-### Espacio para tu trabajo:
-
-
-
 
 ### Solución Paso a Paso:
 
@@ -62,18 +23,13 @@ $$\frac{2 \times 2}{3 \times 3} - \frac{4}{9} = \frac{4}{9} - \frac{4}{9}$$
 $$\frac{4}{9} - \frac{4}{9} = 0$$
 
 ### ✅ Verificación:
-Como al sustituir $x = \frac{2}{3}$ obtenemos $0 = 0$, que es una identidad verdadera, concluimos que **SÍ**, $x = \frac{2}{3}$ es solución de la ecuación.
+Como al sustituir $x = \frac{2}{3}$ obtenemos $0 = 0$, concluimos que **SÍ**, $x = \frac{2}{3}$ es solución de la ecuación.
 
 ---
 
 ## Problema 2: Fórmula de Interés Simple
 
 **Enunciado:** Usando la fórmula $I = Prt$, si $P = 1500$, $r = 0.04$ y $t = 3$, calcule el valor de $I$.
-
-### Espacio para tu trabajo:
-
-
-
 
 ### Solución Paso a Paso:
 
@@ -93,23 +49,14 @@ $$I = 1500 \times 0.04 \times 3$$
 **Paso 4:** Calculamos paso a paso:
 
 $$I = 1500 \times 0.12$$
-$$I = 180$$
 
-### ✅ Verificación:
-Podemos verificar: $1500 \times 0.04 = 60$, y $60 \times 3 = 180$ ✓
-
-**Respuesta:** $I = 180$
+**Respuesta:** $$I = 180$$
 
 ---
 
 ## Problema 3: Identidades Matemáticas
 
 **Enunciado:** Determine si la ecuación $2(x - 4) = 2x - 8$ es una identidad, una ecuación condicional, o una contradicción. Explique su razonamiento.
-
-### Espacio para tu trabajo:
-
-
-
 
 ### Solución Paso a Paso:
 
@@ -141,11 +88,6 @@ Esta es una igualdad verdadera para cualquier valor de $x$.
 ## Problema 4: Perímetro de Rectángulos
 
 **Enunciado:** Un rectángulo tiene largo $(3x - 2)$ y ancho $(x + 5)$. Escriba una expresión simplificada para su perímetro.
-
-### Espacio para tu trabajo:
-
-
-
 
 ### Solución Paso a Paso:
 
@@ -180,11 +122,6 @@ Perímetro = $2(1 + 6) = 14$, y usando nuestra fórmula: $8(1) + 6 = 14$ ✓
 
 **Enunciado:** Use el Teorema del Factor para determinar si $(x + 2)$ es factor del polinomio $P(x) = x^3 + x^2 - 4x - 4$. Muestre todo su trabajo.
 
-### Espacio para tu trabajo:
-
-
-
-
 ### Solución Paso a Paso:
 
 **Paso 1:** Recordamos el Teorema del Factor:
@@ -200,31 +137,16 @@ $$P(-2) = (-2)^3 + (-2)^2 - 4(-2) - 4$$
 $$P(-2) = -8 + 4 + 8 - 4$$
 $$P(-2) = 0$$
 
-**Paso 4:** Verificación por división sintética:
-
-```
--2 |  1   1  -4  -4
-   |     -2   2   4
-   |  1  -1  -2   0
-```
-
 El residuo es 0, confirmando que $(x + 2)$ es factor.
 
 ### ✅ Conclusión:
 **SÍ**, $(x + 2)$ es factor de $P(x) = x^3 + x^2 - 4x - 4$ porque $P(-2) = 0$.
-
-Además, podemos escribir: $P(x) = (x + 2)(x^2 - x - 2)$
 
 ---
 
 ## Problema 6: Factorización de Polinomios Cuadráticos
 
 **Enunciado:** Factorice completamente el polinomio: $8x^2 + 22x + 15$
-
-### Espacio para tu trabajo:
-
-
-
 
 ### Solución Paso a Paso:
 
@@ -256,11 +178,6 @@ $(2x + 3)(4x + 5) = 8x^2 + 10x + 12x + 15 = 8x^2 + 22x + 15$ ✓
 ## Problema 7: Ecuaciones Lineales con Paréntesis
 
 **Enunciado:** Resuelva la ecuación: $3x = 2(x + 3) - (x - 4)$
-
-### Espacio para tu trabajo:
-
-
-
 
 ### Solución Paso a Paso:
 
@@ -296,11 +213,6 @@ Lado derecho: $2(5 + 3) - (5 - 4) = 2(8) - 1 = 16 - 1 = 15$ ✓
 
 **Enunciado:** Resuelva la ecuación: $\frac{3x + 2}{4} - \frac{2x - 1}{3} = \frac{1}{2}$
 
-### Espacio para tu trabajo:
-
-
-
-
 ### Solución Paso a Paso:
 
 **Paso 1:** Encontramos el MCM de los denominadores 4, 3, y 2:
@@ -335,11 +247,6 @@ $\frac{3(-4) + 2}{4} - \frac{2(-4) - 1}{3} = \frac{-10}{4} - \frac{-9}{3} = -\fr
 
 **Enunciado:** Resuelva por factorización la ecuación: $x^2 + 3x - 10 = 0$
 
-### Espacio para tu trabajo:
-
-
-
-
 ### Solución Paso a Paso:
 
 **Paso 1:** Buscamos factorizar $x^2 + 3x - 10$ como $(x + a)(x + b)$ donde:
@@ -373,20 +280,15 @@ $$x = -5 \quad \text{o} \quad x = 2$$
 
 **Enunciado:** El triple de un número menos la cuarta parte del mismo número es igual a 22. ¿Cuál es el número?
 
-### Espacio para tu trabajo:
-
-
-
-
 ### Solución Paso a Paso:
 
 **Paso 1:** Definir la variable
 Sea $x$ el número desconocido.
 
 **Paso 2:** Traducir el problema a una ecuación
-- "El triple de un número" = $3x$
-- "la cuarta parte del mismo número" = $\frac{x}{4}$
-- "El triple menos la cuarta parte es igual a 22" = $3x - \frac{x}{4} = 22$
+- "El triple de un número": $3x$
+- "la cuarta parte del mismo número": $\frac{x}{4}$
+- "El triple menos la cuarta parte es igual a 22": $3x - \frac{x}{4} = 22$
 
 **Paso 3:** Resolver la ecuación
 
@@ -441,38 +343,3 @@ $= x + \frac{3(z - x) + 2(z - x)}{5} = x + \frac{5(z - x)}{5} = x + z - x = z$ �
 
 **Respuesta:** $y = \frac{z - x}{5}$
 
----
-
-## 📋 Resumen de Fórmulas Clave
-
-### Fórmulas Importantes:
-1. **Interés Simple:** $I = Prt$
-2. **Perímetro de Rectángulo:** $P = 2(\text{largo} + \text{ancho})$
-3. **Teorema del Factor:** $(x - a)$ es factor de $P(x)$ si $P(a) = 0$
-
-### Métodos de Resolución:
-1. **Verificación de Ecuaciones:** Sustituir el valor y verificar si ambos lados son iguales
-2. **Identidades:** Ambos lados simplifican a la misma expresión
-3. **Factorización por Agrupación:** $ac$ método para cuadráticas
-4. **Ecuaciones Racionales:** Multiplicar por el MCM de denominadores
-5. **Factorización de Cuadráticas:** Buscar factores que multipliquen y sumen correctamente
-6. **Problemas Verbales:** Definir variable, traducir, resolver, verificar
-
-### Propiedades Importantes:
-- **Propiedad Distributiva:** $a(b + c) = ab + ac$
-- **Producto Cero:** Si $ab = 0$, entonces $a = 0$ o $b = 0$
-- **Operaciones con Fracciones:** MCM para sumar/restar fracciones
-
----
-
-## 🎯 Consejos para el Examen
-
-1. **Lee cuidadosamente** cada problema antes de comenzar
-2. **Muestra TODO tu trabajo** paso a paso
-3. **Verifica tus respuestas** sustituyendo en la ecuación original
-4. **Usa unidades apropiadas** cuando sea necesario
-5. **Organiza tu trabajo** de manera clara y legible
-
-¡Buena suerte en tu examen!
-
----
