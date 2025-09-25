@@ -280,105 +280,6 @@ Para $(2x^2 + x - 3)(x^2 - 2x + 1)$:
 **Resultado:** $2x^4 - 4x^3 + x^3 + 2x^2 - 2x^2 - 3x^2 + x + 6x - 3$
 $$= 2x^4 - 3x^3 - 3x^2 + 7x - 3$$
 
----
-
-## Factorización de Polinomios
-
-### Factor Común
-
-Se extrae el mayor factor común de todos los términos.
-
-**Ejemplo:**
-$$6x^3 + 9x^2 - 12x = 3x(2x^2 + 3x - 4)$$
-
-### Agrupación
-
-Se agrupan términos para factorizar por partes.
-
-**Ejemplo:**
-$$ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)$$
-
-### Trinomio Cuadrático
-
-Para $ax^2 + bx + c$, se buscan dos números que multiplicados den $ac$ y sumados den $b$.
-
-**Ejemplo:**
-$$x^2 + 5x + 6 = (x + 2)(x + 3)$$
-
-### Diferencia de Cuadrados
-
-$$a^2 - b^2 = (a + b)(a - b)$$
-
-**Ejemplo:**
-$$4x^2 - 9 = (2x + 3)(2x - 3)$$
-
----
-
-## Algoritmos de Factorización
-
-### Pasos Generales
-
-1. **Factor común:** Extraer el máximo factor común
-2. **Número de términos:**
-   - 2 términos: Buscar diferencia de cuadrados o suma/diferencia de cubos
-   - 3 términos: Buscar trinomio cuadrático perfecto o factorizable
-   - 4+ términos: Intentar agrupación
-3. **Verificar:** Multiplicar los factores para comprobar
-
-### Ejemplo Completo
-
-Factorizar: $2x^3 - 8x$
-
-1. **Factor común:** $2x(x^2 - 4)$
-2. **Diferencia de cuadrados:** $2x(x + 2)(x - 2)$
-
-**Verificación:** $2x(x + 2)(x - 2) = 2x(x^2 - 4) = 2x^3 - 8x$ ✓
-
----
-
-## Casos Especiales de Factorización
-
-### Trinomio Cuadrático Perfecto
-
-$$a^2 + 2ab + b^2 = (a + b)^2$$
-$$a^2 - 2ab + b^2 = (a - b)^2$$
-
-**Identificación:** El primer y tercer término son cuadrados perfectos, y el término medio es el doble del producto de las raíces.
-
-**Ejemplo:**
-$$9x^2 + 12x + 4 = (3x)^2 + 2(3x)(2) + 2^2 = (3x + 2)^2$$
-
-### Suma y Diferencia de Cubos
-
-$$a^3 + b^3 = (a + b)(a^2 - ab + b^2)$$
-$$a^3 - b^3 = (a - b)(a^2 + ab + b^2)$$
-
-**Ejemplos:**
-- $x^3 + 27 = (x + 3)(x^2 - 3x + 9)$
-- $8x^3 - 1 = (2x - 1)(4x^2 + 2x + 1)$
-
----
-
-## Aplicaciones de Polinomios
-
-### Evaluación de Polinomios
-
-Para evaluar un polinomio $P(x)$ en $x = a$, se sustituye $x$ por $a$.
-
-**Ejemplo:**
-Si $P(x) = 2x^3 - 3x^2 + x - 5$, entonces:
-$$P(2) = 2(2)^3 - 3(2)^2 + 2 - 5 = 16 - 12 + 2 - 5 = 1$$
-
-### Teorema del Residuo
-
-Si un polinomio $P(x)$ se divide por $(x - a)$, entonces el residuo es $P(a)$.
-
-### Teorema del Factor
-
-$(x - a)$ es un factor de $P(x)$ si y solo si $P(a) = 0$.
-
----
-
 ## Ejercicios Resueltos
 
 ### Ejercicio 1: Multiplicación
@@ -398,26 +299,47 @@ Desarrollar: $(2x - 3y)^2$
 $$= (2x)^2 - 2(2x)(3y) + (3y)^2$$
 $$= 4x^2 - 12xy + 9y^2$$
 
-### Ejercicio 3: Factorización
+### Ejercicio 3: Multiplicación de Polinomios
 
-Factorizar: $x^4 - 16$
+Multiplicar: $(x^2 + 3x - 2)(2x - 1)$
 
 **Solución:**
-$$= (x^2)^2 - 4^2 = (x^2 + 4)(x^2 - 4)$$
-$$= (x^2 + 4)(x + 2)(x - 2)$$
+$$= x^2(2x - 1) + 3x(2x - 1) - 2(2x - 1)$$
+$$= 2x^3 - x^2 + 6x^2 - 3x - 4x + 2$$
+$$= 2x^3 + 5x^2 - 7x + 2$$
+
+### Ejercicio 4: Producto Notable Complejo
+
+Desarrollar: $(3x + 2y)(3x - 2y)$
+
+**Solución (diferencia de cuadrados):**
+$$= (3x)^2 - (2y)^2 = 9x^2 - 4y^2$$
 
 ---
 
 ## Resumen de Conceptos Clave
 
-1. **Expresiones Algebraicas:** Combinaciones de variables, números y operaciones
-2. **Dominio:** Conjunto de valores permitidos para las variables
-3. **Polinomios:** Expresiones algebraicas con exponentes enteros no negativos
-4. **Clasificación:** Por grado (lineal, cuadrático, cúbico...) y por términos (monomio, binomio, trinomio...)
-5. **Operaciones:** Suma, resta, multiplicación y factorización siguiendo reglas específicas
-6. **Leyes de Exponentes:** Reglas fundamentales para manipular potencias
-7. **Productos Notables:** Fórmulas para multiplicaciones especiales
-8. **Factorización:** Técnicas para expresar polinomios como productos de factores
+### Expresiones Algebraicas
+1. **Definición:** Combinaciones de variables, números y operaciones aritméticas
+2. **Componentes:** Términos, coeficientes, variables y exponentes
+3. **Dominio:** Conjunto de valores permitidos para las variables, considerando restricciones como división por cero y raíces de números negativos
 
-Estos conceptos son fundamentales para el álgebra avanzada y forman la base para el estudio de ecuaciones, funciones y cálculo.
+### Polinomios
+4. **Definición:** Expresiones algebraicas con exponentes enteros no negativos
+5. **Terminología:** Grado, término principal, coeficiente principal, término constante
+6. **Clasificación por grado:** Constante (0), lineal (1), cuadrático (2), cúbico (3), etc.
+7. **Clasificación por términos:** Monomio (1), binomio (2), trinomio (3), polinomio (4+)
+
+### Operaciones con Polinomios
+8. **Suma y resta:** Combinación de términos semejantes
+9. **Leyes de exponentes:** Reglas fundamentales para manipular potencias
+10. **Multiplicación:** Desde monomio por monomio hasta polinomio completo
+11. **Método FOIL:** Técnica específica para multiplicar binomios
+12. **Productos notables:** Fórmulas especiales para multiplicaciones comunes
+
+### Aplicaciones
+13. **Representación tabular:** Organización sistemática de multiplicaciones complejas
+14. **Verificación:** Importancia de comprobar resultados mediante multiplicación directa
+
+Estos conceptos fundamentales preparan el terreno para temas más avanzados como factorización, resolución de ecuaciones polinomiales, y análisis de funciones. Dominando estas operaciones básicas, los estudiantes desarrollan las herramientas necesarias para el álgebra avanzada y el cálculo.
 
