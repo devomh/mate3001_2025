@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz11</text>
+    </category>
+  </question>
+
+  <!-- Q1: Discriminant - Positive Perfect Square -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Discriminante-PositivoPerfecto</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Calcule el discriminante de la ecuación cuadrática \(2x^2 - 7x + 3 = 0\) y determine la naturaleza de sus raíces <em>(sin resolverlas)</em>.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\Delta = 25\); la ecuación tiene dos raíces reales distintas y racionales</p>]]></text>
+      <feedback><text>¡Correcto! Usando Δ = b² - 4ac = (-7)² - 4(2)(3) = 49 - 24 = 25. Como Δ > 0 y es un cuadrado perfecto, hay dos raíces reales distintas y racionales.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error in discriminant -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = -1\); la ecuación tiene dos raíces complejas conjugadas</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el cálculo: b² = (-7)² = 49 (positivo), y 4ac = 4(2)(3) = 24. Entonces Δ = 49 - 24 = 25, no -1.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 73\); la ecuación tiene dos raíces reales distintas e irracionales</p>]]></text>
+      <feedback><text>Incorrecto. Verifica el cálculo de 4ac: debe ser 4(2)(3) = 24, no 4(2)(3) calculado incorrectamente. El discriminante correcto es 49 - 24 = 25.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Correct discriminant but wrong interpretation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 25\); la ecuación tiene dos raíces reales distintas e irracionales</p>]]></text>
+      <feedback><text>Incorrecto. El discriminante Δ = 25 es correcto, pero como 25 es un cuadrado perfecto (√25 = 5), las raíces son racionales, no irracionales.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: Discriminant - Zero -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Discriminante-Cero</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Calcule el discriminante de la ecuación cuadrática \(9x^2 + 6x + 1 = 0\) y determine la naturaleza de sus raíces <em>(sin resolverlas)</em>.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\Delta = 0\); la ecuación tiene una raíz real doble</p>]]></text>
+      <feedback><text>¡Correcto! Usando Δ = b² - 4ac = (6)² - 4(9)(1) = 36 - 36 = 0. Cuando Δ = 0, hay una raíz real doble. Esta ecuación es el trinomio cuadrado perfecto (3x + 1)².</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 12\); la ecuación tiene dos raíces reales distintas y racionales</p>]]></text>
+      <feedback><text>Incorrecto. Verifica el cálculo: 4ac = 4(9)(1) = 36, no 24. Entonces Δ = 36 - 36 = 0, no 12.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong formula application -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 36\); la ecuación tiene dos raíces reales distintas y racionales</p>]]></text>
+      <feedback><text>Incorrecto. Parece que solo calculaste b² = 36, pero olvidaste restar 4ac. El discriminante completo es Δ = b² - 4ac = 36 - 36 = 0.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Conceptual confusion -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 0\); la ecuación no tiene raíces reales</p>]]></text>
+      <feedback><text><![CDATA[Incorrecto. El discriminante Δ = 0 es correcto, pero esto significa que hay una raíz real doble (raíz repetida), no que no hay raíces reales. Las raíces complejas ocurren cuando Δ < 0.]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: Discriminant - Negative -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Discriminante-Negativo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Calcule el discriminante de la ecuación cuadrática \(x^2 - x + 1 = 0\) y determine la naturaleza de sus raíces <em>(sin resolverlas)</em>.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\Delta = -3\); la ecuación tiene dos raíces complejas conjugadas</p>]]></text>
+      <feedback><text><![CDATA[¡Correcto! Usando Δ = b² - 4ac = (-1)² - 4(1)(1) = 1 - 4 = -3. Como Δ < 0, la ecuación tiene dos raíces complejas conjugadas (no hay raíces reales).]]></text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error with b -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 5\); la ecuación tiene dos raíces reales distintas e irracionales</p>]]></text>
+      <feedback><text>Incorrecto. Recuerda que b² siempre es positivo: (-1)² = 1, no -1. El discriminante correcto es Δ = 1 - 4 = -3.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = 3\); la ecuación tiene dos raíces reales distintas e irracionales</p>]]></text>
+      <feedback><text>Incorrecto. Verifica el cálculo: Δ = b² - 4ac = 1 - 4(1)(1) = 1 - 4 = -3, no +3. El signo es importante.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Correct discriminant but wrong interpretation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Delta = -3\); la ecuación tiene una raíz real doble</p>]]></text>
+      <feedback><text><![CDATA[Incorrecto. El discriminante Δ = -3 es correcto, pero cuando Δ < 0, hay raíces complejas conjugadas, no una raíz doble. La raíz doble ocurre cuando Δ = 0.]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: Solving with Quadratic Formula - Complex Roots -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-ResolucionFormula-RaicesComplejas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación por cualquier método: \(x^2 = 4(x - 3)\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 2 + 2\sqrt{2}i\) o \(x = 2 - 2\sqrt{2}i\)</p>]]></text>
+      <feedback><text>¡Correcto! Expandiendo: x² - 4x + 12 = 0. Con la fórmula cuadrática: x = [4 ± √(16-48)]/2 = [4 ± √(-32)]/2 = [4 ± 4√2i]/2 = 2 ± 2√2i.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot to expand correctly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\) o \(x = 6\)</p>]]></text>
+      <feedback><text>Incorrecto. Estas son raíces reales, pero al expandir x² = 4(x-3) obtenemos x² - 4x + 12 = 0, cuyo discriminante es negativo (Δ = -32), indicando raíces complejas.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Error in simplifying complex root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2 + 4\sqrt{2}i\) o \(x = 2 - 4\sqrt{2}i\)</p>]]></text>
+      <feedback><text>Incorrecto. Casi correcto, pero al dividir 4√2i entre 2, obtenemos 2√2i, no 4√2i. La respuesta correcta es x = 2 ± 2√2i.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Forgot imaginary unit -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2 + 2\sqrt{2}\) o \(x = 2 - 2\sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Como el discriminante es negativo (Δ = -32), las raíces son complejas y deben incluir la unidad imaginaria i. La respuesta es x = 2 ± 2√2i.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: Solving by Square Root Method -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-MetodoRaizCuadrada-Simple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación por cualquier método: \((x + 1)^2 = 9\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 2\) o \(x = -4\)</p>]]></text>
+      <feedback><text>¡Correcto! Aplicando raíz cuadrada: x + 1 = ±3. Entonces x + 1 = 3 da x = 2, y x + 1 = -3 da x = -4.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot negative root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\) (solución única)</p>]]></text>
+      <feedback><text>Incorrecto. Al aplicar raíz cuadrada debemos considerar ±√9 = ±3, lo que da dos soluciones: x + 1 = 3 (x = 2) y x + 1 = -3 (x = -4).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Didn't solve for x -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) o \(x = -3\)</p>]]></text>
+      <feedback><text>Incorrecto. Estos son los valores de x + 1, no de x. Debes resolver: si x + 1 = 3, entonces x = 2; si x + 1 = -3, entonces x = -4.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -2\) o \(x = 4\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa los signos: x + 1 = 3 da x = 3 - 1 = 2 (no -2), y x + 1 = -3 da x = -3 - 1 = -4 (no 4).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Solving by Square Root Method - With Coefficient -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-MetodoRaizCuadrada-ConCoeficiente</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación por cualquier método: \((2x - 1)^2 = 25\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 3\) o \(x = -2\)</p>]]></text>
+      <feedback><text>¡Correcto! Aplicando raíz cuadrada: 2x - 1 = ±5. De 2x - 1 = 5: x = 3. De 2x - 1 = -5: x = -2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot to divide by 2 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 6\) o \(x = -4\)</p>]]></text>
+      <feedback><text>Incorrecto. Después de obtener 2x = 6 y 2x = -4, debes dividir por 2 para despejar x. Las soluciones correctas son x = 3 y x = -2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) o \(x = 2\)</p>]]></text>
+      <feedback><text>Incorrecto. De 2x - 1 = -5, obtenemos 2x = -4, entonces x = -2, no x = 2. Verifica el signo en la segunda solución.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't isolate x properly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 5\) o \(x = -5\)</p>]]></text>
+      <feedback><text>Incorrecto. Estos son los valores después de aplicar ±√25, pero necesitas resolver 2x - 1 = 5 y 2x - 1 = -5 para encontrar x.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Application - Rectangle Area -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Aplicacion-AreaRectangulo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Un rectángulo tiene un largo que es 4 cm mayor que su ancho. Si el área del rectángulo es \(60 \, \text{cm}^2\), encuentre las dimensiones del rectángulo.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Ancho = 6 cm, Largo = 10 cm</p>]]></text>
+      <feedback><text>¡Correcto! Si x es el ancho, entonces x(x+4) = 60. Resolviendo: x² + 4x - 60 = 0, factorizando: (x+10)(x-6) = 0. Como x > 0, x = 6 cm y largo = 10 cm.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Used negative root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ancho = -10 cm, Largo = -6 cm</p>]]></text>
+      <feedback><text>Incorrecto. Aunque x = -10 es una solución algebraica de la ecuación, las dimensiones físicas deben ser positivas. La solución válida es x = 6.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Confused dimensions -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ancho = 10 cm, Largo = 6 cm</p>]]></text>
+      <feedback><text>Incorrecto. El problema dice que el largo es 4 cm mayor que el ancho. Si el ancho fuera 10, el largo sería 14, no 6. Verifica cuál dimensión es mayor.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Arithmetic error in factoring -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ancho = 5 cm, Largo = 12 cm</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 5 × 12 = 60 ✓, pero 12 - 5 = 7, no 4. El largo debe ser exactamente 4 cm mayor que el ancho. Revisa la factorización.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Application - Two Numbers -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Aplicacion-DosNumeros</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La suma de dos números es 12 y su producto es 35. Encuentre los números.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>7 y 5</p>]]></text>
+      <feedback><text>¡Correcto! Si x + y = 12 y xy = 35, entonces y = 12 - x. Sustituyendo: x(12-x) = 35, da x² - 12x + 35 = 0. Factorizando: (x-7)(x-5) = 0. Los números son 7 y 5.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>8 y 4</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 8 + 4 = 12 ✓, pero 8 × 4 = 32, no 35. Estos números no satisfacen la condición del producto.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>6 y 6</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 6 + 6 = 12 ✓, pero 6 × 6 = 36, no 35. El producto debe ser exactamente 35.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Used wrong equation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10 y 2</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 10 + 2 = 12 ✓, pero 10 × 2 = 20, no 35. Revisa la ecuación cuadrática formada.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Application - Rectangle Perimeter and Area -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-Aplicacion-PerimetroYArea</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>El perímetro de un rectángulo es 28 cm y su área es \(48 \, \text{cm}^2\). Encuentre las dimensiones del rectángulo.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>8 cm por 6 cm</p>]]></text>
+      <feedback><text>¡Correcto! Si x + y = 14 (del perímetro) y xy = 48, entonces y = 14 - x. Sustituyendo: x(14-x) = 48, da x² - 14x + 48 = 0. Factorizando: (x-8)(x-6) = 0. Las dimensiones son 8 cm y 6 cm.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Used only one constraint -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>12 cm por 4 cm</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 12 × 4 = 48 ✓, pero el perímetro es 2(12 + 4) = 32 cm, no 28 cm. Debe satisfacer ambas condiciones.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10 cm por 4 cm</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: perímetro = 2(10 + 4) = 28 ✓, pero área = 10 × 4 = 40, no 48 cm². Debe satisfacer ambas condiciones.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>9 cm por 5 cm</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 9 + 5 = 14 ✓, pero 9 × 5 = 45, no 48. Revisa la factorización de x² - 14x + 48 = 0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Completing the Square -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-CompletarCuadrado-Metodo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación usando el método de completar el cuadrado: \(x^2 + 6x + 2 = 0\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -3 + \sqrt{7}\) o \(x = -3 - \sqrt{7}\)</p>]]></text>
+      <feedback><text>¡Correcto! Completando el cuadrado: x² + 6x = -2, sumamos (6/2)² = 9 a ambos lados: (x+3)² = 7. Entonces x + 3 = ±√7, por lo tanto x = -3 ± √7.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot to move constant -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -3 + \sqrt{11}\) o \(x = -3 - \sqrt{11}\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes aislar los términos con x primero: x² + 6x = -2, luego sumar 9: (x+3)² = -2 + 9 = 7, no 11. Entonces x = -3 ± √7.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong term to complete square -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -6 + \sqrt{34}\) o \(x = -6 - \sqrt{34}\)</p>]]></text>
+      <feedback><text>Incorrecto. Para completar el cuadrado, sumamos (b/2)² = (6/2)² = 9, no 36. El término correcto es (x+3)², no (x+6)².</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3 + \sqrt{7}\) o \(x = 3 - \sqrt{7}\)</p>]]></text>
+      <feedback><text>Incorrecto. Revisa el signo: de (x+3)² = 7 obtenemos x + 3 = ±√7, entonces x = -3 ± √7, no +3 ± √7.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
