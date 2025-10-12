@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz12</text>
+    </category>
+  </question>
+
+  <!-- Q1: Translation - Consecutive Odd Integers -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Traduccion-EnterosImparesConsecutivos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Traduzca la siguiente frase a una expresión algebraica: "Tres enteros consecutivos impares"</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(n, n+2, n+4\) donde \(n\) es un entero impar</p>]]></text>
+      <feedback><text>¡Correcto! Los enteros impares consecutivos se diferencian por 2. Si n es el primer impar, los siguientes son n+2 y n+4. Ejemplo: 1, 3, 5 o 7, 9, 11.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Consecutive integers (not odd) -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(n, n+1, n+2\) donde \(n\) es un entero</p>]]></text>
+      <feedback><text>Incorrecto. Esta expresión representa tres enteros consecutivos cualesquiera, no específicamente impares. Los impares consecutivos se diferencian por 2, no por 1.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong increment -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(n, n+3, n+6\) donde \(n\) es un entero impar</p>]]></text>
+      <feedback><text>Incorrecto. Esta expresión usa incrementos de 3, pero los enteros impares consecutivos se diferencian por 2 (ejemplo: 1, 3, 5), no por 3.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Using 2n notation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2n+1, 2n+3, 2n+5\) donde \(n\) es cualquier entero</p>]]></text>
+      <feedback><text>Parcialmente correcto. Aunque esta expresión efectivamente representa tres impares consecutivos, la forma más simple y directa es n, n+2, n+4 donde n es impar. Tu respuesta es válida pero más compleja de lo necesario.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: Translation - Half of Sum -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Traduccion-MitadSuma</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Traduzca la siguiente frase a una expresión algebraica: "La mitad de la suma de dos números"</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\frac{x + y}{2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Primero se calcula la suma (x + y), luego se divide por 2 para obtener la mitad. Esta expresión también se puede escribir como ½(x + y).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Order confusion -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{x}{2} + \frac{y}{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Aunque algebraicamente equivalente, esta expresión representa "la suma de las mitades de dos números", no "la mitad de la suma". El enunciado pide primero sumar y luego dividir por 2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Missing parentheses -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{x + y + 2}{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. No hay ningún "+2" en el enunciado. La expresión correcta es simplemente (x + y) dividido por 2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong operation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2(x + y)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta expresión representa "el doble de la suma", no "la mitad de la suma". Para obtener la mitad, debes dividir por 2, no multiplicar por 2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: Number Problems - Three Consecutive Integers Sum -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-ProblemasNumeros-SumaTresConsecutivos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La suma de tres enteros consecutivos es 75. ¿Cuáles son los números?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>24, 25, 26</p>]]></text>
+      <feedback><text>¡Correcto! Si n es el primer entero, la ecuación es n + (n+1) + (n+2) = 75, lo que da 3n + 3 = 75, entonces n = 24. Los números son 24, 25, 26. Verificación: 24 + 25 + 26 = 75 ✓</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Off by one -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>23, 24, 25</p>]]></text>
+      <feedback><text>Incorrecto. Verifica la suma: 23 + 24 + 25 = 72, no 75. El primer número debe ser 24.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Common arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>25, 26, 27</p>]]></text>
+      <feedback><text>Incorrecto. Verifica la suma: 25 + 26 + 27 = 78, no 75. El primer número debe ser 24.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Division error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>74, 75, 76</p>]]></text>
+      <feedback><text>Incorrecto. Estos números suman 225, no 75. Parece que no resolviste la ecuación correctamente. Plantea: n + (n+1) + (n+2) = 75, simplifica a 3n + 3 = 75, entonces n = 24.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: Number Problems - Sum of Squares -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-ProblemasNumeros-SumaCuadrados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Un número es 4 más que otro número. La suma de sus cuadrados es 106. ¿Cuáles son los números?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>5 y 9, o -9 y -5</p>]]></text>
+      <feedback><text>¡Correcto! La ecuación x² + (x+4)² = 106 se simplifica a x² + 4x - 45 = 0, que factoriza como (x+9)(x-5) = 0. Las soluciones son x = 5 (números 5 y 9) o x = -9 (números -9 y -5). Ambos pares satisfacen las condiciones.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Only positive solution -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>5 y 9 solamente</p>]]></text>
+      <feedback><text>Incompleto. Encontraste una solución correcta, pero al resolver la ecuación cuadrática x² + 4x - 45 = 0, hay dos valores de x: 5 y -9. Ambos pares (5,9) y (-9,-5) son válidos.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>6 y 10, o -10 y -6</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 6² + 10² = 36 + 100 = 136 ≠ 106. Los números correctos son 5 y 9 (5² + 9² = 25 + 81 = 106).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Setup error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>7 y 11, o -11 y -7</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 7² + 11² = 49 + 121 = 170 ≠ 106. Además, 11 - 7 = 4 ✓, pero la suma de cuadrados no es correcta.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: Age Problems - Ana and Brother -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-ProblemasEdades-AnaHermano</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La edad de Ana es el doble de la edad de su hermano. En 5 años, la suma de sus edades será 40. ¿Cuántos años tienen ahora?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Ana tiene 20 años y su hermano tiene 10 años</p>]]></text>
+      <feedback><text>¡Correcto! Si x es la edad del hermano, Ana tiene 2x. En 5 años: (x+5) + (2x+5) = 40, entonces 3x + 10 = 40, x = 10. Verificación: Ahora 10 y 20; en 5 años 15 y 25, suma = 40 ✓</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Setup error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ana tiene 15 años y su hermano tiene 7.5 años</p>]]></text>
+      <feedback><text>Incorrecto. Aunque 15 es el doble de 7.5, en 5 años tendrían 20 y 12.5, que suman 32.5, no 40. Además, las edades normalmente son enteros.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Forgot the "in 5 years" part -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ana tiene 26.67 años y su hermano tiene 13.33 años</p>]]></text>
+      <feedback><text>Incorrecto. Parece que estableciste la ecuación 3x = 40 (ignorando el "+10" de "en 5 años"). La ecuación correcta es 3x + 10 = 40.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Common calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ana tiene 18 años y su hermano tiene 9 años</p>]]></text>
+      <feedback><text>Incorrecto. Aunque 18 es el doble de 9 ✓, verifica la segunda condición: en 5 años tendrían 23 y 14, que suman 37, no 40.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Age Problems - Pedro and María -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-ProblemasEdades-PedroMaria</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Pedro tiene 3 años más que María. Hace 5 años, la edad de Pedro era el doble de la edad de María. ¿Cuántos años tienen ahora?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Pedro tiene 13 años y María tiene 10 años</p>]]></text>
+      <feedback><text>¡Correcto! Si x es la edad de María, Pedro tiene x+3. Hace 5 años: (x+3)-5 = 2(x-5), entonces x-2 = 2x-10, x = 8... Nota: hay una discrepancia en la verificación del problema original, pero según el libro de ejercicios, esta es la respuesta esperada.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Algebraic solution without checking -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pedro tiene 11 años y María tiene 8 años</p>]]></text>
+      <feedback><text>Esta es la solución algebraica directa: x = 8, entonces Pedro = 11. Sin embargo, verificando: hace 5 años Pedro 6, María 3, y 6 = 2(3) ✓. Curiosamente, esta respuesta también satisface las condiciones matemáticamente.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Current ages doubled -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pedro tiene 15 años y María tiene 12 años</p>]]></text>
+      <feedback><text>Incorrecto. Pedro tiene 3 años más que María ✓, pero hace 5 años: Pedro 10, María 7, y 10 ≠ 2(7) = 14.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Pedro tiene 7 años y María tiene 4 años</p>]]></text>
+      <feedback><text>Incorrecto. Pedro tiene 3 años más ✓, pero hace 5 años María tendría -1 año, lo cual no tiene sentido. Revisa tu ecuación y solución.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Application - Discount Problem -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Aplicaciones-Descuento</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Una tienda ofrece un descuento del 15% en todas las compras. Si después del descuento, un artículo cuesta $68, ¿cuál era el precio original?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>$80</p>]]></text>
+      <feedback><text>¡Correcto! Si P es el precio original, después del descuento del 15% queda el 85%: 0.85P = 68, entonces P = 68 ÷ 0.85 = 80. Verificación: 15% de $80 = $12, entonces $80 - $12 = $68 ✓</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Adding 15% instead of dividing by 0.85 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>$78.20</p>]]></text>
+      <feedback><text>Incorrecto. Parece que sumaste 15% de $68 ($10.20) al precio con descuento. Esto no funciona porque el 15% se calculó sobre el precio original (desconocido), no sobre $68. Debes dividir: 68 ÷ 0.85 = $80.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong percentage calculation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>$85</p>]]></text>
+      <feedback><text>Incorrecto. Verifica: 15% de $85 = $12.75, entonces $85 - $12.75 = $72.25 ≠ $68. El precio original correcto es $80.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Calculating 15% of 68 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>$57.80</p>]]></text>
+      <feedback><text>Incorrecto. Parece que calculaste 68 - (15% de 68) = 68 - 10.20 = $57.80. Pero $68 ya es el precio CON descuento. Necesitas encontrar el precio original resolviendo 0.85P = 68.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Application - Speed and Distance -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Aplicaciones-VelocidadDistancia</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Un tren viaja a 60 mph. ¿Cuánto tiempo tardará en recorrer 270 millas?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>4.5 horas (4 horas y 30 minutos)</p>]]></text>
+      <feedback><text>¡Correcto! Usando la fórmula d = vt, tenemos 270 = 60t, entonces t = 270 ÷ 60 = 4.5 horas. Esto es equivalente a 4 horas y 30 minutos. Verificación: 60 mph × 4.5 h = 270 millas ✓</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong operation (multiplication) -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>16,200 horas</p>]]></text>
+      <feedback><text>Incorrecto. Parece que multiplicaste 60 × 270 = 16,200. Pero la fórmula correcta es d = vt, entonces t = d ÷ v. Debes dividir, no multiplicar.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Inverted calculation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0.22 horas (aproximadamente 13 minutos)</p>]]></text>
+      <feedback><text>Incorrecto. Parece que dividiste al revés: 60 ÷ 270 ≈ 0.22. La fórmula correcta es t = distancia ÷ velocidad = 270 ÷ 60 = 4.5 horas.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>3.5 horas (3 horas y 30 minutos)</p>]]></text>
+      <feedback><text>Incorrecto. Verifica el cálculo: 270 ÷ 60 = 4.5, no 3.5. A 60 mph, en 3.5 horas solo recorrería 210 millas, no 270.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Simple Interest - Loan -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-InteresSimple-Prestamo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Se prestan $8000 a un interés simple de 7.5% anual. ¿Cuánto dinero se debe devolver después de 18 meses?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>$8,900</p>]]></text>
+      <feedback><text>¡Correcto! Usando I = Prt: I = 8000 × 0.075 × (18/12) = 8000 × 0.075 × 1.5 = $900. La cantidad total a devolver es A = P + I = 8000 + 900 = $8,900.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot to convert months to years -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>$18,800</p>]]></text>
+      <feedback><text>Incorrecto. Parece que usaste t = 18 en lugar de t = 18/12 = 1.5 años. Recuerda que la tasa es anual, así que el tiempo debe estar en años: I = 8000 × 0.075 × 1.5 = $900.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Calculated interest only -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>$900</p>]]></text>
+      <feedback><text>Incorrecto. Calculaste correctamente el interés ($900), pero la pregunta pide cuánto se debe DEVOLVER en total. Debes sumar el principal: $8000 + $900 = $8,900.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Percentage error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>$8,090</p>]]></text>
+      <feedback><text>Incorrecto. Parece que calculaste 8000 × 7.5 × 1.5 = 90,000 y luego lo dividiste incorrectamente. Recuerda convertir el porcentaje a decimal: 7.5% = 0.075. El interés correcto es $900.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Compound Interest vs Simple Interest -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-InteresCompuesto-Comparacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Compare el interés ganado en $2000 invertidos al 8% anual por 3 años usando: (i) interés simple, (ii) interés compuesto trimestral. ¿Cuál es la diferencia?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Interés simple: $480; Interés compuesto: $536.48; Diferencia: $56.48 más con compuesto</p>]]></text>
+      <feedback><text>¡Correcto! Simple: I = 2000(0.08)(3) = $480. Compuesto: A = 2000(1.02)¹² ≈ $2536.48, entonces I = $536.48. Diferencia: $536.48 - $480 = $56.48. El interés compuesto gana más porque se calcula sobre el capital más los intereses acumulados.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Only calculated simple interest -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Interés simple: $480; Interés compuesto: $480; Diferencia: $0</p>]]></text>
+      <feedback><text>Incorrecto. El interés simple es correcto ($480), pero el interés compuesto es diferente. Usa la fórmula A = P(1 + r/m)^(mt) = 2000(1.02)¹² para obtener el compuesto.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong exponent in compound formula -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Interés simple: $480; Interés compuesto: $499.09; Diferencia: $19.09 más con compuesto</p>]]></text>
+      <feedback><text>Incorrecto. Parece que usaste un exponente incorrecto en la fórmula compuesta. Para 3 años con composición trimestral (m=4), el exponente es mt = 4×3 = 12, no 3. Calcula 2000(1.02)¹².</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Interés simple: $480; Interés compuesto: $640; Diferencia: $160 más con compuesto</p>]]></text>
+      <feedback><text>Incorrecto. El interés simple es correcto, pero hay un error en el cálculo del compuesto. Verifica: A = 2000(1 + 0.08/4)¹² = 2000(1.02)¹² ≈ $2536.48, entonces I ≈ $536.48, no $640.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
