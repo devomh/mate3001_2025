@@ -1,0 +1,616 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,decorations.pathreplacing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% Custom colors
+\definecolor{myblue}{RGB}{0,102,204}
+\definecolor{myred}{RGB}{204,0,0}
+\definecolor{mygreen}{RGB}{0,153,76}
+\definecolor{mypurple}{RGB}{153,0,153}
+
+\title[Ecuaciones Cuadráticas]{Sección 3.8: Ecuaciones Cuadráticas}
+\subtitle{Métodos de Solución y Análisis}
+\author{MATE 3001}
+\date{}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+\titlepage
+\end{frame}
+
+% Table of contents
+\begin{frame}{Contenido}
+\tableofcontents
+\end{frame}
+
+\section{Definición y Ejemplos}
+
+\begin{frame}{¿Qué es una Ecuación Cuadrática?}
+\begin{block}{Definición}
+Una \textbf{ecuación cuadrática} es una ecuación que puede escribirse como:
+\[
+\boxed{ax^2 + bx + c = 0, \quad a\neq 0,\ a,b,c\in\mathbb{R}}
+\]
+\end{block}
+
+\pause
+\vspace{0.5cm}
+\begin{columns}[T]
+\column{0.5\textwidth}
+\textbf{Características clave:}
+\begin{itemize}
+\item Grado máximo: 2
+\item Coeficiente $a \neq 0$
+\item Forma estándar
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\begin{axis}[
+    axis lines=center,
+    xlabel={$x$},
+    ylabel={$y$},
+    ymin=-1, ymax=5,
+    xmin=-3, xmax=3,
+    xtick={-2,-1,0,1,2},
+    ytick={0,2,4},
+    width=5cm,
+    height=4cm
+]
+\addplot[domain=-2.5:2.5, samples=100, thick, myblue] {x^2};
+\node[myblue] at (axis cs:1.5,3.5) {$y=x^2$};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Ejemplos de Ecuaciones Cuadráticas}
+\begin{enumerate}
+\item<1-> $x^2 + 6x = -9$ \quad {\color{mygreen}$\Rightarrow x^2 + 6x + 9 = 0$}
+\item<2-> $x(x+5) = -4$ \quad {\color{mygreen}$\Rightarrow x^2 + 5x + 4 = 0$}
+\item<3-> $x^2 - 3x = 0$ \quad {\color{mygreen}Ya en forma estándar}
+\item<4-> $5x^2 = x^2$ \quad {\color{mygreen}$\Rightarrow 4x^2 = 0$}
+\end{enumerate}
+
+\onslide<5->{
+\begin{alertblock}{Nota Importante}
+Siempre escribir en \textbf{forma estándar} antes de resolver.
+\end{alertblock}
+}
+\end{frame}
+
+\begin{frame}{Soluciones de Ecuaciones Cuadráticas}
+\begin{definition}
+$x=c$ es \textbf{solución} si, al sustituir en la ecuación, produce una identidad.
+\end{definition}
+
+\pause
+\vspace{0.5cm}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=center,
+    xlabel={$x$},
+    ylabel={$y$},
+    ymin=-2, ymax=4,
+    xmin=-4, xmax=4,
+    width=10cm,
+    height=5cm,
+    legend pos=north west
+]
+% Two real solutions
+\addplot[domain=-3.5:2.5, samples=100, thick, myblue] {x^2 + x - 2};
+\addplot[only marks, mark=*, mark size=3pt, myred] coordinates {(-2,0) (1,0)};
+\legend{$y=x^2+x-2$, Soluciones}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\section{Métodos de Solución}
+
+\begin{frame}{Tres Métodos Principales}
+\begin{center}
+\begin{tikzpicture}[
+    box/.style={rectangle, draw, fill=blue!20, text width=3.5cm,
+                text centered, rounded corners, minimum height=1.2cm},
+    arrow/.style={-Stealth, thick}
+]
+\node[box, fill=myblue!30] (eq) at (0,3) {\textbf{Ecuación Cuadrática}\\$ax^2+bx+c=0$};
+
+\node[box, fill=mygreen!30] (factor) at (-4,0) {\textbf{Factorización}\\Más rápido};
+\node[box, fill=mypurple!30] (complete) at (0,0) {\textbf{Completar Cuadrado}\\Útil teóricamente};
+\node[box, fill=myred!30] (formula) at (4,0) {\textbf{Fórmula Cuadrática}\\Siempre funciona};
+
+\draw[arrow] (eq) -- (factor);
+\draw[arrow] (eq) -- (complete);
+\draw[arrow] (eq) -- (formula);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\subsection{Factorización}
+
+\begin{frame}{Método 1: Factorización}
+\begin{block}{Teorema del Cero como Factor}
+Si $p$ y $q$ son expresiones algebraicas, entonces
+\[
+pq=0 \iff p=0 \text{ o bien } q=0
+\]
+\end{block}
+
+\pause
+\textbf{Pasos:}
+\begin{enumerate}
+\item<2-> Escribir en forma estándar: $ax^2 + bx + c = 0$
+\item<3-> Factorizar: $(rx+p)(sx+q)=0$ con $rs=a$ y $pq=c$
+\item<4-> Igualar cada factor a cero
+\item<5-> Resolver las ecuaciones lineales resultantes
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ejemplo A: Factorización}
+\textbf{Resolver:} $6x^2 + x - 12 = 0$
+
+\pause
+\vspace{0.3cm}
+\textbf{Paso 1:} Factorizar el trinomio
+\[
+6x^2 + x - 12 = {\color{myblue}(3x - 4)(2x + 3)} = 0
+\]
+
+\pause
+\textbf{Paso 2:} Igualar cada factor a cero
+\begin{align*}
+{\color{myred}3x - 4 = 0} &\quad \text{o bien} \quad {\color{mygreen}2x + 3 = 0}
+\end{align*}
+
+\pause
+\textbf{Paso 3:} Resolver
+\begin{align*}
+{\color{myred}x = \frac{4}{3}} &\quad \text{o bien} \quad {\color{mygreen}x = -\frac{3}{2}}
+\end{align*}
+
+\pause
+\begin{alertblock}{Soluciones}
+$x = \dfrac{4}{3}$ \quad o \quad $x = -\dfrac{3}{2}$
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Ejemplo B: Factorización con Forma No Estándar}
+\textbf{Resolver:} $2x(4x+15)=27$
+
+\pause
+\textbf{Paso 1:} Expandir y escribir en forma estándar
+\begin{align*}
+8x^2 + 30x &= 27\\
+{\color{myblue}8x^2 + 30x - 27} &{\color{myblue}= 0}
+\end{align*}
+
+\pause
+\textbf{Paso 2:} Factorizar
+\[
+(4x - 3)(2x + 9) = 0
+\]
+
+\pause
+\textbf{Paso 3:} Resolver
+\begin{align*}
+4x - 3 = 0 \quad &\Rightarrow \quad {\color{myred}x = \frac{3}{4}}\\
+2x + 9 = 0 \quad &\Rightarrow \quad {\color{mygreen}x = -\frac{9}{2}}
+\end{align*}
+\end{frame}
+
+\subsection{Fórmula Cuadrática}
+
+\begin{frame}{Método 2: La Fórmula Cuadrática}
+\begin{block}{Fórmula Cuadrática}
+Para la ecuación $ax^2 + bx + c = 0$ con $a\neq 0$:
+\[
+\boxed{x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}}
+\]
+\end{block}
+
+\pause
+\vspace{0.3cm}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% Drawing components of the formula
+\node[fill=myblue!20, rounded corners, text width=2.5cm, align=center] (b) at (0,0) {$-b$\\Opuesto de $b$};
+\node[fill=mygreen!20, rounded corners, text width=3cm, align=center] (disc) at (4,0) {$\sqrt{b^2-4ac}$\\Discriminante};
+\node[fill=myred!20, rounded corners, text width=2cm, align=center] (denom) at (2,-2) {$2a$\\Denominador};
+
+\draw[-Stealth, thick] (b) -- (1,1.5);
+\draw[-Stealth, thick] (disc) -- (3,1.5);
+\draw[-Stealth, thick] (denom) -- (2,1.5);
+\node at (2,2) {\Large $x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}$};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{El Discriminante}
+\begin{definition}
+El \textbf{discriminante} es $\Delta = b^2 - 4ac$
+\end{definition}
+
+\vspace{0.5cm}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+\item<2-> \textcolor{mygreen}{\textbf{$\Delta > 0$:}} Dos raíces reales distintas
+\item<3-> \textcolor{myblue}{\textbf{$\Delta = 0$:}} Una raíz real (multiplicidad 2)
+\item<4-> \textcolor{myred}{\textbf{$\Delta < 0$:}} No hay raíces reales
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[
+    axis lines=center,
+    xlabel={$x$},
+    ymin=-2, ymax=3,
+    xmin=-3, xmax=3,
+    width=5cm,
+    height=4cm,
+    title={$\Delta > 0$}
+]
+\addplot[domain=-2.5:1.5, samples=50, thick, mygreen] {x^2 + x - 2};
+\addplot[only marks, mark=*, mygreen] coordinates {(-2,0) (1,0)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Visualización del Discriminante}
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+% Delta > 0
+\begin{axis}[
+    name=plot1,
+    axis lines=center,
+    ymin=-2, ymax=3,
+    xmin=-3, xmax=2,
+    width=4.5cm,
+    height=3.5cm,
+    title={\color{mygreen}$\Delta > 0$},
+    title style={at={(0.5,1.1)}},
+    xtick=\empty,
+    ytick=\empty
+]
+\addplot[domain=-2.5:1.5, samples=50, thick, mygreen] {x^2 + x - 2};
+\addplot[only marks, mark=*, mark size=2pt, mygreen] coordinates {(-2,0) (1,0)};
+\end{axis}
+
+% Delta = 0
+\begin{axis}[
+    name=plot2,
+    at={(plot1.right of south east)},
+    anchor=left of south west,
+    xshift=1cm,
+    axis lines=center,
+    ymin=-1, ymax=4,
+    xmin=-3, xmax=3,
+    width=4.5cm,
+    height=3.5cm,
+    title={\color{myblue}$\Delta = 0$},
+    title style={at={(0.5,1.1)}},
+    xtick=\empty,
+    ytick=\empty
+]
+\addplot[domain=-2.5:2.5, samples=50, thick, myblue] {(x-1)^2};
+\addplot[only marks, mark=*, mark size=2pt, myblue] coordinates {(1,0)};
+\end{axis}
+
+% Delta < 0
+\begin{axis}[
+    name=plot3,
+    at={(plot2.right of south east)},
+    anchor=left of south west,
+    xshift=1cm,
+    axis lines=center,
+    ymin=-1, ymax=4,
+    xmin=-3, xmax=3,
+    width=4.5cm,
+    height=3.5cm,
+    title={\color{myred}$\Delta < 0$},
+    title style={at={(0.5,1.1)}},
+    xtick=\empty,
+    ytick=\empty
+]
+\addplot[domain=-2.5:2.5, samples=50, thick, myred] {x^2 + 1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{itemize}
+\item<2-> {\color{mygreen}Dos puntos de intersección} con el eje $x$
+\item<3-> {\color{myblue}Toca tangencialmente} el eje $x$
+\item<4-> {\color{myred}No interseca} el eje $x$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ejemplo C: Usando la Fórmula Cuadrática}
+\textbf{Resolver:} $x^2 - x - 2 = 0$
+
+\pause
+\textbf{Paso 1:} Identificar coeficientes
+\[
+a = 1, \quad b = -1, \quad c = -2
+\]
+
+\pause
+\textbf{Paso 2:} Calcular el discriminante
+\begin{align*}
+\Delta &= b^2 - 4ac\\
+&= (-1)^2 - 4(1)(-2)\\
+&= 1 + 8 = {\color{mygreen}9 > 0}
+\end{align*}
+{\color{mygreen}$\Rightarrow$ Dos raíces reales distintas}
+
+\end{frame}
+
+\begin{frame}{Ejemplo C: Continuación}
+\textbf{Paso 3:} Aplicar la fórmula
+\begin{align*}
+x &= \frac{-b \pm \sqrt{\Delta}}{2a}\\
+&= \frac{-(-1) \pm \sqrt{9}}{2(1)}\\
+&= \frac{1 \pm 3}{2}
+\end{align*}
+
+\pause
+\textbf{Paso 4:} Obtener las dos soluciones
+\begin{align*}
+x_1 &= \frac{1 + 3}{2} = \frac{4}{2} = {\color{myred}2}\\
+x_2 &= \frac{1 - 3}{2} = \frac{-2}{2} = {\color{myblue}-1}
+\end{align*}
+
+\pause
+\begin{alertblock}{Soluciones}
+$x = 2$ \quad o \quad $x = -1$
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Ejemplo D: Ecuación sin Soluciones Reales}
+\textbf{Resolver:} $\dfrac{5x}{x^2 + 9} = -1$
+
+\pause
+\textbf{Paso 1:} Multiplicar por $x^2 + 9$ (siempre positivo, no crea soluciones extrañas)
+\[
+5x = -(x^2 + 9)
+\]
+
+\pause
+\textbf{Paso 2:} Forma estándar
+\[
+x^2 + 5x + 9 = 0
+\]
+
+\pause
+\textbf{Paso 3:} Calcular discriminante
+\begin{align*}
+\Delta &= 5^2 - 4(1)(9)\\
+&= 25 - 36 = {\color{myred}-11 < 0}
+\end{align*}
+
+\pause
+\begin{alertblock}{Conclusión}
+{\color{myred}No hay soluciones reales}
+\end{alertblock}
+\end{frame}
+
+\subsection{Completar el Cuadrado}
+
+\begin{frame}{Método 3: Completar el Cuadrado}
+\textbf{Idea:} Transformar $ax^2 + bx + c = 0$ en $(x+p)^2 = q$
+
+\pause
+\vspace{0.3cm}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% Visual representation
+\draw[fill=myblue!30] (0,0) rectangle (2,2);
+\draw[fill=mygreen!30] (2,0) rectangle (3,2);
+\draw[fill=mygreen!30] (0,2) rectangle (2,3);
+\draw[fill=myred!30] (2,2) rectangle (3,3);
+
+\node at (1,1) {$x^2$};
+\node at (2.5,1) {$\frac{b}{2}x$};
+\node at (1,2.5) {$\frac{b}{2}x$};
+\node at (2.5,2.5) {$\left(\frac{b}{2}\right)^2$};
+
+\draw[<->, thick] (0,-0.3) -- (2,-0.3);
+\node at (1,-0.6) {$x$};
+\draw[<->, thick] (2,-0.3) -- (3,-0.3);
+\node at (2.5,-0.6) {$\frac{b}{2}$};
+
+\draw[<->, thick] (-0.3,0) -- (-0.3,2);
+\node at (-0.8,1) {$x$};
+\draw[<->, thick] (-0.3,2) -- (-0.3,3);
+\node at (-0.8,2.5) {$\frac{b}{2}$};
+
+\draw[decorate, decoration={brace, amplitude=10pt}, thick] (3.2,0) -- (3.2,3);
+\node at (5,1.5) {$\left(x + \frac{b}{2}\right)^2$};
+\end{tikzpicture}
+\end{center}
+
+\onslide<3->{
+\textbf{Fórmula clave:} Para obtener un cuadrado perfecto de $x^2 + bx$, añadir $\left(\dfrac{b}{2}\right)^2$
+}
+\end{frame}
+
+\begin{frame}{Ejemplo: Completar el Cuadrado}
+\textbf{Resolver:} $x^2 + 6x + 5 = 0$
+
+\pause
+\textbf{Paso 1:} Mover el término constante
+\[
+x^2 + 6x = -5
+\]
+
+\pause
+\textbf{Paso 2:} Completar el cuadrado (añadir $\left(\frac{6}{2}\right)^2 = 9$ a ambos lados)
+\[
+x^2 + 6x + 9 = -5 + 9
+\]
+
+\pause
+\textbf{Paso 3:} Factorizar el lado izquierdo
+\[
+(x + 3)^2 = 4
+\]
+
+\pause
+\textbf{Paso 4:} Tomar raíz cuadrada
+\[
+x + 3 = \pm 2
+\]
+
+\pause
+\textbf{Paso 5:} Resolver
+\[
+x = -3 \pm 2 \quad \Rightarrow \quad {\color{myred}x = -1} \text{ o } {\color{myblue}x = -5}
+\]
+\end{frame}
+
+\section{Estrategia de Solución}
+
+\begin{frame}{¿Qué Método Usar?}
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    decision/.style={diamond, draw, fill=yellow!30, text width=4cm,
+                     text centered, inner sep=0pt},
+    block/.style={rectangle, draw, fill=blue!20, text width=3.5cm,
+                  text centered, rounded corners, minimum height=1cm},
+    result/.style={rectangle, draw, fill=green!30, text width=3cm,
+                   text centered, rounded corners},
+    arrow/.style={-Stealth, thick}
+]
+
+\node[block, fill=mypurple!30] (start) {Ecuación Cuadrática\\$ax^2+bx+c=0$};
+\node[decision, below of=start, yshift=-0.5cm] (factor) {¿Se factoriza\\fácilmente?};
+\node[result, below of=factor, yshift=-1.2cm, xshift=-3cm] (factormethod) {\textbf{Factorización}\\Más rápido};
+\node[decision, below of=factor, yshift=-1.2cm, xshift=3cm] (choose) {¿Qué método\\prefieres?};
+\node[result, below of=choose, yshift=-1.2cm, xshift=-2cm] (formula) {\textbf{Fórmula}\\Confiable};
+\node[result, below of=choose, yshift=-1.2cm, xshift=2cm] (complete) {\textbf{Completar}\\Teórico};
+
+\draw[arrow] (start) -- (factor);
+\draw[arrow] (factor) -- node[left] {Sí} (factormethod);
+\draw[arrow] (factor) -- node[above] {No} (choose);
+\draw[arrow] (choose) -- (formula);
+\draw[arrow] (choose) -- (complete);
+
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Resumen de Métodos}
+\begin{table}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Método} & \textbf{Velocidad} & \textbf{Confiabilidad} & \textbf{Cuándo usar} \\
+\hline
+Factorización & \color{mygreen}Rápida & Media & Factores obvios \\
+\hline
+Fórmula & Media & \color{mygreen}Alta & Siempre funciona \\
+\hline
+Completar & Lenta & \color{mygreen}Alta & Derivar fórmula \\
+\hline
+\end{tabular}
+\end{table}
+
+\pause
+\vspace{0.5cm}
+\begin{block}{Recomendación General}
+\begin{enumerate}
+\item Intenta \textbf{factorizar} primero
+\item Si no es obvio, usa la \textbf{fórmula cuadrática}
+\item Siempre verifica el \textbf{discriminante} para anticipar el tipo de soluciones
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\section{Práctica}
+
+\begin{frame}{Ejercicios de Práctica}
+\textbf{Resuelve las siguientes ecuaciones cuadráticas:}
+
+\begin{enumerate}
+\item $x^2 - 5x + 6 = 0$
+\vspace{0.3cm}
+\item $2x^2 + 7x - 15 = 0$
+\vspace{0.3cm}
+\item $x^2 - 4x + 5 = 0$
+\vspace{0.3cm}
+\item $3x^2 = 12$
+\vspace{0.3cm}
+\item $x(x - 8) = -15$
+\end{enumerate}
+
+\vspace{0.5cm}
+\textbf{Sugerencias:}
+\begin{itemize}
+\item Identifica el método más apropiado
+\item Calcula el discriminante cuando uses la fórmula
+\item Verifica tus respuestas sustituyendo
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Soluciones de Práctica}
+\begin{enumerate}
+\item $x^2 - 5x + 6 = 0$ \\
+{\color{myblue}$(x-2)(x-3)=0 \Rightarrow x=2$ o $x=3$}
+\vspace{0.2cm}
+
+\item $2x^2 + 7x - 15 = 0$ \\
+{\color{myblue}$(2x-3)(x+5)=0 \Rightarrow x=\frac{3}{2}$ o $x=-5$}
+\vspace{0.2cm}
+
+\item $x^2 - 4x + 5 = 0$ \\
+{\color{myred}$\Delta = 16-20 = -4 < 0 \Rightarrow$ No hay soluciones reales}
+\vspace{0.2cm}
+
+\item $3x^2 = 12$ \\
+{\color{myblue}$x^2=4 \Rightarrow x=\pm 2$}
+\vspace{0.2cm}
+
+\item $x(x - 8) = -15$ \\
+{\color{myblue}$x^2-8x+15=0 \Rightarrow (x-3)(x-5)=0 \Rightarrow x=3$ o $x=5$}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Puntos Clave para Recordar}
+\begin{itemize}
+\item<1-> Una ecuación cuadrática tiene la forma $ax^2 + bx + c = 0$ con $a \neq 0$
+\vspace{0.3cm}
+\item<2-> Tres métodos principales: factorización, fórmula cuadrática, completar el cuadrado
+\vspace{0.3cm}
+\item<3-> El discriminante $\Delta = b^2 - 4ac$ determina el número y tipo de soluciones
+\vspace{0.3cm}
+\item<4-> La fórmula cuadrática \textbf{siempre funciona}: $x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}$
+\vspace{0.3cm}
+\item<5-> Siempre verifica tus soluciones sustituyendo en la ecuación original
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge ¿Preguntas?
+\end{center}
+\end{frame}
+
+\end{document}

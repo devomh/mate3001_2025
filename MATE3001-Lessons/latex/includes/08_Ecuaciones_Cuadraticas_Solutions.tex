@@ -1,0 +1,537 @@
+%========================================
+% DETAILED SOLUTIONS: Ecuaciones Cuadráticas
+%========================================
+
+\subsection*{Ejercicio 1: Identificación de Coeficientes}
+
+\textbf{Problema 1a:} $x^2 + 8x + 15 = 0$
+
+La ecuación ya está en forma estándar. Identificamos directamente:
+\begin{itemize}
+\item $a = 1$ (coeficiente de $x^2$)
+\item $b = 8$ (coeficiente de $x$)
+\item $c = 15$ (término constante)
+\end{itemize}
+
+\textbf{Problema 1b:} $3x^2 - 7x + 2 = 0$
+
+Ya está en forma estándar:
+\begin{itemize}
+\item $a = 3$
+\item $b = -7$ (notar el signo negativo)
+\item $c = 2$
+\end{itemize}
+
+\textbf{Problema 1c:} $x^2 - 16 = 0$
+
+Esta ecuación no tiene término lineal. Ya está en forma estándar:
+\begin{itemize}
+\item $a = 1$
+\item $b = 0$ (el coeficiente de $x$ es cero)
+\item $c = -16$
+\end{itemize}
+
+\textbf{Problema 1d:} $5x^2 + 2x = 3$
+
+Primero escribimos en forma estándar restando 3 de ambos lados:
+$$5x^2 + 2x - 3 = 0$$
+Por tanto:
+\begin{itemize}
+\item $a = 5$
+\item $b = 2$
+\item $c = -3$
+\end{itemize}
+
+\textbf{Problema 1e:} $-2x^2 = 8x - 10$
+
+Movemos todos los términos al lado izquierdo:
+\begin{align}
+-2x^2 - 8x + 10 &= 0
+\end{align}
+Por tanto: $a = -2$, $b = -8$, $c = 10$
+
+Alternativamente, podríamos multiplicar por $-1$:
+$$2x^2 + 8x - 10 = 0$$
+Dando: $a = 2$, $b = 8$, $c = -10$ (ambas formas son correctas)
+
+\textbf{Problema 1f:} $x(x + 5) = 6$
+
+Primero expandimos el producto:
+\begin{align}
+x^2 + 5x &= 6\\
+x^2 + 5x - 6 &= 0
+\end{align}
+Por tanto: $a = 1$, $b = 5$, $c = -6$
+
+%========================================
+
+\subsection*{Ejercicio 2: Factorización Simple}
+
+\textbf{Problema 2a:} $x^2 + 9x + 20 = 0$
+
+Buscamos dos números que sumen 9 y multipliquen 20. Probamos factores de 20:
+\begin{itemize}
+\item $1 \times 20 = 20$, pero $1 + 20 = 21$ ✗
+\item $2 \times 10 = 20$, pero $2 + 10 = 12$ ✗
+\item $4 \times 5 = 20$, y $4 + 5 = 9$ $\checkmark$
+\end{itemize}
+
+Factorizamos:
+$$(x + 4)(x + 5) = 0$$
+
+Aplicamos el principio del producto cero:
+\begin{align}
+x + 4 &= 0 \quad \Rightarrow \quad x = -4\\
+x + 5 &= 0 \quad \Rightarrow \quad x = -5
+\end{align}
+
+\textbf{Verificación para $x = -4$:}
+$$(-4)^2 + 9(-4) + 20 = 16 - 36 + 20 = 0$$ $\checkmark$
+
+\textbf{Respuesta:} $x = -4$ o $x = -5$
+
+\textbf{Problema 2b:} $x^2 - x - 12 = 0$
+
+Buscamos dos números que sumen $-1$ y multipliquen $-12$:
+\begin{itemize}
+\item $3 \times (-4) = -12$, y $3 + (-4) = -1$ $\checkmark$
+\end{itemize}
+
+Factorizamos:
+$$(x + 3)(x - 4) = 0$$
+
+Soluciones:
+$$x = -3 \quad \text{o} \quad x = 4$$
+
+\textbf{Problema 2e:} $x^2 + 6x + 9 = 0$
+
+Reconocemos un trinomio cuadrado perfecto:
+$$x^2 + 6x + 9 = (x + 3)^2 = 0$$
+
+Esto da una raíz doble:
+$$(x + 3)^2 = 0 \quad \Rightarrow \quad x + 3 = 0 \quad \Rightarrow \quad x = -3$$
+
+\textbf{Nota:} Cuando hay una raíz doble, la parábola toca el eje $x$ en un solo punto (el vértice).
+
+\textbf{Problema 2f:} $x^2 - 49 = 0$
+
+Esta es una diferencia de cuadrados: $x^2 - 7^2$
+
+Factorizamos usando la fórmula $a^2 - b^2 = (a+b)(a-b)$:
+$$(x + 7)(x - 7) = 0$$
+
+Soluciones:
+$$x = -7 \quad \text{o} \quad x = 7$$
+
+\textbf{Problema 2g:} $4x^2 - 25 = 0$
+
+Otra diferencia de cuadrados: $(2x)^2 - 5^2$
+
+Factorizamos:
+$$(2x + 5)(2x - 5) = 0$$
+
+Resolvemos:
+\begin{align}
+2x + 5 &= 0 \quad \Rightarrow \quad x = -\frac{5}{2}\\
+2x - 5 &= 0 \quad \Rightarrow \quad x = \frac{5}{2}
+\end{align}
+
+\textbf{Problema 2h:} $x^2 + 8x = 0$
+
+Factorizamos el término común $x$:
+$$x(x + 8) = 0$$
+
+Soluciones:
+$$x = 0 \quad \text{o} \quad x = -8$$
+
+\textbf{Nota importante:} No dividir por $x$. Siempre factorizar para no perder la solución $x = 0$.
+
+%========================================
+
+\subsection*{Ejercicio 3: Método AC}
+
+\textbf{Problema 3a:} $2x^2 + 7x + 3 = 0$
+
+\textbf{Paso 1:} Calculamos $ac = 2 \times 3 = 6$
+
+\textbf{Paso 2:} Buscamos dos números que sumen $b = 7$ y multipliquen $ac = 6$:
+\begin{itemize}
+\item Factores de 6: 1 y 6
+\item Verificamos: $1 + 6 = 7$ $\checkmark$ y $1 \times 6 = 6$ $\checkmark$
+\end{itemize}
+
+\textbf{Paso 3:} Reescribimos $7x$ como $6x + x$:
+$$2x^2 + 6x + x + 3 = 0$$
+
+\textbf{Paso 4:} Agrupamos y factorizamos:
+\begin{align}
+(2x^2 + 6x) + (x + 3) &= 0\\
+2x(x + 3) + 1(x + 3) &= 0\\
+(x + 3)(2x + 1) &= 0
+\end{align}
+
+\textbf{Paso 5:} Resolvemos:
+\begin{align}
+x + 3 &= 0 \quad \Rightarrow \quad x = -3\\
+2x + 1 &= 0 \quad \Rightarrow \quad x = -\frac{1}{2}
+\end{align}
+
+\textbf{Problema 3b:} $3x^2 - 10x + 8 = 0$
+
+$ac = 3 \times 8 = 24$
+
+Buscamos dos números que sumen $-10$ y multipliquen $24$:
+\begin{itemize}
+\item $-6 \times (-4) = 24$ y $-6 + (-4) = -10$ $\checkmark$
+\end{itemize}
+
+Reescribimos y factorizamos:
+\begin{align}
+3x^2 - 6x - 4x + 8 &= 0\\
+3x(x - 2) - 4(x - 2) &= 0\\
+(x - 2)(3x - 4) &= 0
+\end{align}
+
+Soluciones: $x = 2$ o $x = \frac{4}{3}$
+
+\textbf{Problema 3d:} $4x^2 - 4x - 15 = 0$
+
+$ac = 4 \times (-15) = -60$
+
+Buscamos dos números que sumen $-4$ y multipliquen $-60$:
+\begin{itemize}
+\item $6 \times (-10) = -60$ y $6 + (-10) = -4$ $\checkmark$
+\end{itemize}
+
+\begin{align}
+4x^2 + 6x - 10x - 15 &= 0\\
+2x(2x + 3) - 5(2x + 3) &= 0\\
+(2x + 3)(2x - 5) &= 0
+\end{align}
+
+Soluciones: $x = -\frac{3}{2}$ o $x = \frac{5}{2}$
+
+%========================================
+
+\subsection*{Ejercicio 4: Completar el Cuadrado}
+
+\textbf{Problema 4a:} $x^2 + 4x - 5 = 0$
+
+\textbf{Paso 1:} Movemos el término constante:
+$$x^2 + 4x = 5$$
+
+\textbf{Paso 2:} Calculamos $\left(\frac{b}{2}\right)^2 = \left(\frac{4}{2}\right)^2 = 4$
+
+\textbf{Paso 3:} Sumamos 4 a ambos lados:
+$$x^2 + 4x + 4 = 5 + 4$$
+
+\textbf{Paso 4:} Factorizamos el lado izquierdo:
+$$(x + 2)^2 = 9$$
+
+\textbf{Paso 5:} Tomamos raíz cuadrada:
+$$x + 2 = \pm 3$$
+
+\textbf{Paso 6:} Resolvemos:
+\begin{align}
+x + 2 &= 3 \quad \Rightarrow \quad x = 1\\
+x + 2 &= -3 \quad \Rightarrow \quad x = -5
+\end{align}
+
+\textbf{Respuesta:} $x = 1$ o $x = -5$
+
+\textbf{Problema 4e:} $2x^2 + 12x + 10 = 0$
+
+\textbf{Paso 1:} Dividimos por 2 para que $a = 1$:
+$$x^2 + 6x + 5 = 0$$
+
+\textbf{Paso 2:} Movemos el término constante:
+$$x^2 + 6x = -5$$
+
+\textbf{Paso 3:} Calculamos $\left(\frac{6}{2}\right)^2 = 9$ y sumamos:
+$$x^2 + 6x + 9 = -5 + 9 = 4$$
+
+\textbf{Paso 4:} Factorizamos:
+$$(x + 3)^2 = 4$$
+
+\textbf{Paso 5:} Tomamos raíz cuadrada:
+$$x + 3 = \pm 2$$
+
+\textbf{Paso 6:} Resolvemos:
+$$x = -3 + 2 = -1 \quad \text{o} \quad x = -3 - 2 = -5$$
+
+%========================================
+
+\subsection*{Ejercicio 5: Fórmula Cuadrática}
+
+\textbf{Problema 5a:} $x^2 + 3x - 10 = 0$
+
+Identificamos: $a = 1$, $b = 3$, $c = -10$
+
+Aplicamos la fórmula:
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+Sustituimos:
+\begin{align}
+x &= \frac{-3 \pm \sqrt{3^2 - 4(1)(-10)}}{2(1)}\\
+x &= \frac{-3 \pm \sqrt{9 + 40}}{2}\\
+x &= \frac{-3 \pm \sqrt{49}}{2}\\
+x &= \frac{-3 \pm 7}{2}
+\end{align}
+
+Calculamos ambas soluciones:
+\begin{align}
+x_1 &= \frac{-3 + 7}{2} = \frac{4}{2} = 2\\
+x_2 &= \frac{-3 - 7}{2} = \frac{-10}{2} = -5
+\end{align}
+
+\textbf{Verificación para $x = 2$:}
+$$2^2 + 3(2) - 10 = 4 + 6 - 10 = 0$$ $\checkmark$
+
+\textbf{Problema 5e:} $x^2 + 4x + 1 = 0$
+
+Identificamos: $a = 1$, $b = 4$, $c = 1$
+
+\begin{align}
+x &= \frac{-4 \pm \sqrt{16 - 4}}{2}\\
+x &= \frac{-4 \pm \sqrt{12}}{2}\\
+x &= \frac{-4 \pm 2\sqrt{3}}{2}\\
+x &= \frac{2(-2 \pm \sqrt{3})}{2}\\
+x &= -2 \pm \sqrt{3}
+\end{align}
+
+\textbf{Respuesta:} $x = -2 + \sqrt{3} \approx -0.268$ o $x = -2 - \sqrt{3} \approx -3.732$
+
+\textbf{Nota:} Estas son soluciones irracionales exactas. Es importante simplificar los radicales completamente.
+
+\textbf{Problema 5g:} $x^2 - 2x - 5 = 0$
+
+Identificamos: $a = 1$, $b = -2$, $c = -5$
+
+\begin{align}
+x &= \frac{-(-2) \pm \sqrt{(-2)^2 - 4(1)(-5)}}{2(1)}\\
+x &= \frac{2 \pm \sqrt{4 + 20}}{2}\\
+x &= \frac{2 \pm \sqrt{24}}{2}\\
+x &= \frac{2 \pm 2\sqrt{6}}{2}\\
+x &= 1 \pm \sqrt{6}
+\end{align}
+
+%========================================
+
+\subsection*{Ejercicio 6: El Discriminante}
+
+\textbf{Problema 6a:} $x^2 + 5x + 6 = 0$
+
+Calculamos el discriminante:
+$$D = b^2 - 4ac = 5^2 - 4(1)(6) = 25 - 24 = 1$$
+
+Como $D = 1 > 0$, la ecuación tiene \textbf{dos raíces reales distintas}.
+
+Podemos confirmar factorizando: $(x+2)(x+3) = 0$, dando $x = -2$ y $x = -3$.
+
+\textbf{Problema 6b:} $x^2 - 8x + 16 = 0$
+
+$$D = (-8)^2 - 4(1)(16) = 64 - 64 = 0$$
+
+Como $D = 0$, la ecuación tiene \textbf{una raíz real doble}.
+
+Confirmación: $x^2 - 8x + 16 = (x-4)^2 = 0$, dando $x = 4$ (doble).
+
+\textbf{Problema 6c:} $x^2 + 3x + 5 = 0$
+
+$$D = 3^2 - 4(1)(5) = 9 - 20 = -11$$
+
+Como $D = -11 < 0$, la ecuación \textbf{no tiene raíces reales}.
+
+La parábola $y = x^2 + 3x + 5$ no interseca el eje $x$.
+
+\textbf{Problema 6e:} $9x^2 + 6x + 1 = 0$
+
+$$D = 6^2 - 4(9)(1) = 36 - 36 = 0$$
+
+Raíz doble. Confirmación: $9x^2 + 6x + 1 = (3x+1)^2 = 0$, dando $x = -\frac{1}{3}$ (doble).
+
+%========================================
+
+\subsection*{Ejercicio 7: Forma Estándar}
+
+\textbf{Problema 7c:} $(x + 2)(x - 3) = 6$
+
+\textbf{Error común:} No igualar cada factor a 6. Primero debemos expandir.
+
+\textbf{Paso 1:} Expandir:
+$$x^2 - 3x + 2x - 6 = 6$$
+$$x^2 - x - 6 = 6$$
+
+\textbf{Paso 2:} Forma estándar:
+$$x^2 - x - 12 = 0$$
+
+\textbf{Paso 3:} Factorizar:
+$$(x - 4)(x + 3) = 0$$
+
+Soluciones: $x = 4$ o $x = -3$
+
+\textbf{Problema 7d:} $x^2 = 4(x - 3)$
+
+\textbf{Paso 1:} Expandir:
+$$x^2 = 4x - 12$$
+
+\textbf{Paso 2:} Forma estándar:
+$$x^2 - 4x + 12 = 0$$
+
+\textbf{Paso 3:} Calcular discriminante:
+$$D = (-4)^2 - 4(1)(12) = 16 - 48 = -32 < 0$$
+
+\textbf{Conclusión:} No hay soluciones reales.
+
+%========================================
+
+\subsection*{Ejercicio 8: Aplicaciones - Soluciones Detalladas}
+
+\textbf{Problema 8.1:} Rectángulo con largo 4 cm mayor que ancho, área 60 cm$^2$
+
+\textbf{Paso 1 - Definir variable:}
+\begin{itemize}
+\item Sea $x$ = ancho del rectángulo (cm)
+\item Entonces $x + 4$ = largo del rectángulo (cm)
+\end{itemize}
+
+\textbf{Paso 2 - Escribir ecuación:}
+$$\text{Área} = \text{largo} \times \text{ancho}$$
+$$60 = (x+4) \cdot x$$
+$$60 = x^2 + 4x$$
+
+\textbf{Paso 3 - Forma estándar:}
+$$x^2 + 4x - 60 = 0$$
+
+\textbf{Paso 4 - Factorizar:}
+
+Buscamos dos números que sumen 4 y multipliquen $-60$: son 10 y $-6$
+$$(x + 10)(x - 6) = 0$$
+
+\textbf{Paso 5 - Resolver:}
+$$x = -10 \quad \text{o} \quad x = 6$$
+
+\textbf{Paso 6 - Interpretar:}
+
+Como $x$ representa una longitud física, debe ser positiva. Descartamos $x = -10$.
+
+Por tanto: $x = 6$ cm (ancho) y $x + 4 = 10$ cm (largo)
+
+\textbf{Verificación:}
+$$\text{Área} = 6 \times 10 = 60 \text{ cm}^2$$ $\checkmark$
+
+\textbf{Problema 8.3:} Dos números positivos con diferencia 3, suma de cuadrados 89
+
+\textbf{Paso 1 - Variables:}
+\begin{itemize}
+\item $x$ = número mayor
+\item $x - 3$ = número menor
+\end{itemize}
+
+\textbf{Paso 2 - Ecuación:}
+$$x^2 + (x-3)^2 = 89$$
+
+\textbf{Paso 3 - Expandir:}
+$$x^2 + x^2 - 6x + 9 = 89$$
+$$2x^2 - 6x + 9 = 89$$
+
+\textbf{Paso 4 - Forma estándar:}
+$$2x^2 - 6x - 80 = 0$$
+
+Dividir por 2:
+$$x^2 - 3x - 40 = 0$$
+
+\textbf{Paso 5 - Factorizar:}
+
+Buscamos dos números que sumen $-3$ y multipliquen $-40$: son 5 y $-8$
+$$(x + 5)(x - 8) = 0$$
+
+\textbf{Paso 6 - Soluciones:}
+$$x = -5 \quad \text{o} \quad x = 8$$
+
+Como necesitamos números positivos, $x = 8$.
+
+\textbf{Respuesta:} Los números son 8 y 5
+
+\textbf{Verificación:}
+$$8^2 + 5^2 = 64 + 25 = 89$$ $\checkmark$
+
+\textbf{Problema 8.5:} Objeto lanzado verticalmente, $h = -16t^2 + 48t$, altura 32 pies
+
+\textbf{Interpretación física:}
+
+El objeto alcanza 32 pies dos veces: una vez subiendo y otra vez bajando.
+
+\textbf{Paso 1 - Sustituir:}
+$$32 = -16t^2 + 48t$$
+
+\textbf{Paso 2 - Forma estándar:}
+$$-16t^2 + 48t - 32 = 0$$
+
+\textbf{Paso 3 - Simplificar (dividir por $-16$):}
+$$t^2 - 3t + 2 = 0$$
+
+\textbf{Paso 4 - Factorizar:}
+$$(t - 1)(t - 2) = 0$$
+
+\textbf{Paso 5 - Soluciones:}
+$$t = 1 \text{ segundo} \quad \text{o} \quad t = 2 \text{ segundos}$$
+
+\textbf{Interpretación:}
+\begin{itemize}
+\item En $t = 1$ s: el objeto está a 32 pies \textbf{subiendo}
+\item En $t = 2$ s: el objeto está a 32 pies \textbf{bajando}
+\end{itemize}
+
+El objeto alcanza su altura máxima en $t = 1.5$ s (punto medio).
+
+%========================================
+
+\subsection*{Ejercicio 9: Problemas Desafiantes}
+
+\textbf{Problema 9c:} Encuentre $k$ para que $x^2 + kx + 9 = 0$ tenga una raíz doble
+
+\textbf{Concepto:} Una ecuación tiene raíz doble cuando su discriminante es cero.
+
+\textbf{Solución:}
+
+Para $ax^2 + bx + c = 0$: $a = 1$, $b = k$, $c = 9$
+
+Discriminante:
+$$D = b^2 - 4ac = k^2 - 4(1)(9) = k^2 - 36$$
+
+Para raíz doble, $D = 0$:
+$$k^2 - 36 = 0$$
+$$k^2 = 36$$
+$$k = \pm 6$$
+
+\textbf{Verificación con $k = 6$:}
+$$x^2 + 6x + 9 = (x+3)^2 = 0$$ $\checkmark$ (raíz doble en $x = -3$)
+
+\textbf{Verificación con $k = -6$:}
+$$x^2 - 6x + 9 = (x-3)^2 = 0$$ $\checkmark$ (raíz doble en $x = 3$)
+
+\textbf{Respuesta:} $k = 6$ o $k = -6$
+
+\textbf{Problema 9d:} Encuentre $k$ para que $kx^2 - 6x + 2 = 0$ tenga dos raíces reales distintas
+
+\textbf{Concepto:} Dos raíces reales distintas requieren $D > 0$ y $a \neq 0$.
+
+\textbf{Solución:}
+
+Para $kx^2 - 6x + 2 = 0$: $a = k$, $b = -6$, $c = 2$
+
+Discriminante:
+$$D = (-6)^2 - 4(k)(2) = 36 - 8k$$
+
+Para dos raíces reales distintas:
+$$D > 0$$
+$$36 - 8k > 0$$
+$$36 > 8k$$
+$$k < \frac{36}{8} = 4.5$$
+
+Además, para que sea ecuación cuadrática: $k \neq 0$
+
+\textbf{Respuesta:} $k < 4.5$ y $k \neq 0$
+
+En notación de intervalos: $k \in (-\infty, 0) \cup (0, 4.5)$
