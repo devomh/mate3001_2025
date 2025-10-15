@@ -1,0 +1,364 @@
+%========================================
+% EXERCISES: Sistema de Coordenadas
+%========================================
+
+\section{Ejercicios}
+
+%========================================
+% Exercise 1: Identifying Quadrants
+%========================================
+\begin{exercise}
+\textbf{Identificación de Cuadrantes}
+
+Indique en qué cuadrante se encuentra cada uno de los siguientes puntos. Si el punto está sobre un eje, indique cuál.
+
+\problem $(5, 3)$
+\begin{solucion}
+Cuadrante I (ambas coordenadas son positivas)
+\end{solucion}
+
+\problem $(-2, 7)$
+\begin{solucion}
+Cuadrante II ($x < 0$, $y > 0$)
+\end{solucion}
+
+\problem $(-4, -6)$
+\begin{solucion}
+Cuadrante III (ambas coordenadas son negativas)
+\end{solucion}
+
+\problem $(8, -3)$
+\begin{solucion}
+Cuadrante IV ($x > 0$, $y < 0$)
+\end{solucion}
+
+\problem $(0, -5)$
+\begin{solucion}
+Sobre el eje $y$ (no está en ningún cuadrante)
+\end{solucion}
+
+\problem $(6, 0)$
+\begin{solucion}
+Sobre el eje $x$ (no está en ningún cuadrante)
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 2: Plotting Points
+%========================================
+\begin{exercise}
+\textbf{Graficar Puntos}
+
+Grafique los siguientes puntos en un sistema de coordenadas:
+
+\begin{exerciselist}
+    \item $A(3, 4)$
+    \item $B(-2, 5)$
+    \item $C(-4, -3)$
+    \item $D(6, -2)$
+    \item $E(0, 4)$
+    \item $F(5, 0)$
+\end{exerciselist}
+
+\begin{solucion}
+Los puntos se grafican en el plano cartesiano según sus coordenadas. Ver soluciones detalladas al final del documento.
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 3: Distance Formula - Basic
+%========================================
+\begin{exercise}
+\textbf{Cálculo de Distancias}
+
+Calcule la distancia entre los siguientes pares de puntos:
+
+\problem $(2, 5)$ y $(6, 8)$
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(6-2)^2 + (8-5)^2} \\
+  &= \sqrt{4^2 + 3^2} \\
+  &= \sqrt{16 + 9} \\
+  &= \sqrt{25} = 5
+\end{align*}
+\end{solucion}
+
+\problem $(1, 3)$ y $(4, 7)$
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(4-1)^2 + (7-3)^2} \\
+  &= \sqrt{3^2 + 4^2} \\
+  &= \sqrt{9 + 16} \\
+  &= \sqrt{25} = 5
+\end{align*}
+\end{solucion}
+
+\problem $(-2, 1)$ y $(3, 4)$
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(3-(-2))^2 + (4-1)^2} \\
+  &= \sqrt{5^2 + 3^2} \\
+  &= \sqrt{25 + 9} \\
+  &= \sqrt{34} \approx 5.83
+\end{align*}
+\end{solucion}
+
+\problem $(-5, -2)$ y $(1, 6)$
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(1-(-5))^2 + (6-(-2))^2} \\
+  &= \sqrt{6^2 + 8^2} \\
+  &= \sqrt{36 + 64} \\
+  &= \sqrt{100} = 10
+\end{align*}
+\end{solucion}
+
+\problem $(0, 0)$ y $(3, 4)$
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(3-0)^2 + (4-0)^2} \\
+  &= \sqrt{3^2 + 4^2} \\
+  &= \sqrt{9 + 16} \\
+  &= \sqrt{25} = 5
+\end{align*}
+\end{solucion}
+
+\problem $(-3, 7)$ y $(-3, -2)$
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(-3-(-3))^2 + (-2-7)^2} \\
+  &= \sqrt{0^2 + (-9)^2} \\
+  &= \sqrt{81} = 9
+\end{align*}
+Nota: Los puntos están sobre la misma línea vertical.
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 4: Midpoint Formula - Basic
+%========================================
+\begin{exercise}
+\textbf{Cálculo de Puntos Medios}
+
+Encuentre las coordenadas del punto medio del segmento con los extremos dados:
+
+\problem $(4, 6)$ y $(8, 10)$
+\begin{solucion}
+\begin{align*}
+M &= \left(\frac{4+8}{2}, \frac{6+10}{2}\right) \\
+  &= \left(\frac{12}{2}, \frac{16}{2}\right) \\
+  &= (6, 8)
+\end{align*}
+\end{solucion}
+
+\problem $(2, 3)$ y $(6, 9)$
+\begin{solucion}
+\begin{align*}
+M &= \left(\frac{2+6}{2}, \frac{3+9}{2}\right) \\
+  &= \left(\frac{8}{2}, \frac{12}{2}\right) \\
+  &= (4, 6)
+\end{align*}
+\end{solucion}
+
+\problem $(-3, 5)$ y $(7, -1)$
+\begin{solucion}
+\begin{align*}
+M &= \left(\frac{-3+7}{2}, \frac{5+(-1)}{2}\right) \\
+  &= \left(\frac{4}{2}, \frac{4}{2}\right) \\
+  &= (2, 2)
+\end{align*}
+\end{solucion}
+
+\problem $(0, 0)$ y $(6, 8)$
+\begin{solucion}
+\begin{align*}
+M &= \left(\frac{0+6}{2}, \frac{0+8}{2}\right) \\
+  &= \left(\frac{6}{2}, \frac{8}{2}\right) \\
+  &= (3, 4)
+\end{align*}
+\end{solucion}
+
+\problem $(-5, -3)$ y $(-1, 7)$
+\begin{solucion}
+\begin{align*}
+M &= \left(\frac{-5+(-1)}{2}, \frac{-3+7}{2}\right) \\
+  &= \left(\frac{-6}{2}, \frac{4}{2}\right) \\
+  &= (-3, 2)
+\end{align*}
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 5: Combined Problems
+%========================================
+\begin{exercise}
+\textbf{Problemas Combinados}
+
+\problem Los puntos $A(2, 1)$, $B(6, 3)$, y $C(4, 5)$ son los vértices de un triángulo. Calcule el perímetro del triángulo.
+
+\begin{solucion}
+Calculamos las tres distancias:
+
+Lado AB:
+$$d_{AB} = \sqrt{(6-2)^2 + (3-1)^2} = \sqrt{16+4} = \sqrt{20} = 2\sqrt{5}$$
+
+Lado BC:
+$$d_{BC} = \sqrt{(4-6)^2 + (5-3)^2} = \sqrt{4+4} = \sqrt{8} = 2\sqrt{2}$$
+
+Lado AC:
+$$d_{AC} = \sqrt{(4-2)^2 + (5-1)^2} = \sqrt{4+16} = \sqrt{20} = 2\sqrt{5}$$
+
+Perímetro:
+$$P = 2\sqrt{5} + 2\sqrt{2} + 2\sqrt{5} = 4\sqrt{5} + 2\sqrt{2} \approx 11.76 \text{ unidades}$$
+\end{solucion}
+
+\problem Encuentre el punto medio del segmento que une $(5, -3)$ y $(-1, 7)$, luego calcule la distancia desde el origen hasta ese punto medio.
+
+\begin{solucion}
+Punto medio:
+$$M = \left(\frac{5+(-1)}{2}, \frac{-3+7}{2}\right) = \left(\frac{4}{2}, \frac{4}{2}\right) = (2, 2)$$
+
+Distancia del origen a $M(2,2)$:
+$$d = \sqrt{(2-0)^2 + (2-0)^2} = \sqrt{4+4} = \sqrt{8} = 2\sqrt{2} \approx 2.83 \text{ unidades}$$
+\end{solucion}
+
+\problem Determine si el triángulo con vértices $A(0, 0)$, $B(3, 4)$, y $C(6, 0)$ es isósceles (dos lados iguales).
+
+\begin{solucion}
+Calculamos las tres distancias:
+
+$$d_{AB} = \sqrt{(3-0)^2 + (4-0)^2} = \sqrt{9+16} = \sqrt{25} = 5$$
+
+$$d_{BC} = \sqrt{(6-3)^2 + (0-4)^2} = \sqrt{9+16} = \sqrt{25} = 5$$
+
+$$d_{AC} = \sqrt{(6-0)^2 + (0-0)^2} = \sqrt{36} = 6$$
+
+Como $d_{AB} = d_{BC} = 5$, el triángulo \textbf{SÍ es isósceles}.
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 6: Application Problems
+%========================================
+\begin{exercise}
+\textbf{Problemas de Aplicación}
+
+\problem Una ciudad se representa en un sistema de coordenadas. La biblioteca está en el punto $(3, 5)$ y el parque está en el punto $(9, 13)$. Si cada unidad representa 1 kilómetro, ¿cuál es la distancia entre la biblioteca y el parque?
+
+\begin{solucion}
+\begin{align*}
+d &= \sqrt{(9-3)^2 + (13-5)^2} \\
+  &= \sqrt{6^2 + 8^2} \\
+  &= \sqrt{36 + 64} \\
+  &= \sqrt{100} = 10
+\end{align*}
+
+La distancia es 10 kilómetros.
+\end{solucion}
+
+\problem Un barco parte del punto $A(-4, 2)$ y navega hasta el punto $B(8, 7)$ en línea recta. ¿En qué punto se encuentra el barco cuando ha recorrido exactamente la mitad del camino?
+
+\begin{solucion}
+El punto medio representa la mitad del camino:
+$$M = \left(\frac{-4+8}{2}, \frac{2+7}{2}\right) = \left(\frac{4}{2}, \frac{9}{2}\right) = \left(2, 4.5\right)$$
+
+El barco está en el punto $(2, 4.5)$.
+\end{solucion}
+
+\problem En un mapa, tres ciudades están ubicadas en los puntos $A(0, 0)$, $B(12, 0)$, y $C(6, 8)$. Determine si las tres ciudades forman un triángulo equilátero (todos los lados iguales).
+
+\begin{solucion}
+Calculamos las tres distancias:
+
+$$d_{AB} = \sqrt{(12-0)^2 + (0-0)^2} = \sqrt{144} = 12$$
+
+$$d_{AC} = \sqrt{(6-0)^2 + (8-0)^2} = \sqrt{36+64} = \sqrt{100} = 10$$
+
+$$d_{BC} = \sqrt{(6-12)^2 + (8-0)^2} = \sqrt{36+64} = \sqrt{100} = 10$$
+
+Como los lados no son todos iguales ($12 \neq 10$), el triángulo \textbf{NO es equilátero}.
+Sin embargo, como $d_{AC} = d_{BC} = 10$, el triángulo \textbf{SÍ es isósceles}.
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 7: Challenge Problems
+%========================================
+\begin{exercise}
+\textbf{Problemas Desafiantes}
+
+\problem El punto medio de un segmento es $M(4, 3)$ y uno de sus extremos es $A(2, 7)$. Encuentre las coordenadas del otro extremo $B$.
+
+\begin{solucion}
+Sea $B(x, y)$ el extremo desconocido.
+
+Para la coordenada $x$:
+$$\frac{2 + x}{2} = 4 \implies 2 + x = 8 \implies x = 6$$
+
+Para la coordenada $y$:
+$$\frac{7 + y}{2} = 3 \implies 7 + y = 6 \implies y = -1$$
+
+El otro extremo es $B(6, -1)$.
+
+Verificación: $M = \left(\frac{2+6}{2}, \frac{7+(-1)}{2}\right) = (4, 3)$ \checkmark
+\end{solucion}
+
+\problem Demuestre que los puntos $A(1, 2)$, $B(3, 6)$, $C(5, 10)$ son colineales (están sobre la misma línea recta).
+
+\textit{Sugerencia: Si tres puntos son colineales, entonces $d(A,B) + d(B,C) = d(A,C)$.}
+
+\begin{solucion}
+Calculamos las tres distancias:
+
+$$d_{AB} = \sqrt{(3-1)^2 + (6-2)^2} = \sqrt{4+16} = \sqrt{20} = 2\sqrt{5}$$
+
+$$d_{BC} = \sqrt{(5-3)^2 + (10-6)^2} = \sqrt{4+16} = \sqrt{20} = 2\sqrt{5}$$
+
+$$d_{AC} = \sqrt{(5-1)^2 + (10-2)^2} = \sqrt{16+64} = \sqrt{80} = 4\sqrt{5}$$
+
+Verificamos: $d_{AB} + d_{BC} = 2\sqrt{5} + 2\sqrt{5} = 4\sqrt{5} = d_{AC}$ \checkmark
+
+Los puntos \textbf{SÍ son colineales}.
+\end{solucion}
+
+\problem Un rectángulo tiene vértices en $A(1, 1)$, $B(5, 1)$, $C(5, 4)$, y $D(1, 4)$. Encuentre la longitud de las diagonales del rectángulo.
+
+\begin{solucion}
+Las diagonales son $AC$ y $BD$.
+
+Diagonal AC:
+$$d_{AC} = \sqrt{(5-1)^2 + (4-1)^2} = \sqrt{16+9} = \sqrt{25} = 5$$
+
+Diagonal BD:
+$$d_{BD} = \sqrt{(1-5)^2 + (4-1)^2} = \sqrt{16+9} = \sqrt{25} = 5$$
+
+Ambas diagonales miden 5 unidades (como debe ser en un rectángulo).
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 8: Mixed Practice
+%========================================
+\begin{exercise}
+\textbf{Práctica Mixta}
+
+\begin{exerciselist}
+    \item Encuentre el punto medio entre $(7, 11)$ y $(3, 5)$.
+    \item Calcule la distancia entre $(-6, 2)$ y $(2, 8)$.
+    \item Si $M(5, 3)$ es el punto medio del segmento con un extremo en $(8, 7)$, ¿cuál es el otro extremo?
+    \item Determine si el triángulo con vértices $(0, 0)$, $(5, 0)$, y $(0, 12)$ es un triángulo rectángulo.
+    \item Encuentre el perímetro del cuadrilátero con vértices $A(0, 0)$, $B(4, 0)$, $C(4, 3)$, y $D(0, 3)$.
+\end{exerciselist}
+
+\begin{solucion}
+a) $M = \left(\frac{7+3}{2}, \frac{11+5}{2}\right) = (5, 8)$
+
+b) $d = \sqrt{(2-(-6))^2 + (8-2)^2} = \sqrt{64+36} = \sqrt{100} = 10$
+
+c) Sea $B(x,y)$: $\frac{8+x}{2} = 5 \implies x = 2$; $\frac{7+y}{2} = 3 \implies y = -1$. Entonces $B(2, -1)$.
+
+d) $d_{AB} = 5$, $d_{BC} = 13$, $d_{AC} = 12$. Verificamos: $5^2 + 12^2 = 25 + 144 = 169 = 13^2$ \checkmark. Sí es rectángulo.
+
+e) Es un rectángulo con lados 4 y 3. Perímetro = $2(4) + 2(3) = 14$ unidades.
+\end{solucion}
+\end{exercise}
