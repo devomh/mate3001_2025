@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Question Bank: Quiz 13 - Sistema de Coordenadas Rectangulares -->
+  <!-- MATE 3001 - Matemática Elemental -->
+  <!-- Lección 10: Sistema de Coordenadas -->
+
+  <question type="category">
+    <category>
+      <text>$course$/top/Quiz 13: Sistema de Coordenadas</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Distance Formula - Negative Coordinates -->
+  <question type="multichoice">
+    <name>
+      <text>Q1: Fórmula de Distancia - Coordenadas Negativas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Calcule la distancia entre los puntos \((-5, -2)\) y \((1, 6)\).</p>
+<p><strong>Fórmula de distancia:</strong> \(d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Identificamos las coordenadas: \((x_1, y_1) = (-5, -2)\) y \((x_2, y_2) = (1, 6)\)</p>
+<p>Sustituimos en la fórmula:</p>
+<p>\begin{align}
+d &= \sqrt{(1-(-5))^2 + (6-(-2))^2} \\
+  &= \sqrt{(1+5)^2 + (6+2)^2} \\
+  &= \sqrt{6^2 + 8^2} \\
+  &= \sqrt{36 + 64} \\
+  &= \sqrt{100} \\
+  &= 10
+\end{align}</p>
+<p><strong>Nota importante:</strong> Al restar coordenadas negativas, recuerde que \(a - (-b) = a + b\). El triple (6, 8, 10) es un múltiplo del triple pitagórico 3-4-5.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>10 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La distancia es 10 unidades. Has aplicado correctamente la fórmula de distancia y manejado las coordenadas negativas apropiadamente.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>100 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Calculaste \(6^2 + 8^2 = 100\) correctamente, pero olvidaste tomar la raíz cuadrada. La respuesta correcta es \(\sqrt{100} = 10\) unidades.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{14} \approx 3.74\) unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este error ocurre cuando olvidas elevar al cuadrado las diferencias antes de sumarlas. Debes calcular \(\sqrt{6^2 + 8^2}\), no \(\sqrt{6 + 8}\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{80} \approx 8.94\) unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hay un error en el manejo de signos. Verifica que \(x_2 - x_1 = 1-(-5) = 6\), no 4. La respuesta correcta es \(\sqrt{100} = 10\) unidades.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Distance Formula - Vertical Line -->
+  <question type="multichoice">
+    <name>
+      <text>Q2: Fórmula de Distancia - Línea Vertical</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Calcule la distancia entre los puntos \((-3, 7)\) y \((-3, -2)\).</p>
+<p><strong>Nota:</strong> Observe que ambos puntos comparten la misma coordenada \(x\).</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Observamos que ambos puntos tienen la misma coordenada \(x = -3\), por lo tanto están sobre una línea vertical.</p>
+<p>Usando la fórmula de distancia:</p>
+<p>\begin{align}
+d &= \sqrt{(-3-(-3))^2 + (-2-7)^2} \\
+  &= \sqrt{0^2 + (-9)^2} \\
+  &= \sqrt{0 + 81} \\
+  &= \sqrt{81} \\
+  &= 9
+\end{align}</p>
+<p><strong>Observación:</strong> Cuando dos puntos comparten la misma coordenada \(x\), la distancia es simplemente el valor absoluto de la diferencia en \(y\): \(|y_2 - y_1| = |-2 - 7| = |-9| = 9\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>9 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La distancia es 9 unidades. Para puntos sobre una línea vertical, la distancia es \(|y_2 - y_1| = |-2 - 7| = 9\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>81 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Calculaste \((-9)^2 = 81\) correctamente, pero olvidaste tomar la raíz cuadrada. La respuesta correcta es \(\sqrt{81} = 9\) unidades.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>5 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este error ocurre si calculaste \(|7 - (-2)| = 9\) en lugar de \(|-2 - 7| = 9\). La distancia correcta es 9 unidades.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>3 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Parece que hay confusión con las raíces cuadradas. \(\sqrt{81} = 9\), no 3. Recuerda que \(9^2 = 81\), entonces \(\sqrt{81} = 9\).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Midpoint Formula - Mixed Coordinates -->
+  <question type="multichoice">
+    <name>
+      <text>Q3: Fórmula del Punto Medio - Coordenadas Mixtas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Encuentre las coordenadas del punto medio del segmento con extremos \((-3, 5)\) y \((7, -1)\).</p>
+<p><strong>Fórmula del punto medio:</strong> \(M = \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)\)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Identificamos las coordenadas: \((x_1, y_1) = (-3, 5)\) y \((x_2, y_2) = (7, -1)\)</p>
+<p><strong>Coordenada \(x\) del punto medio:</strong></p>
+<p>\(\frac{x_1 + x_2}{2} = \frac{-3 + 7}{2} = \frac{4}{2} = 2\)</p>
+<p><strong>Coordenada \(y\) del punto medio:</strong></p>
+<p>\(\frac{y_1 + y_2}{2} = \frac{5 + (-1)}{2} = \frac{4}{2} = 2\)</p>
+<p>Por lo tanto: \(M = (2, 2)\)</p>
+<p><strong>Concepto clave:</strong> El punto medio encuentra el promedio de las coordenadas \(x\) y el promedio de las coordenadas \(y\). Es equidistante de ambos extremos.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(M(2, 2)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El punto medio es \(M(2, 2)\). Has aplicado correctamente la fórmula del punto medio y manejado las coordenadas negativas apropiadamente.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(M(4, 4)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Calculaste \(-3 + 7 = 4\) y \(5 + (-1) = 4\) correctamente, pero olvidaste dividir entre 2. El punto medio requiere promediar: \(\frac{4}{2} = 2\) para ambas coordenadas.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(M(-5, 3)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hay un error en el manejo de signos. Para la coordenada \(x\): \(\frac{-3 + 7}{2} = \frac{4}{2} = 2\), no -5. Recuerda sumar las coordenadas, no restarlas.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(M(2, -2)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La coordenada \(x\) está correcta, pero hay un error de signo en \(y\). Debes calcular \(\frac{5 + (-1)}{2} = \frac{4}{2} = 2\), no -2.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Midpoint Formula - Negative Coordinates -->
+  <question type="multichoice">
+    <name>
+      <text>Q4: Fórmula del Punto Medio - Coordenadas Negativas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Encuentre las coordenadas del punto medio del segmento con extremos \((-5, -3)\) y \((-1, 7)\).</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Identificamos las coordenadas: \((x_1, y_1) = (-5, -3)\) y \((x_2, y_2) = (-1, 7)\)</p>
+<p><strong>Coordenada \(x\) del punto medio:</strong></p>
+<p>\(\frac{x_1 + x_2}{2} = \frac{-5 + (-1)}{2} = \frac{-6}{2} = -3\)</p>
+<p><strong>Coordenada \(y\) del punto medio:</strong></p>
+<p>\(\frac{y_1 + y_2}{2} = \frac{-3 + 7}{2} = \frac{4}{2} = 2\)</p>
+<p>Por lo tanto: \(M = (-3, 2)\)</p>
+<p><strong>Observación:</strong> El punto medio \((-3, 2)\) se encuentra en el Cuadrante II porque \(x < 0\) y \(y > 0\).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(M(-3, 2)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El punto medio es \(M(-3, 2)\). Cuando ambas coordenadas \(x\) son negativas, se suman: \(-5 + (-1) = -6\), y luego se divide: \(\frac{-6}{2} = -3\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(M(-6, 4)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Calculaste \(-5 + (-1) = -6\) y \(-3 + 7 = 4\) correctamente, pero olvidaste dividir entre 2. Debes calcular \(\frac{-6}{2} = -3\) y \(\frac{4}{2} = 2\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(M(-2, 5)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hay errores en ambas coordenadas. Para \(x\): \(\frac{-5 + (-1)}{2} = -3\), no -2. Para \(y\): \(\frac{-3 + 7}{2} = 2\), no 5.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(M(3, 2)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La coordenada \(y\) está correcta, pero hay un error de signo en \(x\). Cuando sumas dos números negativos, el resultado es negativo: \(\frac{-5 + (-1)}{2} = \frac{-6}{2} = -3\), no 3.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Triangle - Isosceles Verification -->
+  <question type="multichoice">
+    <name>
+      <text>Q5: Triángulo - Verificación de Isósceles</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine si el triángulo con vértices \(A(0, 0)\), \(B(3, 4)\), y \(C(6, 0)\) es isósceles (dos lados iguales).</p>
+<p><strong>Sugerencia:</strong> Un triángulo es isósceles si tiene al menos dos lados de igual longitud.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Calculamos las tres distancias usando la fórmula de distancia.</p>
+<p><strong>Lado AB:</strong></p>
+<p>\(d_{AB} = \sqrt{(3-0)^2 + (4-0)^2} = \sqrt{9 + 16} = \sqrt{25} = 5\)</p>
+<p><strong>Lado BC:</strong></p>
+<p>\(d_{BC} = \sqrt{(6-3)^2 + (0-4)^2} = \sqrt{9 + 16} = \sqrt{25} = 5\)</p>
+<p><strong>Lado AC:</strong></p>
+<p>\(d_{AC} = \sqrt{(6-0)^2 + (0-0)^2} = \sqrt{36} = 6\)</p>
+<p><strong>Comparación:</strong> \(d_{AB} = d_{BC} = 5\) y \(d_{AC} = 6\)</p>
+<p>Como \(d_{AB} = d_{BC} = 5\), el triángulo <strong>SÍ es isósceles</strong>.</p>
+<p><strong>Observación adicional:</strong> Este triángulo es un triángulo rectángulo 3-4-5. El punto \(C\) está sobre el eje \(x\), haciendo \(AC\) horizontal.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Sí, es isósceles porque \(AB = BC = 5\) unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El triángulo es isósceles porque tiene dos lados iguales: \(AB = BC = 5\) unidades. El tercer lado \(AC = 6\) unidades es diferente.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, es escaleno porque todos los lados son diferentes</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Verifica los cálculos de distancia cuidadosamente. Los lados \(AB\) y \(BC\) ambos miden 5 unidades, por lo que el triángulo SÍ es isósceles.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, es isósceles porque \(AB = AC = 5\) unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El lado \(AC\) mide 6 unidades, no 5. Los lados iguales son \(AB\) y \(BC\), ambos de 5 unidades.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, es equilátero porque todos los lados son iguales</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. El triángulo NO es equilátero. Tiene dos lados de 5 unidades (\(AB\) y \(BC\)) y un lado de 6 unidades (\(AC\)). Es isósceles, no equilátero.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Application - Ship Navigation -->
+  <question type="multichoice">
+    <name>
+      <text>Q6: Aplicación - Navegación de Barco</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Un barco parte del punto \(A(-4, 2)\) y navega hasta el punto \(B(8, 7)\) en línea recta. ¿En qué punto se encuentra el barco cuando ha recorrido exactamente la mitad del camino?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Cuando el barco ha recorrido exactamente la mitad del camino, se encuentra en el <strong>punto medio</strong> del segmento \(AB\).</p>
+<p>Identificamos las coordenadas:</p>
+<ul>
+<li>Punto de partida: \(A(-4, 2)\) donde \(x_1 = -4, y_1 = 2\)</li>
+<li>Punto de destino: \(B(8, 7)\) donde \(x_2 = 8, y_2 = 7\)</li>
+</ul>
+<p>Calculamos cada coordenada del punto medio:</p>
+<p><strong>Coordenada \(x\):</strong> \(\frac{-4 + 8}{2} = \frac{4}{2} = 2\)</p>
+<p><strong>Coordenada \(y\):</strong> \(\frac{2 + 7}{2} = \frac{9}{2} = 4.5\)</p>
+<p>Por lo tanto: \(M = (2, 4.5)\)</p>
+<p><strong>Interpretación:</strong> El barco está en las coordenadas \((2, 4.5)\) cuando ha navegado exactamente la mitad de la distancia desde \(A\) hasta \(B\).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((2, 4.5)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El barco está en el punto \((2, 4.5)\) cuando ha recorrido la mitad del camino. Este es el punto medio entre \(A(-4, 2)\) y \(B(8, 7)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((4, 9)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Calculaste \(-4 + 8 = 4\) y \(2 + 7 = 9\) correctamente, pero olvidaste dividir entre 2. El punto medio requiere: \(\frac{4}{2} = 2\) y \(\frac{9}{2} = 4.5\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2, 9)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Dividiste la coordenada \(x\) correctamente, pero olvidaste dividir la coordenada \(y\) entre 2. Debes calcular \(\frac{2 + 7}{2} = 4.5\), no 9.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((6, 3.5)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hay errores en los cálculos. Para \(x\): \(\frac{-4 + 8}{2} = 2\), no 6. Para \(y\): \(\frac{2 + 7}{2} = 4.5\), no 3.5.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Finding Unknown Endpoint -->
+  <question type="multichoice">
+    <name>
+      <text>Q9: Encontrar Extremo Desconocido</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>El punto medio de un segmento es \(M(5, 4)\) y uno de sus extremos es \(A(2, 9)\). Encuentre las coordenadas del otro extremo \(B\).</p>
+<p><strong>Sugerencia:</strong> Este es un problema "inverso" de punto medio. Use la fórmula del punto medio y despeje las coordenadas desconocidas.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Sea \(B(x, y)\) el extremo desconocido.</p>
+<p>Recordemos que el punto medio se calcula como:</p>
+<p>\(M = \left(\frac{x_1 + x}{2}, \frac{y_1 + y}{2}\right)\)</p>
+<p>Donde \(A(x_1, y_1) = A(2, 9)\) y \(M = (5, 4)\).</p>
+<p><strong>Para encontrar la coordenada \(x\) de \(B\):</strong></p>
+<p>\(\frac{2 + x}{2} = 5\)</p>
+<p>\(2 + x = 10\) (multiplicamos por 2)</p>
+<p>\(x = 8\)</p>
+<p><strong>Para encontrar la coordenada \(y\) de \(B\):</strong></p>
+<p>\(\frac{9 + y}{2} = 4\)</p>
+<p>\(9 + y = 8\) (multiplicamos por 2)</p>
+<p>\(y = -1\)</p>
+<p>Por lo tanto: \(B(8, -1)\)</p>
+<p><strong>Verificación:</strong> \(M = \left(\frac{2+8}{2}, \frac{9+(-1)}{2}\right) = (5, 4)\) ✓</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(B(8, -1)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El otro extremo es \(B(8, -1)\). Has resuelto correctamente las ecuaciones algebraicas derivadas de la fórmula del punto medio.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(B(6, 1)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hay errores en la manipulación algebraica. Verifica: \(\frac{2 + x}{2} = 5\) implica \(x = 8\), no 6. Y \(\frac{9 + y}{2} = 4\) implica \(y = -1\), no 1.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(B(8, 1)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La coordenada \(x\) está correcta, pero hay un error de signo en \(y\). De \(\frac{9 + y}{2} = 4\) obtenemos \(9 + y = 8\), entonces \(y = -1\), no 1.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(B(7, -5)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Hay errores en ambas coordenadas. Resuelve cuidadosamente: \(2 + x = 10\) da \(x = 8\), y \(9 + y = 8\) da \(y = -1\). El resultado correcto es \(B(8, -1)\).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Triangle Perimeter -->
+  <question type="multichoice">
+    <name>
+      <text>Q10: Perímetro de Triángulo</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Los puntos \(A(1, 1)\), \(B(4, 5)\), y \(C(7, 1)\) son los vértices de un triángulo. Calcule el perímetro del triángulo.</p>
+<p><strong>Nota:</strong> El perímetro es la suma de las longitudes de los tres lados.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>El perímetro de un triángulo es la suma de las longitudes de sus tres lados. Calculamos cada lado usando la fórmula de distancia.</p>
+<p><strong>Lado AB:</strong></p>
+<p>\(d_{AB} = \sqrt{(4-1)^2 + (5-1)^2} = \sqrt{9 + 16} = \sqrt{25} = 5\)</p>
+<p><strong>Lado BC:</strong></p>
+<p>\(d_{BC} = \sqrt{(7-4)^2 + (1-5)^2} = \sqrt{9 + 16} = \sqrt{25} = 5\)</p>
+<p><strong>Lado AC:</strong></p>
+<p>\(d_{AC} = \sqrt{(7-1)^2 + (1-1)^2} = \sqrt{36 + 0} = \sqrt{36} = 6\)</p>
+<p><strong>Perímetro:</strong></p>
+<p>\(P = d_{AB} + d_{BC} + d_{AC} = 5 + 5 + 6 = 16\) unidades</p>
+<p><strong>Observación:</strong> Este triángulo es isósceles porque \(AB = BC = 5\) unidades. Los puntos \(A\) y \(C\) están sobre la línea horizontal \(y = 1\), por lo que el lado \(AC\) es horizontal. Cada "pierna" del triángulo es un triángulo rectángulo 3-4-5.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>16 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! El perímetro es 16 unidades. Calculaste correctamente las tres distancias (\(AB = 5\), \(BC = 5\), \(AC = 6\)) y las sumaste: \(5 + 5 + 6 = 16\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>11 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Parece que solo sumaste dos lados del triángulo. El perímetro requiere sumar LOS TRES lados: \(AB + BC + AC = 5 + 5 + 6 = 16\) unidades.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este valor solo incluye los dos lados iguales (\(AB + BC = 5 + 5 = 10\)). No olvides el tercer lado \(AC = 6\). El perímetro correcto es \(5 + 5 + 6 = 16\) unidades.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>25 unidades</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. Este error sugiere que olvidaste tomar raíces cuadradas o usaste una fórmula incorrecta. Cada lado debe calcularse con \(\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}\). El perímetro correcto es 16 unidades.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

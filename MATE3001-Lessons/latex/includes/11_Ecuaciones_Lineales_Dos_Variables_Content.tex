@@ -36,6 +36,7 @@ Esta forma se conoce como \textbf{forma estándar} de una ecuación lineal.
 
 \textbf{Observación importante:} A diferencia de las ecuaciones lineales con una variable (que tienen una solución), las ecuaciones lineales con dos variables tienen un \textbf{número infinito de soluciones}.
 
+\newpage
 %========================================
 % SECTION 11.2: Soluciones y Gráficas
 %========================================
@@ -173,6 +174,7 @@ Para graficar una ecuación lineal:
 \end{tikzpicture}
 \end{center}
 
+\newpage
 %========================================
 % SECTION 11.3: Intersecciones con los Ejes
 %========================================
@@ -234,6 +236,7 @@ Las intersecciones con los ejes son puntos especiales que facilitan la gráfica 
 \end{tikzpicture}
 \end{center}
 
+\newpage
 \begin{example}
 \textbf{Encontrar las intersecciones con los ejes}
 
@@ -389,9 +392,9 @@ Las rectas pueden tener diferentes tipos de pendientes según su inclinación:
 
 % Visual comparison of different slope types
 \begin{center}
-\begin{tikzpicture}[scale=0.7]
-    % Positive slope
-    \begin{scope}[xshift=0cm]
+\begin{tikzpicture}[scale=0.65]
+    % Positive slope (top left)
+    \begin{scope}[xshift=0cm, yshift=0cm]
         \draw[gray!20, very thin] (-1,-1) grid (3,3);
         \draw[->, thick] (-1,0) -- (3,0) node[right, font=\small] {$x$};
         \draw[->, thick] (0,-1) -- (0,3) node[above, font=\small] {$y$};
@@ -401,8 +404,8 @@ Las rectas pueden tener diferentes tipos de pendientes según su inclinación:
         \node[below, font=\small] at (1,-2.5) {La recta \textit{sube}};
     \end{scope}
 
-    % Negative slope
-    \begin{scope}[xshift=5cm]
+    % Negative slope (top right)
+    \begin{scope}[xshift=7cm, yshift=0cm]
         \draw[gray!20, very thin] (-1,-1) grid (3,3);
         \draw[->, thick] (-1,0) -- (3,0) node[right, font=\small] {$x$};
         \draw[->, thick] (0,-1) -- (0,3) node[above, font=\small] {$y$};
@@ -412,8 +415,8 @@ Las rectas pueden tener diferentes tipos de pendientes según su inclinación:
         \node[below, font=\small] at (1,-2.5) {La recta \textit{baja}};
     \end{scope}
 
-    % Zero slope (horizontal)
-    \begin{scope}[xshift=10cm]
+    % Zero slope (bottom left)
+    \begin{scope}[xshift=0cm, yshift=-8cm]
         \draw[gray!20, very thin] (-1,-1) grid (3,3);
         \draw[->, thick] (-1,0) -- (3,0) node[right, font=\small] {$x$};
         \draw[->, thick] (0,-1) -- (0,3) node[above, font=\small] {$y$};
@@ -423,8 +426,8 @@ Las rectas pueden tener diferentes tipos de pendientes según su inclinación:
         \node[below, font=\small] at (1,-2.5) {Recta \textit{horizontal}};
     \end{scope}
 
-    % Undefined slope (vertical)
-    \begin{scope}[xshift=15cm]
+    % Undefined slope (bottom right)
+    \begin{scope}[xshift=7cm, yshift=-8cm]
         \draw[gray!20, very thin] (-1,-1) grid (3,3);
         \draw[->, thick] (-1,0) -- (3,0) node[right, font=\small] {$x$};
         \draw[->, thick] (0,-1) -- (0,3) node[above, font=\small] {$y$};
@@ -455,6 +458,8 @@ Las rectas pueden tener diferentes tipos de pendientes según su inclinación:
     \end{itemize}
 \end{enumerate}
 \end{theorem}
+
+\newpage
 
 \begin{example}
 \textbf{Identificar el tipo de pendiente}

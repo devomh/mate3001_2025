@@ -73,32 +73,40 @@ Un par ordenado $(a, b)$ representa un punto sobre el sistema de coordenadas y e
 % Visual guide for signs in each quadrant
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
-    % Quadrant I
-    \node[draw, fill=green!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (0,0) {
-        \textbf{Cuadrante I} \\[0.2cm]
-        $(+, +)$ \\
-        $x > 0, y > 0$
+    % Quadrant I (upper right)
+    \node[draw, fill=green!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (4.5,0) {
+        \begin{tabular}{c}
+            \textbf{Cuadrante I} \\[0.1cm]
+            $(+, +)$ \\
+            $x > 0, y > 0$
+        \end{tabular}
     };
 
-    % Quadrant II
-    \node[draw, fill=blue!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (3.5,0) {
-        \textbf{Cuadrante II} \\[0.2cm]
-        $(-, +)$ \\
-        $x < 0, y > 0$
+    % Quadrant II (upper left)
+    \node[draw, fill=blue!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (0,0) {
+        \begin{tabular}{c}
+            \textbf{Cuadrante II} \\[0.1cm]
+            $(-, +)$ \\
+            $x < 0, y > 0$
+        \end{tabular}
     };
 
-    % Quadrant III
-    \node[draw, fill=orange!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (0,-2.8) {
-        \textbf{Cuadrante III} \\[0.2cm]
-        $(-, -)$ \\
-        $x < 0, y < 0$
+    % Quadrant III (lower left)
+    \node[draw, fill=orange!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (0,-3.5) {
+        \begin{tabular}{c}
+            \textbf{Cuadrante III} \\[0.1cm]
+            $(-, -)$ \\
+            $x < 0, y < 0$
+        \end{tabular}
     };
 
-    % Quadrant IV
-    \node[draw, fill=red!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (3.5,-2.8) {
-        \textbf{Cuadrante IV} \\[0.2cm]
-        $(+, -)$ \\
-        $x > 0, y < 0$
+    % Quadrant IV (lower right)
+    \node[draw, fill=red!15, minimum width=2.5cm, minimum height=2cm, rounded corners] at (4.5,-3.5) {
+        \begin{tabular}{c}
+            \textbf{Cuadrante IV} \\[0.1cm]
+            $(+, -)$ \\
+            $x > 0, y < 0$
+        \end{tabular}
     };
 \end{tikzpicture}
 \end{center}
@@ -384,12 +392,12 @@ Es decir:
     \draw[->, thick] (0,-1) -- (0,5) node[above] {$y$};
 
     % Points
-    \def\xa{1}
-    \def\ya{1}
-    \def\xb{5}
-    \def\yb{4}
-    \def\xm{(\xa+\xb)/2}
-    \def\ym{(\ya+\yb)/2}
+    \pgfmathsetmacro{\xa}{1}
+    \pgfmathsetmacro{\ya}{1}
+    \pgfmathsetmacro{\xb}{5}
+    \pgfmathsetmacro{\yb}{4}
+    \pgfmathsetmacro{\xm}{(\xa+\xb)/2}
+    \pgfmathsetmacro{\ym}{(\ya+\yb)/2}
 
     \filldraw[blue] (\xa,\ya) circle (2.5pt);
     \node[blue, below left] at (\xa,\ya) {$(x_1, y_1)$};
