@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz14</text>
+    </category>
+  </question>
+
+  <!-- Q3: Find Intercepts - CLOZE -->
+  <question type="cloze">
+    <name>
+      <text>Q3-Intersecciones-I</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la ecuación \(3x + 4y = 24\), encuentre las intersecciones con los ejes:</p>
+<p><strong>a) Intersección con el eje \(x\):</strong><br/>
+x = {1:NUMERICAL:=8:0.01} , y = {1:NUMERICAL:=0:0.01}</p>
+<p><strong>b) Intersección con el eje \(y\):</strong><br/>
+x = {1:NUMERICAL:=0:0.01} , y = {1:NUMERICAL:=6:0.01}</p>
+<p><em>Nota: Para encontrar la intersección con el eje \(x\), haga \(y = 0\). Para encontrar la intersección con el eje \(y\), haga \(x = 0\).</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p><strong>Intersección con eje \(x\):</strong> Hacemos \(y = 0\):<br/>
+\(3x + 4(0) = 24\)<br/>
+\(3x = 24\)<br/>
+\(x = 8\)<br/>
+Punto: \((8, 0)\)</p>
+<p><strong>Intersección con eje \(y\):</strong> Hacemos \(x = 0\):<br/>
+\(3(0) + 4y = 24\)<br/>
+\(4y = 24\)<br/>
+\(y = 6\)<br/>
+Punto: \((0, 6)\)</p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+  <!-- Q4: Find Intercepts - CLOZE -->
+  <question type="cloze">
+    <name>
+      <text>Q4-Intersecciones-II</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la ecuación \(-2x + 5y = 10\), encuentre las intersecciones con los ejes:</p>
+<p><strong>a) Intersección con el eje \(x\):</strong><br/>
+x = {1:NUMERICAL:=-5:0.01} , y = {1:NUMERICAL:=0:0.01}</p>
+<p><strong>b) Intersección con el eje \(y\):</strong><br/>
+x = {1:NUMERICAL:=0:0.01} , y = {1:NUMERICAL:=2:0.01}</p>
+<p><em>Nota: Para encontrar la intersección con el eje \(x\), haga \(y = 0\). Para encontrar la intersección con el eje \(y\), haga \(x = 0\).</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p><strong>Intersección con eje \(x\):</strong> Hacemos \(y = 0\):<br/>
+\(-2x + 5(0) = 10\)<br/>
+\(-2x = 10\)<br/>
+\(x = -5\)<br/>
+Punto: \((-5, 0)\)</p>
+<p><strong>Intersección con eje \(y\):</strong> Hacemos \(x = 0\):<br/>
+\(-2(0) + 5y = 10\)<br/>
+\(5y = 10\)<br/>
+\(y = 2\)<br/>
+Punto: \((0, 2)\)</p>
+<p><strong>Error común:</strong> Olvidar el signo negativo al dividir \(-2x = 10\) entre \(-2\).</p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+  <!-- Q5: Verify Solution - Horizontal Line - MULTIPLE CHOICE -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Verificar-Horizontal</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Es \((5, 4)\) una solución de la ecuación \(y = 4\)?</p>
+<p>Justifique su respuesta.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>La ecuación \(y = 4\) es una recta horizontal. Todos los puntos con coordenada \(y = 4\) son soluciones, sin importar el valor de \(x\). Como el punto \((5, 4)\) tiene \(y = 4\), es una solución.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Sí, es una solución porque la coordenada \(y = 4\) satisface la ecuación.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La ecuación \(y = 4\) representa una recta horizontal. Cualquier punto con \(y = 4\) es solución, sin importar el valor de \(x\). Como \((5, 4)\) tiene \(y = 4\), es una solución.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una solución porque \(x = 5\) no satisface la ecuación.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La ecuación \(y = 4\) solo depende de la coordenada \(y\), no de \(x\). El valor de \(x\) puede ser cualquier número.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una solución porque \(5 \neq 4\).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No debe comparar \(x\) con el valor constante de la ecuación. En \(y = 4\), solo importa que la coordenada \(y\) sea igual a 4, lo cual se cumple en \((5, 4)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, es una solución porque \(5 + 4 = 9\).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No debe sumar las coordenadas. La ecuación \(y = 4\) simplemente requiere que la coordenada \(y\) del punto sea igual a 4.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Verify Solution - Vertical Line - MULTIPLE CHOICE -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Verificar-Vertical</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Es \((-3, 2)\) una solución de la ecuación \(x = -3\)?</p>
+<p>Justifique su respuesta.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>La ecuación \(x = -3\) es una recta vertical. Todos los puntos con coordenada \(x = -3\) son soluciones, sin importar el valor de \(y\). Como el punto \((-3, 2)\) tiene \(x = -3\), es una solución.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Sí, es una solución porque la coordenada \(x = -3\) satisface la ecuación.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>¡Correcto! La ecuación \(x = -3\) representa una recta vertical. Cualquier punto con \(x = -3\) es solución, sin importar el valor de \(y\). Como \((-3, 2)\) tiene \(x = -3\), es una solución.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una solución porque \(y = 2\) no satisface la ecuación.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. La ecuación \(x = -3\) solo depende de la coordenada \(x\), no de \(y\). El valor de \(y\) puede ser cualquier número.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una solución porque \(2 \neq -3\).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No debe comparar \(y\) con el valor constante de la ecuación. En \(x = -3\), solo importa que la coordenada \(x\) sea igual a \(-3\), lo cual se cumple en \((-3, 2)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3 -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, es una solución porque \(-3 + 2 = -1\).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrecto. No debe sumar las coordenadas. La ecuación \(x = -3\) simplemente requiere que la coordenada \(x\) del punto sea igual a \(-3\).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Write Vertical Line Equation - CLOZE -->
+  <question type="cloze">
+    <name>
+      <text>Q7-Escribir-Vertical</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Escriba la ecuación de una recta vertical que pasa por el punto \((-3, 7)\).</p>
+<p>x = {1:NUMERICAL:=-3:0.01}</p>
+<p><em>Nota: Recuerde que las rectas verticales tienen la forma \(x = h\), donde \(h\) es constante.</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Una recta vertical tiene la forma \(x = h\), donde todos los puntos tienen la misma coordenada \(x\).</p>
+<p>Como la recta pasa por el punto \((-3, 7)\), todos los puntos en la recta deben tener \(x = -3\).</p>
+<p><strong>Ecuación: \(x = -3\)</strong></p>
+<p><strong>Concepto clave:</strong> Las rectas verticales son paralelas al eje \(y\) y tienen coordenada \(x\) constante.</p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+  <!-- Q8: Write Horizontal Line Equation - CLOZE -->
+  <question type="cloze">
+    <name>
+      <text>Q8-Escribir-Horizontal</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Escriba la ecuación de una recta horizontal que pasa por el punto \((0, 4)\).</p>
+<p>y = {1:NUMERICAL:=4:0.01}</p>
+<p><em>Nota: Recuerde que las rectas horizontales tienen la forma \(y = k\), donde \(k\) es constante.</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p>Una recta horizontal tiene la forma \(y = k\), donde todos los puntos tienen la misma coordenada \(y\).</p>
+<p>Como la recta pasa por el punto \((0, 4)\), todos los puntos en la recta deben tener \(y = 4\).</p>
+<p><strong>Ecuación: \(y = 4\)</strong></p>
+<p><strong>Concepto clave:</strong> Las rectas horizontales son paralelas al eje \(x\) y tienen coordenada \(y\) constante.</p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+  <!-- Q9: Multi-part Horizontal Line - CLOZE -->
+  <question type="cloze">
+    <name>
+      <text>Q9-Multipart-Horizontal</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la ecuación \(y = -3\):</p>
+<p><strong>a) Tipo de recta:</strong> {1:MULTICHOICE:=Horizontal~Vertical~Oblicua}</p>
+<p><strong>b) Intersección con el eje \(y\):</strong><br/>
+x = {1:NUMERICAL:=0:0.01} , y = {1:NUMERICAL:=-3:0.01}</p>
+<p><em>Nota: Una recta horizontal tiene la forma \(y = k\) y es paralela al eje \(x\).</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p><strong>a) Tipo de recta:</strong> Horizontal (porque solo contiene la variable \(y\) igualada a una constante)</p>
+<p><strong>b) Intersección con el eje \(y\):</strong></p>
+<p>El eje \(y\) está formado por puntos donde \(x = 0\).</p>
+<p>En la recta \(y = -3\), cuando \(x = 0\), tenemos el punto \((0, -3)\).</p>
+<p><strong>Nota:</strong> Esta recta NO cruza el eje \(x\) porque es paralela a él y está 3 unidades por debajo.</p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+  <!-- Q10: Multi-part Vertical Line - CLOZE -->
+  <question type="cloze">
+    <name>
+      <text>Q10-Multipart-Vertical</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la ecuación \(x = 2\):</p>
+<p><strong>a) Tipo de recta:</strong> {1:MULTICHOICE:=Vertical~Horizontal~Oblicua}</p>
+<p><strong>b) Intersección con el eje \(x\):</strong><br/>
+x = {1:NUMERICAL:=2:0.01} , y = {1:NUMERICAL:=0:0.01}</p>
+<p><em>Nota: Una recta vertical tiene la forma \(x = h\) y es paralela al eje \(y\).</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>Solución:</strong></p>
+<p><strong>a) Tipo de recta:</strong> Vertical (porque solo contiene la variable \(x\) igualada a una constante)</p>
+<p><strong>b) Intersección con el eje \(x\):</strong></p>
+<p>El eje \(x\) está formado por puntos donde \(y = 0\).</p>
+<p>En la recta \(x = 2\), cuando \(y = 0\), tenemos el punto \((2, 0)\).</p>
+<p><strong>Nota:</strong> Esta recta NO cruza el eje \(y\) porque es paralela a él y está 2 unidades a la derecha.</p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+</quiz>

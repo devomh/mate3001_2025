@@ -1,0 +1,379 @@
+%========================================
+% EXERCISES: Sistema de Dos Ecuaciones Lineales
+%========================================
+
+\section{Ejercicios}
+
+%========================================
+% Exercise 1: Solving Systems by All Three Methods
+%========================================
+\begin{exercise}
+\textbf{Resolver Sistemas por los Tres Métodos}
+
+Resuelva cada sistema de ecuaciones usando:
+\begin{itemize}
+    \item Método Gráfico
+    \item Método de Sustitución
+    \item Método de Eliminación
+\end{itemize}
+
+\problem $$\begin{cases}2x - y = 4 \\ 3x + y = 6\end{cases}$$
+
+\begin{solucion}
+\textbf{Método Gráfico:}
+
+Para $2x - y = 4$: Intersecciones $(2, 0)$ y $(0, -4)$
+
+Para $3x + y = 6$: Intersecciones $(2, 0)$ y $(0, 6)$
+
+(Se grafican ambas rectas y se identifica su intersección)
+
+Solución gráfica: $(2, 0)$
+
+\vspace{0.3cm}
+
+\textbf{Método de Sustitución:}
+
+Despejando $y$ de la primera ecuación: $y = 2x - 4$
+
+Reemplazando en la segunda ecuación:
+$$3x + (2x - 4) = 6$$
+$$5x = 10$$
+$$x = 2$$
+
+Sustituir en el despeje: $y = 2(2) - 4 = 0$
+
+Solución: $(x,y) = (2,0)$
+
+\vspace{0.3cm}
+
+\textbf{Método por Eliminación:}
+
+Los coeficientes de $y$ en las ecuaciones ya son opuestos.
+
+Sumar ambas ecuaciones:
+$$\begin{aligned}
+(2x - y) + (3x + y) &= 4 + 6 \\
+5x + 0y &= 10 \\
+x &= 2
+\end{aligned}$$
+
+Sustituir en la primera ecuación: $2(2) - y = 4 \implies y = 0$
+
+Solución: $(x,y) = (2,0)$
+\end{solucion}
+
+\problem $$\begin{cases}x + y = 7 \\ 2x - 3y = -1\end{cases}$$
+
+\begin{solucion}
+\textbf{Método Gráfico:}
+
+Para $x + y = 7$: Intersecciones $(7, 0)$ y $(0, 7)$
+
+Para $2x - 3y = -1$: Intersecciones $(-\frac{1}{2}, 0)$ y $(0, \frac{1}{3})$
+
+Solución gráfica: $(4, 3)$
+
+\vspace{0.3cm}
+
+\textbf{Método de Sustitución:}
+
+Despejando $x$ de la primera ecuación: $x = 7 - y$
+
+Reemplazando en la segunda ecuación:
+$$2(7 - y) - 3y = -1$$
+$$14 - 2y - 3y = -1$$
+$$-5y = -15$$
+$$y = 3$$
+
+Sustituir: $x = 7 - 3 = 4$
+
+Solución: $(x,y) = (4,3)$
+
+\vspace{0.3cm}
+
+\textbf{Método por Eliminación:}
+
+Multiplicar la primera ecuación por $-2$:
+$$-2(x + y) = -2(7) \implies -2x - 2y = -14$$
+
+Sumar con la segunda ecuación:
+$$\begin{aligned}
+(-2x - 2y) + (2x - 3y) &= -14 + (-1) \\
+-5y &= -15 \\
+y &= 3
+\end{aligned}$$
+
+Sustituir en la primera ecuación: $x + 3 = 7 \implies x = 4$
+
+Solución: $(x,y) = (4,3)$
+\end{solucion}
+
+\problem $$\begin{cases}2x + 5y = 15 \\ 4x + y = 21\end{cases}$$
+
+\begin{solucion}
+\textbf{Método Gráfico:}
+
+Para $2x + 5y = 15$: Intersecciones $(\frac{15}{2}, 0)$ y $(0, 3)$
+
+Para $4x + y = 21$: Intersecciones $(\frac{21}{4}, 0)$ y $(0, 21)$
+
+Solución gráfica: $(5, 1)$
+
+\vspace{0.3cm}
+
+\textbf{Método de Sustitución:}
+
+Despejando $y$ de la segunda ecuación: $y = 21 - 4x$
+
+Reemplazando en la primera ecuación:
+$$2x + 5(21 - 4x) = 15$$
+$$2x + 105 - 20x = 15$$
+$$-18x = -90$$
+$$x = 5$$
+
+Sustituir: $y = 21 - 4(5) = 1$
+
+Solución: $(x,y) = (5,1)$
+
+\vspace{0.3cm}
+
+\textbf{Método por Eliminación:}
+
+Multiplicar la segunda ecuación por $-5$:
+$$-5(4x + y) = -5(21) \implies -20x - 5y = -105$$
+
+Sumar con la primera ecuación:
+$$\begin{aligned}
+(2x + 5y) + (-20x - 5y) &= 15 + (-105) \\
+-18x &= -90 \\
+x &= 5
+\end{aligned}$$
+
+Sustituir en la segunda ecuación: $4(5) + y = 21 \implies y = 1$
+
+Solución: $(x,y) = (5,1)$
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 2: Identifying Number of Solutions
+%========================================
+\begin{exercise}
+\textbf{Identificar el Número de Soluciones}
+
+Para cada sistema, determine (sin resolverlo) si tiene una solución, ninguna solución o infinitas soluciones. Explique su razonamiento.
+
+\problem $$\begin{cases}x + 2y = 5 \\ 2x + 4y = 10\end{cases}$$
+
+\begin{solucion}
+La segunda ecuación es $2$ veces la primera ecuación: $2(x + 2y) = 2(5)$.
+
+Las rectas \textbf{coinciden}.
+
+\textbf{Infinitas soluciones}
+\end{solucion}
+
+\problem $$\begin{cases}3x - y = 4 \\ 3x - y = 7\end{cases}$$
+
+\begin{solucion}
+Ambas ecuaciones tienen la misma forma ($3x - y =$) pero diferentes constantes (4 y 7).
+
+Las rectas son \textbf{paralelas}.
+
+\textbf{Sin solución}
+\end{solucion}
+
+\problem $$\begin{cases}x + y = 8 \\ x - y = 2\end{cases}$$
+
+\begin{solucion}
+Las rectas tienen diferentes pendientes (pendientes: $-1$ y $1$).
+
+Las rectas se \textbf{intersectan} en un punto.
+
+\textbf{Una solución}
+\end{solucion}
+
+\problem $$\begin{cases}2x + 3y = 6 \\ 4x + 6y = 12\end{cases}$$
+
+\begin{solucion}
+La segunda ecuación es $2$ veces la primera ecuación.
+
+Las rectas \textbf{coinciden}.
+
+\textbf{Infinitas soluciones}
+\end{solucion}
+
+\problem $$\begin{cases}y = 2x + 1 \\ y = 2x - 3\end{cases}$$
+
+\begin{solucion}
+Ambas ecuaciones tienen la misma pendiente ($m = 2$) pero diferentes intersecciones con el eje $y$ (1 y $-3$).
+
+Las rectas son \textbf{paralelas}.
+
+\textbf{Sin solución}
+\end{solucion}
+
+\problem $$\begin{cases}5x - 2y = 10 \\ x + 3y = 6\end{cases}$$
+
+\begin{solucion}
+Las rectas tienen diferentes pendientes (pendientes: $\frac{5}{2}$ y $-\frac{1}{3}$).
+
+Las rectas se \textbf{intersectan} en un punto.
+
+\textbf{Una solución}
+\end{solucion}
+\end{exercise}
+
+%========================================
+% Exercise 3: Word Problems
+%========================================
+\begin{exercise}
+\textbf{Problemas de Aplicación}
+
+Resuelva los siguientes problemas usando sistemas de ecuaciones lineales. Siga el proceso de 4 pasos:
+\begin{enumerate}
+    \item Identificar las variables
+    \item Expresar las cantidades en términos de las variables
+    \item Establecer el sistema de ecuaciones
+    \item Resolver e interpretar los resultados
+\end{enumerate}
+
+\problem Encuentre dos números cuya suma es 34 y cuya diferencia es 10.
+
+\begin{solucion}
+\textbf{Paso 1:} Sea $x$ el número mayor y $y$ el número menor.
+
+\textbf{Paso 2:}
+\begin{itemize}
+    \item Suma: $x + y = 34$
+    \item Diferencia: $x - y = 10$
+\end{itemize}
+
+\textbf{Paso 3:} Sistema:
+$$\begin{cases}
+x + y = 34 \\
+x - y = 10
+\end{cases}$$
+
+\textbf{Paso 4:} Sumando ambas ecuaciones:
+$$2x = 44 \implies x = 22$$
+
+Sustituyendo: $22 + y = 34 \implies y = 12$
+
+\textbf{Respuesta:} Los dos números son 22 y 12.
+\end{solucion}
+
+\problem Un hombre tiene 14 monedas en su bolsillo, todas las cuales son de 10 o de 25 centavos. Si el valor total de su cambio es \$2.75, ¿cuántas monedas de 10 centavos y cuántas de 25 centavos tiene?
+
+\begin{solucion}
+\textbf{Paso 1:} Sea $x$ = número de monedas de 10 centavos, $y$ = número de monedas de 25 centavos.
+
+\textbf{Paso 2:}
+\begin{itemize}
+    \item Total de monedas: $x + y = 14$
+    \item Valor total (en centavos): $10x + 25y = 275$
+\end{itemize}
+
+\textbf{Paso 3:} Sistema:
+$$\begin{cases}
+x + y = 14 \\
+10x + 25y = 275
+\end{cases}$$
+
+\textbf{Paso 4:} De la primera ecuación: $x = 14 - y$
+
+Sustituyendo en la segunda:
+$$10(14 - y) + 25y = 275$$
+$$140 - 10y + 25y = 275$$
+$$15y = 135$$
+$$y = 9$$
+
+Entonces: $x = 14 - 9 = 5$
+
+\textbf{Respuesta:} Tiene 5 monedas de 10 centavos y 9 monedas de 25 centavos.
+\end{solucion}
+
+\problem Una tienda vende camisetas a \$15 cada una y pantalones a \$25 cada uno. Si en un día se vendieron 45 artículos por un total de \$825, ¿cuántas camisetas y cuántos pantalones se vendieron?
+
+\begin{solucion}
+\textbf{Paso 1:} Sea $x$ = número de camisetas, $y$ = número de pantalones.
+
+\textbf{Paso 2:}
+\begin{itemize}
+    \item Total de artículos: $x + y = 45$
+    \item Valor total: $15x + 25y = 825$
+\end{itemize}
+
+\textbf{Paso 3:} Sistema:
+$$\begin{cases}
+x + y = 45 \\
+15x + 25y = 825
+\end{cases}$$
+
+\textbf{Paso 4:} De la primera ecuación: $x = 45 - y$
+
+Sustituyendo:
+$$15(45 - y) + 25y = 825$$
+$$675 - 15y + 25y = 825$$
+$$10y = 150$$
+$$y = 15$$
+
+Entonces: $x = 45 - 15 = 30$
+
+\textbf{Respuesta:} Se vendieron 30 camisetas y 15 pantalones.
+\end{solucion}
+
+\problem La suma de dos números es 50. Tres veces el primer número menos el segundo número es igual a 10. Encuentre los dos números.
+
+\begin{solucion}
+\textbf{Paso 1:} Sea $x$ el primer número y $y$ el segundo número.
+
+\textbf{Paso 2:}
+\begin{itemize}
+    \item Suma: $x + y = 50$
+    \item Relación: $3x - y = 10$
+\end{itemize}
+
+\textbf{Paso 3:} Sistema:
+$$\begin{cases}
+x + y = 50 \\
+3x - y = 10
+\end{cases}$$
+
+\textbf{Paso 4:} Sumando ambas ecuaciones:
+$$4x = 60 \implies x = 15$$
+
+Sustituyendo: $15 + y = 50 \implies y = 35$
+
+\textbf{Respuesta:} Los dos números son 15 y 35.
+\end{solucion}
+
+\problem Un rectángulo tiene un perímetro de 60 metros. El largo es 6 metros más que el ancho. Encuentre las dimensiones del rectángulo.
+
+\begin{solucion}
+\textbf{Paso 1:} Sea $l$ = largo y $a$ = ancho.
+
+\textbf{Paso 2:}
+\begin{itemize}
+    \item Perímetro: $2l + 2a = 60$
+    \item Relación: $l = a + 6$
+\end{itemize}
+
+\textbf{Paso 3:} Sistema:
+$$\begin{cases}
+2l + 2a = 60 \\
+l = a + 6
+\end{cases}$$
+
+\textbf{Paso 4:} Sustituyendo la segunda ecuación en la primera:
+$$2(a + 6) + 2a = 60$$
+$$2a + 12 + 2a = 60$$
+$$4a = 48$$
+$$a = 12$$
+
+Entonces: $l = 12 + 6 = 18$
+
+\textbf{Respuesta:} El rectángulo tiene 18 metros de largo y 12 metros de ancho.
+\end{solucion}
+\end{exercise}
