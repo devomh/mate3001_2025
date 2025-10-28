@@ -1,0 +1,245 @@
+%========================================
+% INSTRUCTOR SOLUTIONS AND NOTES: Desigualdades Lineales
+%========================================
+
+\subsection*{Notas Pedagógicas para el Instructor}
+
+\subsubsection*{Objetivos de Aprendizaje}
+
+Al completar esta lección, los estudiantes deberán ser capaces de:
+
+\begin{enumerate}
+    \item Distinguir entre ecuaciones y desigualdades lineales
+    \item Aplicar correctamente las reglas para manipular desigualdades
+    \item \textbf{Identificar cuándo invertir el sentido de la desigualdad} (al multiplicar/dividir por negativos)
+    \item Resolver desigualdades lineales en una variable
+    \item Expresar soluciones en notación de intervalos
+    \item Representar soluciones gráficamente en la recta real
+    \item Resolver desigualdades compuestas (tipo ``y'' y tipo ``o'')
+    \item Modelar situaciones del mundo real con desigualdades
+\end{enumerate}
+
+\subsubsection*{Errores Comunes de los Estudiantes}
+
+\begin{enumerate}
+    \item \textbf{ERROR \#1: No invertir la desigualdad al multiplicar/dividir por negativos}
+
+    \textbf{Ejemplo incorrecto:}
+    \begin{align*}
+        -2x &> 6 \\
+        x &> -3 \quad \textcolor{red}{\text{¡INCORRECTO!}}
+    \end{align*}
+
+    \textbf{Corrección:} Al dividir entre $-2 < 0$, se debe invertir:
+    \begin{align*}
+        -2x &> 6 \\
+        x &< -3 \quad \textcolor{green}{\text{¡CORRECTO!}}
+    \end{align*}
+
+    \textbf{Estrategia de enseñanza:} Pida a los estudiantes que verifiquen su respuesta sustituyendo un valor del conjunto solución. Por ejemplo, si $x < -3$, pruebe $x = -4$: ¿$-2(-4) > 6$? Sí, $8 > 6$ ✓
+
+    \item \textbf{ERROR \#2: Confundir círculos abiertos y cerrados}
+
+    Los estudiantes frecuentemente dibujan círculos rellenos cuando deberían ser abiertos y viceversa.
+
+    \textbf{Mnemotecnia:}
+    \begin{itemize}
+        \item \textbf{Círculo relleno (●):} El valor \textbf{está incluido} ($\le$ o $\ge$)
+        \item \textbf{Círculo abierto (○):} El valor \textbf{no está incluido} ($<$ o $>$)
+    \end{itemize}
+
+    \item \textbf{ERROR \#3: Confundir paréntesis y corchetes en notación de intervalos}
+
+    \textbf{Regla nemotécnica:}
+    \begin{itemize}
+        \item \textbf{Paréntesis ( ):} ``abierto'' = no incluido
+        \item \textbf{Corchete [ ]:} ``cerrado'' = incluido
+        \item El infinito ($\infty$) \textbf{siempre} lleva paréntesis
+    \end{itemize}
+
+    \item \textbf{ERROR \#4: En desigualdades compuestas tipo ``o'', intentar combinarlas incorrectamente}
+
+    \textbf{Ejemplo incorrecto:}
+    \[x < -2 \text{ o } x \ge 3 \quad \Rightarrow \quad -2 < x \ge 3 \quad \textcolor{red}{\text{¡INCORRECTO!}}\]
+
+    \textbf{Corrección:} Las desigualdades tipo ``o'' representan la \textbf{unión} de dos conjuntos disjuntos, no se pueden combinar en una sola expresión. La notación correcta es:
+    \[(-\infty, -2) \cup [3, \infty)\]
+
+    \item \textbf{ERROR \#5: Olvidar que algunas desigualdades no tienen solución}
+
+    Como en el Ejercicio 10, donde se obtiene $-8 \ge 1$ (falso), el conjunto solución es $\varnothing$.
+\end{enumerate}
+
+\subsubsection*{Sugerencias de Enseñanza}
+
+\begin{enumerate}
+    \item \textbf{Enfatizar la verificación de soluciones}
+
+    Anime a los estudiantes a verificar sus respuestas sustituyendo valores del conjunto solución en la desigualdad original. Esto refuerza la comprensión y detecta errores.
+
+    \item \textbf{Uso de la recta numérica física}
+
+    Considere usar una recta numérica grande en el pizarrón o en el suelo donde los estudiantes puedan pararse físicamente en diferentes puntos para visualizar las desigualdades.
+
+    \item \textbf{Conexión con ecuaciones}
+
+    Comience cada tema resolviendo una ecuación similar antes de pasar a la desigualdad. Por ejemplo:
+    \begin{itemize}
+        \item Ecuación: $-2x = 6 \Rightarrow x = -3$ (un punto)
+        \item Desigualdad: $-2x > 6 \Rightarrow x < -3$ (un intervalo)
+    \end{itemize}
+
+    \item \textbf{Práctica progresiva}
+
+    Orden sugerido de dificultad:
+    \begin{enumerate}
+        \item Desigualdades simples con coeficientes positivos
+        \item Desigualdades con coeficientes negativos (enfatizar inversión)
+        \item Desigualdades con fracciones
+        \item Desigualdades compuestas tipo ``y''
+        \item Desigualdades compuestas tipo ``o''
+        \item Problemas de aplicación
+    \end{enumerate}
+
+    \item \textbf{Uso de color en el pizarrón}
+
+    \begin{itemize}
+        \item Use color rojo cuando se invierte una desigualdad
+        \item Use azul para resaltar las soluciones finales
+        \item Use verde para verificaciones correctas
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Actividades de Clase Sugeridas}
+
+\begin{enumerate}
+    \item \textbf{Actividad 1: ¿Verdadero o Falso?}
+
+    Presente una lista de valores y pida a los estudiantes que determinen si satisfacen una desigualdad dada. Ejemplo:
+    \begin{itemize}
+        \item Desigualdad: $2x - 5 < 7$
+        \item ¿$x = 0$ es solución? (Sí, porque $-5 < 7$)
+        \item ¿$x = 6$ es solución? (No, porque $7 \not< 7$)
+        \item ¿$x = -10$ es solución? (Sí, porque $-25 < 7$)
+    \end{itemize}
+
+    \item \textbf{Actividad 2: Matching Game}
+
+    Prepare tarjetas con desigualdades, notaciones de intervalos y gráficas. Los estudiantes deben emparejar las tres representaciones de la misma solución.
+
+    \item \textbf{Actividad 3: Error Analysis}
+
+    Presente soluciones incorrectas y pida a los estudiantes que identifiquen y corrijan los errores. Esto desarrolla pensamiento crítico.
+
+    \item \textbf{Actividad 4: Problemas del Mundo Real}
+
+    Pida a los estudiantes que creen sus propios problemas verbales que requieran desigualdades, luego intercambien con compañeros para resolver.
+\end{enumerate}
+
+\subsubsection*{Preguntas de Discusión}
+
+\begin{enumerate}
+    \item ¿Por qué multiplicar por un número negativo invierte la desigualdad? (Relacionar con la recta numérica y reflexión)
+
+    \item ¿Cuál es la diferencia entre ``y'' e ``o'' en desigualdades compuestas? ¿Cómo se relaciona con intersección y unión de conjuntos?
+
+    \item ¿Por qué el infinito siempre lleva paréntesis en notación de intervalos? (Porque no es un número alcanzable)
+
+    \item ¿Cómo podemos verificar si nuestra solución es correcta? (Sustitución de valores de prueba)
+
+    \item ¿En qué situaciones del mundo real usamos desigualdades en lugar de ecuaciones? (Presupuestos, límites de velocidad, restricciones de edad, etc.)
+\end{enumerate}
+
+\subsubsection*{Extensiones para Estudiantes Avanzados}
+
+\begin{enumerate}
+    \item Desigualdades con valor absoluto: $|x - 3| < 5$
+
+    \item Sistemas de desigualdades en dos variables (representación gráfica en el plano)
+
+    \item Desigualdades cuadráticas: $x^2 - 5x + 6 \le 0$
+
+    \item Aplicaciones de optimización con restricciones
+\end{enumerate}
+
+\subsubsection*{Recursos Adicionales}
+
+\begin{itemize}
+    \item \textbf{Videos:} Khan Academy - Linear Inequalities
+    \item \textbf{Software:} GeoGebra para visualizar desigualdades gráficamente
+    \item \textbf{Práctica adicional:} IXL Math - Solve linear inequalities
+    \item \textbf{Manipulativos:} Rectas numéricas físicas, fichas para marcar intervalos
+\end{itemize}
+
+\subsubsection*{Evaluación Formativa}
+
+\textbf{Pregunta rápida de verificación (Exit Ticket):}
+
+Resuelva: $-3x + 7 \le 1$
+
+\textbf{Respuesta correcta:} $x \ge 2$ o $[2, \infty)$
+
+Si los estudiantes responden $x \le 2$, necesitan refuerzo sobre la inversión de desigualdades.
+
+\subsubsection*{Conexiones con Otros Temas}
+
+\begin{itemize}
+    \item \textbf{Lección anterior (Sistema de ecuaciones):} Las desigualdades lineales son la base para sistemas de desigualdades
+    \item \textbf{Próxima lección:} Desigualdades con valor absoluto requieren comprender desigualdades compuestas
+    \item \textbf{Aplicaciones futuras:} Programación lineal, optimización, cálculo (derivadas para encontrar máximos/mínimos)
+\end{itemize}
+
+\subsubsection*{Notas Específicas por Ejercicio}
+
+\textbf{Ejercicios 1-3:} Buenos problemas para comenzar. Coeficientes positivos, sin complicaciones.
+
+\textbf{Ejercicios 4, 6-8:} Requieren inversión de desigualdad. Monitoree cuidadosamente que los estudiantes inviertan correctamente.
+
+\textbf{Ejercicio 5:} Práctica con fracciones. Algunos estudiantes pueden necesitar revisar operaciones con fracciones.
+
+\textbf{Ejercicio 9:} Requiere reorganizar términos. Buena práctica de álgebra.
+
+\textbf{Ejercicio 10:} No tiene solución ($\varnothing$). Asegúrese de que los estudiantes reconozcan declaraciones falsas.
+
+\textbf{Ejercicios 11-13:} Desigualdades compuestas tipo ``y''. Enfatice que se trabaja con las tres partes simultáneamente.
+
+\textbf{Ejercicios 14-15:} Desigualdades tipo ``o''. Enfatice la unión ($\cup$) y que las regiones están separadas.
+
+\textbf{Ejercicio 16:} Problema verbal directo. Buena introducción al modelado.
+
+\textbf{Ejercicio 17:} Problema más complejo que requiere plantear la expresión del puntaje. Excelente para pensamiento crítico. Note que la solución debe ser un entero entre 0 y 30.
+
+\subsubsection*{Tiempo Estimado}
+
+\begin{itemize}
+    \item \textbf{Teoría y ejemplos:} 45-60 minutos
+    \item \textbf{Práctica guiada:} 30-45 minutos
+    \item \textbf{Práctica independiente:} 45-60 minutos
+    \item \textbf{Total:} 2-3 sesiones de clase (50 minutos cada una)
+\end{itemize}
+
+\subsubsection*{Diferenciación}
+
+\textbf{Para estudiantes que necesitan apoyo adicional:}
+\begin{itemize}
+    \item Proporcione rectas numéricas pre-dibujadas
+    \item Use manipulativos físicos
+    \item Comience con más ejemplos de coeficientes positivos
+    \item Proporcione una tarjeta de referencia con las reglas
+\end{itemize}
+
+\textbf{Para estudiantes avanzados:}
+\begin{itemize}
+    \item Introduzca desigualdades con valor absoluto
+    \item Pida que creen sus propios problemas
+    \item Explore desigualdades en contextos más complejos
+    \item Investigue sistemas de desigualdades
+\end{itemize}
+
+\vspace{1cm}
+
+\hrule
+
+\vspace{0.5cm}
+
+\textbf{Nota final:} El concepto de invertir la desigualdad al multiplicar/dividir por negativos es contraintuitivo para muchos estudiantes. Dedique tiempo adicional a este concepto, use múltiples ejemplos, y verifique frecuentemente la comprensión. La visualización en la recta numérica es especialmente útil para desarrollar intuición.
