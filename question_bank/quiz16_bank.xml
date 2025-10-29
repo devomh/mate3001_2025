@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Question Bank: Quiz 16 - Repaso Examen III (Opción Múltiple) -->
+  <!-- MATE 3001 - Matemática Elemental -->
+
+  <question type="category">
+    <category>
+      <text>$course$/top/Quiz 16: Repaso Examen III</text>
+    </category>
+  </question>
+
+  <!-- Q1: Ecuación cuadrática por factorización -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Factorizacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la ecuación cuadrática: \(x^2 - x - 12 = 0\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -3\) y \(x = 4\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. \(x^2 - x - 12 = (x + 3)(x - 4)\); por producto cero: \(x=-3\) o \(x=4\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) y \(x = -4\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Intercambia signos; no satisface la ecuación.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -3\) y \(x = -4\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Ambos negativos no anulan el término lineal.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) y \(x = 4\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Ambos positivos no producen \(-1\) como suma.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: Fórmula cuadrática -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-FormulaCuadratica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva \(3x^2 + 5x - 2 = 0\) usando la fórmula cuadrática.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = \tfrac{1}{3}\) y \(x = -2\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. Discriminante \(49\); \(x = \frac{-5 \pm 7}{6}\Rightarrow \tfrac{1}{3},\,-2\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\) y \(x = -\tfrac{1}{3}\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Usa denominador \(2\) en lugar de \(2a=6\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 1\) y \(x = -6\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Error al evaluar \(\frac{-5\pm7}{6}\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -\tfrac{5}{3}\) y \(x = \tfrac{2}{3}\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Errores de sustitución en la fórmula.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: Distancia entre puntos -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Distancia</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Halle la distancia entre \((2,-1)\) y \((-4,7)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(10\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. \(\sqrt{(-6)^2+8^2}=\sqrt{36+64}=\sqrt{100}=10\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(14\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Suma de diferencias absolutas (distancia Manhattan).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Considera solo la diferencia en \(x\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(8\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Considera solo la diferencia en \(y\).</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: Punto medio -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-PuntoMedio</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Encuentre el punto medio del segmento que une \((6,-3)\) y \((-2,9)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((2,3)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. \(\left(\tfrac{6+(-2)}{2},\tfrac{-3+9}{2}\right)=(2,3)\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((4,6)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Sumó sin dividir entre 2.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-2,9)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Es un extremo, no el punto medio.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2,-3)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Mezcla coordenadas de los extremos.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: Interés compuesto -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-InteresCompuesto</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Se invierten \$\(3000\) a \(6\%\) anual, compuesto trimestralmente, por \(2\) años. Calcule \(A\) usando \(A=P\left(1+\tfrac{r}{n}\right)^{nt}\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\$3{,}379.48\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. \(3000(1+0.06/4)^{8}=3000(1.015)^8\approx 3379.48\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\$3{,}360.00\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Es el resultado de interés simple \(P(1+rt)\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\$3{,}300.00\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Aproximación subestimada del crecimiento compuesto.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\$3{,}420.00\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Cálculo compuesto mal evaluado.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Sistema por sustitución -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Sustitucion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva por sustitución: \(\begin{cases}2x+y=7\\ x-3y=-5\end{cases}\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\left(\tfrac{16}{7},\tfrac{17}{7}\right)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. De \(y=7-2x\), sustituyendo en la segunda da \(x=\tfrac{16}{7}\), luego \(y=\tfrac{17}{7}\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\left(\tfrac{17}{7},\tfrac{16}{7}\right)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Intercambia \(x\) e \(y\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2,3)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. No satisface el sistema.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((16,17)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Olvida dividir por \(7\).</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Sistema por eliminación -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Eliminacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva por eliminación: \(\begin{cases}3x+4y=10\\ 5x-2y=4\end{cases}\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\left(\tfrac{18}{13},\tfrac{19}{13}\right)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. Multiplicar la segunda por 2, sumar y despejar da \(x=\tfrac{18}{13}\), \(y=\tfrac{19}{13}\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\left(\tfrac{19}{13},\tfrac{18}{13}\right)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Intercambia \(x\) e \(y\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((1,2)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. No satisface ambas ecuaciones.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((18,19)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Falta dividir por \(13\).</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Aplicación con sistemas (ventas) -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-AplicacionVentas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Una tienda vende camisetas a \$\(15\) y pantalones a \$\(30\). Se vendieron \(30\) artículos y se recaudaron \$\(600\). ¿Cuántas camisetas y cuántos pantalones se vendieron?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(20\) camisetas y \(10\) pantalones</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. Sistema: \(c+p=30\), \(15c+30p=600\) \(\Rightarrow p=10\), \(c=20\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(10\) camisetas y \(20\) pantalones</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Invierte cantidades; el total en dólares no coincide.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(15\) camisetas y \(15\) pantalones</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Suma 30, pero \(15(15)+30(15)=675\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(12\) camisetas y \(18\) pantalones</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. \(15(12)+30(18)=720\), excede \$600.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Desigualdad compuesta -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-DesigualdadCompuesta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva \(-5 &lt; 2x - 1 \leq 7\). Exprese la solución en intervalos.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((-2,\,4]\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. Al resolver se obtiene \(-2&lt;x\le 4\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([-2,\,4]\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. En \(-2\) no hay igualdad; es estricta.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-2,\,4)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. En \(4\) sí se incluye el extremo.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([-2,\,4)\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Extremos incompatibles con las desigualdades dadas.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Completar el cuadrado -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-CompletarCuadrado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Exprese \(x^2+8x-9=0\) en la forma \((x-h)^2=k\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((x+4)^2=25\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. \(x^2+8x=9\Rightarrow x^2+8x+16=25\Rightarrow (x+4)^2=25\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x+8)^2=9\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. La mitad de \(8\) es \(4\), no \(8\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x+4)^2=9\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Al completar se suma \(16\), no \(9\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x-4)^2=25\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Signo equivocado en el binomio.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11: Discriminante y naturaleza de soluciones -->
+  <question type="multichoice">
+    <name>
+      <text>Q11-Discriminante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine la naturaleza de las soluciones de \(x^2-4x+5=0\) usando el discriminante.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Dos soluciones complejas conjugadas (no reales)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. \(\Delta=b^2-4ac=16-20=-4&lt;0\) implica dos soluciones complejas conjugadas.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Dos soluciones reales distintas</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Eso ocurre cuando \(\Delta&gt;0\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una solución real doble</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Eso ocurre cuando \(\Delta=0\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Una solución real y una compleja</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Las raíces vienen en pares complejos conjugados o ambas reales.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Rectas horizontal y vertical -->
+  <question type="multichoice">
+    <name>
+      <text>Q12-RectasHyV</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Seleccione la pareja correcta de ecuaciones para la recta horizontal que pasa por \((5,-3)\) y la recta vertical que pasa por \((2,7)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Horizontal: \(y=-3\); Vertical: \(x=2\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correcto. Horizontales: \(y=k\) con \(k=-3\); Verticales: \(x=h\) con \(h=2\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Horizontal: \(y=5\); Vertical: \(x=-3\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Confunde coordenadas con constantes de línea.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Horizontal: \(x=-3\); Vertical: \(y=2\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Horizontal es \(y=\text{const}\), vertical es \(x=\text{const}\).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Horizontal: \(y=2\); Vertical: \(x=7\)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrecto. Usa valores de \(y\) y \(x\) equivocados.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
+
