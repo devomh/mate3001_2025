@@ -1,0 +1,400 @@
+%========================================
+% DETAILED SOLUTIONS: Expresiones Racionales
+%========================================
+
+\subsection*{Ejercicio 1: Dominio}
+
+\textbf{Problema 1:} Encuentre el dominio de $\dfrac{3x+1}{x^2-9}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item Identificar que el denominador no puede ser cero
+    \item Factorizar el denominador: $x^2-9 = (x-3)(x+3)$
+    \item Resolver $(x-3)(x+3) = 0$ da $x = 3$ o $x = -3$
+    \item Por lo tanto, el dominio es $\{x|x \neq 3 \text{ y } x \neq -3\}$
+\end{enumerate}
+
+\textbf{Problema 2:} Encuentre el dominio de $\dfrac{\sqrt{x-3}}{x^2-4x+3}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item El numerador $\sqrt{x-3}$ requiere $x-3 \geq 0$, es decir $x \geq 3$
+    \item Factorizar el denominador: $x^2-4x+3 = (x-1)(x-3)$
+    \item El denominador no puede ser cero: $x \neq 1$ y $x \neq 3$
+    \item Combinando ambas condiciones: $x \geq 3$ pero $x \neq 3$
+    \item El dominio es $\{x|x > 3\}$
+\end{enumerate}
+
+\textbf{Problema 3:} Encuentre el dominio de $\dfrac{x^2+1}{x^3-8}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item El numerador $x^2+1$ siempre es positivo, no hay restricciones
+    \item Factorizar el denominador usando diferencia de cubos: $x^3-8 = (x-2)(x^2+2x+4)$
+    \item Para $(x-2)(x^2+2x+4) = 0$:
+        \begin{itemize}
+            \item $x-2 = 0$ da $x = 2$
+            \item $x^2+2x+4 = 0$ no tiene soluciones reales (discriminante negativo)
+        \end{itemize}
+    \item El dominio es $\{x|x \neq 2\}$
+\end{enumerate}
+
+\textbf{Problema 4:} Encuentre el dominio de $\dfrac{\sqrt{2x+5}}{x^2-7x+10}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item El numerador requiere $2x+5 \geq 0$, es decir $x \geq -\dfrac{5}{2}$
+    \item Factorizar el denominador: $x^2-7x+10 = (x-2)(x-5)$
+    \item El denominador no puede ser cero: $x \neq 2$ y $x \neq 5$
+    \item El dominio es $\{x|x \geq -\dfrac{5}{2}, x \neq 2, x \neq 5\}$
+\end{enumerate}
+
+\textbf{Problema 5:} Encuentre el dominio de $\dfrac{x-1}{x^3+x^2-6x}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item Factorizar el denominador:
+    \begin{align*}
+    x^3+x^2-6x &= x(x^2+x-6)\\
+    &= x(x+3)(x-2)
+    \end{align*}
+    \item El denominador es cero cuando $x = 0$, $x = -3$, o $x = 2$
+    \item El dominio es $\{x|x \neq 0, x \neq -3, x \neq 2\}$
+\end{enumerate}
+
+%========================================
+\subsection*{Ejercicio 2: Simplificación}
+
+\textbf{Problema 1:} Simplifique $\dfrac{x^2-4}{x^2+5x+6}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2-4}{x^2+5x+6} &= \frac{(x-2)(x+2)}{(x+2)(x+3)} \quad \text{(factorizar)}\\
+&= \frac{(x-2)\cancel{(x+2)}}{\cancel{(x+2)}(x+3)} \quad \text{(cancelar factor común)}\\
+&= \frac{x-2}{x+3}
+\end{align*}
+
+\textbf{Problema 2:} Simplifique $\dfrac{2x^2-8x}{x^2-16}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{2x^2-8x}{x^2-16} &= \frac{2x(x-4)}{(x-4)(x+4)} \quad \text{(factorizar)}\\
+&= \frac{2x\cancel{(x-4)}}{\cancel{(x-4)}(x+4)} \quad \text{(cancelar)}\\
+&= \frac{2x}{x+4}
+\end{align*}
+
+\textbf{Problema 3:} Simplifique $\dfrac{x^3-27}{x^2-9}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^3-27}{x^2-9} &= \frac{(x-3)(x^2+3x+9)}{(x-3)(x+3)} \quad \text{(diferencia de cubos)}\\
+&= \frac{\cancel{(x-3)}(x^2+3x+9)}{\cancel{(x-3)}(x+3)}\\
+&= \frac{x^2+3x+9}{x+3}
+\end{align*}
+
+\textbf{Problema 4:} Simplifique $\dfrac{x^2+6x+9}{x^2-9}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2+6x+9}{x^2-9} &= \frac{(x+3)^2}{(x-3)(x+3)} \quad \text{(trinomio cuadrado perfecto)}\\
+&= \frac{(x+3)^{\cancel{2}}}{\cancel{(x+3)}(x-3)}\\
+&= \frac{x+3}{x-3}
+\end{align*}
+
+\textbf{Problema 5:} Simplifique $\dfrac{3x^2-12}{x^2-4x+4}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{3x^2-12}{x^2-4x+4} &= \frac{3(x^2-4)}{(x-2)^2} \quad \text{(factor común y TCP)}\\
+&= \frac{3(x-2)(x+2)}{(x-2)^2}\\
+&= \frac{3\cancel{(x-2)}(x+2)}{(x-2)^{\cancel{2}}}\\
+&= \frac{3(x+2)}{x-2}
+\end{align*}
+
+%========================================
+\subsection*{Ejercicio 3: Multiplicación}
+
+\textbf{Problema 1:} Multiplique $\dfrac{x^2-1}{x^2+3x+2} \cdot \dfrac{x+2}{x-1}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2-1}{x^2+3x+2} \cdot \frac{x+2}{x-1} &= \frac{(x-1)(x+1)}{(x+1)(x+2)} \cdot \frac{x+2}{x-1}\\
+&= \frac{\cancel{(x-1)}\cancel{(x+1)}\cancel{(x+2)}}{\cancel{(x+1)}\cancel{(x+2)}\cancel{(x-1)}}\\
+&= 1
+\end{align*}
+
+\textbf{Problema 2:} Multiplique $\dfrac{2x^2-2x-12}{x^2-9} \cdot \dfrac{x+3}{4x-12}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{2x^2-2x-12}{x^2-9} \cdot \frac{x+3}{4x-12} &= \frac{2(x^2-x-6)}{(x-3)(x+3)} \cdot \frac{x+3}{4(x-3)}\\
+&= \frac{2(x-3)(x+2)}{(x-3)(x+3)} \cdot \frac{x+3}{4(x-3)}\\
+&= \frac{2\cancel{(x-3)}(x+2)\cancel{(x+3)}}{\cancel{(x-3)}\cancel{(x+3)} \cdot 4\cancel{(x-3)}}\\
+&= \frac{2(x+2)}{4(x-3)} = \frac{x+2}{2(x-3)}
+\end{align*}
+
+\textbf{Problema 3:} Multiplique $\dfrac{x^2-4}{x+3} \cdot \dfrac{x^2+6x+9}{x^2-4x+4}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2-4}{x+3} \cdot \frac{x^2+6x+9}{x^2-4x+4} &= \frac{(x-2)(x+2)}{x+3} \cdot \frac{(x+3)^2}{(x-2)^2}\\
+&= \frac{\cancel{(x-2)}(x+2)(x+3)^{\cancel{2}}}{\cancel{x+3}(x-2)^{\cancel{2}}}\\
+&= \frac{(x+2)(x+3)}{x-2}
+\end{align*}
+
+\textbf{Problema 4:} Multiplique $\dfrac{x^2+x-6}{x^2-1} \cdot \dfrac{x^2-2x+1}{x^2-9}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2+x-6}{x^2-1} \cdot \frac{x^2-2x+1}{x^2-9} &= \frac{(x+3)(x-2)}{(x-1)(x+1)} \cdot \frac{(x-1)^2}{(x-3)(x+3)}\\
+&= \frac{\cancel{(x+3)}(x-2)(x-1)^{\cancel{2}}}{\cancel{(x-1)}(x+1)(x-3)\cancel{(x+3)}}\\
+&= \frac{(x-2)(x-1)}{(x+1)(x-3)}
+\end{align*}
+
+\textbf{Problema 5:} Multiplique $\dfrac{2x^2-8}{x^2+5x} \cdot \dfrac{x^2+4x-5}{x-2}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{2x^2-8}{x^2+5x} \cdot \frac{x^2+4x-5}{x-2} &= \frac{2(x^2-4)}{x(x+5)} \cdot \frac{(x+5)(x-1)}{x-2}\\
+&= \frac{2(x-2)(x+2)}{x(x+5)} \cdot \frac{(x+5)(x-1)}{x-2}\\
+&= \frac{2\cancel{(x-2)}(x+2)\cancel{(x+5)}(x-1)}{x\cancel{(x+5)}\cancel{(x-2)}}\\
+&= \frac{2(x+2)(x-1)}{x}
+\end{align*}
+
+%========================================
+\subsection*{Ejercicio 4: División}
+
+\textbf{Problema 1:} Divida $\dfrac{x^2-9}{x^2+4x+4} \div \dfrac{x+3}{x+2}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2-9}{x^2+4x+4} \div \frac{x+3}{x+2} &= \frac{x^2-9}{x^2+4x+4} \cdot \frac{x+2}{x+3}\\
+&= \frac{(x-3)(x+3)}{(x+2)^2} \cdot \frac{x+2}{x+3}\\
+&= \frac{(x-3)\cancel{(x+3)}\cancel{(x+2)}}{(x+2)^{\cancel{2}}\cancel{(x+3)}}\\
+&= \frac{x-3}{x+2}
+\end{align*}
+
+\textbf{Problema 2:} Divida $\dfrac{x^2+5x+6}{x^2-4} \div \dfrac{x^2+4x+3}{x^2-3x+2}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+&\frac{x^2+5x+6}{x^2-4} \cdot \frac{x^2-3x+2}{x^2+4x+3}\\
+&= \frac{(x+2)(x+3)}{(x-2)(x+2)} \cdot \frac{(x-1)(x-2)}{(x+1)(x+3)}\\
+&= \frac{\cancel{(x+2)}\cancel{(x+3)}\cancel{(x-2)}(x-1)}{\cancel{(x-2)}\cancel{(x+2)}(x+1)\cancel{(x+3)}}\\
+&= \frac{x-1}{x+1}
+\end{align*}
+
+\textbf{Problema 3:} Divida $\dfrac{x^2-1}{x+3} \div \dfrac{x-1}{x^2+6x+9}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^2-1}{x+3} \div \frac{x-1}{x^2+6x+9} &= \frac{x^2-1}{x+3} \cdot \frac{x^2+6x+9}{x-1}\\
+&= \frac{(x-1)(x+1)}{x+3} \cdot \frac{(x+3)^2}{x-1}\\
+&= \frac{\cancel{(x-1)}(x+1)(x+3)^{\cancel{2}}}{\cancel{x+3}\cancel{(x-1)}}\\
+&= (x+1)(x+3) = x^2+4x+3
+\end{align*}
+
+\textbf{Problema 4:} Divida $\dfrac{2x^2-8}{x^2+x-6} \div \dfrac{x-2}{x+3}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{2x^2-8}{x^2+x-6} \div \frac{x-2}{x+3} &= \frac{2x^2-8}{x^2+x-6} \cdot \frac{x+3}{x-2}\\
+&= \frac{2(x-2)(x+2)}{(x+3)(x-2)} \cdot \frac{x+3}{x-2}\\
+&= \frac{2\cancel{(x-2)}(x+2)\cancel{(x+3)}}{\cancel{(x+3)}(x-2)^{\cancel{2}}}\\
+&= \frac{2(x+2)}{x-2}
+\end{align*}
+
+\textbf{Problema 5:} Simplifique $\dfrac{x^2-16}{2x+6} \cdot \dfrac{x^2+3x}{x^2-4x} \div \dfrac{x+4}{2x}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+&\frac{x^2-16}{2x+6} \cdot \frac{x^2+3x}{x^2-4x} \cdot \frac{2x}{x+4}\\
+&= \frac{(x-4)(x+4)}{2(x+3)} \cdot \frac{x(x+3)}{x(x-4)} \cdot \frac{2x}{x+4}\\
+&= \frac{\cancel{(x-4)}\cancel{(x+4)}\cancel{x}\cancel{(x+3)} \cdot 2\cancel{x}}{2\cancel{(x+3)}\cancel{x}\cancel{(x-4)}\cancel{(x+4)}}\\
+&= 1
+\end{align*}
+
+%========================================
+\subsection*{Ejercicio 5: Suma y Resta}
+
+\textbf{Problema 1:} Efectúe $\dfrac{3}{x-2} + \dfrac{4}{x+3}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item Identificar MCD: $(x-2)(x+3)$
+    \item Convertir cada fracción:
+    \begin{align*}
+    \frac{3}{x-2} + \frac{4}{x+3} &= \frac{3(x+3)}{(x-2)(x+3)} + \frac{4(x-2)}{(x-2)(x+3)}\\
+    &= \frac{3(x+3)+4(x-2)}{(x-2)(x+3)}\\
+    &= \frac{3x+9+4x-8}{(x-2)(x+3)}\\
+    &= \frac{7x+1}{(x-2)(x+3)}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Problema 2:} Efectúe $\dfrac{x}{x^2-4} - \dfrac{2}{x+2}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item Factorizar: $x^2-4 = (x-2)(x+2)$
+    \item MCD: $(x-2)(x+2)$
+    \begin{align*}
+    \frac{x}{(x-2)(x+2)} - \frac{2}{x+2} &= \frac{x}{(x-2)(x+2)} - \frac{2(x-2)}{(x-2)(x+2)}\\
+    &= \frac{x-2(x-2)}{(x-2)(x+2)}\\
+    &= \frac{x-2x+4}{(x-2)(x+2)}\\
+    &= \frac{-x+4}{(x-2)(x+2)}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Problema 3:} Efectúe $\dfrac{1}{x} + \dfrac{2}{x^2} - \dfrac{3}{x^3}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item MCD: $x^3$
+    \begin{align*}
+    \frac{1}{x} + \frac{2}{x^2} - \frac{3}{x^3} &= \frac{x^2}{x^3} + \frac{2x}{x^3} - \frac{3}{x^3}\\
+    &= \frac{x^2+2x-3}{x^3}\\
+    &= \frac{(x+3)(x-1)}{x^3}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Problema 4:} Efectúe $\dfrac{2x}{x^2-1} + \dfrac{3}{x-1} - \dfrac{1}{x+1}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item Factorizar: $x^2-1 = (x-1)(x+1)$
+    \item MCD: $(x-1)(x+1)$
+    \begin{align*}
+    &\frac{2x}{(x-1)(x+1)} + \frac{3}{x-1} - \frac{1}{x+1}\\
+    &= \frac{2x}{(x-1)(x+1)} + \frac{3(x+1)}{(x-1)(x+1)} - \frac{(x-1)}{(x-1)(x+1)}\\
+    &= \frac{2x+3(x+1)-(x-1)}{(x-1)(x+1)}\\
+    &= \frac{2x+3x+3-x+1}{(x-1)(x+1)}\\
+    &= \frac{4x+4}{(x-1)(x+1)} = \frac{4(x+1)}{(x-1)(x+1)} = \frac{4}{x-1}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Problema 5:} Efectúe $\dfrac{x+1}{x^2+5x+6} - \dfrac{x-1}{x^2+4x+3}$
+
+\textbf{Solución detallada:}
+\begin{enumerate}
+    \item Factorizar:
+    \begin{itemize}
+        \item $x^2+5x+6 = (x+2)(x+3)$
+        \item $x^2+4x+3 = (x+1)(x+3)$
+    \end{itemize}
+    \item MCD: $(x+1)(x+2)(x+3)$
+    \begin{align*}
+    &= \frac{(x+1)(x+1)}{(x+1)(x+2)(x+3)} - \frac{(x-1)(x+2)}{(x+1)(x+2)(x+3)}\\
+    &= \frac{(x+1)^2-(x-1)(x+2)}{(x+1)(x+2)(x+3)}\\
+    &= \frac{x^2+2x+1-(x^2+x-2)}{(x+1)(x+2)(x+3)}\\
+    &= \frac{x^2+2x+1-x^2-x+2}{(x+1)(x+2)(x+3)}\\
+    &= \frac{x+3}{(x+1)(x+2)(x+3)} = \frac{1}{(x+1)(x+2)}
+    \end{align*}
+\end{enumerate}
+
+%========================================
+\subsection*{Ejercicio 6: Fracciones Compuestas}
+
+\textbf{Problema 1:} Simplifique $\dfrac{1+\dfrac{1}{x}}{1-\dfrac{1}{x^2}}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{1+\dfrac{1}{x}}{1-\dfrac{1}{x^2}} &= \frac{\dfrac{x+1}{x}}{\dfrac{x^2-1}{x^2}}\\
+&= \frac{x+1}{x} \cdot \frac{x^2}{x^2-1}\\
+&= \frac{(x+1)x^2}{x(x-1)(x+1)}\\
+&= \frac{x}{x-1}
+\end{align*}
+
+\textbf{Problema 2:} Simplifique $\dfrac{\dfrac{a}{b}+\dfrac{b}{a}}{\dfrac{1}{a}+\dfrac{1}{b}}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{\dfrac{a}{b}+\dfrac{b}{a}}{\dfrac{1}{a}+\dfrac{1}{b}} &= \frac{\dfrac{a^2+b^2}{ab}}{\dfrac{a+b}{ab}}\\
+&= \frac{a^2+b^2}{ab} \cdot \frac{ab}{a+b}\\
+&= \frac{a^2+b^2}{a+b}
+\end{align*}
+
+\textbf{Problema 3:} Simplifique $\dfrac{\dfrac{x+1}{x-1}}{\dfrac{x^2-1}{x+2}}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{\dfrac{x+1}{x-1}}{\dfrac{x^2-1}{x+2}} &= \frac{x+1}{x-1} \div \frac{x^2-1}{x+2}\\
+&= \frac{x+1}{x-1} \cdot \frac{x+2}{(x-1)(x+1)}\\
+&= \frac{\cancel{(x+1)}(x+2)}{(x-1)^2\cancel{(x+1)}}\\
+&= \frac{x+2}{(x-1)^2}
+\end{align*}
+
+\textbf{Problema 4:} Simplifique $\dfrac{1-\dfrac{2}{x}+\dfrac{1}{x^2}}{1-\dfrac{1}{x^2}}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{1-\dfrac{2}{x}+\dfrac{1}{x^2}}{1-\dfrac{1}{x^2}} &= \frac{\dfrac{x^2-2x+1}{x^2}}{\dfrac{x^2-1}{x^2}}\\
+&= \frac{x^2-2x+1}{x^2} \cdot \frac{x^2}{x^2-1}\\
+&= \frac{(x-1)^2}{(x-1)(x+1)}\\
+&= \frac{x-1}{x+1}
+\end{align*}
+
+\textbf{Problema 5:} Simplifique $\dfrac{\dfrac{1}{x+1}-\dfrac{1}{x-1}}{\dfrac{2}{x^2-1}}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+&\frac{\dfrac{1}{x+1}-\dfrac{1}{x-1}}{\dfrac{2}{x^2-1}}\\
+&= \frac{\dfrac{(x-1)-(x+1)}{(x+1)(x-1)}}{\dfrac{2}{x^2-1}}\\
+&= \frac{\dfrac{-2}{x^2-1}}{\dfrac{2}{x^2-1}}\\
+&= \frac{-2}{x^2-1} \cdot \frac{x^2-1}{2}\\
+&= \frac{-2(x^2-1)}{2(x^2-1)} = -1
+\end{align*}
+
+%========================================
+\subsection*{Ejercicio 7: Repaso}
+
+\textbf{Problema 1:} Simplifique completamente: $\dfrac{x^3-8}{x^2-4} \cdot \dfrac{x+2}{x^2+2x+4}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{x^3-8}{x^2-4} \cdot \frac{x+2}{x^2+2x+4} &= \frac{(x-2)(x^2+2x+4)}{(x-2)(x+2)} \cdot \frac{x+2}{x^2+2x+4}\\
+&= \frac{\cancel{(x-2)}\cancel{(x^2+2x+4)}\cancel{(x+2)}}{\cancel{(x-2)}\cancel{(x+2)}\cancel{(x^2+2x+4)}}\\
+&= 1
+\end{align*}
+
+\textbf{Problema 2:} Efectúe y simplifique: $\dfrac{1}{x+1} + \dfrac{2}{x-1} - \dfrac{3x}{x^2-1}$
+
+\textbf{Solución detallada:}
+MCD: $(x-1)(x+1) = x^2-1$
+\begin{align*}
+&\frac{1}{x+1} + \frac{2}{x-1} - \frac{3x}{x^2-1}\\
+&= \frac{(x-1)}{(x+1)(x-1)} + \frac{2(x+1)}{(x+1)(x-1)} - \frac{3x}{(x+1)(x-1)}\\
+&= \frac{(x-1)+2(x+1)-3x}{(x+1)(x-1)}\\
+&= \frac{x-1+2x+2-3x}{x^2-1}\\
+&= \frac{1}{x^2-1}
+\end{align*}
+
+\textbf{Problema 3:} Simplifique la fracción compuesta: $\dfrac{\dfrac{1}{a}-\dfrac{1}{b}}{\dfrac{1}{a^2}-\dfrac{1}{b^2}}$
+
+\textbf{Solución detallada:}
+\begin{align*}
+\frac{\dfrac{1}{a}-\dfrac{1}{b}}{\dfrac{1}{a^2}-\dfrac{1}{b^2}} &= \frac{\dfrac{b-a}{ab}}{\dfrac{b^2-a^2}{a^2b^2}}\\
+&= \frac{b-a}{ab} \cdot \frac{a^2b^2}{b^2-a^2}\\
+&= \frac{(b-a) \cdot a^2b^2}{ab(b-a)(b+a)}\\
+&= \frac{\cancel{(b-a)}ab\cancel{ab}}{\cancel{ab}\cancel{(b-a)}(b+a)}\\
+&= \frac{ab}{b+a}
+\end{align*}
+
+\textbf{Problema 4:} Encuentre el dominio y simplifique: $\dfrac{x^2-5x+6}{x^2-9}$
+
+\textbf{Solución detallada:}
+
+\textbf{Dominio:}
+\begin{enumerate}
+    \item Factorizar denominador: $x^2-9 = (x-3)(x+3)$
+    \item El denominador es cero cuando $x = 3$ o $x = -3$
+    \item Dominio: $\{x|x \neq 3, x \neq -3\}$
+\end{enumerate}
+
+\textbf{Simplificación:}
+\begin{align*}
+\frac{x^2-5x+6}{x^2-9} &= \frac{(x-2)(x-3)}{(x-3)(x+3)}\\
+&= \frac{(x-2)\cancel{(x-3)}}{\cancel{(x-3)}(x+3)}\\
+&= \frac{x-2}{x+3}
+\end{align*}
+
+\textbf{Nota importante:} Aunque simplificamos y cancelamos $(x-3)$, el dominio original se mantiene: $x \neq 3$ y $x \neq -3$.

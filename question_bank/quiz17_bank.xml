@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz17</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Dominio con Radicales -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Dominio-Radicales</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Encuentre el dominio de \(\dfrac{\sqrt{2x+5}}{x^2-7x+10}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\left\{x\middle|x \geq -\frac{5}{2}, x \neq 2, x \neq 5\right\}\)</p>]]></text>
+      <feedback><text>¡Correcto! Consideraste ambas restricciones: el radicando debe ser no negativo (2x+5 ≥ 0) y el denominador no puede ser cero (factorizado como (x-2)(x-5)).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x|x \neq 2, x \neq 5\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Olvidaste la restricción del radical. El radicando 2x+5 debe ser no negativo, por lo que x ≥ -5/2.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\left\{x\middle|x \geq -\frac{5}{2}, x \neq 10\right\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los valores que hacen cero el denominador son x=2 y x=5 (no 10). Recuerda factorizar x²-7x+10 = (x-2)(x-5).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\left\{x\middle|x > -\frac{5}{2}, x \neq 2, x \neq 5\right\}\)</p>]]></text>
+      <feedback><text>Incorrecto. La desigualdad del radical es ≥ (mayor o igual), no > (estrictamente mayor). El valor x = -5/2 sí está incluido en el dominio.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Dominio con Factorización Triple -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Dominio-FactorizacionTriple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Encuentre el dominio de \(\dfrac{x-1}{x^3+x^2-6x}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\{x|x \neq 0, x \neq -3, x \neq 2\}\)</p>]]></text>
+      <feedback><text>¡Correcto! Factorizaste completamente: x³+x²-6x = x(x+3)(x-2), por lo que los valores excluidos son x=0, x=-3 y x=2.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x|x \neq 0, x \neq 3, x \neq -2\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los signos de los factores están invertidos. La factorización correcta es x(x+3)(x-2), no x(x-3)(x+2).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x|x \neq 0, x \neq -6\}\)</p>]]></text>
+      <feedback><text>Incorrecto. No factorizaste completamente el trinomio x²+x-6. Este se factoriza como (x+3)(x-2), dando tres valores excluidos en total.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x|x \neq -3, x \neq 2\}\)</p>]]></text>
+      <feedback><text>Incorrecto. Olvidaste el factor común x. La factorización completa es x(x+3)(x-2), por lo que x=0 también debe excluirse.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Diferencia de Cubos -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Simplificacion-DiferenciaCubos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{x^3-27}{x^2-9}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x^2+3x+9}{x+3}\)</p>]]></text>
+      <feedback><text>¡Correcto! Usaste la fórmula de diferencia de cubos en el numerador: x³-27 = (x-3)(x²+3x+9), y diferencia de cuadrados en el denominador: x²-9 = (x-3)(x+3), luego cancelaste (x-3).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-3}{x+3}\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes cancelar directamente x³ con x². Debes factorizar primero. El numerador x³-27 es una diferencia de cubos que incluye el factor (x²+3x+9).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^2+3x+9\)</p>]]></text>
+      <feedback><text>Incorrecto. Cancelaste incorrectamente todo el denominador. Solo puedes cancelar el factor (x-3), quedando (x+3) en el denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x-3)(x^2+9)}{(x-3)(x+3)}\)</p>]]></text>
+      <feedback><text>Incorrecto. La fórmula de diferencia de cubos es a³-b³ = (a-b)(a²+ab+b²). Para x³-27, el segundo factor es x²+3x+9, no x²+9.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Trinomio Cuadrado Perfecto -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Simplificacion-TCP</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{x^2+6x+9}{x^2-9}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+3}{x-3}\)</p>]]></text>
+      <feedback><text>¡Correcto! Reconociste que x²+6x+9 = (x+3)² es un trinomio cuadrado perfecto y x²-9 = (x-3)(x+3), luego cancelaste (x+3).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{6x+9}{-9}\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes cancelar solo los términos x². Debes factorizar primero ambas expresiones completamente.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+3)^2}{x^2-9}\)</p>]]></text>
+      <feedback><text>Parcialmente correcto. Factorizaste el numerador, pero olvidaste factorizar el denominador x²-9 = (x-3)(x+3) para poder cancelar.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x+3\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes cancelar todo el denominador. Después de factorizar y cancelar (x+3), queda (x-3) en el denominador.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Factor Común y Simplificación -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Simplificacion-FactorComun</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{3x^2-12}{x^2-4x+4}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{3(x+2)}{x-2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Factorizaste el numerador 3x²-12 = 3(x-2)(x+2) y el denominador x²-4x+4 = (x-2)², luego cancelaste un factor (x-2).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{3(x+2)}{(x-2)^2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Después de factorizar, hay un factor (x-2) en el numerador y (x-2)² en el denominador, por lo que sí puedes cancelar un (x-2).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{3(x^2-4)}{(x-2)^2}\)</p>]]></text>
+      <feedback><text>Parcialmente correcto. Factorizaste el numerador hasta 3(x²-4), pero falta factorizar x²-4 = (x-2)(x+2) para poder cancelar con el denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3(x+2)\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes cancelar ambos factores (x-2) del denominador. Solo hay un (x-2) en el numerador, así que queda uno en el denominador.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Multiplicación con Cancelación Múltiple -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Multiplicacion-CancelacionMultiple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Multiplique \(\dfrac{x^2-4}{x+3} \cdot \dfrac{x^2+6x+9}{x^2-4x+4}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+2)(x+3)}{x-2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Factorizaste todo primero: (x-2)(x+2)/(x+3) · (x+3)²/(x-2)², y luego cancelaste (x-2) y (x+3) correctamente.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x^2-4)(x^2+6x+9)}{(x+3)(x^2-4x+4)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes factorizar antes de multiplicar. Esto te permite cancelar factores comunes y simplificar.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+2)(x+3)}{(x-2)^2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Hay dos factores (x-2) en el denominador y uno en el numerador, así que puedes cancelar uno, quedando solo (x-2) en el denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+2}{x-2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Cancelaste incorrectamente. Hay dos factores (x+3), uno en numerador y dos en el segundo numerador, menos uno en denominador, queda uno en el numerador final.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Multiplicación Compleja -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Multiplicacion-Compleja</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Multiplique \(\dfrac{x^2+x-6}{x^2-1} \cdot \dfrac{x^2-2x+1}{x^2-9}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x-2)(x-1)}{(x+1)(x-3)}\)</p>]]></text>
+      <feedback><text>¡Correcto! Factorizaste correctamente todos los términos y cancelaste (x+3) y un factor (x-1), quedando esta expresión simplificada.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+3)(x-2)}{(x-1)(x+1)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Olvidaste cancelar factores comunes. Los factores (x+3) y un (x-1) se cancelan entre numerador y denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-2}{x+1}\)</p>]]></text>
+      <feedback><text>Incorrecto. Cancelaste incorrectamente. Solo puedes cancelar un factor (x-1) de los dos que están en el segundo numerador, quedando uno en el resultado.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x-2)(x-1)^2}{(x+1)(x-3)}\)</p>]]></text>
+      <feedback><text>Incorrecto. El segundo numerador tiene (x-1)² y el primer denominador tiene (x-1), por lo que sí puedes cancelar un factor (x-1).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Multiplicación con Factor Común -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Multiplicacion-FactorComun</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Multiplique \(\dfrac{2x^2-8}{x^2+5x} \cdot \dfrac{x^2+4x-5}{x-2}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{2(x+2)(x-1)}{x}\)</p>]]></text>
+      <feedback><text>¡Correcto! Factorizaste correctamente: 2(x-2)(x+2)/[x(x+5)] · (x+5)(x-1)/(x-2), y cancelaste (x-2) y (x+5).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2(x+2)(x-1)(x+5)}{x(x-2)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los factores (x-2) y (x+5) aparecen en numerador y denominador, por lo que deben cancelarse.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+2)(x-1)}{x}\)</p>]]></text>
+      <feedback><text>Incorrecto. Olvidaste el factor 2 que sale del numerador 2x²-8 = 2(x²-4).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2(x^2-4)(x^2+4x-5)}{x(x+5)(x-2)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes factorizar completamente x²-4 = (x-2)(x+2) y x²+4x-5 = (x+5)(x-1) para poder cancelar factores comunes.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: División Básica -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-Division-Basica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Divida \(\dfrac{x^2-1}{x+3} \div \dfrac{x-1}{x^2+6x+9}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((x+1)(x+3)\)</p>]]></text>
+      <feedback><text>¡Correcto! Multiplicaste por el recíproco, factorizaste x²-1 = (x-1)(x+1) y x²+6x+9 = (x+3)², y cancelaste (x-1) y un (x+3).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x^2-1}{(x+3)(x-1)}\)</p>]]></text>
+      <feedback><text>Incorrecto. No multiplicaste correctamente. Para dividir fracciones, debes multiplicar por el recíproco del divisor.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+1)(x+3)^2}{x-1}\)</p>]]></text>
+      <feedback><text>Incorrecto. Hay un factor (x-1) en el numerador [de x²-1 = (x-1)(x+1)] que cancela con el (x-1) del divisor original.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x+1\)</p>]]></text>
+      <feedback><text>Incorrecto. Cancelaste incorrectamente. Después de todas las cancelaciones, quedan dos factores: (x+1) y (x+3).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: División con Simplificación -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-Division-Simplificacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Divida \(\dfrac{2x^2-8}{x^2+x-6} \div \dfrac{x-2}{x+3}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{2(x+2)}{x-2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Convertiste a multiplicación por el recíproco, factorizaste completamente, y cancelaste (x-2) [una vez] y (x+3).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2(x+2)(x+3)}{(x-2)^2}\)</p>]]></text>
+      <feedback><text>Incorrecto. El factor (x+3) aparece en numerador y denominador, debe cancelarse. Quedan tres factores (x-2) en total, cancelando uno.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2(x+2)\)</p>]]></text>
+      <feedback><text>Incorrecto. Hay tres factores (x-2) en total: uno en el numerador original, uno en el denominador original, y uno en el divisor. Solo puedes cancelar dos de ellos.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2(x^2-4)}{(x+3)(x-2)^2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes factorizar x²-4 = (x-2)(x+2) para identificar y cancelar factores comunes con el denominador.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: División Múltiple con Multiplicación -->
+  <question type="multichoice">
+    <name>
+      <text>Q11-Division-Multiple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{x^2-16}{2x+6} \cdot \dfrac{x^2+3x}{x^2-4x} \div \dfrac{x+4}{2x}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x\)</p>]]></text>
+      <feedback><text>¡Correcto! Después de convertir la división en multiplicación y factorizar completamente, todos los factores se cancelan excepto una x en el numerador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x^2}{x+4}\)</p>]]></text>
+      <feedback><text>Incorrecto. El factor (x+4) se cancela completamente entre numerador y denominador. Continúa simplificando.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2x(x-4)(x+4)(x+3)}{(x+3)(x-4)(x+4)}\)</p>]]></text>
+      <feedback><text>Parcialmente correcto en la factorización, pero no cancelaste los factores comunes. Todos estos factores se cancelan excepto una x.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(1\)</p>]]></text>
+      <feedback><text>Incorrecto. Cancelaste incorrectamente. Hay tres factores x en el numerador y dos en el denominador, quedando una x en el resultado.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Suma con Potencias Sucesivas -->
+  <question type="multichoice">
+    <name>
+      <text>Q12-Suma-PotenciasSucesivas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Efectúe \(\dfrac{1}{x} + \dfrac{2}{x^2} - \dfrac{3}{x^3}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+3)(x-1)}{x^3}\)</p>]]></text>
+      <feedback><text>¡Correcto! Usaste el MCD = x³, obtuviste (x²+2x-3)/x³, y factorizaste el numerador como (x+3)(x-1).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x^2+2x-3}{x}\)</p>]]></text>
+      <feedback><text>Incorrecto. El MCD debe ser x³ (la mayor potencia), no x. Debes multiplicar cada fracción por las potencias apropiadas de x.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{1+2-3}{x^3}\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes sumar los numeradores directamente sin convertir cada fracción al mismo denominador. Debes multiplicar cada numerador por la potencia apropiada de x.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x^2+2x-3}{x^3}\)</p>]]></text>
+      <feedback><text>Casi correcto. Obtuviste el numerador correcto, pero no lo factorizaste. El numerador x²+2x-3 se factoriza como (x+3)(x-1).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 13: Suma con Denominadores Relacionados -->
+  <question type="multichoice">
+    <name>
+      <text>Q13-Suma-DenominadoresRelacionados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Efectúe \(\dfrac{2x}{x^2-1} + \dfrac{3}{x-1} - \dfrac{1}{x+1}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{4}{x-1}\)</p>]]></text>
+      <feedback><text>¡Correcto! Identificaste el MCD = (x-1)(x+1), sumaste correctamente obteniendo 4(x+1) en el numerador, y cancelaste (x+1).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{4x+4}{(x-1)(x+1)}\)</p>]]></text>
+      <feedback><text>Casi correcto. Obtuviste 4x+4 = 4(x+1) en el numerador, pero no factorizaste ni cancelaste con el (x+1) del denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2x+3-1}{x^2-1}\)</p>]]></text>
+      <feedback><text>Incorrecto. No convertiste cada fracción al MCD antes de sumar. Debes multiplicar 3/(x-1) por (x+1) y 1/(x+1) por (x-1).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2x+2}{x-1}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en la suma de numeradores. Debe ser: 2x + 3(x+1) - (x-1) = 2x + 3x + 3 - x + 1 = 4x + 4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 14: Resta con Trinomios en Denominadores -->
+  <question type="multichoice">
+    <name>
+      <text>Q14-Resta-TrinomiosDenominadores</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Efectúe \(\dfrac{x+1}{x^2+5x+6} - \dfrac{x-1}{x^2+4x+3}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{1}{(x+1)(x+2)}\)</p>]]></text>
+      <feedback><text>¡Correcto! Factorizaste ambos denominadores, usaste MCD = (x+1)(x+2)(x+3), obtuviste (x+3) en el numerador y cancelaste con el denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+3}{(x+1)(x+2)(x+3)}\)</p>]]></text>
+      <feedback><text>Casi correcto. Obtuviste (x+3) en el numerador, pero no lo cancelaste con el (x+3) que está en el denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{2}{(x+2)(x+3)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Error en la resta de numeradores. Debe ser: (x+1)² - (x-1)(x+2) = x²+2x+1 - (x²+x-2) = x+3.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+1)-(x-1)}{(x^2+5x+6)-(x^2+4x+3)}\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes restar denominadores. Debes factorizar cada denominador, encontrar el MCD, y convertir cada fracción al MCD antes de restar.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 15: Fracción Compuesta Simple -->
+  <question type="multichoice">
+    <name>
+      <text>Q15-FraccionCompuesta-Simple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{\dfrac{x+1}{x-1}}{\dfrac{x^2-1}{x+2}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+2}{(x-1)^2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Dividiste el numerador entre el denominador, multiplicaste por el recíproco, factorizaste x²-1 = (x-1)(x+1), y cancelaste (x+1).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+1)(x+2)}{(x-1)(x^2-1)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Multiplicaste incorrectamente. Para dividir fracciones, multiplica por el recíproco del denominador, y luego factoriza x²-1.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+2}{x-1}\)</p>]]></text>
+      <feedback><text>Incorrecto. Después de cancelar (x+1), quedan dos factores (x-1) en el denominador [de (x-1) original y de x²-1 = (x-1)(x+1)].</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x+1)(x+2)}{(x-1)(x^2-1)}\)</p>]]></text>
+      <feedback><text>Incorrecto. Debes factorizar x²-1 = (x-1)(x+1) para poder cancelar el factor (x+1) entre numerador y denominador.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 16: Fracción Compuesta con Expresiones Múltiples -->
+  <question type="multichoice">
+    <name>
+      <text>Q16-FraccionCompuesta-Multiple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{1-\dfrac{2}{x}+\dfrac{1}{x^2}}{1-\dfrac{1}{x^2}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-1}{x+1}\)</p>]]></text>
+      <feedback><text>¡Correcto! Simplificaste el numerador a (x-1)²/x² y el denominador a (x²-1)/x², luego dividiste y cancelaste factores comunes correctamente.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x^2-2x+1}{x^2-1}\)</p>]]></text>
+      <feedback><text>Casi correcto. Simplificaste correctamente numerador y denominador, pero no dividiste ni factorizaste. x²-2x+1 = (x-1)² y x²-1 = (x-1)(x+1).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x-1)^2}{(x-1)(x+1)}\)</p>]]></text>
+      <feedback><text>Casi correcto. Factorizaste correctamente, pero no cancelaste el factor común (x-1) entre numerador y denominador.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{1-2+1}{1-1}\)</p>]]></text>
+      <feedback><text>Incorrecto. No puedes sustituir x por 1 ni simplificar de esta manera. Debes trabajar algebraicamente usando el MCD para cada nivel.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 17: Fracción Compuesta con Diferencia -->
+  <question type="multichoice">
+    <name>
+      <text>Q17-FraccionCompuesta-Diferencia</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique \(\dfrac{\dfrac{1}{x+1}-\dfrac{1}{x-1}}{\dfrac{2}{x^2-1}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(-1\)</p>]]></text>
+      <feedback><text>¡Correcto! Simplificaste el numerador a -2/(x²-1), dividiste entre 2/(x²-1), y obtuviste -2/2 = -1. ¡Excelente trabajo!</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{-2}{2}\)</p>]]></text>
+      <feedback><text>Casi correcto. Obtuviste la expresión correcta, pero no simplificaste el resultado final. -2/2 = -1.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{(x-1)-(x+1)}{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Después de restar en el numerador, obtienes -2, no (x-1)-(x+1) sin simplificar. Y debes completar la división.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(1\)</p>]]></text>
+      <feedback><text>Incorrecto. Error de signo. El numerador da -2/(x²-1), no 2/(x²-1), porque (x-1)-(x+1) = -2.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

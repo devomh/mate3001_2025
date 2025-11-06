@@ -1,0 +1,182 @@
+\documentclass[12pt]{article}
+
+%========================================
+% PACKAGES AND CONFIGURATION
+%========================================
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}              % Spanish language support
+\decimalpoint                                % Force decimal point instead of comma
+\usepackage[margin=1in]{geometry}
+\setlength{\headheight}{15pt}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz}                        % For LaTeX-generated diagrams
+\usetikzlibrary{arrows.meta}           % For arrow styles
+\usetikzlibrary{shapes}                % For diamond and other shapes
+\usetikzlibrary{decorations.pathreplacing} % For braces and decorations
+\usetikzlibrary{calc}                  % For coordinate calculations
+\usetikzlibrary{positioning}           % For relative positioning (below=of, etc.)
+\usepackage{comment}                     % For conditional content exclusion
+\usepackage{cancel}                      % For showing algebraic cancellation
+
+% Fix Spanish babel conflicts with TikZ
+\usetikzlibrary{babel}
+
+%========================================
+% COURSE CUSTOMIZATION SECTION
+%========================================
+% MODIFY THESE FOR EACH COURSE:
+\newcommand{\coursecode}{MATE 3001}      % Course code
+\newcommand{\coursename}{Matemática Elemental}     % Course name
+\newcommand{\institution}{UPR-Humacao}   % Institution name
+\newcommand{\lessontitle}{Expresiones Racionales}    % Will be overridden per lesson
+
+%========================================
+% COLOR SCHEME DEFINITIONS
+%========================================
+\definecolor{defcolor}{RGB}{240,248,255}     % Light blue for definitions
+\definecolor{examplecolor}{RGB}{245,255,245} % Light green for examples
+\definecolor{exercisecolor}{RGB}{255,248,240} % Light orange for exercises
+\definecolor{theoremcolor}{RGB}{255,250,240}  % Light orange for theorems
+\definecolor{warningcolor}{RGB}{255,240,240}  % Light red for warnings
+
+%========================================
+% CUSTOM ENVIRONMENTS
+%========================================
+% Definition Environment (Blue)
+\newmdenv[
+    backgroundcolor=defcolor,
+    linecolor=blue!50,
+    linewidth=2pt,
+    leftmargin=10pt,
+    rightmargin=10pt,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    frametitle={\textbf{Definición}},
+    frametitlealignment=\raggedright
+]{definition}
+
+% Example Environment (Green)
+\newmdenv[
+    backgroundcolor=examplecolor,
+    linecolor=green!50,
+    linewidth=2pt,
+    leftmargin=10pt,
+    rightmargin=10pt,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    frametitle={\textbf{Ejemplo}},
+    frametitlealignment=\raggedright
+]{example}
+
+% Exercise Environment (Orange)
+\newcounter{exercise}[section]
+\newcounter{problem}[exercise]
+\newmdenv[
+    backgroundcolor=exercisecolor,
+    linecolor=orange!50,
+    linewidth=2pt,
+    leftmargin=10pt,
+    rightmargin=10pt,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    frametitle={\stepcounter{exercise}\textbf{Ejercicio \theexercise}},
+    frametitlealignment=\raggedright
+]{exercise}
+
+% Theorem Environment (Orange variant)
+\newmdenv[
+    backgroundcolor=theoremcolor,
+    linecolor=orange!50,
+    linewidth=2pt,
+    leftmargin=10pt,
+    rightmargin=10pt,
+    innertopmargin=10pt,
+    innerbottommargin=10pt
+]{theorem}
+
+% Warning Environment (Red)
+\newmdenv[
+    backgroundcolor=warningcolor,
+    linecolor=red!50,
+    linewidth=2pt,
+    leftmargin=10pt,
+    rightmargin=10pt,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    frametitle={\textbf{¡Atención!}},
+    frametitlealignment=\raggedright
+]{warning}
+
+%========================================
+% HEADER AND FOOTER CONFIGURATION
+%========================================
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\coursecode\ - \coursename}
+\lhead{\lessontitle}
+\cfoot{\thepage}
+
+%========================================
+% CUSTOM COMMANDS
+%========================================
+\newcommand{\lesson}[1]{\renewcommand{\lessontitle}{#1}\section{#1}}
+\newcommand{\subsectiontitle}[1]{\subsection{#1}}
+
+% Exercise numbering commands
+\newcommand{\problem}{\par\noindent\stepcounter{problem}\textbf{\theproblem.} }
+\newcommand{\solution}{\textbf{Solución:} }
+
+% Custom environment for exercise lists
+\newenvironment{exerciselist}
+    {\begin{enumerate}[label=\textbf{\alph*.}]}
+    {\end{enumerate}}
+
+% Solution environment with conditional display
+\newif\ifshowsolutions
+% \showsolutionstrue  % Uncomment for instructor version
+\showsolutionsfalse   % Default: student version
+
+\ifshowsolutions
+    \newenvironment{solucion}[1][Solución]
+      {\par\medskip\noindent\textbf{#1:}\par\nopagebreak}
+      {\par\medskip}
+\else
+    \excludecomment{solucion}
+\fi
+
+%========================================
+% GRAPHICS CONFIGURATION
+%========================================
+\graphicspath{{../images/}{../images/shared/}{../images/diagrams/}{../images/14_expresiones_racionales/}}
+
+%========================================
+% DOCUMENT CONTENT
+%========================================
+\begin{document}
+
+% Title page
+\title{\lessontitle}
+\author{\coursecode\ - \coursename}
+\date{}
+\maketitle
+
+% Set section counter to lesson number
+\setcounter{section}{13}
+
+% Modular content inclusion
+\input{includes/14_ExpresionesRacionales_Content}
+\input{includes/14_ExpresionesRacionales_Exercises}
+
+% Conditional solution inclusion
+\ifshowsolutions
+    \newpage
+    \section*{Soluciones}
+    \input{includes/14_ExpresionesRacionales_Solutions}
+\fi
+
+\end{document}
