@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz19</text>
+    </category>
+  </question>
+
+  <!-- Question 1 -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Radicales-SimplificacionPar</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\sqrt{98a^6b^5}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(7a^3b^2\sqrt{2b}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se factorizó 98 = 49·2, y se aplicaron las leyes de exponentes correctamente. Para variables con exponente par bajo raíz par, se divide el exponente entre 2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot to simplify coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{98}a^3b^2\sqrt{b}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta simplificar \(\sqrt{98}\). Note que \(98 = 49 \cdot 2 = 7^2 \cdot 2\), por lo que \(\sqrt{98} = 7\sqrt{2}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(14a^3b^2\sqrt{b}\)</p>]]></text>
+      <feedback><text>Incorrecto. El coeficiente 14 sugiere que se multiplicó 7 × 2, pero el 2 debe permanecer dentro del radical. La respuesta correcta es \(7a^3b^2\sqrt{2b}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong exponents -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(7a^6b^5\sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. No se simplificaron los exponentes correctamente. Al sacar de la raíz cuadrada, los exponentes se dividen entre 2: \(a^6 \to a^3\) y \(b^5 = b^4 \cdot b \to b^2\sqrt{b}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2 -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Radicales-SumaRadicales</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\sqrt{50x^2}+\sqrt{32x^2}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(9|x|\sqrt{2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se simplificó cada radical: \(\sqrt{50x^2} = 5|x|\sqrt{2}\) y \(\sqrt{32x^2} = 4|x|\sqrt{2}\), luego se sumaron los coeficientes: \(5|x| + 4|x| = 9|x|\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot absolute value -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(9x\sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el valor absoluto. Como \(\sqrt{x^2} = |x|\), la respuesta correcta debe incluir \(|x|\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Added radicands incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(|x|\sqrt{82}\)</p>]]></text>
+      <feedback><text>Incorrecto. No se pueden sumar los radicandos directamente (\(50 + 32 = 82\)). Primero hay que simplificar cada radical y luego sumar términos semejantes.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(20|x|\sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. El coeficiente 20 sugiere multiplicación en vez de suma. Los coeficientes se suman: \(5|x|\sqrt{2} + 4|x|\sqrt{2} = (5+4)|x|\sqrt{2} = 9|x|\sqrt{2}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3 -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Radicales-SimplificacionImpar</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\sqrt[3]{-128x^7y^4}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(-4x^2y\sqrt[3]{2xy}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se factorizó -128 = -64·2, \(x^7 = x^6 \cdot x\), \(y^4 = y^3 \cdot y\). Como el índice es impar, se puede sacar la raíz del número negativo: \(\sqrt[3]{-64} = -4\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot negative sign -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(4x^2y\sqrt[3]{2xy}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta el signo negativo. Como \(\sqrt[3]{-64} = -4\), la respuesta debe ser negativa.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-8x^2y\sqrt[3]{xy}\)</p>]]></text>
+      <feedback><text>Incorrecto. El coeficiente y el radicando son incorrectos. \(\sqrt[3]{-128} = \sqrt[3]{-64 \cdot 2} = -4\sqrt[3]{2}\), no \(-8\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong exponents -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-4x^7y^4\sqrt[3]{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los exponentes no se simplificaron. Para raíz cúbica: \(x^7 = x^6 \cdot x\) da \(x^2\sqrt[3]{x}\), y \(y^4 = y^3 \cdot y\) da \(y\sqrt[3]{y}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4 -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Radicales-Raiz4ta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\sqrt[4]{162a^9b^{12}}\) (asumiendo \(a \geq 0\))</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(3a^2b^3\sqrt[4]{2a}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se factorizó 162 = 81·2, \(a^9 = a^8 \cdot a\), \(b^{12}\) es divisible entre 4. \(\sqrt[4]{81} = 3\), \(\sqrt[4]{a^8} = a^2\), \(\sqrt[4]{b^{12}} = b^3\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(9a^2b^3\sqrt[4]{2a}\)</p>]]></text>
+      <feedback><text>Incorrecto. \(\sqrt[4]{81} = 3\), no 9. Recuerde que \(3^4 = 81\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong exponents -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3ab^3\sqrt[4]{2a^5}\)</p>]]></text>
+      <feedback><text>Incorrecto. Para raíz cuarta, \(a^9 = a^8 \cdot a\) da \(a^2\sqrt[4]{a}\), no \(a\sqrt[4]{a^5}\). Se divide el exponente entre el índice: 8÷4 = 2.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't simplify -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3a^2b^3\sqrt[4]{2a^9}\)</p>]]></text>
+      <feedback><text>Incorrecto. El exponente de \(a\) dentro del radical debe simplificarse. Como \(a^9 = a^8 \cdot a\), solo queda \(a\) dentro del radical.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5 -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Radicales-Multiplicacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Multiplique y simplifique: \(\sqrt{6x^2}\cdot\sqrt{24x^3}\) (asumiendo \(x \geq 0\))</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(12x^2\sqrt{x}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se multiplicaron los radicandos: \(6x^2 \cdot 24x^3 = 144x^5\). Luego \(\sqrt{144x^5} = \sqrt{144x^4 \cdot x} = 12x^2\sqrt{x}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Didn't multiply coefficients -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6x^2\sqrt{x}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los coeficientes también se multiplican: \(6 \cdot 24 = 144\), y \(\sqrt{144} = 12\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Added exponents incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(12x^5\)</p>]]></text>
+      <feedback><text>Incorrecto. No se puede sacar \(x^5\) completamente de \(\sqrt{x^5}\). Como \(x^5 = x^4 \cdot x\), se obtiene \(x^2\sqrt{x}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(30x^2\sqrt{x}\)</p>]]></text>
+      <feedback><text>Incorrecto. El coeficiente 30 sugiere que se sumaron 6 + 24, pero deben multiplicarse. \(\sqrt{6 \cdot 24} = \sqrt{144} = 12\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6 -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Radicales-MultiplicacionCubica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Multiplique y simplifique: \(\sqrt[3]{4x}\cdot\sqrt[3]{16x^2}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(4x\)</p>]]></text>
+      <feedback><text>¡Correcto! Se multiplicaron los radicandos: \(4x \cdot 16x^2 = 64x^3\). Como \(\sqrt[3]{64x^3} = \sqrt[3]{4^3x^3} = 4x\), el resultado no tiene radical.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Didn't simplify -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt[3]{64x^3}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta expresión puede simplificarse completamente. Como \(64 = 4^3\) y tenemos \(x^3\), se obtiene \(4x\) sin radical.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(8x\)</p>]]></text>
+      <feedback><text>Incorrecto. \(\sqrt[3]{64} = 4\), no 8. Recuerde que \(4^3 = 64\), no \(8^3\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Left radical incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(4\sqrt[3]{x}\)</p>]]></text>
+      <feedback><text>Incorrecto. Como tenemos \(x^3\) bajo la raíz cúbica, \(x\) sale completamente: \(\sqrt[3]{x^3} = x\), no \(\sqrt[3]{x}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7 -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Radicales-RacionalizacionSimple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Racionalice: \(\dfrac{10}{\sqrt{5}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2\sqrt{5}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se multiplicó por \(\frac{\sqrt{5}}{\sqrt{5}}\): \(\frac{10}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}} = \frac{10\sqrt{5}}{5} = 2\sqrt{5}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Didn't simplify -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{10\sqrt{5}}{5}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta expresión puede simplificarse dividiendo: \(\frac{10\sqrt{5}}{5} = 2\sqrt{5}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Canceled incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(10\sqrt{5}\)</p>]]></text>
+      <feedback><text>Incorrecto. Después de racionalizar se obtiene \(\frac{10\sqrt{5}}{5}\), que simplifica a \(2\sqrt{5}\), no \(10\sqrt{5}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong simplification -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2\)</p>]]></text>
+      <feedback><text>Incorrecto. El \(\sqrt{5}\) debe permanecer en la respuesta. \(\frac{10}{\sqrt{5}} \neq 2\). La respuesta correcta es \(2\sqrt{5}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8 -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Radicales-RacionalizacionCubica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Racionalice: \(\dfrac{6}{\sqrt[3]{9}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2\sqrt[3]{3}\)</p>]]></text>
+      <feedback><text>¡Correcto! Como \(\sqrt[3]{9} = \sqrt[3]{3^2}\), se multiplicó por \(\frac{\sqrt[3]{3}}{\sqrt[3]{3}}\) para obtener \(\frac{6\sqrt[3]{3}}{\sqrt[3]{27}} = \frac{6\sqrt[3]{3}}{3} = 2\sqrt[3]{3}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Used wrong factor -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6\sqrt[3]{3}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta dividir entre 3 al final. \(\frac{6\sqrt[3]{3}}{3} = 2\sqrt[3]{3}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Squared instead of cubed -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2\sqrt[3]{9}\)</p>]]></text>
+      <feedback><text>Incorrecto. Para racionalizar \(\sqrt[3]{9}\), necesitamos \(\sqrt[3]{3}\) para completar \(\sqrt[3]{27} = 3\), no mantener \(\sqrt[3]{9}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't simplify denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{6\sqrt[3]{3}}{\sqrt[3]{27}}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta simplificar \(\sqrt[3]{27} = 3\). La expresión simplificada es \(\frac{6\sqrt[3]{3}}{3} = 2\sqrt[3]{3}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9 -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-Radicales-RacionalizacionBinomial</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Racionalice: \(\dfrac{5}{4-\sqrt{2}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\frac{20+5\sqrt{2}}{14}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se multiplicó por el conjugado \(\frac{4+\sqrt{2}}{4+\sqrt{2}}\): \(\frac{5(4+\sqrt{2})}{16-2} = \frac{20+5\sqrt{2}}{14}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Used wrong conjugate -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{20-5\sqrt{2}}{14}\)</p>]]></text>
+      <feedback><text>Incorrecto. El conjugado de \(4-\sqrt{2}\) es \(4+\sqrt{2}\), por lo que el numerador debe ser \(5(4+\sqrt{2}) = 20+5\sqrt{2}\), con signo positivo.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{20+5\sqrt{2}}{18}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador debe ser \((4)^2-(\sqrt{2})^2 = 16-2 = 14\), no 18.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't distribute -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{5(4+\sqrt{2})}{14}\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta distribuir el 5 en el numerador: \(5(4+\sqrt{2}) = 20+5\sqrt{2}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10 -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-Radicales-RacionalizacionBinomial2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Racionalice: \(\dfrac{3}{2+\sqrt{5}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(3\sqrt{5}-6\)</p>]]></text>
+      <feedback><text>¡Correcto! Se multiplicó por \(\frac{2-\sqrt{5}}{2-\sqrt{5}}\): \(\frac{3(2-\sqrt{5})}{4-5} = \frac{6-3\sqrt{5}}{-1} = -6+3\sqrt{5} = 3\sqrt{5}-6\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot negative denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6-3\sqrt{5}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador es \(4-5 = -1\), por lo que hay que cambiar los signos: \(\frac{6-3\sqrt{5}}{-1} = -6+3\sqrt{5}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Used wrong conjugate -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6+3\sqrt{5}\)</p>]]></text>
+      <feedback><text>Incorrecto. El conjugado de \(2+\sqrt{5}\) es \(2-\sqrt{5}\) (se cambia el signo). Además, el denominador \(4-5 = -1\) cambia los signos del numerador.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong denominator -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{6-3\sqrt{5}}{9}\)</p>]]></text>
+      <feedback><text>Incorrecto. El denominador debe ser \(2^2-(\sqrt{5})^2 = 4-5 = -1\), no 9.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11 -->
+  <question type="multichoice">
+    <name>
+      <text>Q11-Radicales-SumaResta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(2\sqrt{12}+\sqrt{27}-5\sqrt{3}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2\sqrt{3}\)</p>]]></text>
+      <feedback><text>¡Correcto! \(2\sqrt{12} = 2(2\sqrt{3}) = 4\sqrt{3}\), \(\sqrt{27} = 3\sqrt{3}\). Sumando: \(4\sqrt{3}+3\sqrt{3}-5\sqrt{3} = 2\sqrt{3}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Added radicands -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{34}\)</p>]]></text>
+      <feedback><text>Incorrecto. No se pueden sumar los radicandos directamente. Primero se debe simplificar cada radical para obtener términos semejantes con \(\sqrt{3}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong simplification -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(7\sqrt{3}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los coeficientes son \(4\sqrt{3}+3\sqrt{3}-5\sqrt{3}\). Al sumar: \(4+3-5 = 2\), no 7.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't combine like terms -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(4\sqrt{3}+3\sqrt{3}-5\sqrt{3}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esta expresión puede simplificarse sumando los coeficientes: \(4+3-5 = 2\), resultando en \(2\sqrt{3}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12 -->
+  <question type="multichoice">
+    <name>
+      <text>Q12-Radicales-SumaResta2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\sqrt{50}+\sqrt{18}-\sqrt{8}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(6\sqrt{2}\)</p>]]></text>
+      <feedback><text>¡Correcto! \(\sqrt{50} = 5\sqrt{2}\), \(\sqrt{18} = 3\sqrt{2}\), \(\sqrt{8} = 2\sqrt{2}\). Sumando: \(5\sqrt{2}+3\sqrt{2}-2\sqrt{2} = 6\sqrt{2}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong coefficient -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(8\sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los coeficientes son \(5+3-2 = 6\), no 8. Verifique la simplificación de cada radical.</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Added radicands -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{60}\)</p>]]></text>
+      <feedback><text>Incorrecto. No se pueden sumar/restar radicandos directamente (\(50+18-8 = 60\)). Primero simplifique cada radical.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong simplification of radicals -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(10\sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Verifique la simplificación: \(\sqrt{50} = 5\sqrt{2}\), \(\sqrt{18} = 3\sqrt{2}\), \(\sqrt{8} = 2\sqrt{2}\). La suma es \(5+3-2 = 6\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 13 -->
+  <question type="multichoice">
+    <name>
+      <text>Q13-Radicales-NotacionExponencial</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Convierta a forma radical: \(y^{-3/4}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\frac{1}{\sqrt[4]{y^3}}\)</p>]]></text>
+      <feedback><text>¡Correcto! El exponente negativo indica recíproco: \(y^{-3/4} = \frac{1}{y^{3/4}}\). Luego, el denominador del exponente (4) es el índice de la raíz, y el numerador (3) es la potencia: \(\frac{1}{\sqrt[4]{y^3}}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Forgot reciprocal -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt[4]{y^3}\)</p>]]></text>
+      <feedback><text>Incorrecto. El exponente negativo indica que la expresión debe estar en el denominador: \(y^{-3/4} = \frac{1}{y^{3/4}} = \frac{1}{\sqrt[4]{y^3}}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong index and power -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{1}{\sqrt[3]{y^4}}\)</p>]]></text>
+      <feedback><text>Incorrecto. En \(y^{3/4}\), el denominador (4) es el índice del radical y el numerador (3) es la potencia, no al revés.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Confused negative with root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-\sqrt[4]{y^3}\)</p>]]></text>
+      <feedback><text>Incorrecto. El exponente negativo no implica signo negativo, sino recíproco. \(y^{-3/4} = \frac{1}{y^{3/4}}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 14 -->
+  <question type="multichoice">
+    <name>
+      <text>Q14-Radicales-ExponentesFraccionarios</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\dfrac{x^{3/2}\,x^{1/2}}{x^{5/2}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\frac{1}{\sqrt{x}}\)</p>]]></text>
+      <feedback><text>¡Correcto! Se suman exponentes en el numerador: \(3/2 + 1/2 = 4/2 = 2\). Luego se resta: \(x^{2-5/2} = x^{-1/2} = \frac{1}{x^{1/2}} = \frac{1}{\sqrt{x}}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong exponent operation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^{-1}\)</p>]]></text>
+      <feedback><text>Incorrecto. Al sumar \(3/2 + 1/2 = 2\) y restar \(2 - 5/2 = -1/2\), no -1. La respuesta es \(x^{-1/2} = \frac{1}{\sqrt{x}}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Multiplied instead of added -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\frac{1}{x^{3/2}}\)</p>]]></text>
+      <feedback><text>Incorrecto. Los exponentes se suman al multiplicar, no se multiplican: \(x^{3/2} \cdot x^{1/2} = x^{3/2+1/2} = x^2\), no \(x^{3/4}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't convert to radical -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^{-1/2}\)</p>]]></text>
+      <feedback><text>Correcto el exponente, pero la pregunta pide forma radical. \(x^{-1/2} = \frac{1}{x^{1/2}} = \frac{1}{\sqrt{x}}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 15 -->
+  <question type="multichoice">
+    <name>
+      <text>Q15-Radicales-ProblemasMixtos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \(\sqrt[3]{a^5}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(a\sqrt[3]{a^2}\)</p>]]></text>
+      <feedback><text>¡Correcto! \(a^5 = a^3 \cdot a^2\), entonces \(\sqrt[3]{a^5} = \sqrt[3]{a^3 \cdot a^2} = a\sqrt[3]{a^2}\). Alternativamente, \(a^{5/3} = a^{3/3+2/3} = a \cdot a^{2/3}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong factorization -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(a^2\sqrt[3]{a}\)</p>]]></text>
+      <feedback><text>Incorrecto. Se debe factorizar como \(a^5 = a^3 \cdot a^2\), donde \(a^3\) es múltiplo del índice 3. Esto da \(a\sqrt[3]{a^2}\), no \(a^2\sqrt[3]{a}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Didn't simplify -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(a^{5/3}\)</p>]]></text>
+      <feedback><text>Correcto en forma exponencial, pero puede simplificarse más a forma radical: \(a^{5/3} = a^{3/3} \cdot a^{2/3} = a\sqrt[3]{a^2}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Divided exponent incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(a\sqrt{a^2}\)</p>]]></text>
+      <feedback><text>Incorrecto. El índice de la raíz es 3, no 2. La respuesta correcta es \(a\sqrt[3]{a^2}\), no \(a\sqrt{a^2}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 16 -->
+  <question type="multichoice">
+    <name>
+      <text>Q16-Radicales-EvaluacionNumerica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Evalúe sin calculadora: \(\sqrt{16}+\sqrt[3]{27}-\sqrt[4]{16}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(5\)</p>]]></text>
+      <feedback><text>¡Correcto! \(\sqrt{16} = 4\), \(\sqrt[3]{27} = 3\), \(\sqrt[4]{16} = 2\). Entonces: \(4 + 3 - 2 = 5\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong fourth root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3\)</p>]]></text>
+      <feedback><text>Incorrecto. Parece que usó \(\sqrt[4]{16} = 4\), pero \(2^4 = 16\), entonces \(\sqrt[4]{16} = 2\). La respuesta correcta es \(4+3-2 = 5\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong cube root -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(11\)</p>]]></text>
+      <feedback><text>Incorrecto. Verifique \(\sqrt[3]{27}\). Como \(3^3 = 27\), tenemos \(\sqrt[3]{27} = 3\), no 9. La respuesta es \(4+3-2 = 5\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Added instead of subtracted -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(9\)</p>]]></text>
+      <feedback><text>Incorrecto. La operación final es una resta: \(4+3-2 = 5\), no \(4+3+2 = 9\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 17 -->
+  <question type="multichoice">
+    <name>
+      <text>Q17-Radicales-Dominio</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine el dominio de \(g(x)=\sqrt{5-2x}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((-\infty, \frac{5}{2}]\)</p>]]></text>
+      <feedback><text>¡Correcto! Para raíz cuadrada: \(5-2x \geq 0\), entonces \(-2x \geq -5\), y \(x \leq \frac{5}{2}\). El dominio es \((-\infty, \frac{5}{2}]\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong inequality direction -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([\frac{5}{2}, \infty)\)</p>]]></text>
+      <feedback><text>Incorrecto. Al dividir por -2, la desigualdad cambia de dirección: \(-2x \geq -5\) se convierte en \(x \leq \frac{5}{2}\), no \(x \geq \frac{5}{2}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Forgot to divide -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-\infty, 5]\)</p>]]></text>
+      <feedback><text>Incorrecto. De \(-2x \geq -5\), hay que dividir entre -2: \(x \leq \frac{5}{2}\), no \(x \leq 5\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Used wrong inequality -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-\infty, \infty)\)</p>]]></text>
+      <feedback><text>Incorrecto. Para raíz cuadrada (índice par), el radicando debe ser no negativo: \(5-2x \geq 0\). Esto restringe el dominio a \(x \leq \frac{5}{2}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 18 -->
+  <question type="multichoice">
+    <name>
+      <text>Q18-Radicales-DominioImpar</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine el dominio de \(h(x)=\sqrt[3]{x+1}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((-\infty, \infty)\)</p>]]></text>
+      <feedback><text>¡Correcto! Como el índice es impar (3), la raíz cúbica está definida para cualquier número real. No hay restricciones en el dominio.</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Treated as even index -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([-1, \infty)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto sería correcto para \(\sqrt{x+1}\) (raíz cuadrada), pero para raíz cúbica (índice impar), el radicando puede ser negativo. Dominio: \(\mathbb{R}\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong boundary -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([1, \infty)\)</p>]]></text>
+      <feedback><text>Incorrecto. La raíz cúbica está definida para todos los números reales, incluyendo negativos. No hay restricción en el dominio.</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Opposite inequality -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-\infty, -1]\)</p>]]></text>
+      <feedback><text>Incorrecto. Las raíces de índice impar están definidas para todos los números reales. El dominio es \(\mathbb{R} = (-\infty, \infty)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 19 -->
+  <question type="multichoice">
+    <name>
+      <text>Q19-Radicales-Conjugados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplifique: \((\sqrt{3}+\sqrt{2})(\sqrt{3}-\sqrt{2})\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(1\)</p>]]></text>
+      <feedback><text>¡Correcto! Usando la diferencia de cuadrados \((a+b)(a-b) = a^2-b^2\): \((\sqrt{3})^2-(\sqrt{2})^2 = 3-2 = 1\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Multiplied radicals incorrectly -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{6}\)</p>]]></text>
+      <feedback><text>Incorrecto. No se multiplican directamente los radicales. Use la diferencia de cuadrados: \((\sqrt{3}+\sqrt{2})(\sqrt{3}-\sqrt{2}) = (\sqrt{3})^2-(\sqrt{2})^2 = 3-2 = 1\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Added instead of used difference of squares -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(5\)</p>]]></text>
+      <feedback><text>Incorrecto. Este no es un producto FOIL completo. Como son conjugados, use \((a+b)(a-b) = a^2-b^2\): \(3-2 = 1\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Didn't simplify -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(3-2\sqrt{6}+2\)</p>]]></text>
+      <feedback><text>Incorrecto. Los conjugados tienen forma \((a+b)(a-b)\), que dan \(a^2-b^2\), no requieren FOIL completo. El resultado es simplemente \(3-2 = 1\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 20 -->
+  <question type="multichoice">
+    <name>
+      <text>Q20-Radicales-DominioCuadratico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine el dominio de \(f(x)=\sqrt{x^2-9}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((-\infty,-3] \cup [3,\infty)\)</p>]]></text>
+      <feedback><text>¡Correcto! Se necesita \(x^2-9 \geq 0\), o sea \(x^2 \geq 9\). Esto ocurre cuando \(|x| \geq 3\), es decir, \(x \leq -3\) o \(x \geq 3\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 1: Used wrong inequality -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([-3, 3]\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto sería \(x^2 \leq 9\). Necesitamos \(x^2 \geq 9\), que da \(x \leq -3\) o \(x \geq 3\): \((-\infty,-3] \cup [3,\infty)\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 2: Only positive values -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\([3, \infty)\)</p>]]></text>
+      <feedback><text>Incorrecto. Falta la parte negativa. \(x^2 \geq 9\) se cumple tanto para \(x \geq 3\) como para \(x \leq -3\). Dominio: \((-\infty,-3] \cup [3,\infty)\).</text></feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong boundary -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-\infty, -9] \cup [9, \infty)\)</p>]]></text>
+      <feedback><text>Incorrecto. De \(x^2 \geq 9\) se obtiene \(|x| \geq 3\), no \(|x| \geq 9\). Los valores críticos son \(\pm 3\), no \(\pm 9\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
