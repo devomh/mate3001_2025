@@ -1,17 +1,17 @@
-# Raíces y Radicales (Cap. 8)
+# Raíces y Radicales
 
-Esta lección sigue la organización del temario mostrada en la imagen:
-- 8.1 Raíces y radicales / Simplificación de expresiones con radicales (Pág. 392–393)
-- 8.2 Multiplicación y simplificación de radicales (Pág. 397–398)
-- 8.3 División y racionalización de radicales (Pág. 401–402)
-- 8.4 Suma y resta de radicales (Pág. 406)
-- 8.5 Radicales y notación exponencial (Pág. 413)
+Temario:
+- Raíces y radicales / Simplificación de expresiones con radicales
+- Multiplicación y simplificación de radicales
+- División y racionalización de radicales
+- Suma y resta de radicales
+- Radicales y notación exponencial
 
 Salvo aviso contrario, trabajamos en números reales. Para índices **pares** se exige radicando ≥ 0 y, al simplificar, pueden aparecer valores absolutos (por ejemplo, \(\sqrt{x^2}=|x|\)).
 
 ---
 
-## 8.1 Raíces y radicales — Simplificación de expresiones con radicales
+## Raíces y radicales — Simplificación de expresiones con radicales
 
 Objetivos
 - Reconocer partes de un radical: índice, signo radical y radicando.
@@ -51,7 +51,7 @@ Errores comunes
 
 ---
 
-## 8.2 Multiplicación y simplificación de radicales
+## Multiplicación y simplificación de radicales
 
 Objetivos
 - Multiplicar radicales con el mismo índice y simplificar el resultado.
@@ -74,7 +74,7 @@ Consejos
 
 ---
 
-## 8.3 División y racionalización de radicales
+## División y racionalización de radicales
 
 Objetivos
 - Dividir radicales con el mismo índice y racionalizar denominadores.
@@ -102,7 +102,7 @@ Errores comunes
 
 ---
 
-## 8.4 Suma y resta de radicales
+## Suma y resta de radicales
 
 Objetivos
 - Identificar radicales semejantes y combinarlos correctamente.
@@ -128,7 +128,7 @@ Errores comunes
 
 ---
 
-## 8.5 Radicales y notación exponencial
+## Radicales y notación exponencial
 
 Objetivos
 - Convertir entre notación radical y exponente racional y aplicar leyes de exponentes.
