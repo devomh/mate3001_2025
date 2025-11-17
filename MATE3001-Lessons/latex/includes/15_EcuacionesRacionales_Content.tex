@@ -1,0 +1,317 @@
+%========================================
+% LESSON CONTENT: Ecuaciones Racionales
+%========================================
+
+\lesson{Ecuaciones Racionales}
+
+%========================================
+% FORMAL DEFINITIONS
+%========================================
+\subsectiontitle{Definiciones Fundamentales}
+
+\begin{definition}
+\textbf{Ecuación Racional}
+
+Una \textbf{ecuación racional} es una ecuación que contiene una o más expresiones racionales (fracciones con polinomios en el numerador y/o denominador).
+\end{definition}
+
+\textbf{Ejemplos de ecuaciones racionales:}
+
+\begin{enumerate}[leftmargin=*]
+    \item \(\displaystyle \frac{3}{x} + \frac{5}{x+2} = 2\) \quad (expresiones racionales en el lado izquierdo)
+
+    \item \(\displaystyle \frac{x}{x-1} = \frac{2}{x+1}\) \quad (expresiones racionales en ambos lados)
+
+    \item \(\displaystyle \frac{1}{x^2-4} - \frac{2}{x+2} = 0\) \quad (múltiples expresiones racionales)
+\end{enumerate}
+
+\vspace{0.5em}
+
+\begin{definition}
+\textbf{Solución de una Ecuación Racional}
+
+Una \textbf{solución} de una ecuación racional es un valor de la variable que satisface \textit{ambas} condiciones siguientes:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Pertenece al dominio:} El valor NO anula ningún denominador en la ecuación (no produce división por cero).
+
+    \item \textbf{Hace verdadera la ecuación:} Cuando se sustituye el valor en la ecuación original, ambos lados de la ecuación son iguales.
+\end{enumerate}
+\end{definition}
+
+\textbf{Nota importante:} Ambas condiciones son \textit{necesarias}. Un valor puede satisfacer el álgebra pero violar el dominio, o viceversa. Solo los valores que cumplen ambas condiciones son soluciones válidas.
+
+\vspace{0.5em}
+
+\begin{definition}
+\textbf{Número de Soluciones Posibles}
+
+Una ecuación racional puede tener:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Ninguna solución:} Si todas las soluciones potenciales violan las restricciones del dominio, o si la ecuación simplificada no tiene soluciones reales.
+
+    \item \textbf{Una o más soluciones finitas:} El número de soluciones depende del grado del polinomio que resulta al eliminar los denominadores. Por ejemplo:
+    \begin{itemize}
+        \item Una ecuación que produce una ecuación lineal puede tener 0 o 1 solución.
+        \item Una ecuación que produce una ecuación cuadrática puede tener 0, 1, o 2 soluciones.
+        \item En general, una ecuación de grado \(n\) puede tener hasta \(n\) soluciones reales.
+    \end{itemize}
+
+    \item \textbf{Infinitas soluciones:} En casos excepcionales, si la ecuación es una identidad (verdadera para todos los valores en el dominio). Ejemplo: \(\dfrac{x+1}{x} = 1 + \dfrac{1}{x}\) es verdadera para todo \(x \neq 0\).
+\end{itemize}
+\end{definition}
+
+\vspace{0.5em}
+
+\begin{definition}
+\textbf{Solución Extraña}
+
+Una \textbf{solución extraña} (o solución espuria) es un valor que:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Resulta del proceso algebraico:} El valor se obtiene al resolver la ecuación después de eliminar denominadores.
+
+    \item \textbf{NO es una solución válida:} El valor viola las restricciones del dominio, generalmente porque hace que algún denominador en la ecuación original sea cero.
+
+    \item \textbf{Debe descartarse:} Al verificar en la ecuación original, produce una expresión indefinida (división por cero).
+\end{enumerate}
+
+\textbf{¿Por qué ocurren soluciones extrañas?}
+
+Cuando multiplicamos ambos lados de una ecuación por el MCD (que contiene la variable), estamos multiplicando por una expresión que puede ser cero. Esta operación puede introducir soluciones que no existían en la ecuación original.
+
+\textbf{Ejemplo:} Si tenemos \(\dfrac{x+2}{x-3} = 2 + \dfrac{5}{x-3}\) y obtenemos \(x = 3\) al resolver, este valor es extraño porque hace que el denominador \(x-3 = 0\).
+\end{definition}
+
+\vspace{0.5em}
+
+\begin{warning}
+\textbf{Regla fundamental:} SIEMPRE verifique cada solución en la ecuación original. La verificación es el único método confiable para detectar soluciones extrañas.
+\end{warning}
+
+%========================================
+% KEY IDEA
+%========================================
+\subsectiontitle{Idea Clave}
+
+\begin{theorem}
+\textbf{Método de Eliminación de Denominadores}
+
+Multiplicar ambos lados de una ecuación racional por el \textbf{mínimo común denominador (MCD)} elimina los denominadores y produce una ecuación polinómica equivalente, siempre que primero se \textbf{excluyan} los valores que anulan el MCD.
+
+\textit{Cada solución hallada debe verificarse en la ecuación original para descartar soluciones extrañas.}
+\end{theorem}
+
+%========================================
+% GENERAL PROCEDURE
+%========================================
+\subsectiontitle{Procedimiento General}
+
+Para resolver una ecuación racional, siga estos pasos:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Escriba las restricciones:} Identifique todos los valores que anulan cualquier denominador en la ecuación. Estos valores están prohibidos y deben excluirse del dominio.
+
+    \item \textbf{Multiplique por el MCD:} Determine el mínimo común denominador de todos los denominadores presentes y multiplique ambos lados de la ecuación por este MCD.
+
+    \item \textbf{Simplifique y resuelva:} Simplifique la ecuación resultante, expándala si es necesario, y llévela a forma estándar (frecuentemente se obtiene una ecuación cuadrática).
+
+    \item \textbf{Encuentre las soluciones:} Resuelva la ecuación usando factorización, la fórmula cuadrática u otro método apropiado.
+
+    \item \textbf{Verifique las soluciones:} Sustituya cada solución en la ecuación original y descarte aquellas que violen las restricciones del dominio o que produzcan expresiones indefinidas.
+\end{enumerate}
+
+\vspace{1em}
+
+%========================================
+% GUIDED EXAMPLE 1
+%========================================
+\begin{example}
+\textbf{Ejemplo 1: Ecuación Racional Estándar}
+
+Resuelva: \(\displaystyle \frac{3}{x} + \frac{5}{x+2} = 2\)
+
+\solution
+
+\textbf{Paso 1: Restricciones}
+
+Los denominadores son \(x\) y \(x+2\). Por lo tanto:
+\[x \neq 0 \quad \text{y} \quad x \neq -2\]
+
+\textbf{Paso 2: Determinar el MCD}
+
+El MCD de \(x\) y \(x+2\) es: \(x(x+2)\)
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+Multiplicamos ambos lados por \(x(x+2)\):
+\[\left(\frac{3}{x} + \frac{5}{x+2}\right) \cdot x(x+2) = 2 \cdot x(x+2)\]
+
+Distribuyendo el MCD:
+\[\frac{3}{\cancel{x}} \cdot \cancel{x}(x+2) + \frac{5}{\cancel{x+2}} \cdot x(\cancel{x+2}) = 2x(x+2)\]
+
+\[3(x+2) + 5x = 2x(x+2)\]
+
+\textbf{Paso 4: Expandir y simplificar}
+
+\begin{align*}
+3x + 6 + 5x &= 2x^2 + 4x\\
+8x + 6 &= 2x^2 + 4x\\
+0 &= 2x^2 + 4x - 8x - 6\\
+0 &= 2x^2 - 4x - 6
+\end{align*}
+
+Dividiendo entre 2:
+\[x^2 - 2x - 3 = 0\]
+
+\textbf{Paso 5: Factorizar}
+
+\[(x - 3)(x + 1) = 0\]
+
+Por lo tanto:
+\[x = 3 \quad \text{o} \quad x = -1\]
+
+\textbf{Paso 6: Verificación}
+
+\textit{Para} \(x = 3\):
+\[\frac{3}{3} + \frac{5}{3+2} = 1 + \frac{5}{5} = 1 + 1 = 2 \quad \checkmark\]
+
+\textit{Para} \(x = -1\):
+\[\frac{3}{-1} + \frac{5}{-1+2} = -3 + \frac{5}{1} = -3 + 5 = 2 \quad \checkmark\]
+
+Ambas soluciones son válidas y no violan las restricciones.
+
+\textbf{Respuesta:} \(x = 3\) o \(x = -1\)
+\end{example}
+
+%========================================
+% EXAMPLE 2
+%========================================
+\begin{example}
+\textbf{Ejemplo 2: Uso de la Fórmula Cuadrática}
+
+Resuelva: \(\displaystyle \frac{2}{x-1} + \frac{1}{x+1} = 1\)
+
+\solution
+
+\textbf{Paso 1: Restricciones}
+
+\[x \neq 1 \quad \text{y} \quad x \neq -1\]
+
+\textbf{Paso 2: MCD}
+
+El MCD es \((x-1)(x+1)\)
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+\[\frac{2}{\cancel{x-1}} \cdot (\cancel{x-1})(x+1) + \frac{1}{\cancel{x+1}} \cdot (x-1)(\cancel{x+1}) = 1 \cdot (x-1)(x+1)\]
+
+\[2(x+1) + (x-1) = (x-1)(x+1)\]
+
+\textbf{Paso 4: Expandir}
+
+\begin{align*}
+2x + 2 + x - 1 &= x^2 - 1\\
+3x + 1 &= x^2 - 1\\
+0 &= x^2 - 3x - 2
+\end{align*}
+
+\textbf{Paso 5: Aplicar la fórmula cuadrática}
+
+Con \(a = 1\), \(b = -3\), \(c = -2\):
+
+\[x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4(1)(-2)}}{2(1)} = \frac{3 \pm \sqrt{9 + 8}}{2} = \frac{3 \pm \sqrt{17}}{2}\]
+
+\textbf{Paso 6: Verificación}
+
+Ambas soluciones \(x = \dfrac{3 + \sqrt{17}}{2} \approx 3.56\) y \(x = \dfrac{3 - \sqrt{17}}{2} \approx -0.56\) son diferentes de \(\pm 1\), por lo que son válidas.
+
+\textbf{Respuesta:} \(x = \dfrac{3 \pm \sqrt{17}}{2}\)
+\end{example}
+
+%========================================
+% EXAMPLE 3 - EXTRANEOUS SOLUTION
+%========================================
+\begin{example}
+\textbf{Ejemplo 3: Solución Extraña}
+
+Resuelva: \(\displaystyle \frac{x+2}{x-3} = 2 + \frac{5}{x-3}\)
+
+\solution
+
+\textbf{Paso 1: Restricción}
+
+\[x \neq 3\]
+
+\textbf{Paso 2: MCD}
+
+El MCD es \((x-3)\)
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+\[\frac{x+2}{\cancel{x-3}} \cdot (\cancel{x-3}) = 2(x-3) + \frac{5}{\cancel{x-3}} \cdot (\cancel{x-3})\]
+
+\[x + 2 = 2(x-3) + 5\]
+
+\textbf{Paso 4: Resolver}
+
+\begin{align*}
+x + 2 &= 2x - 6 + 5\\
+x + 2 &= 2x - 1\\
+2 + 1 &= 2x - x\\
+3 &= x
+\end{align*}
+
+\textbf{Paso 5: Verificar}
+
+La solución obtenida es \(x = 3\), pero esto \textbf{viola la restricción} \(x \neq 3\).
+
+Si intentamos sustituir \(x = 3\) en la ecuación original, obtenemos división por cero:
+\[\frac{3+2}{3-3} = \frac{5}{0} \quad \text{(indefinido)}\]
+
+\textbf{Conclusión:} Esta ecuación \textbf{no tiene solución}. La única solución potencial es extraña porque viola el dominio.
+\end{example}
+
+%========================================
+% COMMON ERRORS
+%========================================
+\subsectiontitle{Errores Comunes}
+
+\begin{warning}
+	
+\vspace{-0.25cm}	
+\textbf{Errores frecuentes al resolver ecuaciones racionales:}
+
+\vspace{-0.25cm}	
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{No identificar restricciones primero:} Siempre anote los valores prohibidos \textit{antes} de multiplicar por el MCD.
+
+	\vspace{-0.25cm}	
+    \item \textbf{``Cancelar'' incorrectamente:} No se pueden cancelar términos a través de sumas o restas. Solo se cancelan factores comunes en productos.
+
+    \textit{Incorrecto:} \(\dfrac{x+2}{x} = \dfrac{\cancel{x}+2}{\cancel{x}} = 2\)
+
+	\vspace{-0.25cm}	
+    \item \textbf{Olvidar verificar:} Siempre sustituya las soluciones en la ecuación original para detectar soluciones extrañas.
+
+    \item \textbf{Usar productos cruzados incorrectamente:} El método de productos cruzados solo aplica cuando hay \textit{una sola fracción} en cada lado de la ecuación. Si hay múltiples fracciones, use el MCD.
+
+    \item \textbf{Errores algebraicos:} Tenga cuidado al distribuir y combinar términos semejantes después de eliminar denominadores.
+\end{enumerate}
+\end{warning}
+
+\newpage
+
+%========================================
+% DIDACTIC NOTES
+%========================================
+\subsectiontitle{Notas Didácticas}
+
+\begin{itemize}[leftmargin=*]
+    \item Mantenga visibles el MCD y las restricciones durante todo el procedimiento. Use un recuadro o área separada en su trabajo.
+
+    \item Si al limpiar denominadores se obtiene una igualdad imposible (por ejemplo, \(-2 = 4\) o \(0 = 5\)), la conclusión es \textbf{sin solución} (después de verificar que no hay errores algebraicos).
+
+    \item La verificación no es opcional. Las soluciones extrañas son comunes en ecuaciones racionales y solo se detectan al verificar en la ecuación original.
+\end{itemize}

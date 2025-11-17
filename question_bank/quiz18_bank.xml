@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz18</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Basic rational equation with two fractions -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-EcuacionesRacionales-DosFracciones</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la siguiente ecuación racional: \(\displaystyle \frac{3}{x-2} + \frac{4}{x+3} = 1\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 7\) o \(x = -1\)</p>]]></text>
+      <feedback><text>¡Correcto! Después de multiplicar por el MCD \((x-2)(x+3)\), obtienes la ecuación cuadrática \(x^2 - 6x - 7 = 0\), que se factoriza como \((x-7)(x+1) = 0\). Ambas soluciones son válidas ya que no violan las restricciones \(x \neq 2\) y \(x \neq -3\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 7\) solamente</p>]]></text>
+      <feedback><text>Incorrecto. Aunque \(x = 7\) es una solución válida, también existe otra solución. Al factorizar \(x^2 - 6x - 7 = 0\), obtienes \((x-7)(x+1) = 0\), lo que da dos soluciones: \(x = 7\) y \(x = -1\). Verifica que ambas satisfacen la ecuación original.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\) o \(x = -3\)</p>]]></text>
+      <feedback><text>Incorrecto. Estos son los valores prohibidos por las restricciones del dominio, no las soluciones. Los valores \(x = 2\) y \(x = -3\) hacen que los denominadores sean cero, por lo que deben excluirse. Las soluciones correctas son \(x = 7\) y \(x = -1\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 1\) o \(x = -7\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es un error en la factorización de la ecuación cuadrática. Al resolver \(x^2 - 6x - 7 = 0\), debes buscar dos números que multipliquen a \(-7\) y sumen \(-6\). Los números correctos son \(-7\) y \(1\), dando \((x-7)(x+1) = 0\), por lo que \(x = 7\) o \(x = -1\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Equation with factorizable denominator -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-EcuacionesRacionales-DiferenciaCuadrados</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la siguiente ecuación racional: \(\displaystyle \frac{x}{x^2-4} - \frac{2}{x+2} = 0\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 4\)</p>]]></text>
+      <feedback><text>¡Correcto! Después de factorizar \(x^2 - 4 = (x-2)(x+2)\) y multiplicar por el MCD \((x-2)(x+2)\), obtienes \(x - 2(x-2) = 0\), que simplifica a \(-x + 4 = 0\), dando \(x = 4\). Esta solución es válida porque no viola las restricciones \(x \neq \pm 2\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\)</p>]]></text>
+      <feedback><text>Incorrecto. El valor \(x = 2\) es una restricción del dominio porque hace que \(x^2 - 4 = (x-2)(x+2) = 0\). Este valor no puede ser una solución válida. La solución correcta es \(x = 4\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -2\)</p>]]></text>
+      <feedback><text>Incorrecto. El valor \(x = -2\) viola las restricciones del dominio porque hace que tanto \(x+2 = 0\) como \(x^2-4 = 0\). No puede ser una solución válida. La solución correcta es \(x = 4\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No hay solución</p>]]></text>
+      <feedback><text>Incorrecto. Esta ecuación sí tiene solución. Al multiplicar por el MCD y simplificar correctamente, obtienes \(x - 2x + 4 = 0\), que da \(x = 4\). Verifica que \(x = 4\) no viola las restricciones y satisface la ecuación original.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Equation with powers of x -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-EcuacionesRacionales-PotenciasX</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la siguiente ecuación racional: \(\displaystyle \frac{1}{x} + \frac{2}{x^2} - \frac{3}{x^3} = 0\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -3\) o \(x = 1\)</p>]]></text>
+      <feedback><text>¡Correcto! Al multiplicar por el MCD \(x^3\), obtienes la ecuación cuadrática \(x^2 + 2x - 3 = 0\), que se factoriza como \((x+3)(x-1) = 0\). Ambas soluciones son válidas porque no violan la restricción \(x \neq 0\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) o \(x = -1\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es un error en los signos de la factorización. La ecuación cuadrática es \(x^2 + 2x - 3 = 0\), que se factoriza como \((x+3)(x-1) = 0\), no \((x-3)(x+1) = 0\). Las soluciones correctas son \(x = -3\) y \(x = 1\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 0\) o \(x = 1\)</p>]]></text>
+      <feedback><text>Incorrecto. El valor \(x = 0\) viola la restricción del dominio porque hace que todos los denominadores sean cero. Además, al resolver correctamente obtienes \(x^2 + 2x - 3 = 0\), cuyas soluciones son \(x = -3\) y \(x = 1\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 1\) solamente</p>]]></text>
+      <feedback><text>Incorrecto. Aunque \(x = 1\) es una solución válida, la ecuación cuadrática \(x^2 + 2x - 3 = 0\) se factoriza como \((x+3)(x-1) = 0\), lo que da dos soluciones: \(x = -3\) y \(x = 1\). Verifica que \(x = -3\) también satisface la ecuación original.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Extraneous solution -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-EcuacionesRacionales-SolucionExtrana</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la siguiente ecuación racional: \(\displaystyle \frac{2x}{x^2-1} + \frac{3}{x-1} - \frac{1}{x+1} = 0\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>No hay solución</p>]]></text>
+      <feedback><text>¡Correcto! Al resolver algebraicamente obtienes \(x = -1\), pero este valor viola la restricción \(x \neq -1\) y causa división por cero en la ecuación original. Por lo tanto, esta es una solución extraña que debe descartarse, y la ecuación no tiene solución válida.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -1\)</p>]]></text>
+      <feedback><text>Incorrecto. Aunque \(x = -1\) resulta del proceso algebraico, este valor viola las restricciones del dominio. Si intentas sustituir \(x = -1\) en la ecuación original, obtienes división por cero. Esta es una solución extraña que debe descartarse.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 1\)</p>]]></text>
+      <feedback><text>Incorrecto. El valor \(x = 1\) no es la solución de la ecuación algebraica simplificada. Al resolver \(4x + 4 = 0\), obtienes \(x = -1\), no \(x = 1\). Además, \(x = 1\) también viola las restricciones del dominio.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 0\)</p>]]></text>
+      <feedback><text>Incorrecto. Al simplificar la ecuación después de multiplicar por el MCD, obtienes \(4x + 4 = 0\), que da \(x = -1\), no \(x = 0\). Sin embargo, \(x = -1\) es una solución extraña, por lo que la ecuación no tiene solución.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Complex equation with quadratic denominators -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-EcuacionesRacionales-DenominadoresCuadraticos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Resuelva la siguiente ecuación racional: \(\displaystyle \frac{x+1}{x^2+5x+6} - \frac{x-1}{x^2+4x+3} = \frac{1}{x+3}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = -1 + \sqrt{2}\) o \(x = -1 - \sqrt{2}\)</p>]]></text>
+      <feedback><text>¡Correcto! Después de factorizar los denominadores y multiplicar por el MCD \((x+1)(x+2)(x+3)\), obtienes la ecuación cuadrática \(x^2 + 2x - 1 = 0\). Usando la fórmula cuadrática, las soluciones son \(x = -1 \pm \sqrt{2}\), ambas válidas porque no violan las restricciones \(x \neq -1, -2, -3\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -1\) o \(x = 1\)</p>]]></text>
+      <feedback><text>Incorrecto. El valor \(x = -1\) viola las restricciones del dominio. Además, al resolver la ecuación cuadrática \(x^2 + 2x - 1 = 0\), no se obtienen valores enteros. Las soluciones correctas involucran radicales: \(x = -1 \pm \sqrt{2}\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 1 + \sqrt{2}\) o \(x = 1 - \sqrt{2}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es un error en los signos de la fórmula cuadrática. La ecuación es \(x^2 + 2x - 1 = 0\), donde \(b = 2\), así que la solución es \(x = \frac{-2 \pm \sqrt{8}}{2} = -1 \pm \sqrt{2}\), no \(1 \pm \sqrt{2}\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No hay solución</p>]]></text>
+      <feedback><text>Incorrecto. Esta ecuación sí tiene soluciones válidas. Al simplificar correctamente, obtienes \(x^2 + 2x - 1 = 0\), cuyo discriminante es positivo (\(b^2 - 4ac = 8 > 0\)). Las soluciones son \(x = -1 \pm \sqrt{2}\), ambas válidas.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Understanding restrictions -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-EcuacionesRacionales-Restricciones</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la ecuación \(\displaystyle \frac{3}{x-2} + \frac{4}{x+3} = 1\), ¿cuáles son las restricciones del dominio y por qué son necesarias?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x \neq 2\) y \(x \neq -3\) porque estos valores hacen que los denominadores sean cero</p>]]></text>
+      <feedback><text>¡Correcto! Las restricciones se establecen para evitar división por cero. Si \(x = 2\), entonces \(x-2 = 0\) y el primer término sería \(\frac{3}{0}\). Si \(x = -3\), entonces \(x+3 = 0\) y el segundo término sería \(\frac{4}{0}\). Ambos casos son indefinidos matemáticamente.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x \neq 7\) y \(x \neq -1\) porque estas son las soluciones de la ecuación</p>]]></text>
+      <feedback><text>Incorrecto. Las restricciones del dominio no son las soluciones de la ecuación. Las restricciones son los valores que hacen que los denominadores sean cero, es decir, \(x \neq 2\) y \(x \neq -3\). Los valores \(x = 7\) y \(x = -1\) son las soluciones válidas.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x \neq 0\) porque no se puede dividir por cero</p>]]></text>
+      <feedback><text>Incorrecto. Aunque es cierto que no se puede dividir por cero, ninguno de los denominadores en esta ecuación es simplemente \(x\). Los denominadores son \(x-2\) y \(x+3\), por lo que las restricciones son \(x \neq 2\) y \(x \neq -3\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No hay restricciones porque la ecuación está bien definida para todos los valores reales</p>]]></text>
+      <feedback><text>Incorrecto. Toda ecuación racional tiene restricciones en los valores que hacen que algún denominador sea cero. En esta ecuación, \(x = 2\) hace que \(x-2 = 0\) y \(x = -3\) hace que \(x+3 = 0\), por lo que ambos valores deben excluirse del dominio.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Identifying LCD -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-EcuacionesRacionales-MCD</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la ecuación \(\displaystyle \frac{1}{x-1} + \frac{2}{x+1} = \frac{3}{x^2-1}\), ¿cuál es el MCD (mínimo común denominador) apropiado?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((x-1)(x+1)\)</p>]]></text>
+      <feedback><text>¡Correcto! Al factorizar \(x^2 - 1 = (x-1)(x+1)\), vemos que los tres denominadores son \((x-1)\), \((x+1)\), y \((x-1)(x+1)\). El MCD debe ser el producto \((x-1)(x+1)\), que es divisible por todos los denominadores presentes.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^2 - 1\) solamente</p>]]></text>
+      <feedback><text>Parcialmente correcto, pero incompleto. Aunque \(x^2 - 1\) es uno de los denominadores, es importante reconocer su forma factorizada \((x-1)(x+1)\) para identificar claramente todos los factores. La respuesta correcta es \((x-1)(x+1)\), que es equivalente a \(x^2-1\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x-1)(x+1)(x^2-1)\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es redundante porque \(x^2 - 1 = (x-1)(x+1)\). No necesitas multiplicar por \(x^2-1\) nuevamente. El MCD correcto es simplemente \((x-1)(x+1)\), que ya incluye todos los factores necesarios.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((x-1)^2(x+1)^2\)</p>]]></text>
+      <feedback><text>Incorrecto. Cada factor solo aparece con exponente 1 en los denominadores, por lo que no necesitas elevarlos al cuadrado. El MCD correcto es \((x-1)(x+1)\), con cada factor apareciendo una sola vez.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Step-by-step procedure -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-EcuacionesRacionales-Procedimiento</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuál es el orden correcto de los pasos para resolver una ecuación racional?</p>
+<p>I. Verificar las soluciones en la ecuación original<br/>
+II. Escribir las restricciones del dominio<br/>
+III. Multiplicar ambos lados por el MCD<br/>
+IV. Resolver la ecuación resultante<br/>
+V. Simplificar y llevar a forma estándar</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>II, III, V, IV, I</p>]]></text>
+      <feedback><text>¡Correcto! El orden correcto es: (1) Escribir restricciones, (2) Multiplicar por el MCD, (3) Simplificar y llevar a forma estándar, (4) Resolver la ecuación resultante, (5) Verificar las soluciones. Este proceso sistemático asegura que no se olvide ningún paso crucial, especialmente la verificación.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>III, II, V, IV, I</p>]]></text>
+      <feedback><text>Incorrecto. Las restricciones del dominio deben establecerse ANTES de multiplicar por el MCD, no después. Es crucial identificar los valores prohibidos desde el principio para poder detectar soluciones extrañas posteriormente. El orden correcto comienza con II (escribir restricciones).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>II, III, V, I, IV</p>]]></text>
+      <feedback><text>Incorrecto. No puedes verificar las soluciones (paso I) antes de encontrarlas (paso IV). Primero debes resolver la ecuación para obtener candidatos a solución, y luego verificarlos en la ecuación original. El orden correcto termina con I (verificar).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>II, III, IV, V, I</p>]]></text>
+      <feedback><text>Incorrecto. Después de multiplicar por el MCD (paso III), debes simplificar y llevar a forma estándar (paso V) ANTES de resolver (paso IV). La simplificación es necesaria para obtener una ecuación en forma estándar que puedas resolver usando métodos conocidos como factorización o la fórmula cuadrática.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Extraneous solutions concept -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-EcuacionesRacionales-SolucionesExtranas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué es una solución extraña y por qué ocurre en ecuaciones racionales?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Es un valor que resulta del proceso algebraico pero viola las restricciones del dominio, ocurre porque multiplicamos por el MCD que puede ser cero</p>]]></text>
+      <feedback><text>¡Correcto! Una solución extraña se obtiene correctamente del álgebra pero no es válida porque viola las restricciones. Ocurre cuando multiplicamos ambos lados por el MCD (que contiene la variable), ya que esta operación puede introducir soluciones artificiales. Por eso es crucial verificar siempre en la ecuación original.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Es un error de cálculo que se comete al resolver la ecuación y debe corregirse revisando el álgebra</p>]]></text>
+      <feedback><text>Incorrecto. Una solución extraña no es un error de cálculo. Es un valor que se obtiene correctamente del proceso algebraico, pero que no satisface la ecuación original porque viola las restricciones del dominio. Las soluciones extrañas son inherentes al método de resolver ecuaciones racionales, no errores de cálculo.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Es cualquier solución irracional (que contiene radicales) que no puede simplificarse a un número entero</p>]]></text>
+      <feedback><text>Incorrecto. Las soluciones irracionales (como \(\sqrt{2}\) o \(1 + \sqrt{3}\)) pueden ser soluciones perfectamente válidas. Una solución extraña no se define por su forma (racional o irracional), sino por el hecho de que viola las restricciones del dominio de la ecuación original.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Es una solución adicional que aparece solo cuando se usa la fórmula cuadrática en lugar de factorización</p>]]></text>
+      <feedback><text>Incorrecto. Las soluciones extrañas no dependen del método de solución usado (factorización vs. fórmula cuadrática). Ambos métodos dan las mismas soluciones algebraicas. Una solución extraña ocurre específicamente cuando un valor obtenido viola las restricciones del dominio de la ecuación racional original.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Applied problem -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-EcuacionesRacionales-Aplicacion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La suma de un número y su recíproco es \(\frac{5}{2}\). ¿Cuáles son los números que satisfacen esta condición?</p>
+<p><em>Nota: El recíproco de un número \(x\) es \(\frac{1}{x}\).</em></p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 2\) o \(x = \frac{1}{2}\)</p>]]></text>
+      <feedback><text>¡Correcto! La ecuación es \(x + \frac{1}{x} = \frac{5}{2}\), que al multiplicar por \(2x\) y simplificar da \(2x^2 - 5x + 2 = 0\). Factorizando: \((2x-1)(x-2) = 0\), obtenemos \(x = \frac{1}{2}\) o \(x = 2\). Nota que estas dos soluciones son recíprocas entre sí, lo cual tiene sentido por la simetría del problema.</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = \frac{5}{2}\) solamente</p>]]></text>
+      <feedback><text>Incorrecto. El valor \(\frac{5}{2}\) es la suma buscada, no el número en sí. Debes plantear la ecuación \(x + \frac{1}{x} = \frac{5}{2}\) y resolverla. Al hacerlo correctamente, obtienes dos soluciones: \(x = 2\) y \(x = \frac{1}{2}\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 5\) o \(x = \frac{1}{5}\)</p>]]></text>
+      <feedback><text>Incorrecto. Esto es un error en el planteamiento o solución de la ecuación. Verifica: si \(x = 5\), entonces \(x + \frac{1}{x} = 5 + \frac{1}{5} = \frac{26}{5} \neq \frac{5}{2}\). Al resolver correctamente \(2x^2 - 5x + 2 = 0\), obtienes \(x = 2\) o \(x = \frac{1}{2}\).</text></feedback>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\) solamente</p>]]></text>
+      <feedback><text>Incorrecto. Aunque \(x = 2\) es una solución válida, la ecuación cuadrática \(2x^2 - 5x + 2 = 0\) tiene dos soluciones. Al factorizar como \((2x-1)(x-2) = 0\), obtienes \(x = 2\) y \(x = \frac{1}{2}\). Verifica que ambas soluciones satisfacen la ecuación original.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

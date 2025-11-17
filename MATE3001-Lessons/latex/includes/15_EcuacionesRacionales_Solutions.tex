@@ -1,0 +1,515 @@
+%========================================
+% DETAILED SOLUTIONS: Ecuaciones Racionales
+%========================================
+
+\subsection*{Práctica Rápida}
+
+%========================================
+% PROBLEM 1
+%========================================
+\textbf{Problema 1:} \(\displaystyle \frac{1}{x+1} + \frac{1}{x-1} = 1\)
+
+\textbf{Solución Detallada:}
+
+\textbf{Paso 1: Identificar restricciones}
+
+Los denominadores son \(x+1\) y \(x-1\). Estos se anulan cuando:
+\begin{align*}
+x + 1 &= 0 \quad \Rightarrow \quad x = -1\\
+x - 1 &= 0 \quad \Rightarrow \quad x = 1
+\end{align*}
+
+Por lo tanto, las restricciones son: \(x \neq -1\) y \(x \neq 1\)
+
+\textbf{Paso 2: Determinar el MCD}
+
+El MCD de \((x+1)\) y \((x-1)\) es: \((x+1)(x-1)\)
+
+\textbf{Paso 3: Multiplicar ambos lados por el MCD}
+
+\[\left(\frac{1}{x+1} + \frac{1}{x-1}\right) \cdot (x+1)(x-1) = 1 \cdot (x+1)(x-1)\]
+
+Distribuyendo:
+\[\frac{1}{\cancel{x+1}} \cdot (\cancel{x+1})(x-1) + \frac{1}{\cancel{x-1}} \cdot (x+1)(\cancel{x-1}) = (x+1)(x-1)\]
+
+\[(x-1) + (x+1) = (x+1)(x-1)\]
+
+\textbf{Paso 4: Simplificar el lado izquierdo}
+
+\[x - 1 + x + 1 = (x+1)(x-1)\]
+\[2x = (x+1)(x-1)\]
+
+\textbf{Paso 5: Expandir el lado derecho}
+
+\[2x = x^2 - 1\]
+
+\textbf{Paso 6: Llevar a forma estándar}
+
+\[0 = x^2 - 2x - 1\]
+
+\textbf{Paso 7: Aplicar la fórmula cuadrática}
+
+Con \(a = 1\), \(b = -2\), \(c = -1\):
+
+\begin{align*}
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
+&= \frac{-(-2) \pm \sqrt{(-2)^2 - 4(1)(-1)}}{2(1)}\\
+&= \frac{2 \pm \sqrt{4 + 4}}{2}\\
+&= \frac{2 \pm \sqrt{8}}{2}\\
+&= \frac{2 \pm 2\sqrt{2}}{2}\\
+&= 1 \pm \sqrt{2}
+\end{align*}
+
+\textbf{Paso 8: Verificar restricciones}
+
+\begin{itemize}
+    \item \(x = 1 + \sqrt{2} \approx 2.414\): Es diferente de \(-1\) y \(1\). \checkmark
+    \item \(x = 1 - \sqrt{2} \approx -0.414\): Es diferente de \(-1\) y \(1\). \checkmark
+\end{itemize}
+
+\textbf{Respuesta final:} \(x = 1 + \sqrt{2}\) o \(x = 1 - \sqrt{2}\)
+
+%========================================
+% PROBLEM 2
+%========================================
+\textbf{Problema 2:} \(\displaystyle \frac{x}{x-2} = 2\)
+
+\textbf{Solución Detallada:}
+
+\textbf{Paso 1: Restricción}
+
+\[x - 2 = 0 \quad \Rightarrow \quad x \neq 2\]
+
+\textbf{Paso 2: MCD}
+
+El único denominador es \((x-2)\), que es también el MCD.
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+\[\frac{x}{\cancel{x-2}} \cdot (\cancel{x-2}) = 2(x-2)\]
+
+\[x = 2(x-2)\]
+
+\textbf{Paso 4: Resolver}
+
+\begin{align*}
+x &= 2x - 4\\
+x - 2x &= -4\\
+-x &= -4\\
+x &= 4
+\end{align*}
+
+\textbf{Paso 5: Verificar}
+
+Sustituir \(x = 4\) en la ecuación original:
+\[\frac{4}{4-2} = \frac{4}{2} = 2 \quad \checkmark\]
+
+Además, \(x = 4 \neq 2\), por lo que no viola la restricción.
+
+\textbf{Respuesta final:} \(x = 4\)
+
+%========================================
+% PROBLEM 3
+%========================================
+\textbf{Problema 3:} \(\displaystyle \frac{x+1}{x} = \frac{3}{x-2}\)
+
+\textbf{Solución Detallada:}
+
+\textbf{Paso 1: Restricciones}
+
+\begin{align*}
+x &= 0 \quad \Rightarrow \quad x \neq 0\\
+x - 2 &= 0 \quad \Rightarrow \quad x \neq 2
+\end{align*}
+
+\textbf{Paso 2: MCD}
+
+El MCD es: \(x(x-2)\)
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+\[\frac{x+1}{\cancel{x}} \cdot \cancel{x}(x-2) = \frac{3}{\cancel{x-2}} \cdot x(\cancel{x-2})\]
+
+\[(x+1)(x-2) = 3x\]
+
+\textbf{Paso 4: Expandir el lado izquierdo}
+
+\begin{align*}
+(x+1)(x-2) &= x \cdot x + x \cdot (-2) + 1 \cdot x + 1 \cdot (-2)\\
+&= x^2 - 2x + x - 2\\
+&= x^2 - x - 2
+\end{align*}
+
+\textbf{Paso 5: Igualar y simplificar}
+
+\[x^2 - x - 2 = 3x\]
+\[x^2 - x - 2 - 3x = 0\]
+\[x^2 - 4x - 2 = 0\]
+
+\textbf{Paso 6: Aplicar la fórmula cuadrática}
+
+Con \(a = 1\), \(b = -4\), \(c = -2\):
+
+\begin{align*}
+x &= \frac{4 \pm \sqrt{(-4)^2 - 4(1)(-2)}}{2(1)}\\
+&= \frac{4 \pm \sqrt{16 + 8}}{2}\\
+&= \frac{4 \pm \sqrt{24}}{2}\\
+&= \frac{4 \pm 2\sqrt{6}}{2}\\
+&= 2 \pm \sqrt{6}
+\end{align*}
+
+\textbf{Paso 7: Verificar restricciones}
+
+\begin{itemize}
+    \item \(x = 2 + \sqrt{6} \approx 4.449\): Diferente de 0 y 2. \checkmark
+    \item \(x = 2 - \sqrt{6} \approx -0.449\): Diferente de 0 y 2. \checkmark
+\end{itemize}
+
+\textbf{Respuesta final:} \(x = 2 + \sqrt{6}\) o \(x = 2 - \sqrt{6}\)
+
+%========================================
+% PROBLEM 4
+%========================================
+\textbf{Problema 4:} \(\displaystyle \frac{1}{x-3} - \frac{1}{x+3} = \frac{1}{3}\)
+
+\textbf{Solución Detallada:}
+
+\textbf{Paso 1: Restricciones}
+
+\[x \neq 3 \quad \text{y} \quad x \neq -3\]
+
+\textbf{Paso 2: MCD}
+
+El MCD de \((x-3)\), \((x+3)\), y \(3\) es: \(3(x-3)(x+3)\)
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+\[\left(\frac{1}{x-3} - \frac{1}{x+3}\right) \cdot 3(x-3)(x+3) = \frac{1}{3} \cdot 3(x-3)(x+3)\]
+
+\[3(x+3) - 3(x-3) = (x-3)(x+3)\]
+
+\textbf{Paso 4: Expandir y simplificar}
+
+\begin{align*}
+3x + 9 - 3x + 9 &= (x-3)(x+3)\\
+18 &= x^2 - 9
+\end{align*}
+
+\textbf{Paso 5: Resolver}
+
+\begin{align*}
+18 &= x^2 - 9\\
+27 &= x^2\\
+x &= \pm\sqrt{27}\\
+x &= \pm\sqrt{9 \cdot 3}\\
+x &= \pm 3\sqrt{3}
+\end{align*}
+
+\textbf{Paso 6: Verificar restricciones}
+
+\begin{itemize}
+    \item \(x = 3\sqrt{3} \approx 5.196\): Diferente de \(\pm 3\). \checkmark
+    \item \(x = -3\sqrt{3} \approx -5.196\): Diferente de \(\pm 3\). \checkmark
+\end{itemize}
+
+\textbf{Respuesta final:} \(x = 3\sqrt{3}\) o \(x = -3\sqrt{3}\)
+
+%========================================
+% EXIT TICKET
+%========================================
+\subsection*{Exit Ticket}
+
+\textbf{Problema:} \(\displaystyle \frac{5}{x-2} - \frac{1}{x} = 1\)
+
+\textbf{Solución Detallada:}
+
+\textbf{Paso 1: Restricciones}
+
+\[x \neq 2 \quad \text{y} \quad x \neq 0\]
+
+\textbf{Paso 2: MCD}
+
+El MCD es: \(x(x-2)\)
+
+\textbf{Paso 3: Multiplicar por el MCD}
+
+\[\frac{5}{\cancel{x-2}} \cdot x(\cancel{x-2}) - \frac{1}{\cancel{x}} \cdot \cancel{x}(x-2) = 1 \cdot x(x-2)\]
+
+\[5x - (x-2) = x(x-2)\]
+
+\textbf{Paso 4: Expandir y simplificar}
+
+\begin{align*}
+5x - x + 2 &= x^2 - 2x\\
+4x + 2 &= x^2 - 2x\\
+0 &= x^2 - 2x - 4x - 2\\
+0 &= x^2 - 6x - 2
+\end{align*}
+
+\textbf{Paso 5: Aplicar la fórmula cuadrática}
+
+Con \(a = 1\), \(b = -6\), \(c = -2\):
+
+\begin{align*}
+x &= \frac{6 \pm \sqrt{36 - 4(1)(-2)}}{2}\\
+&= \frac{6 \pm \sqrt{36 + 8}}{2}\\
+&= \frac{6 \pm \sqrt{44}}{2}\\
+&= \frac{6 \pm 2\sqrt{11}}{2}\\
+&= 3 \pm \sqrt{11}
+\end{align*}
+
+\textbf{Paso 6: Verificar restricciones}
+
+\begin{itemize}
+    \item \(x = 3 + \sqrt{11} \approx 6.317\): Diferente de 0 y 2. \checkmark
+    \item \(x = 3 - \sqrt{11} \approx -0.317\): Diferente de 0 y 2. \checkmark
+\end{itemize}
+
+\textbf{Verificación (para \(x = 3 + \sqrt{11}\)):}
+
+\[\frac{5}{(3+\sqrt{11})-2} - \frac{1}{3+\sqrt{11}} = \frac{5}{1+\sqrt{11}} - \frac{1}{3+\sqrt{11}}\]
+
+Esto es tedioso de verificar sin calculadora, pero podemos confiar en nuestro álgebra dado que ambos valores cumplen las restricciones.
+
+\textbf{Respuesta final:} \(x = 3 + \sqrt{11}\) o \(x = 3 - \sqrt{11}\)
+
+%========================================
+% PROPOSED EXERCISES
+%========================================
+\subsection*{Ejercicios Propuestos}
+
+%========================================
+% EXERCISE 1
+%========================================
+\textbf{Ejercicio 1:} \(\displaystyle \frac{3}{x-2} + \frac{4}{x+3} = 1\)
+
+\textbf{Solución Completa:}
+
+\textbf{Restricciones:} \(x \neq 2\) y \(x \neq -3\)
+
+\textbf{MCD:} \((x-2)(x+3)\)
+
+Multiplicando:
+\[3(x+3) + 4(x-2) = (x-2)(x+3)\]
+
+Expandiendo el lado izquierdo:
+\[3x + 9 + 4x - 8 = (x-2)(x+3)\]
+\[7x + 1 = (x-2)(x+3)\]
+
+Expandiendo el lado derecho:
+\[7x + 1 = x^2 + 3x - 2x - 6\]
+\[7x + 1 = x^2 + x - 6\]
+
+Llevando a forma estándar:
+\[0 = x^2 + x - 6 - 7x - 1\]
+\[0 = x^2 - 6x - 7\]
+
+Factorizando:
+\[0 = (x - 7)(x + 1)\]
+
+Soluciones: \(x = 7\) o \(x = -1\)
+
+\textbf{Verificación:}
+\begin{itemize}
+    \item \(x = 7\): \(\dfrac{3}{7-2} + \dfrac{4}{7+3} = \dfrac{3}{5} + \dfrac{4}{10} = \dfrac{6}{10} + \dfrac{4}{10} = \dfrac{10}{10} = 1\) \checkmark
+    \item \(x = -1\): \(\dfrac{3}{-1-2} + \dfrac{4}{-1+3} = \dfrac{3}{-3} + \dfrac{4}{2} = -1 + 2 = 1\) \checkmark
+\end{itemize}
+
+\textbf{Respuesta:} \(x = 7\) o \(x = -1\)
+
+%========================================
+% EXERCISE 2
+%========================================
+\textbf{Ejercicio 2:} \(\displaystyle \frac{x}{x^2-4} - \frac{2}{x+2} = 0\)
+
+\textbf{Solución Completa:}
+
+\textbf{Factorización:} \(x^2 - 4 = (x-2)(x+2)\)
+
+\textbf{Restricciones:} \(x \neq 2\) y \(x \neq -2\)
+
+La ecuación se reescribe como:
+\[\frac{x}{(x-2)(x+2)} - \frac{2}{x+2} = 0\]
+
+\textbf{MCD:} \((x-2)(x+2)\)
+
+Multiplicando:
+\[\frac{x}{(x-2)(x+2)} \cdot (x-2)(x+2) - \frac{2}{x+2} \cdot (x-2)(x+2) = 0\]
+
+\[x - 2(x-2) = 0\]
+
+Expandiendo:
+\[x - 2x + 4 = 0\]
+\[-x + 4 = 0\]
+\[x = 4\]
+
+\textbf{Verificación:}
+\[\frac{4}{4^2-4} - \frac{2}{4+2} = \frac{4}{16-4} - \frac{2}{6} = \frac{4}{12} - \frac{2}{6} = \frac{1}{3} - \frac{1}{3} = 0\] \checkmark
+
+\textbf{Respuesta:} \(x = 4\)
+
+%========================================
+% EXERCISE 3
+%========================================
+\textbf{Ejercicio 3:} \(\displaystyle \frac{1}{x} + \frac{2}{x^2} - \frac{3}{x^3} = 0\)
+
+\textbf{Solución Completa:}
+
+\textbf{Restricción:} \(x \neq 0\)
+
+\textbf{MCD:} \(x^3\)
+
+Multiplicando cada término por \(x^3\):
+\[\frac{1}{x} \cdot x^3 + \frac{2}{x^2} \cdot x^3 - \frac{3}{x^3} \cdot x^3 = 0\]
+
+\[x^2 + 2x - 3 = 0\]
+
+Factorizando:
+\[(x + 3)(x - 1) = 0\]
+
+Soluciones: \(x = -3\) o \(x = 1\)
+
+\textbf{Verificación para \(x = -3\):}
+\[\frac{1}{-3} + \frac{2}{(-3)^2} - \frac{3}{(-3)^3} = -\frac{1}{3} + \frac{2}{9} - \frac{3}{-27}\]
+\[= -\frac{1}{3} + \frac{2}{9} + \frac{1}{9} = -\frac{3}{9} + \frac{3}{9} = 0\] \checkmark
+
+\textbf{Verificación para \(x = 1\):}
+\[\frac{1}{1} + \frac{2}{1^2} - \frac{3}{1^3} = 1 + 2 - 3 = 0\] \checkmark
+
+\textbf{Respuesta:} \(x = -3\) o \(x = 1\)
+
+%========================================
+% EXERCISE 4
+%========================================
+\textbf{Ejercicio 4:} \(\displaystyle \frac{2x}{x^2-1} + \frac{3}{x-1} - \frac{1}{x+1} = 0\)
+
+\textbf{Solución Completa:}
+
+\textbf{Factorización:} \(x^2 - 1 = (x-1)(x+1)\)
+
+\textbf{Restricciones:} \(x \neq 1\) y \(x \neq -1\)
+
+La ecuación se reescribe:
+\[\frac{2x}{(x-1)(x+1)} + \frac{3}{x-1} - \frac{1}{x+1} = 0\]
+
+\textbf{MCD:} \((x-1)(x+1)\)
+
+Multiplicando:
+\[2x + 3(x+1) - (x-1) = 0\]
+
+Expandiendo:
+\[2x + 3x + 3 - x + 1 = 0\]
+\[4x + 4 = 0\]
+\[4x = -4\]
+\[x = -1\]
+
+\textbf{Verificación de restricción:}
+
+¡La solución \(x = -1\) viola la restricción \(x \neq -1\)!
+
+Esta es una \textbf{solución extraña} y debe descartarse.
+
+\textbf{Respuesta:} No hay solución (la única solución potencial es extraña).
+
+%========================================
+% EXERCISE 5
+%========================================
+\textbf{Ejercicio 5:} \(\displaystyle \frac{x+1}{x^2+5x+6} - \frac{x-1}{x^2+4x+3} = \frac{1}{x+3}\)
+
+\textbf{Solución Completa:}
+
+\textbf{Factorización:}
+\begin{align*}
+x^2 + 5x + 6 &= (x+2)(x+3)\\
+x^2 + 4x + 3 &= (x+1)(x+3)
+\end{align*}
+
+\textbf{Restricciones:} \(x \neq -1, -2, -3\)
+
+La ecuación se reescribe:
+\[\frac{x+1}{(x+2)(x+3)} - \frac{x-1}{(x+1)(x+3)} = \frac{1}{x+3}\]
+
+\textbf{MCD:} \((x+1)(x+2)(x+3)\)
+
+Multiplicando cada término:
+\[(x+1)^2 - (x-1)(x+2) = (x+1)(x+2)\]
+
+Expandiendo el lado izquierdo:
+\begin{align*}
+(x+1)^2 &= x^2 + 2x + 1\\
+(x-1)(x+2) &= x^2 + 2x - x - 2 = x^2 + x - 2
+\end{align*}
+
+\[(x^2 + 2x + 1) - (x^2 + x - 2) = (x+1)(x+2)\]
+\[x^2 + 2x + 1 - x^2 - x + 2 = (x+1)(x+2)\]
+\[x + 3 = (x+1)(x+2)\]
+
+Expandiendo el lado derecho:
+\[x + 3 = x^2 + 2x + x + 2\]
+\[x + 3 = x^2 + 3x + 2\]
+
+Llevando a forma estándar:
+\[0 = x^2 + 3x + 2 - x - 3\]
+\[0 = x^2 + 2x - 1\]
+
+Aplicando la fórmula cuadrática:
+\begin{align*}
+x &= \frac{-2 \pm \sqrt{4 - 4(1)(-1)}}{2}\\
+&= \frac{-2 \pm \sqrt{4 + 4}}{2}\\
+&= \frac{-2 \pm \sqrt{8}}{2}\\
+&= \frac{-2 \pm 2\sqrt{2}}{2}\\
+&= -1 \pm \sqrt{2}
+\end{align*}
+
+\textbf{Verificación de restricciones:}
+\begin{itemize}
+    \item \(x = -1 + \sqrt{2} \approx 0.414\): No es \(-1, -2,\) o \(-3\). \checkmark
+    \item \(x = -1 - \sqrt{2} \approx -2.414\): No es \(-1, -2,\) o \(-3\). \checkmark
+\end{itemize}
+
+\textbf{Respuesta:} \(x = -1 + \sqrt{2}\) o \(x = -1 - \sqrt{2}\)
+
+%========================================
+% CHALLENGE PROBLEMS
+%========================================
+\subsection*{Problemas de Desafío}
+
+\textbf{Problema 1:} Una ecuación racional tiene la forma \(\displaystyle \frac{a}{x-1} + \frac{b}{x+1} = 1\). Si \(x = 2\) es una solución, encuentre una relación entre \(a\) y \(b\).
+
+\textbf{Solución:}
+
+Sustituir \(x = 2\) en la ecuación:
+\[\frac{a}{2-1} + \frac{b}{2+1} = 1\]
+\[\frac{a}{1} + \frac{b}{3} = 1\]
+\[a + \frac{b}{3} = 1\]
+
+Multiplicando por 3:
+\[3a + b = 3\]
+
+Por lo tanto: \(b = 3 - 3a\)
+
+\vspace{1em}
+
+\textbf{Problema 2:} Analice la ecuación \(\displaystyle \frac{x}{x-1} = \frac{x-1}{x}\)
+
+\textbf{Análisis:}
+
+\textbf{Restricciones:} \(x \neq 0\) y \(x \neq 1\)
+
+\textbf{MCD:} \(x(x-1)\)
+
+Multiplicando:
+\[x^2 = (x-1)^2\]
+
+Expandiendo:
+\[x^2 = x^2 - 2x + 1\]
+\[0 = -2x + 1\]
+\[x = \frac{1}{2}\]
+
+\textbf{Verificación:}
+\[\frac{1/2}{1/2 - 1} = \frac{1/2}{-1/2} = -1\]
+\[\frac{1/2 - 1}{1/2} = \frac{-1/2}{1/2} = -1\]
+
+Ambos lados dan \(-1\), por lo que \(x = \dfrac{1}{2}\) es la única solución.
+
+La ecuación tiene exactamente \textbf{una} solución real, no dos.
