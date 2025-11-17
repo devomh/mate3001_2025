@@ -1,0 +1,317 @@
+%========================================
+% LESSON CONTENT: Raíces y Radicales
+%========================================
+
+\lesson{Raíces y Radicales}
+
+\begin{warning}
+Salvo aviso contrario, trabajamos en números reales. Para índices \textbf{pares} se exige radicando $\geq 0$ y, al simplificar, pueden aparecer valores absolutos (por ejemplo, $\sqrt{x^2}=|x|$).
+\end{warning}
+
+\subsectiontitle{Raíces y radicales --- Simplificación de expresiones con radicales}
+
+\textbf{Objetivos:}
+\begin{itemize}
+    \item Reconocer partes de un radical: índice, signo radical y radicando.
+    \item Determinar cuándo una raíz es real (índice par vs. impar).
+    \item Simplificar extrayendo factores que sean potencias perfectas del índice.
+\end{itemize}
+
+\begin{definition}
+\textbf{Raíz $n$-ésima:} $\sqrt[n]{a}$ es el número $b$ tal que $b^n=a$ (si existe en $\mathbb{R}$).
+
+\textbf{Partes de un radical:}
+\begin{itemize}
+    \item \textbf{Índice}: El número $n$ en $\sqrt[n]{a}$ (si no aparece, se asume $n=2$)
+    \item \textbf{Signo radical}: El símbolo $\sqrt{\phantom{x}}$
+    \item \textbf{Radicando}: El número o expresión $a$ dentro del radical
+\end{itemize}
+
+\textbf{Propiedades importantes:}
+\begin{itemize}
+    \item Si $a=k^n$, entonces $\sqrt[n]{a}=k$ (potencia perfecta)
+    \item Para índice par: $\sqrt[n]{a^n b}=|a|\,\sqrt[n]{b}$
+    \item Para índice impar: $\sqrt[n]{a^n b}=a\,\sqrt[n]{b}$
+\end{itemize}
+\end{definition}
+
+\textbf{Procedimiento de simplificación (índice general $n$):}
+\begin{enumerate}
+    \item Factorice el radicando como producto de potencias: $a=a_1^n\,a_2$.
+    \item Extraiga $a_1$ fuera del radical; mantenga $a_2$ dentro.
+    \item Para índices pares, use valor absoluto cuando corresponda.
+\end{enumerate}
+
+\begin{example}
+\textbf{Ejemplo 1 (índice par):} Simplifique $\sqrt{72x^3y^4}$.
+
+\solution
+\begin{align*}
+\sqrt{72x^3y^4} &= \sqrt{36\cdot2\cdot x^2\cdot x\cdot (y^2)^2}\\
+&= \sqrt{36}\cdot\sqrt{x^2}\cdot\sqrt{y^4}\cdot\sqrt{2x}\\
+&= 6\cdot |x|\cdot y^2\cdot\sqrt{2x}\\
+&= 6|x|y^2\sqrt{2x}
+\end{align*}
+
+\textbf{Nota:} Si se asume $x\geq 0$, entonces la respuesta es $6xy^2\sqrt{2x}$.
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2 (índice impar):} Simplifique $\sqrt[3]{54a^5b^3}$.
+
+\solution
+\begin{align*}
+\sqrt[3]{54a^5b^3} &= \sqrt[3]{27\cdot2}\cdot\sqrt[3]{a^3\cdot a^2}\cdot\sqrt[3]{b^3}\\
+&= 3\cdot a\cdot b\cdot\sqrt[3]{2a^2}\\
+&= 3ab\sqrt[3]{2a^2}
+\end{align*}
+\end{example}
+
+\begin{example}
+\textbf{Aplicación rápida (dominio):} Si $f(x)=\sqrt{x-3}$, determine el dominio.
+
+\solution
+Para que $\sqrt{x-3}$ sea real, necesitamos:
+$$x-3\geq 0 \Rightarrow x\geq 3$$
+Por lo tanto, el dominio es $[3,\infty)$.
+\end{example}
+
+\begin{warning}
+\textbf{Errores comunes:}
+\begin{itemize}
+    \item Olvidar el valor absoluto al simplificar $\sqrt{x^2}=|x|$.
+    \item Pretender que $\sqrt{a+b}=\sqrt{a}+\sqrt{b}$ (¡FALSO!).
+    \item No simplificar completamente antes de proceder.
+\end{itemize}
+\end{warning}
+
+\subsectiontitle{Multiplicación y simplificación de radicales}
+
+\textbf{Objetivos:}
+\begin{itemize}
+    \item Multiplicar radicales con el mismo índice y simplificar el resultado.
+\end{itemize}
+
+\begin{theorem}
+\textbf{Propiedad clave:}
+
+Para $a,b\geq 0$ (si el índice es par):
+$$\sqrt[n]{a}\cdot\sqrt[n]{b}=\sqrt[n]{ab}$$
+
+Se debe simplificar el radicando y, si es posible, extraer factores perfectos.
+\end{theorem}
+
+\begin{example}
+\textbf{Ejemplo 1:} Multiplique y simplifique: $(\sqrt{3x})(\sqrt{15x^3})$.
+
+\solution
+\begin{align*}
+(\sqrt{3x})(\sqrt{15x^3}) &= \sqrt{3x\cdot 15x^3}\\
+&= \sqrt{45x^4}\\
+&= \sqrt{9\cdot 5\cdot x^4}\\
+&= 3x^2\sqrt{5}
+\end{align*}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2:} Multiplique y simplifique: $\sqrt[3]{8a^2}\cdot\sqrt[3]{2a}$.
+
+\solution
+\begin{align*}
+\sqrt[3]{8a^2}\cdot\sqrt[3]{2a} &= \sqrt[3]{16a^3}\\
+&= \sqrt[3]{8\cdot 2\cdot a^3}\\
+&= 2a\sqrt[3]{2}
+\end{align*}
+\end{example}
+
+\textbf{Consejo:} Factorice antes de multiplicar para extraer más fácilmente potencias perfectas.
+
+\subsectiontitle{División y racionalización de radicales}
+
+\textbf{Objetivos:}
+\begin{itemize}
+    \item Dividir radicales con el mismo índice y racionalizar denominadores.
+\end{itemize}
+
+\begin{theorem}
+\textbf{Propiedades:}
+
+$$\frac{\sqrt[n]{a}}{\sqrt[n]{b}}=\sqrt[n]{\frac{a}{b}} \quad \text{con } b>0$$
+
+\textbf{Para eliminar radicales en el denominador:}
+\begin{itemize}
+    \item \textbf{Denominador monomial} con $\sqrt{m}$: multiplicar por $\dfrac{\sqrt{m}}{\sqrt{m}}$
+    \item \textbf{Denominador binomial} $a\pm b\sqrt{m}$: multiplicar por el conjugado $a\mp b\sqrt{m}$
+\end{itemize}
+\end{theorem}
+
+\begin{example}
+\textbf{Ejemplo 1 (conjugado):} Racionalice: $\dfrac{5}{4-\sqrt{2}}$.
+
+\solution
+\begin{align*}
+\frac{5}{4-\sqrt{2}} &= \frac{5}{4-\sqrt{2}}\cdot\frac{4+\sqrt{2}}{4+\sqrt{2}}\\
+&= \frac{5(4+\sqrt{2})}{(4)^2-(\sqrt{2})^2}\\
+&= \frac{20+5\sqrt{2}}{16-2}\\
+&= \frac{20+5\sqrt{2}}{14}\\
+&= \frac{10}{7}+\frac{5\sqrt{2}}{14}
+\end{align*}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2 (monomial):} Racionalice: $\dfrac{3}{\sqrt{5}}$.
+
+\solution
+$$\frac{3}{\sqrt{5}}=\frac{3}{\sqrt{5}}\cdot\frac{\sqrt{5}}{\sqrt{5}}=\frac{3\sqrt{5}}{5}$$
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 3 (simplificar antes de racionalizar):} Simplifique $\dfrac{2\sqrt{3}}{\sqrt{6}}$.
+
+\solution
+Método 1 (combinar radicales):
+$$\frac{2\sqrt{3}}{\sqrt{6}}=2\sqrt{\frac{3}{6}}=2\sqrt{\frac{1}{2}}=2\cdot\frac{1}{\sqrt{2}}=\frac{2\sqrt{2}}{2}=\sqrt{2}$$
+
+Método 2 (racionalizar primero):
+$$\frac{2\sqrt{3}}{\sqrt{6}}\cdot\frac{\sqrt{6}}{\sqrt{6}}=\frac{2\sqrt{18}}{6}=\frac{2\cdot 3\sqrt{2}}{6}=\sqrt{2}$$
+\end{example}
+
+\begin{warning}
+\textbf{Errores comunes:}
+\begin{itemize}
+    \item Racionalizar sin antes simplificar.
+    \item Usar el conjugado incorrecto.
+    \item Olvidar distribuir al multiplicar por el conjugado.
+\end{itemize}
+\end{warning}
+
+\subsectiontitle{Suma y resta de radicales}
+
+\textbf{Objetivos:}
+\begin{itemize}
+    \item Identificar radicales semejantes y combinarlos correctamente.
+\end{itemize}
+
+\begin{definition}
+\textbf{Radicales semejantes:} Solo se suman/restan radicales con \textbf{mismo índice y mismo radicando} una vez simplificados. Actúan como ``términos semejantes''.
+
+Por ejemplo: $3\sqrt{5}+2\sqrt{5}=5\sqrt{5}$ (similar a $3x+2x=5x$)
+\end{definition}
+
+\begin{example}
+\textbf{Ejemplo 1:} Simplifique: $4\sqrt{20}-3\sqrt{5}+\sqrt{45}$.
+
+\solution
+Primero simplificamos cada radical:
+\begin{align*}
+\sqrt{20} &= \sqrt{4\cdot 5}=2\sqrt{5}\\
+\sqrt{45} &= \sqrt{9\cdot 5}=3\sqrt{5}
+\end{align*}
+
+Entonces:
+\begin{align*}
+4\sqrt{20}-3\sqrt{5}+\sqrt{45} &= 4(2\sqrt{5})-3\sqrt{5}+3\sqrt{5}\\
+&= 8\sqrt{5}-3\sqrt{5}+3\sqrt{5}\\
+&= 8\sqrt{5}
+\end{align*}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2:} Simplifique: $3\sqrt{8}-\sqrt{18}+2\sqrt{2}$.
+
+\solution
+\begin{align*}
+3\sqrt{8}-\sqrt{18}+2\sqrt{2} &= 3(2\sqrt{2})-3\sqrt{2}+2\sqrt{2}\\
+&= 6\sqrt{2}-3\sqrt{2}+2\sqrt{2}\\
+&= 5\sqrt{2}
+\end{align*}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 3 (con variables):} Simplifique: $5x\sqrt{3y}-2\sqrt{27y}+\sqrt{12y}$.
+
+\solution
+\begin{align*}
+5x\sqrt{3y}-2\sqrt{27y}+\sqrt{12y} &= 5x\sqrt{3y}-2(3\sqrt{3y})+2\sqrt{3y}\\
+&= 5x\sqrt{3y}-6\sqrt{3y}+2\sqrt{3y}\\
+&= (5x-4)\sqrt{3y}
+\end{align*}
+\end{example}
+
+\begin{warning}
+\textbf{Errores comunes:}
+\begin{itemize}
+    \item Intentar combinar radicales no semejantes.
+    \item No simplificar cada radical antes de combinar.
+\end{itemize}
+\end{warning}
+
+\subsectiontitle{Radicales y notación exponencial}
+
+\textbf{Objetivos:}
+\begin{itemize}
+    \item Convertir entre notación radical y exponente racional y aplicar leyes de exponentes.
+\end{itemize}
+
+\begin{definition}
+\textbf{Equivalencias fundamentales:}
+\begin{itemize}
+    \item $\sqrt[n]{a^m}=a^{\frac{m}{n}}$ (si $a\geq 0$ cuando $n$ es par)
+    \item $a^{p/q}=\sqrt[q]{a^p}=(\sqrt[q]{a})^p$
+    \item $a^{-r}=\dfrac{1}{a^r}$ para $a\neq 0$
+\end{itemize}
+\end{definition}
+
+\begin{example}
+\textbf{Ejemplo 1 (conversiones):}
+\begin{itemize}
+    \item Convertir: $\sqrt[5]{x^2}=x^{2/5}$
+    \item Convertir: $y^{-3/4}=\dfrac{1}{y^{3/4}}=\dfrac{1}{\sqrt[4]{y^3}}$
+\end{itemize}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 2 (operando con exponentes racionales):}
+
+Simplifique: $\dfrac{x^{3/2}\,x^{1/2}}{x^{5/2}}$
+
+\solution
+\begin{align*}
+\frac{x^{3/2}\,x^{1/2}}{x^{5/2}} &= x^{(3/2+1/2-5/2)}\\
+&= x^{-1/2}\\
+&= \frac{1}{x^{1/2}}\\
+&= \frac{1}{\sqrt{x}}
+\end{align*}
+\end{example}
+
+\begin{example}
+\textbf{Ejemplo 3 (de radical a exponente y simplificación):}
+
+Simplifique: $\sqrt[3]{a^5}$
+
+\solution
+\begin{align*}
+\sqrt[3]{a^5} &= a^{5/3}\\
+&= a^{3/3+2/3}\\
+&= a^1\cdot a^{2/3}\\
+&= a\sqrt[3]{a^2}
+\end{align*}
+\end{example}
+
+\begin{warning}
+\textbf{Errores comunes:}
+\begin{itemize}
+    \item Omitir el signo de fracción en el exponente ($a^{m/n}$).
+    \item Olvidar que un exponente negativo ``manda al denominador''.
+    \item Confundir $a^{m/n}$ con $\dfrac{a^m}{n}$.
+\end{itemize}
+\end{warning}
+
+\subsectiontitle{Notas didácticas}
+
+\begin{itemize}
+    \item Mantenga visibles las restricciones de dominio para índices pares.
+    \item Siempre simplifique radicales antes de sumar/restar o racionalizar.
+    \item En problemas con variables, indique cuándo aparecen valores absolutos o especifique supuestos (por ejemplo, ``para $x\geq 0$'').
+    \item Verifique sus respuestas sustituyendo valores numéricos simples cuando sea posible.
+\end{itemize}
