@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- MATE 3001 - Quiz 20: Funciones -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz20</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Identifying Functions - Basic -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-Funciones-IdentificacionBasica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine si la siguiente relación es una función:</p>
+<p>\(\{(1, 4), (2, 7), (3, 4), (4, 10)\}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Sí, es una función porque cada entrada tiene exactamente una salida.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! Cada valor de entrada (1, 2, 3, 4) aparece exactamente una vez. El hecho de que las entradas 1 y 3 tengan la misma salida (4) no viola la definición de función. Una función puede tener múltiples entradas con la misma salida (muchos-a-uno).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Common misconception about same outputs -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una función porque los valores 1 y 3 tienen la misma salida (4).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Este es un error común. Una función SÍ puede tener múltiples entradas con la misma salida. Lo que no puede ocurrir es que una entrada tenga múltiples salidas diferentes. Revise la definición de función.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong definition -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una función porque tiene más de 3 pares ordenados.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. El número de pares ordenados no determina si una relación es función. Una función debe cumplir que cada entrada tenga exactamente una salida, sin importar cuántos pares haya.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Confusion about outputs -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No se puede determinar sin ver la gráfica.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Podemos determinar si es función examinando los pares ordenados directamente. Si cada entrada aparece solo una vez (o si aparece múltiples veces, siempre con la misma salida), entonces es función.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Identifying Functions - Non-function -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-Funciones-NoFuncion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine si la siguiente relación es una función:</p>
+<p>\(\{(5, 2), (3, 8), (5, -1), (7, 6)\}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>No, no es una función porque la entrada 5 tiene dos salidas diferentes (2 y -1).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! El valor 5 aparece dos veces con salidas diferentes (2 y -1), lo cual viola la definición de función. Cada entrada debe tener exactamente una salida. Esto también fallaría la prueba de la recta vertical.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Missing the duplicate -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, es una función porque todas las salidas son diferentes.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. No revisó cuidadosamente las entradas. El valor 5 aparece dos veces como entrada, con salidas diferentes (2 y -1). Esto viola la definición de función.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Wrong reasoning -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Sí, es una función porque cada par ordenado es diferente.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Aunque los pares ordenados son diferentes entre sí, lo importante es verificar si alguna entrada se repite con salidas diferentes. En este caso, 5 aparece dos veces con salidas distintas.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Partial understanding -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, no es una función porque tiene números negativos.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Los números negativos no impiden que una relación sea función. La razón por la que no es función es que la entrada 5 tiene dos salidas diferentes (2 y -1).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Function Evaluation - Basic -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-Funciones-EvaluacionBasica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dada la función \(f(x) = 2x^2 - 5x + 3\), evalúe \(f(3)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(f(3) = 6\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! \(f(3) = 2(3)^2 - 5(3) + 3 = 2(9) - 15 + 3 = 18 - 15 + 3 = 6\). Siguió correctamente el orden de operaciones: exponentes primero, luego multiplicaciones, finalmente sumas y restas.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Order of operations error (multiply before squaring) -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(f(3) = 36\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Este error ocurre al calcular \(2(3)^2\) como \((2 \times 3)^2 = 6^2 = 36\). Recuerde: los exponentes se evalúan antes de las multiplicaciones. El orden correcto es \(2(3)^2 = 2(9) = 18\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Arithmetic error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(f(3) = 0\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Verifique sus cálculos: \(2(9) - 15 + 3 = 18 - 15 + 3 = 6\), no 0. Asegúrese de sumar y restar correctamente de izquierda a derecha.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(f(3) = 30\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Parece haber un error en los signos. La expresión es \(2(9) - 5(3) + 3 = 18 - 15 + 3 = 6\). Asegúrese de restar \(5(3) = 15\), no sumar.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Function Evaluation with Negatives -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Funciones-EvaluacionNegativos</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dada la función \(g(x) = 3x^2 + 4x - 2\), evalúe \(g(-2)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(g(-2) = 2\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! \(g(-2) = 3(-2)^2 + 4(-2) - 2 = 3(4) + (-8) - 2 = 12 - 8 - 2 = 2\). Manejó correctamente los signos: \((-2)^2 = 4\) y \(4(-2) = -8\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Sign error with exponent -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(g(-2) = -18\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Este error sugiere que calculó \((-2)^2 = -4\). Recuerde: \((-2)^2 = (-2) \times (-2) = 4\), no -4. Un número negativo elevado al cuadrado es siempre positivo.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Multiplication sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(g(-2) = 22\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Parece que calculó \(4(-2) = 8\) en lugar de \(-8\). Recuerde: un número positivo por un número negativo da resultado negativo. El cálculo correcto es \(12 + (-8) - 2 = 2\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Combined errors -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(g(-2) = -6\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Verifique su manejo de signos y orden de operaciones. El cálculo correcto es: \(3(4) + 4(-2) - 2 = 12 - 8 - 2 = 2\).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Y-intercept Concept -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Funciones-InterceptoY</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dada la función \(h(x) = 4x^2 - 7x + 5\), evalúe \(h(0)\). ¿Qué representa este valor geométricamente?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(h(0) = 5\), que es el intercepto en \(y\) en el punto \((0, 5)\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! \(h(0) = 5\) y este valor representa el intercepto en \(y\), el punto donde la gráfica cruza el eje \(y\). Como coordenada es \((0, 5)\). Para cualquier función, \(f(0)\) siempre da el intercepto en \(y\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Wrong calculation -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(h(0) = -7\), que es el intercepto en \(x\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto en ambas partes. \(h(0) = 4(0)^2 - 7(0) + 5 = 5\), no -7. Además, \(h(0)\) representa el intercepto en \(y\), no en \(x\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Confusion about which intercept -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(h(0) = 5\), que es el intercepto en \(x\) en el punto \((5, 0)\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Aunque calculó correctamente \(h(0) = 5\), la interpretación geométrica es incorrecta. \(h(0)\) representa el intercepto en \(y\), no en \(x\), y el punto es \((0, 5)\), no \((5, 0)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Confusing coefficient with value -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(h(0) = 4\), que es el vértice de la parábola.</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. El valor de \(h(0)\) es 5 (el término constante), no 4 (que es el coeficiente de \(x^2\)). Además, \(h(0)\) representa el intercepto en \(y\), no el vértice.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Ordered Pair from Evaluation -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Funciones-ParOrdenado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dada la función lineal \(f(x) = 3x - 4\), evalúe \(f(2)\) y exprese el resultado como un punto ordenado \((x, y)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((2, 2)\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! \(f(2) = 3(2) - 4 = 6 - 4 = 2\). Cuando \(f(a) = b\), el punto ordenado es \((a, b)\), entonces el punto es \((2, 2)\). Este punto está en la gráfica de la función.</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Reversed coordinates -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2, 2)\) pero debería escribirse como \((2, 2)\) — son equivalentes</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Esta opción es idéntica a la correcta. Si seleccionó esta pensando que estaban al revés, recuerde que la notación de par ordenado siempre es \((x, y)\) o \((entrada, salida)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Calculation error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2, 10)\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Error en el cálculo. \(f(2) = 3(2) - 4 = 6 - 4 = 2\), no 10. El punto correcto es \((2, 2)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Sign error -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((2, -2)\)</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Error en el signo. \(f(2) = 3(2) - 4 = 6 - 4 = 2\), no -2. Asegúrese de restar correctamente: \(6 - 4 = 2\).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Y-intercept of Linear Function -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-Funciones-InterceptoLineal</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para la función lineal \(f(x) = -2x + 7\), identifique el intercepto en \(y\) y expréselo como un punto ordenado.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+
+    <!-- Correct Answer -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El intercepto en \(y\) es 7, y el punto es \((0, 7)\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>¡Correcto! En la forma \(f(x) = mx + b\), el intercepto en \(y\) es \(b = 7\). Evaluando: \(f(0) = -2(0) + 7 = 7\). El punto donde la recta cruza el eje \(y\) es \((0, 7)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 1: Confusing slope with intercept -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El intercepto en \(y\) es -2, y el punto es \((0, -2)\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Confundió la pendiente \(m = -2\) con el intercepto en \(y\). En \(f(x) = mx + b\), el intercepto es \(b = 7\), no \(m\). El punto correcto es \((0, 7)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 2: Reversed coordinates -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El intercepto en \(y\) es 7, y el punto es \((7, 0)\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Aunque identificó correctamente el intercepto en \(y\) como 7, el punto está al revés. El intercepto en \(y\) ocurre cuando \(x = 0\), así que el punto es \((0, 7)\), no \((7, 0)\).</p>]]></text>
+      </feedback>
+    </answer>
+
+    <!-- Distractor 3: Wrong type of intercept -->
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El intercepto en \(y\) es \(3.5\), y el punto es \((3.5, 0)\).</p>]]></text>
+      <feedback>
+        <text><![CDATA[<p>Incorrecto. Parece que calculó el intercepto en \(x\) (donde \(y = 0\)), no el intercepto en \(y\). El intercepto en \(y\) se encuentra evaluando \(f(0) = 7\), dando el punto \((0, 7)\).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
