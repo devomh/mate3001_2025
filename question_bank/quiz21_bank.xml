@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Course and lesson identification -->
+  <question type="category">
+    <category>
+      <text>$course$/MATE3001/Quiz21</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Domain of Rational Expressions -->
+  <question type="multichoice">
+    <name>
+      <text>Q1-RationalExpressions-Domain</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find the domain of the expression \(\dfrac{x-2}{x^2-16}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x | x \neq 4\}\)</p>]]></text>
+      <feedback><text>This only considers the positive root. Don't forget the negative root as well.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x | x \neq -4\}\)</p>]]></text>
+      <feedback><text>This only considers the negative root. Don't forget the positive root as well.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\{x | x \neq \pm 4\}\)</p>]]></text>
+      <feedback><text>Correct! The denominator \(x^2 - 16 = (x-4)(x+4)\) equals zero when \(x = \pm 4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{x | x \neq 2\}\)</p>]]></text>
+      <feedback><text>The restriction comes from the denominator, not the numerator.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Simplifying Rational Expressions -->
+  <question type="multichoice">
+    <name>
+      <text>Q2-RationalExpressions-Simplify</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplify \(\dfrac{x^2-9}{x^2+6x+9}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-3}{x+3}\)</p>]]></text>
+      <feedback><text>Correct! Factor both numerator and denominator, then cancel the common factor \((x+3)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+3}{x-3}\)</p>]]></text>
+      <feedback><text>Check the factoring carefully. You may have inverted the factors.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-9}{x+9}\)</p>]]></text>
+      <feedback><text>You need to factor the expressions, not just split the constant terms.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{1}{x+3}\)</p>]]></text>
+      <feedback><text>Be careful which factors you cancel. Only \((x+3)\) cancels, not \((x-3)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Multiplying Rational Expressions -->
+  <question type="multichoice">
+    <name>
+      <text>Q3-RationalExpressions-Multiply</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplify \(\dfrac{x^2-4}{x+3} \cdot \dfrac{x+3}{x+2}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x+2\)</p>]]></text>
+      <feedback><text>Check the sign. After factoring \(x^2-4 = (x-2)(x+2)\), which factor remains?</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x-2\)</p>]]></text>
+      <feedback><text>Correct! After factoring and canceling \((x+3)\) and \((x+2)\), you get \(x-2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-2}{x+2}\)</p>]]></text>
+      <feedback><text>You can cancel \((x+2)\) completely since it appears in both numerator and denominator.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(1\)</p>]]></text>
+      <feedback><text>Not everything cancels. After canceling common factors, \((x-2)\) remains.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Simplifying Radicals -->
+  <question type="multichoice">
+    <name>
+      <text>Q4-Radicals-Simplify</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplify \(\sqrt{98}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(7\sqrt{2}\)</p>]]></text>
+      <feedback><text>Correct! Since \(98 = 49 \times 2\), we get \(\sqrt{98} = 7\sqrt{2}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(14\sqrt{7}\)</p>]]></text>
+      <feedback><text>Check your factorization of 98. Look for perfect square factors.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(49\sqrt{2}\)</p>]]></text>
+      <feedback><text>Remember to take the square root of the perfect square factor (49).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2\sqrt{49}\)</p>]]></text>
+      <feedback><text>This is reversed. Simplify \(\sqrt{49}\) to get the coefficient outside.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Rationalizing Denominators -->
+  <question type="multichoice">
+    <name>
+      <text>Q5-Radicals-Rationalize</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Rationalize \(\dfrac{5}{\sqrt{7}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{5\sqrt{7}}{7}\)</p>]]></text>
+      <feedback><text>Correct! Multiply by \(\dfrac{\sqrt{7}}{\sqrt{7}}\) to rationalize the denominator.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{\sqrt{7}}{5}\)</p>]]></text>
+      <feedback><text>The fraction has been inverted. Keep the original numerator and multiply appropriately.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{5\sqrt{7}}{49}\)</p>]]></text>
+      <feedback><text>When rationalizing, \(\sqrt{7} \times \sqrt{7} = 7\), not 49.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{5}{7}\)</p>]]></text>
+      <feedback><text>Don't forget the radical in the numerator after multiplying by \(\sqrt{7}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Combining Radical Expressions -->
+  <question type="multichoice">
+    <name>
+      <text>Q6-Radicals-Combine</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplify \(3\sqrt{18} - 2\sqrt{8} + \sqrt{32}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(6\sqrt{2}\)</p>]]></text>
+      <feedback><text>Check your arithmetic when combining the coefficients: \(9 - 4 + 4 = ?\)</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(9\sqrt{2}\)</p>]]></text>
+      <feedback><text>Correct! Simplify each radical first, then combine: \(9\sqrt{2} - 4\sqrt{2} + 4\sqrt{2} = 9\sqrt{2}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(13\sqrt{2}\)</p>]]></text>
+      <feedback><text>Pay attention to the subtraction sign. You're adding all coefficients instead.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(5\sqrt{58}\)</p>]]></text>
+      <feedback><text>You must simplify each radical before combining like terms.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Solving Rational Equations -->
+  <question type="multichoice">
+    <name>
+      <text>Q7-RationalEquations-Solve</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Solve \(\dfrac{4}{x} + \dfrac{3}{x-2} = 1\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 2\) or \(x = 4\)</p>]]></text>
+      <feedback><text>Check your algebra when solving the quadratic equation \(x^2 - 9x + 8 = 0\).</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 1\) or \(x = 8\)</p>]]></text>
+      <feedback><text>Correct! After clearing denominators and solving, \((x-1)(x-8) = 0\) gives \(x = 1\) or \(x = 8\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -1\) or \(x = 8\)</p>]]></text>
+      <feedback><text>Check the sign on one of your solutions. The correct factors lead to positive 1.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 4\) only</p>]]></text>
+      <feedback><text>This equation has two solutions. Make sure to find both roots of the quadratic.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Identifying Functions -->
+  <question type="multichoice">
+    <name>
+      <text>Q8-Functions-Identify</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following relations is <strong>NOT</strong> a function?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{(2,3), (3,4), (4,5), (5,6)\}\)</p>]]></text>
+      <feedback><text>This is a function. Each input has exactly one output.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\{(1,5), (1,7), (3,9)\}\)</p>]]></text>
+      <feedback><text>Correct! This is NOT a function because input 1 maps to two different outputs (5 and 7).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\{(2,3), (3,3), (4,3), (5,3)\}\)</p>]]></text>
+      <feedback><text>This is a function. Multiple inputs can map to the same output.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(f(x) = x^2 + 1\)</p>]]></text>
+      <feedback><text>This is a function. Algebraic expressions like this always define functions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Intercepts of Linear Functions -->
+  <question type="multichoice">
+    <name>
+      <text>Q9-Functions-Intercepts</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For the function \(f(x) = 2x - 8\), find the \(y\)-intercept as an ordered pair.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((4, 0)\)</p>]]></text>
+      <feedback><text>This is the x-intercept, not the y-intercept. The y-intercept has x = 0.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\((0, -8)\)</p>]]></text>
+      <feedback><text>Correct! The y-intercept occurs when \(x = 0\), giving \(f(0) = -8\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((-4, 0)\)</p>]]></text>
+      <feedback><text>Check your calculation. This is close to an x-intercept but with the wrong sign.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\((0, 8)\)</p>]]></text>
+      <feedback><text>Watch the sign of the constant term. It's -8, not +8.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Conjugates -->
+  <question type="multichoice">
+    <name>
+      <text>Q10-Radicals-Conjugate</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find the conjugate of \(3 + \sqrt{11}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(3 - \sqrt{11}\)</p>]]></text>
+      <feedback><text>Correct! The conjugate changes only the sign between the terms.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-3 - \sqrt{11}\)</p>]]></text>
+      <feedback><text>Don't negate both terms. Only change the sign between them.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-3 + \sqrt{11}\)</p>]]></text>
+      <feedback><text>The constant term should remain positive. Only the operation sign changes.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{11} - 3\)</p>]]></text>
+      <feedback><text>The order matters. The standard form keeps the constant first.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: Exponential to Radical Form -->
+  <question type="multichoice">
+    <name>
+      <text>Q11-Exponents-ToRadical</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Write \(x^{5/3}\) in radical form.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\sqrt[3]{x^5}\)</p>]]></text>
+      <feedback><text>Correct! Using \(x^{m/n} = \sqrt[n]{x^m}\), the denominator becomes the index.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt[5]{x^3}\)</p>]]></text>
+      <feedback><text>You've reversed the numerator and denominator. Check the conversion rule carefully.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{x^{15}}\)</p>]]></text>
+      <feedback><text>Don't multiply the exponents. Convert the fractional exponent to radical form instead.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^{15}\)</p>]]></text>
+      <feedback><text>This is not the correct conversion. Use the rule \(x^{m/n} = \sqrt[n]{x^m}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Radical to Exponential Form -->
+  <question type="multichoice">
+    <name>
+      <text>Q12-Radicals-ToExponential</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Write \(\sqrt[4]{x^3}\) in exponential notation.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^{4/3}\)</p>]]></text>
+      <feedback><text>You've reversed the numerator and denominator. The power goes on top, the index on bottom.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x^{3/4}\)</p>]]></text>
+      <feedback><text>Correct! Using \(\sqrt[n]{x^m} = x^{m/n}\), we get \(x^{3/4}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x^{12}\)</p>]]></text>
+      <feedback><text>Don't multiply. Use the rule \(\sqrt[n]{x^m} = x^{m/n}\) to create a fraction.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\sqrt{x^7}\)</p>]]></text>
+      <feedback><text>This is still in radical form. Convert to exponential notation using fractional exponents.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 13: Simplifying Rational Expressions (Complex) -->
+  <question type="multichoice">
+    <name>
+      <text>Q13-RationalExpressions-SimplifyComplex</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplify completely: \(\dfrac{x^2+3x-10}{x^2-25}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-2}{x-5}\)</p>]]></text>
+      <feedback><text>Correct! Factor both, then cancel the common factor \((x+5)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+5}{x-5}\)</p>]]></text>
+      <feedback><text>\((x+5)\) is the factor that cancels. Check what remains in the numerator.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-2}{x+5}\)</p>]]></text>
+      <feedback><text>Check which factor cancels. It should be \((x+5)\), not \((x-5)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+2}{x-5}\)</p>]]></text>
+      <feedback><text>Check the signs when factoring the numerator. Look for factors of -10 that add to +3.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 14: Dividing Rational Expressions -->
+  <question type="multichoice">
+    <name>
+      <text>Q14-RationalExpressions-Divide</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Perform the division and simplify: \(\dfrac{x^2-16}{x^2+3x-10} \div \dfrac{x-4}{x+5}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x-4}{x-2}\)</p>]]></text>
+      <feedback><text>Check the factorization of \(x^2-16\). One factor has a different sign.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+4}{x-2}\)</p>]]></text>
+      <feedback><text>Correct! After multiplying by the reciprocal and canceling, \(\dfrac{x+4}{x-2}\) remains.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{x+4}{x+5}\)</p>]]></text>
+      <feedback><text>You can cancel \((x+5)\) completely from numerator and denominator.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x+4\)</p>]]></text>
+      <feedback><text>Don't over-simplify. The denominator \((x-2)\) cannot be canceled.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 15: Adding Rational Expressions -->
+  <question type="multichoice">
+    <name>
+      <text>Q15-RationalExpressions-Add</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Perform the addition and simplify: \(\dfrac{2}{x-3} + \dfrac{5}{x+2}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{7}{x-1}\)</p>]]></text>
+      <feedback><text>You cannot simply add numerators and denominators. Find the LCD first.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{7x-11}{(x-3)(x+2)}\)</p>]]></text>
+      <feedback><text>Correct! After finding the LCD and combining: \(2(x+2) + 5(x-3) = 7x-11\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{7x+11}{(x-3)(x+2)}\)</p>]]></text>
+      <feedback><text>Check your signs when combining: \(2(x+2) + 5(x-3) = 2x+4+5x-15\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{7}{2x-1}\)</p>]]></text>
+      <feedback><text>The LCD is \((x-3)(x+2)\), not \(2x-1\). Review finding common denominators.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 16: Simplifying Radicals with Variables -->
+  <question type="multichoice">
+    <name>
+      <text>Q16-Radicals-SimplifyVariables</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Simplify completely (assume all variables are positive): \(\sqrt{128x^5y^4}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(8x^2y^2\sqrt{2x}\)</p>]]></text>
+      <feedback><text>Correct! Extract all perfect squares: \(\sqrt{64 \cdot 2 \cdot x^4 \cdot x \cdot y^4} = 8x^2y^2\sqrt{2x}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(64x^2y^2\sqrt{x}\)</p>]]></text>
+      <feedback><text>Check the simplification of 128. Also, \(\sqrt{2x}\) should remain under the radical.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(8xy^2\sqrt{2x^3}\)</p>]]></text>
+      <feedback><text>From \(x^5\), you can extract \(x^4 = (x^2)^2\), leaving just one x under the radical.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(16x^2y^2\sqrt{x}\)</p>]]></text>
+      <feedback><text>Check the coefficient: \(\sqrt{128} = \sqrt{64 \cdot 2} = 8\sqrt{2}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 17: Solving Rational Equations with Verification -->
+  <question type="multichoice">
+    <name>
+      <text>Q17-RationalEquations-SolveVerify</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Solve the equation: \(\dfrac{4}{x-3} - \dfrac{2}{x} = 1\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 3\) or \(x = 2\)</p>]]></text>
+      <feedback><text>These are restricted values (make denominators zero), not solutions to the equation.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(x = 6\) or \(x = -1\)</p>]]></text>
+      <feedback><text>Correct! Solving \(x^2 - 5x - 6 = 0\) gives \((x-6)(x+1) = 0\), so \(x = 6\) or \(x = -1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = 6\) only</p>]]></text>
+      <feedback><text>The quadratic has two solutions. Don't forget to find both roots.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(x = -6\) or \(x = 1\)</p>]]></text>
+      <feedback><text>Check your signs when factoring. The correct factorization is \((x-6)(x+1)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 18: Rationalizing with Conjugates -->
+  <question type="multichoice">
+    <name>
+      <text>Q18-Radicals-RationalizeConjugate</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Rationalize the denominator and simplify: \(\dfrac{8}{4-\sqrt{3}}\)</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{32 - 8\sqrt{3}}{13}\)</p>]]></text>
+      <feedback><text>Check the sign in the numerator. When you multiply \(8(4+\sqrt{3})\), all terms are positive.</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\dfrac{32 + 8\sqrt{3}}{13}\)</p>]]></text>
+      <feedback><text>Correct! Multiply by \(\dfrac{4+\sqrt{3}}{4+\sqrt{3}}\) to get \(\dfrac{32+8\sqrt{3}}{13}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{8 + 2\sqrt{3}}{13}\)</p>]]></text>
+      <feedback><text>Check your multiplication: \(8 \times 4 = 32\), not 8.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\dfrac{4 + \sqrt{3}}{2}\)</p>]]></text>
+      <feedback><text>Review the conjugate multiplication. The denominator becomes \((4)^2 - (\sqrt{3})^2 = 13\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 19: Function Evaluation (Part a) -->
+  <question type="multichoice">
+    <name>
+      <text>Q19-Functions-Evaluate</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the function \(f(x) = x^2 - 3x + 5\), evaluate \(f(-3)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(-1\)</p>]]></text>
+      <feedback><text>Check your signs carefully. Remember that \((-3)^2 = 9\) and \(-3(-3) = 9\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(5\)</p>]]></text>
+      <feedback><text>Don't forget to evaluate \(x^2\) and \(-3x\) before adding the constant.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(14\)</p>]]></text>
+      <feedback><text>You're close! Make sure to add all three terms: \(9 + 9 + 5\).</text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(23\)</p>]]></text>
+      <feedback><text>Correct! \(f(-3) = 9 - 3(-3) + 5 = 9 + 9 + 5 = 23\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 20: Function Evaluation (Part b) -->
+  <question type="multichoice">
+    <name>
+      <text>Q20-Functions-EvaluateExpression</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the function \(f(x) = x^2 - 3x + 5\), find \(f(a+2)\).</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(a^2 + a + 3\)</p>]]></text>
+      <feedback><text>Correct! After expanding and simplifying: \((a+2)^2 - 3(a+2) + 5 = a^2 + a + 3\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(a^2 + 4a + 7\)</p>]]></text>
+      <feedback><text>Remember to distribute the -3 to both terms in \((a+2)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(a^2 - 3a + 7\)</p>]]></text>
+      <feedback><text>Check your expansion of \((a+2)^2\). It should be \(a^2 + 4a + 4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(a^2 + a - 1\)</p>]]></text>
+      <feedback><text>Recheck your arithmetic when combining constants: \(4 - 6 + 5 = 3\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
